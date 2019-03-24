@@ -117,15 +117,221 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Plan.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="Plan.Size" type="System.Drawing.Size, System.Drawing">
+    <value>838, 397</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Plan.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="Plan.Text" xml:space="preserve">
+    <value>План</value>
+  </data>
+  <data name="&gt;&gt;Plan.Name" xml:space="preserve">
+    <value>Plan</value>
+  </data>
+  <data name="&gt;&gt;Plan.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Plan.Parent" xml:space="preserve">
+    <value>tabControlControlPanel</value>
+  </data>
+  <data name="&gt;&gt;Plan.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Control.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Control.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="Control.Size" type="System.Drawing.Size, System.Drawing">
+    <value>838, 397</value>
+  </data>
+  <data name="Control.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="Control.Text" xml:space="preserve">
+    <value>Управление</value>
+  </data>
+  <data name="&gt;&gt;Control.Name" xml:space="preserve">
+    <value>Control</value>
+  </data>
+  <data name="&gt;&gt;Control.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Control.Parent" xml:space="preserve">
+    <value>tabControlControlPanel</value>
+  </data>
+  <data name="&gt;&gt;Control.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Charts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="Charts.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="Charts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>861, 424</value>
+  </data>
+  <data name="Charts.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="Charts.Text" xml:space="preserve">
+    <value>Графики</value>
+  </data>
+  <data name="&gt;&gt;Charts.Name" xml:space="preserve">
+    <value>Charts</value>
+  </data>
+  <data name="&gt;&gt;Charts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Charts.Parent" xml:space="preserve">
+    <value>tabControlControlPanel</value>
+  </data>
+  <data name="&gt;&gt;Charts.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabControlControlPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="tabControlControlPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>389, 0</value>
+  </data>
+  <data name="tabControlControlPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>869, 450</value>
+  </data>
+  <data name="tabControlControlPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tabControlControlPanel.Name" xml:space="preserve">
+    <value>tabControlControlPanel</value>
+  </data>
+  <data name="&gt;&gt;tabControlControlPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControlControlPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabControlControlPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textBoxT0.Name" xml:space="preserve">
+    <value>textBoxT0</value>
+  </data>
+  <data name="&gt;&gt;textBoxT0.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxT0.Parent" xml:space="preserve">
+    <value>groupBoxCurrentParameters</value>
+  </data>
+  <data name="&gt;&gt;textBoxT0.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelT0.Name" xml:space="preserve">
+    <value>labelT0</value>
+  </data>
+  <data name="&gt;&gt;labelT0.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelT0.Parent" xml:space="preserve">
+    <value>groupBoxCurrentParameters</value>
+  </data>
+  <data name="&gt;&gt;labelT0.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBoxCurrentParameters.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="groupBoxCurrentParameters.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="groupBoxCurrentParameters.Size" type="System.Drawing.Size, System.Drawing">
+    <value>389, 245</value>
+  </data>
+  <data name="groupBoxCurrentParameters.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="groupBoxCurrentParameters.Text" xml:space="preserve">
+    <value>Поточні параметри</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCurrentParameters.Name" xml:space="preserve">
+    <value>groupBoxCurrentParameters</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCurrentParameters.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCurrentParameters.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCurrentParameters.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelT0.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelT0.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 22</value>
+  </data>
+  <data name="labelT0.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 13</value>
+  </data>
+  <data name="labelT0.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelT0.Text" xml:space="preserve">
+    <value>T0, °C</value>
+  </data>
+  <data name="&gt;&gt;labelT0.Name" xml:space="preserve">
+    <value>labelT0</value>
+  </data>
+  <data name="&gt;&gt;labelT0.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelT0.Parent" xml:space="preserve">
+    <value>groupBoxCurrentParameters</value>
+  </data>
+  <data name="&gt;&gt;labelT0.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="textBoxT0.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBoxT0.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 22</value>
+  </data>
+  <data name="textBoxT0.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="textBoxT0.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textBoxT0.Name" xml:space="preserve">
+    <value>textBoxT0</value>
+  </data>
+  <data name="&gt;&gt;textBoxT0.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxT0.Parent" xml:space="preserve">
+    <value>groupBoxCurrentParameters</value>
+  </data>
+  <data name="&gt;&gt;textBoxT0.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1142, 655</value>
+    <value>1258, 450</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Автоматизоване робоче місце СМТ-1</value>

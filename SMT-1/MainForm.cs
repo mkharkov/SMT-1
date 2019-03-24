@@ -16,5 +16,10 @@ namespace SMT_1
         {
             InitializeComponent();
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            textBoxT0.Text = "Degrees";
+        }
     }
 }
