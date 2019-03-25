@@ -34,10 +34,12 @@
             this.Charts = new System.Windows.Forms.TabPage();
             this.tabControlControlPanel = new System.Windows.Forms.TabControl();
             this.groupBoxCurrentParameters = new System.Windows.Forms.GroupBox();
-            this.labelT0 = new System.Windows.Forms.Label();
             this.textBoxT0 = new System.Windows.Forms.TextBox();
+            this.labelT0 = new System.Windows.Forms.Label();
+            this.tableLayoutPanelParameters = new System.Windows.Forms.TableLayoutPanel();
             this.tabControlControlPanel.SuspendLayout();
             this.groupBoxCurrentParameters.SuspendLayout();
+            this.tableLayoutPanelParameters.SuspendLayout();
             this.SuspendLayout();
             // 
             // Plan
@@ -69,21 +71,27 @@
             // 
             // groupBoxCurrentParameters
             // 
-            this.groupBoxCurrentParameters.Controls.Add(this.textBoxT0);
-            this.groupBoxCurrentParameters.Controls.Add(this.labelT0);
+            this.groupBoxCurrentParameters.Controls.Add(this.tableLayoutPanelParameters);
             resources.ApplyResources(this.groupBoxCurrentParameters, "groupBoxCurrentParameters");
             this.groupBoxCurrentParameters.Name = "groupBoxCurrentParameters";
             this.groupBoxCurrentParameters.TabStop = false;
+            // 
+            // textBoxT0
+            // 
+            resources.ApplyResources(this.textBoxT0, "textBoxT0");
+            this.textBoxT0.Name = "textBoxT0";
             // 
             // labelT0
             // 
             resources.ApplyResources(this.labelT0, "labelT0");
             this.labelT0.Name = "labelT0";
             // 
-            // textBoxT0
+            // tableLayoutPanelParameters
             // 
-            resources.ApplyResources(this.textBoxT0, "textBoxT0");
-            this.textBoxT0.Name = "textBoxT0";
+            resources.ApplyResources(this.tableLayoutPanelParameters, "tableLayoutPanelParameters");
+            this.tableLayoutPanelParameters.Controls.Add(this.labelT0, 0, 0);
+            this.tableLayoutPanelParameters.Controls.Add(this.textBoxT0, 1, 0);
+            this.tableLayoutPanelParameters.Name = "tableLayoutPanelParameters";
             // 
             // MainForm
             // 
@@ -99,7 +107,8 @@
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.tabControlControlPanel.ResumeLayout(false);
             this.groupBoxCurrentParameters.ResumeLayout(false);
-            this.groupBoxCurrentParameters.PerformLayout();
+            this.tableLayoutPanelParameters.ResumeLayout(false);
+            this.tableLayoutPanelParameters.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -113,6 +122,7 @@
         private System.Windows.Forms.GroupBox groupBoxCurrentParameters;
         private System.Windows.Forms.TextBox textBoxT0;
         private System.Windows.Forms.Label labelT0;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelParameters;
     }
 }
 
