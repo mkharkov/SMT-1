@@ -178,7 +178,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="Charts.Size" type="System.Drawing.Size, System.Drawing">
-    <value>861, 424</value>
+    <value>861, 405</value>
   </data>
   <data name="Charts.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -202,10 +202,10 @@
     <value>Right</value>
   </data>
   <data name="tabControlControlPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>389, 0</value>
+    <value>282, 0</value>
   </data>
   <data name="tabControlControlPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>869, 450</value>
+    <value>869, 431</value>
   </data>
   <data name="tabControlControlPanel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -229,7 +229,7 @@
     <value>False</value>
   </data>
   <data name="textBoxT0.Location" type="System.Drawing.Point, System.Drawing">
-    <value>194, 3</value>
+    <value>141, 3</value>
   </data>
   <data name="textBoxT0.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
@@ -286,7 +286,7 @@
     <value>2</value>
   </data>
   <data name="tableLayoutPanelParameters.Size" type="System.Drawing.Size, System.Drawing">
-    <value>383, 166</value>
+    <value>276, 166</value>
   </data>
   <data name="tableLayoutPanelParameters.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -313,7 +313,7 @@
     <value>0, 0</value>
   </data>
   <data name="groupBoxCurrentParameters.Size" type="System.Drawing.Size, System.Drawing">
-    <value>389, 185</value>
+    <value>282, 185</value>
   </data>
   <data name="groupBoxCurrentParameters.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -333,6 +333,39 @@
   <data name="&gt;&gt;groupBoxCurrentParameters.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="tableLayoutPanelPlan.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanelPlan.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanelPlan.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 16</value>
+  </data>
+  <data name="tableLayoutPanelPlan.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanelPlan.Size" type="System.Drawing.Size, System.Drawing">
+    <value>276, 227</value>
+  </data>
+  <data name="tableLayoutPanelPlan.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelPlan.Name" xml:space="preserve">
+    <value>tableLayoutPanelPlan</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelPlan.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelPlan.Parent" xml:space="preserve">
+    <value>groupBoxPlan</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelPlan.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanelPlan.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls /&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
   <data name="groupBoxPlan.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -340,7 +373,7 @@
     <value>0, 185</value>
   </data>
   <data name="groupBoxPlan.Size" type="System.Drawing.Size, System.Drawing">
-    <value>389, 265</value>
+    <value>282, 246</value>
   </data>
   <data name="groupBoxPlan.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -367,7 +400,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1258, 450</value>
+    <value>1151, 431</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Автоматизоване робоче місце СМТ-1</value>

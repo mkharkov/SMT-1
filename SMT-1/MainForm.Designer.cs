@@ -38,9 +38,11 @@
             this.labelT0 = new System.Windows.Forms.Label();
             this.tableLayoutPanelParameters = new System.Windows.Forms.TableLayoutPanel();
             this.groupBoxPlan = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanelPlan = new System.Windows.Forms.TableLayoutPanel();
             this.tabControlControlPanel.SuspendLayout();
             this.groupBoxCurrentParameters.SuspendLayout();
             this.tableLayoutPanelParameters.SuspendLayout();
+            this.groupBoxPlan.SuspendLayout();
             this.SuspendLayout();
             // 
             // Plan
@@ -96,9 +98,15 @@
             // 
             // groupBoxPlan
             // 
+            this.groupBoxPlan.Controls.Add(this.tableLayoutPanelPlan);
             resources.ApplyResources(this.groupBoxPlan, "groupBoxPlan");
             this.groupBoxPlan.Name = "groupBoxPlan";
             this.groupBoxPlan.TabStop = false;
+            // 
+            // tableLayoutPanelPlan
+            // 
+            resources.ApplyResources(this.tableLayoutPanelPlan, "tableLayoutPanelPlan");
+            this.tableLayoutPanelPlan.Name = "tableLayoutPanelPlan";
             // 
             // MainForm
             // 
@@ -117,6 +125,7 @@
             this.groupBoxCurrentParameters.ResumeLayout(false);
             this.tableLayoutPanelParameters.ResumeLayout(false);
             this.tableLayoutPanelParameters.PerformLayout();
+            this.groupBoxPlan.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -132,6 +141,7 @@
         private System.Windows.Forms.Label labelT0;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelParameters;
         private System.Windows.Forms.GroupBox groupBoxPlan;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelPlan;
     }
 }
 
