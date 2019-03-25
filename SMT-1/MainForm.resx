@@ -122,7 +122,7 @@
     <value>4, 22</value>
   </data>
   <data name="Plan.Size" type="System.Drawing.Size, System.Drawing">
-    <value>861, 424</value>
+    <value>861, 735</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Plan.TabIndex" type="System.Int32, mscorlib">
@@ -151,7 +151,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="Control.Size" type="System.Drawing.Size, System.Drawing">
-    <value>861, 424</value>
+    <value>861, 735</value>
   </data>
   <data name="Control.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -178,7 +178,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="Charts.Size" type="System.Drawing.Size, System.Drawing">
-    <value>861, 405</value>
+    <value>861, 735</value>
   </data>
   <data name="Charts.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -202,10 +202,10 @@
     <value>Right</value>
   </data>
   <data name="tabControlControlPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>282, 0</value>
+    <value>415, 0</value>
   </data>
   <data name="tabControlControlPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>869, 431</value>
+    <value>869, 761</value>
   </data>
   <data name="tabControlControlPanel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -222,14 +222,110 @@
   <data name="&gt;&gt;tabControlControlPanel.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="&gt;&gt;tableLayoutPanelParameters.Name" xml:space="preserve">
+    <value>tableLayoutPanelParameters</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelParameters.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelParameters.Parent" xml:space="preserve">
+    <value>groupBoxCurrentParameters</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelParameters.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanelParameters.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBoxT0" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelT0" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="groupBoxCurrentParameters.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="groupBoxCurrentParameters.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="groupBoxCurrentParameters.Size" type="System.Drawing.Size, System.Drawing">
+    <value>415, 532</value>
+  </data>
+  <data name="groupBoxCurrentParameters.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="groupBoxCurrentParameters.Text" xml:space="preserve">
+    <value>Поточні параметри</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCurrentParameters.Name" xml:space="preserve">
+    <value>groupBoxCurrentParameters</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCurrentParameters.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCurrentParameters.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCurrentParameters.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="tableLayoutPanelParameters.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
+  </data>
+  <data name="&gt;&gt;textBoxT0.Name" xml:space="preserve">
+    <value>textBoxT0</value>
+  </data>
+  <data name="&gt;&gt;textBoxT0.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxT0.Parent" xml:space="preserve">
+    <value>tableLayoutPanelParameters</value>
+  </data>
+  <data name="&gt;&gt;textBoxT0.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelT0.Name" xml:space="preserve">
+    <value>labelT0</value>
+  </data>
+  <data name="&gt;&gt;labelT0.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelT0.Parent" xml:space="preserve">
+    <value>tableLayoutPanelParameters</value>
+  </data>
+  <data name="&gt;&gt;labelT0.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanelParameters.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanelParameters.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 16</value>
+  </data>
+  <data name="tableLayoutPanelParameters.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanelParameters.Size" type="System.Drawing.Size, System.Drawing">
+    <value>409, 513</value>
+  </data>
+  <data name="tableLayoutPanelParameters.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelParameters.Name" xml:space="preserve">
+    <value>tableLayoutPanelParameters</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelParameters.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelParameters.Parent" xml:space="preserve">
+    <value>groupBoxCurrentParameters</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelParameters.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanelParameters.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBoxT0" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelT0" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="textBoxT0.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="textBoxT0.Location" type="System.Drawing.Point, System.Drawing">
-    <value>141, 3</value>
+    <value>207, 3</value>
   </data>
   <data name="textBoxT0.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
@@ -276,65 +372,248 @@
   <data name="&gt;&gt;labelT0.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="tableLayoutPanelParameters.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tableLayoutPanelParameters.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 16</value>
-  </data>
-  <data name="tableLayoutPanelParameters.RowCount" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanelParameters.Size" type="System.Drawing.Size, System.Drawing">
-    <value>276, 166</value>
-  </data>
-  <data name="tableLayoutPanelParameters.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelParameters.Name" xml:space="preserve">
-    <value>tableLayoutPanelParameters</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelParameters.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelParameters.Parent" xml:space="preserve">
-    <value>groupBoxCurrentParameters</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelParameters.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanelParameters.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBoxT0" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelT0" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="groupBoxCurrentParameters.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="groupBoxCurrentParameters.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="groupBoxCurrentParameters.Size" type="System.Drawing.Size, System.Drawing">
-    <value>282, 185</value>
-  </data>
-  <data name="groupBoxCurrentParameters.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="groupBoxCurrentParameters.Text" xml:space="preserve">
-    <value>Поточні параметри</value>
-  </data>
-  <data name="&gt;&gt;groupBoxCurrentParameters.Name" xml:space="preserve">
-    <value>groupBoxCurrentParameters</value>
-  </data>
-  <data name="&gt;&gt;groupBoxCurrentParameters.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxCurrentParameters.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBoxCurrentParameters.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="tableLayoutPanelPlan.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
+  </data>
+  <data name="textBoxRecordInExecutuion.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="textBoxRecordInExecutuion.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBoxRecordInExecutuion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>95, 16</value>
+  </data>
+  <data name="textBoxRecordInExecutuion.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="textBoxRecordInExecutuion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="textBoxRecordInExecutuion.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBoxRecordInExecutuion.Name" xml:space="preserve">
+    <value>textBoxRecordInExecutuion</value>
+  </data>
+  <data name="&gt;&gt;textBoxRecordInExecutuion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxRecordInExecutuion.Parent" xml:space="preserve">
+    <value>tableLayoutPanelPlan</value>
+  </data>
+  <data name="&gt;&gt;textBoxRecordInExecutuion.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textBoxStartTime.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="textBoxStartTime.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBoxStartTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>95, 68</value>
+  </data>
+  <data name="textBoxStartTime.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="textBoxStartTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="textBoxStartTime.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textBoxStartTime.Name" xml:space="preserve">
+    <value>textBoxStartTime</value>
+  </data>
+  <data name="&gt;&gt;textBoxStartTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxStartTime.Parent" xml:space="preserve">
+    <value>tableLayoutPanelPlan</value>
+  </data>
+  <data name="&gt;&gt;textBoxStartTime.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="textBoxEndTime.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="textBoxEndTime.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBoxEndTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>95, 120</value>
+  </data>
+  <data name="textBoxEndTime.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="textBoxEndTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="textBoxEndTime.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;textBoxEndTime.Name" xml:space="preserve">
+    <value>textBoxEndTime</value>
+  </data>
+  <data name="&gt;&gt;textBoxEndTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxEndTime.Parent" xml:space="preserve">
+    <value>tableLayoutPanelPlan</value>
+  </data>
+  <data name="&gt;&gt;textBoxEndTime.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="textBoxRemainingTime.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="textBoxRemainingTime.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBoxRemainingTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>95, 173</value>
+  </data>
+  <data name="textBoxRemainingTime.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="textBoxRemainingTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="textBoxRemainingTime.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;textBoxRemainingTime.Name" xml:space="preserve">
+    <value>textBoxRemainingTime</value>
+  </data>
+  <data name="&gt;&gt;textBoxRemainingTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxRemainingTime.Parent" xml:space="preserve">
+    <value>tableLayoutPanelPlan</value>
+  </data>
+  <data name="&gt;&gt;textBoxRemainingTime.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="labelRecordInExecution.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="labelRecordInExecution.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelRecordInExecution.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 13</value>
+  </data>
+  <data name="labelRecordInExecution.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 26</value>
+  </data>
+  <data name="labelRecordInExecution.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="labelRecordInExecution.Text" xml:space="preserve">
+    <value>Виконується запис:</value>
+  </data>
+  <data name="&gt;&gt;labelRecordInExecution.Name" xml:space="preserve">
+    <value>labelRecordInExecution</value>
+  </data>
+  <data name="&gt;&gt;labelRecordInExecution.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelRecordInExecution.Parent" xml:space="preserve">
+    <value>tableLayoutPanelPlan</value>
+  </data>
+  <data name="&gt;&gt;labelRecordInExecution.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="labelStartTime.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="labelStartTime.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelStartTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 65</value>
+  </data>
+  <data name="labelStartTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 26</value>
+  </data>
+  <data name="labelStartTime.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="labelStartTime.Text" xml:space="preserve">
+    <value>Початок виконання:</value>
+  </data>
+  <data name="&gt;&gt;labelStartTime.Name" xml:space="preserve">
+    <value>labelStartTime</value>
+  </data>
+  <data name="&gt;&gt;labelStartTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelStartTime.Parent" xml:space="preserve">
+    <value>tableLayoutPanelPlan</value>
+  </data>
+  <data name="&gt;&gt;labelStartTime.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="labelEndTime.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="labelEndTime.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelEndTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 117</value>
+  </data>
+  <data name="labelEndTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 26</value>
+  </data>
+  <data name="labelEndTime.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="labelEndTime.Text" xml:space="preserve">
+    <value>Кінець виконання:</value>
+  </data>
+  <data name="&gt;&gt;labelEndTime.Name" xml:space="preserve">
+    <value>labelEndTime</value>
+  </data>
+  <data name="&gt;&gt;labelEndTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelEndTime.Parent" xml:space="preserve">
+    <value>tableLayoutPanelPlan</value>
+  </data>
+  <data name="&gt;&gt;labelEndTime.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="labelRemainingTime.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="labelRemainingTime.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelRemainingTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 170</value>
+  </data>
+  <data name="labelRemainingTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 26</value>
+  </data>
+  <data name="labelRemainingTime.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="labelRemainingTime.Text" xml:space="preserve">
+    <value>Залишилось до кінця:</value>
+  </data>
+  <data name="&gt;&gt;labelRemainingTime.Name" xml:space="preserve">
+    <value>labelRemainingTime</value>
+  </data>
+  <data name="&gt;&gt;labelRemainingTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelRemainingTime.Parent" xml:space="preserve">
+    <value>tableLayoutPanelPlan</value>
+  </data>
+  <data name="&gt;&gt;labelRemainingTime.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="tableLayoutPanelPlan.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -343,10 +622,10 @@
     <value>3, 16</value>
   </data>
   <data name="tableLayoutPanelPlan.RowCount" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="tableLayoutPanelPlan.Size" type="System.Drawing.Size, System.Drawing">
-    <value>276, 227</value>
+    <value>212, 210</value>
   </data>
   <data name="tableLayoutPanelPlan.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -364,16 +643,16 @@
     <value>0</value>
   </data>
   <data name="tableLayoutPanelPlan.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls /&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBoxRecordInExecutuion" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBoxStartTime" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBoxEndTime" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBoxRemainingTime" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelRecordInExecution" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelStartTime" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelEndTime" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelRemainingTime" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,37.26415,Percent,62.73585" /&gt;&lt;Rows Styles="Percent,25,Percent,25,Percent,25,Percent,25" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="groupBoxPlan.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+    <value>Left</value>
   </data>
   <data name="groupBoxPlan.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 185</value>
+    <value>0, 532</value>
   </data>
   <data name="groupBoxPlan.Size" type="System.Drawing.Size, System.Drawing">
-    <value>282, 246</value>
+    <value>218, 229</value>
   </data>
   <data name="groupBoxPlan.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -400,7 +679,10 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1151, 431</value>
+    <value>1284, 761</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Автоматизоване робоче місце СМТ-1</value>

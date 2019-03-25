@@ -20,6 +20,8 @@ namespace SMT_1
         private void MainForm_Load(object sender, EventArgs e)
         {
             textBoxT0.Text = "Degrees";
+            textBoxRecordInExecutuion.Text = "План не вибрано";
+            textBoxEndTime.Text = textBoxRemainingTime.Text = textBoxStartTime.Text = "0";
         }
     }
 }
