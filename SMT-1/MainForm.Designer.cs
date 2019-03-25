@@ -37,6 +37,7 @@
             this.textBoxT0 = new System.Windows.Forms.TextBox();
             this.labelT0 = new System.Windows.Forms.Label();
             this.tableLayoutPanelParameters = new System.Windows.Forms.TableLayoutPanel();
+            this.groupBoxPlan = new System.Windows.Forms.GroupBox();
             this.tabControlControlPanel.SuspendLayout();
             this.groupBoxCurrentParameters.SuspendLayout();
             this.tableLayoutPanelParameters.SuspendLayout();
@@ -89,15 +90,22 @@
             // tableLayoutPanelParameters
             // 
             resources.ApplyResources(this.tableLayoutPanelParameters, "tableLayoutPanelParameters");
-            this.tableLayoutPanelParameters.Controls.Add(this.labelT0, 0, 0);
             this.tableLayoutPanelParameters.Controls.Add(this.textBoxT0, 1, 0);
+            this.tableLayoutPanelParameters.Controls.Add(this.labelT0, 0, 0);
             this.tableLayoutPanelParameters.Name = "tableLayoutPanelParameters";
+            // 
+            // groupBoxPlan
+            // 
+            resources.ApplyResources(this.groupBoxPlan, "groupBoxPlan");
+            this.groupBoxPlan.Name = "groupBoxPlan";
+            this.groupBoxPlan.TabStop = false;
             // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Controls.Add(this.groupBoxPlan);
             this.Controls.Add(this.groupBoxCurrentParameters);
             this.Controls.Add(this.tabControlControlPanel);
             this.Cursor = System.Windows.Forms.Cursors.Default;
@@ -123,6 +131,7 @@
         private System.Windows.Forms.TextBox textBoxT0;
         private System.Windows.Forms.Label labelT0;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelParameters;
+        private System.Windows.Forms.GroupBox groupBoxPlan;
     }
 }
 

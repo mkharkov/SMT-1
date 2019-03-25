@@ -220,10 +220,34 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tabControlControlPanel.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="tableLayoutPanelParameters.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
+  </data>
+  <data name="textBoxT0.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBoxT0.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 3</value>
+  </data>
+  <data name="textBoxT0.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="textBoxT0.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textBoxT0.Name" xml:space="preserve">
+    <value>textBoxT0</value>
+  </data>
+  <data name="&gt;&gt;textBoxT0.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxT0.Parent" xml:space="preserve">
+    <value>tableLayoutPanelParameters</value>
+  </data>
+  <data name="&gt;&gt;textBoxT0.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="labelT0.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -250,30 +274,6 @@
     <value>tableLayoutPanelParameters</value>
   </data>
   <data name="&gt;&gt;labelT0.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="textBoxT0.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="textBoxT0.Location" type="System.Drawing.Point, System.Drawing">
-    <value>194, 3</value>
-  </data>
-  <data name="textBoxT0.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
-  </data>
-  <data name="textBoxT0.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;textBoxT0.Name" xml:space="preserve">
-    <value>textBoxT0</value>
-  </data>
-  <data name="&gt;&gt;textBoxT0.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxT0.Parent" xml:space="preserve">
-    <value>tableLayoutPanelParameters</value>
-  </data>
-  <data name="&gt;&gt;textBoxT0.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="tableLayoutPanelParameters.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -286,7 +286,7 @@
     <value>2</value>
   </data>
   <data name="tableLayoutPanelParameters.Size" type="System.Drawing.Size, System.Drawing">
-    <value>383, 226</value>
+    <value>383, 166</value>
   </data>
   <data name="tableLayoutPanelParameters.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -304,7 +304,7 @@
     <value>0</value>
   </data>
   <data name="tableLayoutPanelParameters.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="labelT0" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBoxT0" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBoxT0" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelT0" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="groupBoxCurrentParameters.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -313,7 +313,7 @@
     <value>0, 0</value>
   </data>
   <data name="groupBoxCurrentParameters.Size" type="System.Drawing.Size, System.Drawing">
-    <value>389, 245</value>
+    <value>389, 185</value>
   </data>
   <data name="groupBoxCurrentParameters.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -331,6 +331,33 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBoxCurrentParameters.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBoxPlan.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="groupBoxPlan.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 185</value>
+  </data>
+  <data name="groupBoxPlan.Size" type="System.Drawing.Size, System.Drawing">
+    <value>389, 265</value>
+  </data>
+  <data name="groupBoxPlan.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="groupBoxPlan.Text" xml:space="preserve">
+    <value>План</value>
+  </data>
+  <data name="&gt;&gt;groupBoxPlan.Name" xml:space="preserve">
+    <value>groupBoxPlan</value>
+  </data>
+  <data name="&gt;&gt;groupBoxPlan.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxPlan.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBoxPlan.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
