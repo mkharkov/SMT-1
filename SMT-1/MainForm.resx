@@ -723,28 +723,40 @@
   <data name="columnHeaderLoad.Width" type="System.Int32, mscorlib">
     <value>112</value>
   </data>
-  <data name="listView1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="columnHeaderT1.Text" xml:space="preserve">
+    <value>Температура першої камери</value>
+  </data>
+  <data name="columnHeaderT1.Width" type="System.Int32, mscorlib">
+    <value>172</value>
+  </data>
+  <data name="columnHeaderT2.Text" xml:space="preserve">
+    <value>Температура другої камери</value>
+  </data>
+  <data name="columnHeaderT2.Width" type="System.Int32, mscorlib">
+    <value>219</value>
+  </data>
+  <data name="listViewPlanRecords.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="listView1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="listViewPlanRecords.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="listView1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="listViewPlanRecords.Size" type="System.Drawing.Size, System.Drawing">
     <value>861, 249</value>
   </data>
-  <data name="listView1.TabIndex" type="System.Int32, mscorlib">
+  <data name="listViewPlanRecords.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;listView1.Name" xml:space="preserve">
-    <value>listView1</value>
+  <data name="&gt;&gt;listViewPlanRecords.Name" xml:space="preserve">
+    <value>listViewPlanRecords</value>
   </data>
-  <data name="&gt;&gt;listView1.Type" xml:space="preserve">
+  <data name="&gt;&gt;listViewPlanRecords.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;listView1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;listViewPlanRecords.Parent" xml:space="preserve">
     <value>Plan</value>
   </data>
-  <data name="&gt;&gt;listView1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;listViewPlanRecords.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="Plan.Location" type="System.Drawing.Point, System.Drawing">
@@ -1099,7 +1111,7 @@
     <value>4</value>
   </data>
   <data name="labelRecordInExecution.Text" xml:space="preserve">
-    <value>Виконується запис:</value>
+    <value>Виконується запис №:</value>
   </data>
   <data name="&gt;&gt;labelRecordInExecution.Name" xml:space="preserve">
     <value>labelRecordInExecution</value>
@@ -1310,6 +1322,18 @@
   </data>
   <data name="&gt;&gt;openFileDialogPlan.Type" xml:space="preserve">
     <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderT1.Name" xml:space="preserve">
+    <value>columnHeaderT1</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderT1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderT2.Name" xml:space="preserve">
+    <value>columnHeaderT2</value>
+  </data>
+  <data name="&gt;&gt;columnHeaderT2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MainForm</value>

@@ -25,6 +25,8 @@ namespace SMT_1
 
             textBoxPlanEngineRPM.Text = trackBarPlanEngineSpeed.Value.ToString();
             textBoxPlanEngineVoltage.Text = (trackBarPlanEngineSpeed.Value * 2).ToString(); //CHANGE WHEN VOLTAGE FORMULE KNOWN
+
+            textBoxRecordInExecutuion.Text = listViewPlanRecords.SelectedItems[0].ToString();
         }
 
         private void buttonLoadPlan_Click(object sender, EventArgs e)

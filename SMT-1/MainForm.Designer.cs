@@ -42,7 +42,7 @@
             this.buttonLoadPlan = new System.Windows.Forms.Button();
             this.buttonStopPlan = new System.Windows.Forms.Button();
             this.buttonLoadFileFromPath = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.listViewPlanRecords = new System.Windows.Forms.ListView();
             this.columnHeaderNumber = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderTime = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderSpeed = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -75,6 +75,8 @@
             this.textBoxPlanEngineVoltage = new System.Windows.Forms.TextBox();
             this.labelPlanEngineRPM = new System.Windows.Forms.Label();
             this.labelPlanEngineVoltage = new System.Windows.Forms.Label();
+            this.columnHeaderT1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderT2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Plan.SuspendLayout();
             this.tableLayoutPanelPlanValues.SuspendLayout();
             this.groupBoxTime.SuspendLayout();
@@ -94,7 +96,7 @@
             // 
             this.Plan.Controls.Add(this.tableLayoutPanelPlanValues);
             this.Plan.Controls.Add(this.tableLayoutPanelPlanControl);
-            this.Plan.Controls.Add(this.listView1);
+            this.Plan.Controls.Add(this.listViewPlanRecords);
             resources.ApplyResources(this.Plan, "Plan");
             this.Plan.Name = "Plan";
             this.Plan.UseVisualStyleBackColor = true;
@@ -189,19 +191,21 @@
             this.buttonLoadFileFromPath.Name = "buttonLoadFileFromPath";
             this.buttonLoadFileFromPath.UseVisualStyleBackColor = true;
             // 
-            // listView1
+            // listViewPlanRecords
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listViewPlanRecords.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeaderNumber,
             this.columnHeaderTime,
             this.columnHeaderSpeed,
-            this.columnHeaderLoad});
-            resources.ApplyResources(this.listView1, "listView1");
-            this.listView1.FullRowSelect = true;
-            this.listView1.GridLines = true;
-            this.listView1.Name = "listView1";
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.columnHeaderLoad,
+            this.columnHeaderT1,
+            this.columnHeaderT2});
+            resources.ApplyResources(this.listViewPlanRecords, "listViewPlanRecords");
+            this.listViewPlanRecords.FullRowSelect = true;
+            this.listViewPlanRecords.GridLines = true;
+            this.listViewPlanRecords.Name = "listViewPlanRecords";
+            this.listViewPlanRecords.UseCompatibleStateImageBehavior = false;
+            this.listViewPlanRecords.View = System.Windows.Forms.View.Details;
             // 
             // columnHeaderNumber
             // 
@@ -394,6 +398,14 @@
             resources.ApplyResources(this.labelPlanEngineVoltage, "labelPlanEngineVoltage");
             this.labelPlanEngineVoltage.Name = "labelPlanEngineVoltage";
             // 
+            // columnHeaderT1
+            // 
+            resources.ApplyResources(this.columnHeaderT1, "columnHeaderT1");
+            // 
+            // columnHeaderT2
+            // 
+            resources.ApplyResources(this.columnHeaderT2, "columnHeaderT2");
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -447,7 +459,7 @@
         private System.Windows.Forms.Label labelStartTime;
         private System.Windows.Forms.Label labelEndTime;
         private System.Windows.Forms.Label labelRemainingTime;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView listViewPlanRecords;
         private System.Windows.Forms.ColumnHeader columnHeaderNumber;
         private System.Windows.Forms.ColumnHeader columnHeaderTime;
         private System.Windows.Forms.ColumnHeader columnHeaderSpeed;
@@ -475,6 +487,8 @@
         private System.Windows.Forms.TextBox textBoxPlanEngineVoltage;
         private System.Windows.Forms.Label labelPlanEngineVoltage;
         private System.Windows.Forms.Label labelPlanEngineRPM;
+        private System.Windows.Forms.ColumnHeader columnHeaderT1;
+        private System.Windows.Forms.ColumnHeader columnHeaderT2;
     }
 }
 
