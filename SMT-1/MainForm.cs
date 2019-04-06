@@ -23,13 +23,5 @@ namespace SMT_1
             textBoxRecordInExecutuion.Text = "План не вибрано";
             textBoxEndTime.Text = textBoxRemainingTime.Text = textBoxStartTime.Text = "0";
         }
-
-        private void buttonLoadPlan_Click(object sender, EventArgs e)
-        {
-            if (openFileDialogPlan.ShowDialog() == DialogResult.OK)
-            {
-                //textBoxPlanFilePath.Text = openFileDialogPlan.FileName;
-            }
-        }
     }
 }

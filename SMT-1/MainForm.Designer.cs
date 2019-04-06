@@ -47,42 +47,15 @@
             this.labelStartTime = new System.Windows.Forms.Label();
             this.labelEndTime = new System.Windows.Forms.Label();
             this.labelRemainingTime = new System.Windows.Forms.Label();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.columnHeaderNumber = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeaderTime = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeaderSpeed = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeaderLoad = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.openFileDialogPlan = new System.Windows.Forms.OpenFileDialog();
-            this.tableLayoutPanelPlanControl = new System.Windows.Forms.TableLayoutPanel();
-            this.buttonStartSelected = new System.Windows.Forms.Button();
-            this.buttonLoadPlan = new System.Windows.Forms.Button();
-            this.buttonStopPlan = new System.Windows.Forms.Button();
-            this.buttonLoadFileFromPath = new System.Windows.Forms.Button();
-            this.tableLayoutPanelPlanValues = new System.Windows.Forms.TableLayoutPanel();
-            this.groupBoxGeneral = new System.Windows.Forms.GroupBox();
-            this.groupBoxTime = new System.Windows.Forms.GroupBox();
-            this.groupBoxEngineSpeed = new System.Windows.Forms.GroupBox();
-            this.groupBoxLoad = new System.Windows.Forms.GroupBox();
-            this.groupBoxTempFirst = new System.Windows.Forms.GroupBox();
-            this.groupBoxTempSecond = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.Plan.SuspendLayout();
             this.tabControlControlPanel.SuspendLayout();
             this.groupBoxCurrentParameters.SuspendLayout();
             this.tableLayoutPanelParameters.SuspendLayout();
             this.groupBoxPlan.SuspendLayout();
             this.tableLayoutPanelPlan.SuspendLayout();
-            this.tableLayoutPanelPlanControl.SuspendLayout();
-            this.tableLayoutPanelPlanValues.SuspendLayout();
-            this.groupBoxTime.SuspendLayout();
             this.SuspendLayout();
             // 
             // Plan
             // 
-            this.Plan.Controls.Add(this.tableLayoutPanelPlanValues);
-            this.Plan.Controls.Add(this.tableLayoutPanelPlanControl);
-            this.Plan.Controls.Add(this.listView1);
             resources.ApplyResources(this.Plan, "Plan");
             this.Plan.Name = "Plan";
             this.Plan.UseVisualStyleBackColor = true;
@@ -192,132 +165,6 @@
             resources.ApplyResources(this.labelRemainingTime, "labelRemainingTime");
             this.labelRemainingTime.Name = "labelRemainingTime";
             // 
-            // listView1
-            // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeaderNumber,
-            this.columnHeaderTime,
-            this.columnHeaderSpeed,
-            this.columnHeaderLoad});
-            resources.ApplyResources(this.listView1, "listView1");
-            this.listView1.FullRowSelect = true;
-            this.listView1.GridLines = true;
-            this.listView1.Name = "listView1";
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeaderNumber
-            // 
-            resources.ApplyResources(this.columnHeaderNumber, "columnHeaderNumber");
-            // 
-            // columnHeaderTime
-            // 
-            resources.ApplyResources(this.columnHeaderTime, "columnHeaderTime");
-            // 
-            // columnHeaderSpeed
-            // 
-            resources.ApplyResources(this.columnHeaderSpeed, "columnHeaderSpeed");
-            // 
-            // columnHeaderLoad
-            // 
-            resources.ApplyResources(this.columnHeaderLoad, "columnHeaderLoad");
-            // 
-            // openFileDialogPlan
-            // 
-            this.openFileDialogPlan.FileName = "openFileDialogPlan";
-            // 
-            // tableLayoutPanelPlanControl
-            // 
-            resources.ApplyResources(this.tableLayoutPanelPlanControl, "tableLayoutPanelPlanControl");
-            this.tableLayoutPanelPlanControl.Controls.Add(this.buttonStartSelected, 0, 0);
-            this.tableLayoutPanelPlanControl.Controls.Add(this.buttonLoadPlan, 0, 1);
-            this.tableLayoutPanelPlanControl.Controls.Add(this.buttonStopPlan, 1, 0);
-            this.tableLayoutPanelPlanControl.Controls.Add(this.buttonLoadFileFromPath, 1, 1);
-            this.tableLayoutPanelPlanControl.Name = "tableLayoutPanelPlanControl";
-            // 
-            // buttonStartSelected
-            // 
-            resources.ApplyResources(this.buttonStartSelected, "buttonStartSelected");
-            this.buttonStartSelected.Name = "buttonStartSelected";
-            this.buttonStartSelected.UseVisualStyleBackColor = true;
-            // 
-            // buttonLoadPlan
-            // 
-            resources.ApplyResources(this.buttonLoadPlan, "buttonLoadPlan");
-            this.buttonLoadPlan.Name = "buttonLoadPlan";
-            this.buttonLoadPlan.UseVisualStyleBackColor = true;
-            // 
-            // buttonStopPlan
-            // 
-            resources.ApplyResources(this.buttonStopPlan, "buttonStopPlan");
-            this.buttonStopPlan.Name = "buttonStopPlan";
-            this.buttonStopPlan.UseVisualStyleBackColor = true;
-            // 
-            // buttonLoadFileFromPath
-            // 
-            resources.ApplyResources(this.buttonLoadFileFromPath, "buttonLoadFileFromPath");
-            this.buttonLoadFileFromPath.Name = "buttonLoadFileFromPath";
-            this.buttonLoadFileFromPath.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanelPlanValues
-            // 
-            resources.ApplyResources(this.tableLayoutPanelPlanValues, "tableLayoutPanelPlanValues");
-            this.tableLayoutPanelPlanValues.Controls.Add(this.groupBoxGeneral, 0, 0);
-            this.tableLayoutPanelPlanValues.Controls.Add(this.groupBoxTime, 1, 0);
-            this.tableLayoutPanelPlanValues.Controls.Add(this.groupBoxEngineSpeed, 0, 1);
-            this.tableLayoutPanelPlanValues.Controls.Add(this.groupBoxLoad, 1, 1);
-            this.tableLayoutPanelPlanValues.Controls.Add(this.groupBoxTempFirst, 0, 2);
-            this.tableLayoutPanelPlanValues.Controls.Add(this.groupBoxTempSecond, 1, 2);
-            this.tableLayoutPanelPlanValues.Name = "tableLayoutPanelPlanValues";
-            // 
-            // groupBoxGeneral
-            // 
-            resources.ApplyResources(this.groupBoxGeneral, "groupBoxGeneral");
-            this.groupBoxGeneral.Name = "groupBoxGeneral";
-            this.groupBoxGeneral.TabStop = false;
-            // 
-            // groupBoxTime
-            // 
-            this.groupBoxTime.Controls.Add(this.textBox2);
-            this.groupBoxTime.Controls.Add(this.textBox1);
-            resources.ApplyResources(this.groupBoxTime, "groupBoxTime");
-            this.groupBoxTime.Name = "groupBoxTime";
-            this.groupBoxTime.TabStop = false;
-            // 
-            // groupBoxEngineSpeed
-            // 
-            resources.ApplyResources(this.groupBoxEngineSpeed, "groupBoxEngineSpeed");
-            this.groupBoxEngineSpeed.Name = "groupBoxEngineSpeed";
-            this.groupBoxEngineSpeed.TabStop = false;
-            // 
-            // groupBoxLoad
-            // 
-            resources.ApplyResources(this.groupBoxLoad, "groupBoxLoad");
-            this.groupBoxLoad.Name = "groupBoxLoad";
-            this.groupBoxLoad.TabStop = false;
-            // 
-            // groupBoxTempFirst
-            // 
-            resources.ApplyResources(this.groupBoxTempFirst, "groupBoxTempFirst");
-            this.groupBoxTempFirst.Name = "groupBoxTempFirst";
-            this.groupBoxTempFirst.TabStop = false;
-            // 
-            // groupBoxTempSecond
-            // 
-            resources.ApplyResources(this.groupBoxTempSecond, "groupBoxTempSecond");
-            this.groupBoxTempSecond.Name = "groupBoxTempSecond";
-            this.groupBoxTempSecond.TabStop = false;
-            // 
-            // textBox1
-            // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
-            // 
-            // textBox2
-            // 
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
-            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -330,7 +177,6 @@
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.Load += new System.EventHandler(this.MainForm_Load);
-            this.Plan.ResumeLayout(false);
             this.tabControlControlPanel.ResumeLayout(false);
             this.groupBoxCurrentParameters.ResumeLayout(false);
             this.tableLayoutPanelParameters.ResumeLayout(false);
@@ -338,10 +184,6 @@
             this.groupBoxPlan.ResumeLayout(false);
             this.tableLayoutPanelPlan.ResumeLayout(false);
             this.tableLayoutPanelPlan.PerformLayout();
-            this.tableLayoutPanelPlanControl.ResumeLayout(false);
-            this.tableLayoutPanelPlanValues.ResumeLayout(false);
-            this.groupBoxTime.ResumeLayout(false);
-            this.groupBoxTime.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -366,26 +208,6 @@
         private System.Windows.Forms.Label labelStartTime;
         private System.Windows.Forms.Label labelEndTime;
         private System.Windows.Forms.Label labelRemainingTime;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader columnHeaderNumber;
-        private System.Windows.Forms.ColumnHeader columnHeaderTime;
-        private System.Windows.Forms.ColumnHeader columnHeaderSpeed;
-        private System.Windows.Forms.ColumnHeader columnHeaderLoad;
-        private System.Windows.Forms.OpenFileDialog openFileDialogPlan;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelPlanControl;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelPlanValues;
-        private System.Windows.Forms.Button buttonStartSelected;
-        private System.Windows.Forms.Button buttonLoadPlan;
-        private System.Windows.Forms.Button buttonStopPlan;
-        private System.Windows.Forms.Button buttonLoadFileFromPath;
-        private System.Windows.Forms.GroupBox groupBoxGeneral;
-        private System.Windows.Forms.GroupBox groupBoxTime;
-        private System.Windows.Forms.GroupBox groupBoxEngineSpeed;
-        private System.Windows.Forms.GroupBox groupBoxLoad;
-        private System.Windows.Forms.GroupBox groupBoxTempFirst;
-        private System.Windows.Forms.GroupBox groupBoxTempSecond;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
