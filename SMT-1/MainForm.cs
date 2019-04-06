@@ -26,7 +26,20 @@ namespace SMT_1
             textBoxPlanEngineRPM.Text = trackBarPlanEngineSpeed.Value.ToString();
             textBoxPlanEngineVoltage.Text = (trackBarPlanEngineSpeed.Value * 2).ToString(); //CHANGE WHEN VOLTAGE FORMULE KNOWN
 
-            textBoxRecordInExecutuion.Text = listViewPlanRecords.SelectedItems[0].ToString();
+            textBoxLoadedWeight.Text = trackBarLoadedWeight.Value.ToString();
+            textBoxFirstTemp.Text = trackBarFirstTemp.Value.ToString();
+            textBoxSecondTemp.Text = trackBarSecondTemp.Value.ToString();
+
+            // REMOVE THIS FOR. FOR TESTING PURPOSES ONLY
+            for(int i=0;i<100;i++)
+            {
+                string[] arr = { i.ToString(), "00:01:00" };
+                listViewPlanRecords.Items.Add(new ListViewItem(arr));
+            }
+            //REMOVE
+
+
+
         }
 
         private void buttonLoadPlan_Click(object sender, EventArgs e)
@@ -41,6 +54,49 @@ namespace SMT_1
         {
             textBoxPlanEngineRPM.Text = trackBarPlanEngineSpeed.Value.ToString();
             textBoxPlanEngineVoltage.Text = (trackBarPlanEngineSpeed.Value * 2).ToString(); //CHANGE WHEN VOLTAGE FORMULE KNOWN
+        }
+
+        private void trackBarFirstTemp_Scroll(object sender, EventArgs e)
+        {
+            textBoxFirstTemp.Text = trackBarFirstTemp.Value.ToString();
+        }
+
+        private void trackBarLoadedWeight_Scroll(object sender, EventArgs e)
+        {
+            textBoxLoadedWeight.Text = trackBarLoadedWeight.Value.ToString();
+        }
+
+        private void trackBarSecondTemp_Scroll(object sender, EventArgs e)
+        {
+            textBoxSecondTemp.Text = trackBarSecondTemp.Value.ToString();
+        }
+
+        private void listViewPlanRecords_ItemSelectionChanged(object sender, ListViewItemSelectionChangedEventArgs e)
+        {
+            if (listViewPlanRecords.SelectedItems.Count > 0)
+            {
+                textBoxRecordInExecutuion.Text = listViewPlanRecords.SelectedItems[0].SubItems[0].Text;
+                String timeNow = DateTime.Now.ToString("h:mm:ss tt");
+                textBoxStartTime.Text = timeNow;
+                TimeSpan timeDelta = new TimeSpan();
+                bool isParsed = TimeSpan.TryParse(listViewPlanRecords.SelectedItems[0].SubItems[1].Text, out timeDelta);
+
+                if (isParsed)
+                {
+                    textBoxEndTime.Text = Convert.ToDateTime(timeNow).Add(timeDelta).ToString("h:mm:ss tt");
+
+
+                    var delta = (Convert.ToDateTime(textBoxEndTime.Text) - DateTime.Now);
+                    textBoxRemainingTime.Text = String.Format("{0} годин, {1} хвилин, {2} секунд", delta.Hours, delta.Minutes, delta.Seconds);
+                }
+                else
+                {
+                    textBoxEndTime.Text = "Неправильно заданий час";
+                    textBoxRemainingTime.Text = "Неможливо визначити";
+                }
+            }
+            else
+                textBoxRecordInExecutuion.Text = "План не вибрано";
         }
     }
 }
