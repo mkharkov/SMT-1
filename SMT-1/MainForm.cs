@@ -22,6 +22,9 @@ namespace SMT_1
             textBoxT0.Text = "Degrees";
             textBoxRecordInExecutuion.Text = "План не вибрано";
             textBoxEndTime.Text = textBoxRemainingTime.Text = textBoxStartTime.Text = "0";
+
+            textBoxPlanEngineRPM.Text = trackBarPlanEngineSpeed.Value.ToString();
+            textBoxPlanEngineVoltage.Text = (trackBarPlanEngineSpeed.Value * 2).ToString(); //CHANGE WHEN VOLTAGE FORMULE KNOWN
         }
 
         private void buttonLoadPlan_Click(object sender, EventArgs e)
@@ -30,6 +33,12 @@ namespace SMT_1
             {
                 //textBoxPlanFilePath.Text = openFileDialogPlan.FileName;
             }
+        }
+
+        private void trackBarPlanEngineSpeed_Scroll(object sender, EventArgs e)
+        {
+            textBoxPlanEngineRPM.Text = trackBarPlanEngineSpeed.Value.ToString();
+            textBoxPlanEngineVoltage.Text = (trackBarPlanEngineSpeed.Value * 2).ToString(); //CHANGE WHEN VOLTAGE FORMULE KNOWN
         }
     }
 }

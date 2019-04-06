@@ -273,6 +273,156 @@
   <data name="&gt;&gt;groupBoxTime.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="labelPlanEngineVoltage.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelPlanEngineVoltage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>345, 57</value>
+  </data>
+  <data name="labelPlanEngineVoltage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 13</value>
+  </data>
+  <data name="labelPlanEngineVoltage.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="labelPlanEngineVoltage.Text" xml:space="preserve">
+    <value>Вольт</value>
+  </data>
+  <data name="&gt;&gt;labelPlanEngineVoltage.Name" xml:space="preserve">
+    <value>labelPlanEngineVoltage</value>
+  </data>
+  <data name="&gt;&gt;labelPlanEngineVoltage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelPlanEngineVoltage.Parent" xml:space="preserve">
+    <value>groupBoxEngineSpeed</value>
+  </data>
+  <data name="&gt;&gt;labelPlanEngineVoltage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelPlanEngineRPM.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelPlanEngineRPM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>345, 16</value>
+  </data>
+  <data name="labelPlanEngineRPM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 13</value>
+  </data>
+  <data name="labelPlanEngineRPM.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="labelPlanEngineRPM.Text" xml:space="preserve">
+    <value>Об/хв</value>
+  </data>
+  <data name="&gt;&gt;labelPlanEngineRPM.Name" xml:space="preserve">
+    <value>labelPlanEngineRPM</value>
+  </data>
+  <data name="&gt;&gt;labelPlanEngineRPM.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelPlanEngineRPM.Parent" xml:space="preserve">
+    <value>groupBoxEngineSpeed</value>
+  </data>
+  <data name="&gt;&gt;labelPlanEngineRPM.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="textBoxPlanEngineVoltage.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBoxPlanEngineVoltage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 54</value>
+  </data>
+  <data name="textBoxPlanEngineVoltage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 20</value>
+  </data>
+  <data name="textBoxPlanEngineVoltage.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;textBoxPlanEngineVoltage.Name" xml:space="preserve">
+    <value>textBoxPlanEngineVoltage</value>
+  </data>
+  <data name="&gt;&gt;textBoxPlanEngineVoltage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxPlanEngineVoltage.Parent" xml:space="preserve">
+    <value>groupBoxEngineSpeed</value>
+  </data>
+  <data name="&gt;&gt;textBoxPlanEngineVoltage.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelEngineSpeedText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelEngineSpeedText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, 15</value>
+  </data>
+  <data name="labelEngineSpeedText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 13</value>
+  </data>
+  <data name="labelEngineSpeedText.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="labelEngineSpeedText.Text" xml:space="preserve">
+    <value>Кількість обертів за хвилину</value>
+  </data>
+  <data name="&gt;&gt;labelEngineSpeedText.Name" xml:space="preserve">
+    <value>labelEngineSpeedText</value>
+  </data>
+  <data name="&gt;&gt;labelEngineSpeedText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelEngineSpeedText.Parent" xml:space="preserve">
+    <value>groupBoxEngineSpeed</value>
+  </data>
+  <data name="&gt;&gt;labelEngineSpeedText.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="textBoxPlanEngineRPM.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBoxPlanEngineRPM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 12</value>
+  </data>
+  <data name="textBoxPlanEngineRPM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 20</value>
+  </data>
+  <data name="textBoxPlanEngineRPM.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textBoxPlanEngineRPM.Name" xml:space="preserve">
+    <value>textBoxPlanEngineRPM</value>
+  </data>
+  <data name="&gt;&gt;textBoxPlanEngineRPM.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxPlanEngineRPM.Parent" xml:space="preserve">
+    <value>groupBoxEngineSpeed</value>
+  </data>
+  <data name="&gt;&gt;textBoxPlanEngineRPM.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="trackBarPlanEngineSpeed.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 31</value>
+  </data>
+  <data name="trackBarPlanEngineSpeed.Size" type="System.Drawing.Size, System.Drawing">
+    <value>241, 45</value>
+  </data>
+  <data name="trackBarPlanEngineSpeed.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;trackBarPlanEngineSpeed.Name" xml:space="preserve">
+    <value>trackBarPlanEngineSpeed</value>
+  </data>
+  <data name="&gt;&gt;trackBarPlanEngineSpeed.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trackBarPlanEngineSpeed.Parent" xml:space="preserve">
+    <value>groupBoxEngineSpeed</value>
+  </data>
+  <data name="&gt;&gt;trackBarPlanEngineSpeed.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
   <data name="groupBoxEngineSpeed.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
