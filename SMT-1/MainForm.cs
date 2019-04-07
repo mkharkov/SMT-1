@@ -129,5 +129,10 @@ namespace SMT_1
         {
             engine.RPM = (int)numericUpDownControlEngineRPM.Value; //Voltage will be set automatically
         }
+
+        private void buttonControlEngineStart_Click(object sender, EventArgs e)
+        {
+            engine.On = true;
+        }
     }
 }

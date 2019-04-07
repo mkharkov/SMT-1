@@ -102,6 +102,7 @@
             this.trackBarControlEngineRPM = new System.Windows.Forms.TrackBar();
             this.buttonControlEngineSetValues = new System.Windows.Forms.Button();
             this.buttonControlEngineStop = new System.Windows.Forms.Button();
+            this.buttonControlEngineStart = new System.Windows.Forms.Button();
             this.Plan.SuspendLayout();
             this.tableLayoutPanelPlanValues.SuspendLayout();
             this.groupBoxTime.SuspendLayout();
@@ -543,6 +544,7 @@
             // 
             // groupBoxControlEngine
             // 
+            this.groupBoxControlEngine.Controls.Add(this.buttonControlEngineStart);
             this.groupBoxControlEngine.Controls.Add(this.buttonControlEngineStop);
             this.groupBoxControlEngine.Controls.Add(this.buttonControlEngineSetValues);
             this.groupBoxControlEngine.Controls.Add(this.trackBarControlEngineRPM);
@@ -632,6 +634,13 @@
             this.buttonControlEngineStop.Name = "buttonControlEngineStop";
             this.buttonControlEngineStop.UseVisualStyleBackColor = true;
             this.buttonControlEngineStop.Click += new System.EventHandler(this.buttonControlEngineStop_Click);
+            // 
+            // buttonControlEngineStart
+            // 
+            resources.ApplyResources(this.buttonControlEngineStart, "buttonControlEngineStart");
+            this.buttonControlEngineStart.Name = "buttonControlEngineStart";
+            this.buttonControlEngineStart.UseVisualStyleBackColor = true;
+            this.buttonControlEngineStart.Click += new System.EventHandler(this.buttonControlEngineStart_Click);
             // 
             // MainForm
             // 
@@ -756,6 +765,7 @@
         private System.Windows.Forms.NumericUpDown numericUpDownControlEngineRPM;
         private System.Windows.Forms.Button buttonControlEngineStop;
         private System.Windows.Forms.Button buttonControlEngineSetValues;
+        private System.Windows.Forms.Button buttonControlEngineStart;
     }
 }
 
