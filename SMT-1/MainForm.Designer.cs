@@ -100,6 +100,8 @@
             this.numericUpDownControlEngineRPM = new System.Windows.Forms.NumericUpDown();
             this.labelControlEngineRPM = new System.Windows.Forms.Label();
             this.trackBarControlEngineRPM = new System.Windows.Forms.TrackBar();
+            this.buttonControlEngineSetValues = new System.Windows.Forms.Button();
+            this.buttonControlEngineStop = new System.Windows.Forms.Button();
             this.Plan.SuspendLayout();
             this.tableLayoutPanelPlanValues.SuspendLayout();
             this.groupBoxTime.SuspendLayout();
@@ -541,6 +543,8 @@
             // 
             // groupBoxControlEngine
             // 
+            this.groupBoxControlEngine.Controls.Add(this.buttonControlEngineStop);
+            this.groupBoxControlEngine.Controls.Add(this.buttonControlEngineSetValues);
             this.groupBoxControlEngine.Controls.Add(this.trackBarControlEngineRPM);
             this.groupBoxControlEngine.Controls.Add(this.labelControlEngineRPM);
             this.groupBoxControlEngine.Controls.Add(this.numericUpDownControlEngineRPM);
@@ -614,6 +618,18 @@
             this.trackBarControlEngineRPM.TickFrequency = 50;
             this.trackBarControlEngineRPM.Value = 300;
             this.trackBarControlEngineRPM.Scroll += new System.EventHandler(this.trackBarControlEngineRPM_Scroll);
+            // 
+            // buttonControlEngineSetValues
+            // 
+            resources.ApplyResources(this.buttonControlEngineSetValues, "buttonControlEngineSetValues");
+            this.buttonControlEngineSetValues.Name = "buttonControlEngineSetValues";
+            this.buttonControlEngineSetValues.UseVisualStyleBackColor = true;
+            // 
+            // buttonControlEngineStop
+            // 
+            resources.ApplyResources(this.buttonControlEngineStop, "buttonControlEngineStop");
+            this.buttonControlEngineStop.Name = "buttonControlEngineStop";
+            this.buttonControlEngineStop.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -736,6 +752,8 @@
         private System.Windows.Forms.TrackBar trackBarControlEngineRPM;
         private System.Windows.Forms.Label labelControlEngineRPM;
         private System.Windows.Forms.NumericUpDown numericUpDownControlEngineRPM;
+        private System.Windows.Forms.Button buttonControlEngineStop;
+        private System.Windows.Forms.Button buttonControlEngineSetValues;
     }
 }
 
