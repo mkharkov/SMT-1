@@ -624,12 +624,14 @@
             resources.ApplyResources(this.buttonControlEngineSetValues, "buttonControlEngineSetValues");
             this.buttonControlEngineSetValues.Name = "buttonControlEngineSetValues";
             this.buttonControlEngineSetValues.UseVisualStyleBackColor = true;
+            this.buttonControlEngineSetValues.Click += new System.EventHandler(this.buttonControlEngineSetValues_Click);
             // 
             // buttonControlEngineStop
             // 
             resources.ApplyResources(this.buttonControlEngineStop, "buttonControlEngineStop");
             this.buttonControlEngineStop.Name = "buttonControlEngineStop";
             this.buttonControlEngineStop.UseVisualStyleBackColor = true;
+            this.buttonControlEngineStop.Click += new System.EventHandler(this.buttonControlEngineStop_Click);
             // 
             // MainForm
             // 

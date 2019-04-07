@@ -12,13 +12,21 @@ namespace SMT_1
 {
     public partial class MainForm : Form
     {
+        private EngineController engine;
         public MainForm()
         {
             InitializeComponent();
         }
 
+        private void InitializeControllers()
+        {
+            engine = new EngineController();
+        }
+
         private void MainForm_Load(object sender, EventArgs e)
         {
+            InitializeControllers();
+
             textBoxT0.Text = "Degrees";
             textBoxRecordInExecutuion.Text = "План не вибрано";
             textBoxEndTime.Text = textBoxRemainingTime.Text = textBoxStartTime.Text = "0";
@@ -110,6 +118,16 @@ namespace SMT_1
         {
             trackBarControlEngineRPM.Value = (int)numericUpDownControlEngineRPM.Value;
             textBoxControlEngineVoltage.Text = ((int)numericUpDownControlEngineRPM.Value*2).ToString();
+        }
+
+        private void buttonControlEngineStop_Click(object sender, EventArgs e)
+        {
+            engine.On = false;
+        }
+
+        private void buttonControlEngineSetValues_Click(object sender, EventArgs e)
+        {
+            engine.RPM = (int)numericUpDownControlEngineRPM.Value; //Voltage will be set automatically
         }
     }
 }
