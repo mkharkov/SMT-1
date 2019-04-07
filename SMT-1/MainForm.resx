@@ -117,132 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tableLayoutPanelRecordActions.ColumnCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="buttonRecordAdd.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="buttonRecordAdd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="buttonRecordAdd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 19</value>
-  </data>
-  <data name="buttonRecordAdd.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="buttonRecordAdd.Text" xml:space="preserve">
-    <value>Add</value>
-  </data>
-  <data name="&gt;&gt;buttonRecordAdd.Name" xml:space="preserve">
-    <value>buttonRecordAdd</value>
-  </data>
-  <data name="&gt;&gt;buttonRecordAdd.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonRecordAdd.Parent" xml:space="preserve">
-    <value>tableLayoutPanelRecordActions</value>
-  </data>
-  <data name="&gt;&gt;buttonRecordAdd.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="buttonRecordDelete.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="buttonRecordDelete.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 28</value>
-  </data>
-  <data name="buttonRecordDelete.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 19</value>
-  </data>
-  <data name="buttonRecordDelete.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="buttonRecordDelete.Text" xml:space="preserve">
-    <value>Del</value>
-  </data>
-  <data name="&gt;&gt;buttonRecordDelete.Name" xml:space="preserve">
-    <value>buttonRecordDelete</value>
-  </data>
-  <data name="&gt;&gt;buttonRecordDelete.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonRecordDelete.Parent" xml:space="preserve">
-    <value>tableLayoutPanelRecordActions</value>
-  </data>
-  <data name="&gt;&gt;buttonRecordDelete.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="buttonRecordUp.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="buttonRecordUp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 53</value>
-  </data>
-  <data name="buttonRecordUp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 19</value>
-  </data>
-  <data name="buttonRecordUp.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="buttonRecordUp.Text" xml:space="preserve">
-    <value>Up</value>
-  </data>
-  <data name="&gt;&gt;buttonRecordUp.Name" xml:space="preserve">
-    <value>buttonRecordUp</value>
-  </data>
-  <data name="&gt;&gt;buttonRecordUp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonRecordUp.Parent" xml:space="preserve">
-    <value>tableLayoutPanelRecordActions</value>
-  </data>
-  <data name="&gt;&gt;buttonRecordUp.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="buttonRecordDown.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="buttonRecordDown.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 78</value>
-  </data>
-  <data name="buttonRecordDown.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 20</value>
-  </data>
-  <data name="buttonRecordDown.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="buttonRecordDown.Text" xml:space="preserve">
-    <value>Down</value>
-  </data>
-  <data name="&gt;&gt;buttonRecordDown.Name" xml:space="preserve">
-    <value>buttonRecordDown</value>
-  </data>
-  <data name="&gt;&gt;buttonRecordDown.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonRecordDown.Parent" xml:space="preserve">
-    <value>tableLayoutPanelRecordActions</value>
-  </data>
-  <data name="&gt;&gt;buttonRecordDown.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="tableLayoutPanelRecordActions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>802, 0</value>
-  </data>
-  <data name="tableLayoutPanelRecordActions.RowCount" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="tableLayoutPanelRecordActions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 101</value>
-  </data>
-  <data name="tableLayoutPanelRecordActions.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
   <data name="&gt;&gt;tableLayoutPanelRecordActions.Name" xml:space="preserve">
     <value>tableLayoutPanelRecordActions</value>
   </data>
@@ -255,8 +129,77 @@
   <data name="&gt;&gt;tableLayoutPanelRecordActions.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tableLayoutPanelRecordActions.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="buttonRecordAdd" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonRecordDelete" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonRecordUp" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonRecordDown" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Percent,25,Percent,25,Percent,25,Percent,25" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelPlanValues.Name" xml:space="preserve">
+    <value>tableLayoutPanelPlanValues</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelPlanValues.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelPlanValues.Parent" xml:space="preserve">
+    <value>Plan</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelPlanValues.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanelPlanValues.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="groupBoxGeneral" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxTime" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxEngineSpeed" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxLoad" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxTempFirst" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxTempSecond" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,33.33333,Percent,33.33333,Percent,33.33333" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelPlanControl.Name" xml:space="preserve">
+    <value>tableLayoutPanelPlanControl</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelPlanControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelPlanControl.Parent" xml:space="preserve">
+    <value>Plan</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelPlanControl.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanelPlanControl.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="buttonStartSelected" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonLoadPlan" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonStopPlan" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="buttonLoadFileFromPath" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="&gt;&gt;listViewPlanRecords.Name" xml:space="preserve">
+    <value>listViewPlanRecords</value>
+  </data>
+  <data name="&gt;&gt;listViewPlanRecords.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listViewPlanRecords.Parent" xml:space="preserve">
+    <value>Plan</value>
+  </data>
+  <data name="&gt;&gt;listViewPlanRecords.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Plan.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="Plan.Size" type="System.Drawing.Size, System.Drawing">
+    <value>861, 735</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Plan.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="Plan.Text" xml:space="preserve">
+    <value>План</value>
+  </data>
+  <data name="&gt;&gt;Plan.Name" xml:space="preserve">
+    <value>Plan</value>
+  </data>
+  <data name="&gt;&gt;Plan.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Plan.Parent" xml:space="preserve">
+    <value>tabControlControlPanel</value>
+  </data>
+  <data name="&gt;&gt;Plan.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="tableLayoutPanelPlanValues.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
@@ -359,189 +302,6 @@
   </data>
   <data name="tableLayoutPanelPlanValues.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="groupBoxGeneral" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxTime" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxEngineSpeed" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxLoad" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxTempFirst" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxTempSecond" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,33.33333,Percent,33.33333,Percent,33.33333" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="tableLayoutPanelPlanControl.ColumnCount" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="buttonStartSelected.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="buttonStartSelected.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="buttonStartSelected.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 44</value>
-  </data>
-  <data name="buttonStartSelected.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="buttonStartSelected.Text" xml:space="preserve">
-    <value>Запустити з виділеного</value>
-  </data>
-  <data name="&gt;&gt;buttonStartSelected.Name" xml:space="preserve">
-    <value>buttonStartSelected</value>
-  </data>
-  <data name="&gt;&gt;buttonStartSelected.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonStartSelected.Parent" xml:space="preserve">
-    <value>tableLayoutPanelPlanControl</value>
-  </data>
-  <data name="&gt;&gt;buttonStartSelected.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="buttonLoadPlan.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="buttonLoadPlan.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 53</value>
-  </data>
-  <data name="buttonLoadPlan.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 44</value>
-  </data>
-  <data name="buttonLoadPlan.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="buttonLoadPlan.Text" xml:space="preserve">
-    <value>Зберігти план</value>
-  </data>
-  <data name="&gt;&gt;buttonLoadPlan.Name" xml:space="preserve">
-    <value>buttonLoadPlan</value>
-  </data>
-  <data name="&gt;&gt;buttonLoadPlan.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonLoadPlan.Parent" xml:space="preserve">
-    <value>tableLayoutPanelPlanControl</value>
-  </data>
-  <data name="&gt;&gt;buttonLoadPlan.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="buttonStopPlan.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="buttonStopPlan.Location" type="System.Drawing.Point, System.Drawing">
-    <value>151, 3</value>
-  </data>
-  <data name="buttonStopPlan.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 44</value>
-  </data>
-  <data name="buttonStopPlan.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="buttonStopPlan.Text" xml:space="preserve">
-    <value>Зупинити</value>
-  </data>
-  <data name="&gt;&gt;buttonStopPlan.Name" xml:space="preserve">
-    <value>buttonStopPlan</value>
-  </data>
-  <data name="&gt;&gt;buttonStopPlan.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonStopPlan.Parent" xml:space="preserve">
-    <value>tableLayoutPanelPlanControl</value>
-  </data>
-  <data name="&gt;&gt;buttonStopPlan.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="buttonLoadFileFromPath.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="buttonLoadFileFromPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>151, 53</value>
-  </data>
-  <data name="buttonLoadFileFromPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 44</value>
-  </data>
-  <data name="buttonLoadFileFromPath.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="buttonLoadFileFromPath.Text" xml:space="preserve">
-    <value>Завантажити з файлу</value>
-  </data>
-  <data name="&gt;&gt;buttonLoadFileFromPath.Name" xml:space="preserve">
-    <value>buttonLoadFileFromPath</value>
-  </data>
-  <data name="&gt;&gt;buttonLoadFileFromPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonLoadFileFromPath.Parent" xml:space="preserve">
-    <value>tableLayoutPanelPlanControl</value>
-  </data>
-  <data name="&gt;&gt;buttonLoadFileFromPath.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="tableLayoutPanelPlanControl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 632</value>
-  </data>
-  <data name="tableLayoutPanelPlanControl.RowCount" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanelPlanControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>296, 100</value>
-  </data>
-  <data name="tableLayoutPanelPlanControl.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelPlanControl.Name" xml:space="preserve">
-    <value>tableLayoutPanelPlanControl</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelPlanControl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelPlanControl.Parent" xml:space="preserve">
-    <value>Plan</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelPlanControl.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanelPlanControl.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="buttonStartSelected" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonLoadPlan" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonStopPlan" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="buttonLoadFileFromPath" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="listViewPlanRecords.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="listViewPlanRecords.Size" type="System.Drawing.Size, System.Drawing">
-    <value>799, 249</value>
-  </data>
-  <data name="listViewPlanRecords.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;listViewPlanRecords.Name" xml:space="preserve">
-    <value>listViewPlanRecords</value>
-  </data>
-  <data name="&gt;&gt;listViewPlanRecords.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;listViewPlanRecords.Parent" xml:space="preserve">
-    <value>Plan</value>
-  </data>
-  <data name="&gt;&gt;listViewPlanRecords.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="Plan.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="Plan.Size" type="System.Drawing.Size, System.Drawing">
-    <value>861, 735</value>
-  </data>
-  <data name="Plan.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="Plan.Text" xml:space="preserve">
-    <value>План</value>
-  </data>
-  <data name="&gt;&gt;Plan.Name" xml:space="preserve">
-    <value>Plan</value>
-  </data>
-  <data name="&gt;&gt;Plan.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Plan.Parent" xml:space="preserve">
-    <value>tabControlControlPanel</value>
-  </data>
-  <data name="&gt;&gt;Plan.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="groupBoxGeneral.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -777,16 +537,16 @@
   <data name="&gt;&gt;textBoxPlanEngineVoltage.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;labelEngineSpeedText.Name" xml:space="preserve">
-    <value>labelEngineSpeedText</value>
+  <data name="&gt;&gt;labelPlanEngineSpeedText.Name" xml:space="preserve">
+    <value>labelPlanEngineSpeedText</value>
   </data>
-  <data name="&gt;&gt;labelEngineSpeedText.Type" xml:space="preserve">
+  <data name="&gt;&gt;labelPlanEngineSpeedText.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;labelEngineSpeedText.Parent" xml:space="preserve">
+  <data name="&gt;&gt;labelPlanEngineSpeedText.Parent" xml:space="preserve">
     <value>groupBoxEngineSpeed</value>
   </data>
-  <data name="&gt;&gt;labelEngineSpeedText.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;labelPlanEngineSpeedText.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="&gt;&gt;textBoxPlanEngineRPM.Name" xml:space="preserve">
@@ -918,31 +678,31 @@
   <data name="&gt;&gt;textBoxPlanEngineVoltage.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="labelEngineSpeedText.AutoSize" type="System.Boolean, mscorlib">
+  <data name="labelPlanEngineSpeedText.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="labelEngineSpeedText.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="labelPlanEngineSpeedText.Location" type="System.Drawing.Point, System.Drawing">
     <value>44, 15</value>
   </data>
-  <data name="labelEngineSpeedText.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="labelPlanEngineSpeedText.Size" type="System.Drawing.Size, System.Drawing">
     <value>151, 13</value>
   </data>
-  <data name="labelEngineSpeedText.TabIndex" type="System.Int32, mscorlib">
+  <data name="labelPlanEngineSpeedText.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="labelEngineSpeedText.Text" xml:space="preserve">
+  <data name="labelPlanEngineSpeedText.Text" xml:space="preserve">
     <value>Кількість обертів за хвилину</value>
   </data>
-  <data name="&gt;&gt;labelEngineSpeedText.Name" xml:space="preserve">
-    <value>labelEngineSpeedText</value>
+  <data name="&gt;&gt;labelPlanEngineSpeedText.Name" xml:space="preserve">
+    <value>labelPlanEngineSpeedText</value>
   </data>
-  <data name="&gt;&gt;labelEngineSpeedText.Type" xml:space="preserve">
+  <data name="&gt;&gt;labelPlanEngineSpeedText.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;labelEngineSpeedText.Parent" xml:space="preserve">
+  <data name="&gt;&gt;labelPlanEngineSpeedText.Parent" xml:space="preserve">
     <value>groupBoxEngineSpeed</value>
   </data>
-  <data name="&gt;&gt;labelEngineSpeedText.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;labelPlanEngineSpeedText.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="textBoxPlanEngineRPM.Enabled" type="System.Boolean, mscorlib">
@@ -1179,6 +939,213 @@
   <data name="&gt;&gt;groupBoxTempSecond.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="tableLayoutPanelPlanControl.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;buttonStartSelected.Name" xml:space="preserve">
+    <value>buttonStartSelected</value>
+  </data>
+  <data name="&gt;&gt;buttonStartSelected.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonStartSelected.Parent" xml:space="preserve">
+    <value>tableLayoutPanelPlanControl</value>
+  </data>
+  <data name="&gt;&gt;buttonStartSelected.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;buttonLoadPlan.Name" xml:space="preserve">
+    <value>buttonLoadPlan</value>
+  </data>
+  <data name="&gt;&gt;buttonLoadPlan.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonLoadPlan.Parent" xml:space="preserve">
+    <value>tableLayoutPanelPlanControl</value>
+  </data>
+  <data name="&gt;&gt;buttonLoadPlan.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;buttonStopPlan.Name" xml:space="preserve">
+    <value>buttonStopPlan</value>
+  </data>
+  <data name="&gt;&gt;buttonStopPlan.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonStopPlan.Parent" xml:space="preserve">
+    <value>tableLayoutPanelPlanControl</value>
+  </data>
+  <data name="&gt;&gt;buttonStopPlan.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;buttonLoadFileFromPath.Name" xml:space="preserve">
+    <value>buttonLoadFileFromPath</value>
+  </data>
+  <data name="&gt;&gt;buttonLoadFileFromPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonLoadFileFromPath.Parent" xml:space="preserve">
+    <value>tableLayoutPanelPlanControl</value>
+  </data>
+  <data name="&gt;&gt;buttonLoadFileFromPath.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tableLayoutPanelPlanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 632</value>
+  </data>
+  <data name="tableLayoutPanelPlanControl.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanelPlanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>296, 100</value>
+  </data>
+  <data name="tableLayoutPanelPlanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelPlanControl.Name" xml:space="preserve">
+    <value>tableLayoutPanelPlanControl</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelPlanControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelPlanControl.Parent" xml:space="preserve">
+    <value>Plan</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelPlanControl.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanelPlanControl.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="buttonStartSelected" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonLoadPlan" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonStopPlan" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="buttonLoadFileFromPath" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="buttonStartSelected.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="buttonStartSelected.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="buttonStartSelected.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 44</value>
+  </data>
+  <data name="buttonStartSelected.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="buttonStartSelected.Text" xml:space="preserve">
+    <value>Запустити з виділеного</value>
+  </data>
+  <data name="&gt;&gt;buttonStartSelected.Name" xml:space="preserve">
+    <value>buttonStartSelected</value>
+  </data>
+  <data name="&gt;&gt;buttonStartSelected.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonStartSelected.Parent" xml:space="preserve">
+    <value>tableLayoutPanelPlanControl</value>
+  </data>
+  <data name="&gt;&gt;buttonStartSelected.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="buttonLoadPlan.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="buttonLoadPlan.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 53</value>
+  </data>
+  <data name="buttonLoadPlan.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 44</value>
+  </data>
+  <data name="buttonLoadPlan.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="buttonLoadPlan.Text" xml:space="preserve">
+    <value>Зберігти план</value>
+  </data>
+  <data name="&gt;&gt;buttonLoadPlan.Name" xml:space="preserve">
+    <value>buttonLoadPlan</value>
+  </data>
+  <data name="&gt;&gt;buttonLoadPlan.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonLoadPlan.Parent" xml:space="preserve">
+    <value>tableLayoutPanelPlanControl</value>
+  </data>
+  <data name="&gt;&gt;buttonLoadPlan.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="buttonStopPlan.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="buttonStopPlan.Location" type="System.Drawing.Point, System.Drawing">
+    <value>151, 3</value>
+  </data>
+  <data name="buttonStopPlan.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 44</value>
+  </data>
+  <data name="buttonStopPlan.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="buttonStopPlan.Text" xml:space="preserve">
+    <value>Зупинити</value>
+  </data>
+  <data name="&gt;&gt;buttonStopPlan.Name" xml:space="preserve">
+    <value>buttonStopPlan</value>
+  </data>
+  <data name="&gt;&gt;buttonStopPlan.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonStopPlan.Parent" xml:space="preserve">
+    <value>tableLayoutPanelPlanControl</value>
+  </data>
+  <data name="&gt;&gt;buttonStopPlan.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="buttonLoadFileFromPath.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="buttonLoadFileFromPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>151, 53</value>
+  </data>
+  <data name="buttonLoadFileFromPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 44</value>
+  </data>
+  <data name="buttonLoadFileFromPath.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="buttonLoadFileFromPath.Text" xml:space="preserve">
+    <value>Завантажити з файлу</value>
+  </data>
+  <data name="&gt;&gt;buttonLoadFileFromPath.Name" xml:space="preserve">
+    <value>buttonLoadFileFromPath</value>
+  </data>
+  <data name="&gt;&gt;buttonLoadFileFromPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonLoadFileFromPath.Parent" xml:space="preserve">
+    <value>tableLayoutPanelPlanControl</value>
+  </data>
+  <data name="&gt;&gt;buttonLoadFileFromPath.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="listViewPlanRecords.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="listViewPlanRecords.Size" type="System.Drawing.Size, System.Drawing">
+    <value>799, 249</value>
+  </data>
+  <data name="listViewPlanRecords.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;listViewPlanRecords.Name" xml:space="preserve">
+    <value>listViewPlanRecords</value>
+  </data>
+  <data name="&gt;&gt;listViewPlanRecords.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listViewPlanRecords.Parent" xml:space="preserve">
+    <value>Plan</value>
+  </data>
+  <data name="&gt;&gt;listViewPlanRecords.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="columnHeaderNumber.Text" xml:space="preserve">
     <value>№</value>
   </data>
@@ -1214,6 +1181,225 @@
   </data>
   <data name="columnHeaderT2.Width" type="System.Int32, mscorlib">
     <value>182</value>
+  </data>
+  <data name="groupBoxControlLoadedWeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>409, 199</value>
+  </data>
+  <data name="groupBoxControlLoadedWeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>444, 166</value>
+  </data>
+  <data name="groupBoxControlLoadedWeight.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="groupBoxControlLoadedWeight.Text" xml:space="preserve">
+    <value>Навантаження</value>
+  </data>
+  <data name="&gt;&gt;groupBoxControlLoadedWeight.Name" xml:space="preserve">
+    <value>groupBoxControlLoadedWeight</value>
+  </data>
+  <data name="&gt;&gt;groupBoxControlLoadedWeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxControlLoadedWeight.Parent" xml:space="preserve">
+    <value>Control</value>
+  </data>
+  <data name="&gt;&gt;groupBoxControlLoadedWeight.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="groupBoxControlVents.Location" type="System.Drawing.Point, System.Drawing">
+    <value>409, 6</value>
+  </data>
+  <data name="groupBoxControlVents.Size" type="System.Drawing.Size, System.Drawing">
+    <value>444, 175</value>
+  </data>
+  <data name="groupBoxControlVents.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupBoxControlVents.Text" xml:space="preserve">
+    <value>Вентилятори</value>
+  </data>
+  <data name="&gt;&gt;groupBoxControlVents.Name" xml:space="preserve">
+    <value>groupBoxControlVents</value>
+  </data>
+  <data name="&gt;&gt;groupBoxControlVents.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxControlVents.Parent" xml:space="preserve">
+    <value>Control</value>
+  </data>
+  <data name="&gt;&gt;groupBoxControlVents.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="trackBarControlEngineRPM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 41</value>
+  </data>
+  <data name="trackBarControlEngineRPM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>377, 45</value>
+  </data>
+  <data name="trackBarControlEngineRPM.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;trackBarControlEngineRPM.Name" xml:space="preserve">
+    <value>trackBarControlEngineRPM</value>
+  </data>
+  <data name="&gt;&gt;trackBarControlEngineRPM.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trackBarControlEngineRPM.Parent" xml:space="preserve">
+    <value>groupBoxControlEngine</value>
+  </data>
+  <data name="&gt;&gt;trackBarControlEngineRPM.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelControlEngineRPM.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelControlEngineRPM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 98</value>
+  </data>
+  <data name="labelControlEngineRPM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 13</value>
+  </data>
+  <data name="labelControlEngineRPM.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="labelControlEngineRPM.Text" xml:space="preserve">
+    <value>Об\хв</value>
+  </data>
+  <data name="&gt;&gt;labelControlEngineRPM.Name" xml:space="preserve">
+    <value>labelControlEngineRPM</value>
+  </data>
+  <data name="&gt;&gt;labelControlEngineRPM.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelControlEngineRPM.Parent" xml:space="preserve">
+    <value>groupBoxControlEngine</value>
+  </data>
+  <data name="&gt;&gt;labelControlEngineRPM.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="numericUpDownControlEngineRPM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>246, 96</value>
+  </data>
+  <data name="numericUpDownControlEngineRPM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="numericUpDownControlEngineRPM.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownControlEngineRPM.Name" xml:space="preserve">
+    <value>numericUpDownControlEngineRPM</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownControlEngineRPM.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownControlEngineRPM.Parent" xml:space="preserve">
+    <value>groupBoxControlEngine</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownControlEngineRPM.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelControlEngineSpeed.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelControlEngineSpeed.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 25</value>
+  </data>
+  <data name="labelControlEngineSpeed.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 13</value>
+  </data>
+  <data name="labelControlEngineSpeed.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="labelControlEngineSpeed.Text" xml:space="preserve">
+    <value>Кількість обертів за хвилину</value>
+  </data>
+  <data name="&gt;&gt;labelControlEngineSpeed.Name" xml:space="preserve">
+    <value>labelControlEngineSpeed</value>
+  </data>
+  <data name="&gt;&gt;labelControlEngineSpeed.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelControlEngineSpeed.Parent" xml:space="preserve">
+    <value>groupBoxControlEngine</value>
+  </data>
+  <data name="&gt;&gt;labelControlEngineSpeed.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="textBoxControlEngineVoltage.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBoxControlEngineVoltage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>246, 122</value>
+  </data>
+  <data name="textBoxControlEngineVoltage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="textBoxControlEngineVoltage.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;textBoxControlEngineVoltage.Name" xml:space="preserve">
+    <value>textBoxControlEngineVoltage</value>
+  </data>
+  <data name="&gt;&gt;textBoxControlEngineVoltage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxControlEngineVoltage.Parent" xml:space="preserve">
+    <value>groupBoxControlEngine</value>
+  </data>
+  <data name="&gt;&gt;textBoxControlEngineVoltage.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="labelControlEngineVoltage.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelControlEngineVoltage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>352, 125</value>
+  </data>
+  <data name="labelControlEngineVoltage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 13</value>
+  </data>
+  <data name="labelControlEngineVoltage.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="labelControlEngineVoltage.Text" xml:space="preserve">
+    <value>Вольт</value>
+  </data>
+  <data name="&gt;&gt;labelControlEngineVoltage.Name" xml:space="preserve">
+    <value>labelControlEngineVoltage</value>
+  </data>
+  <data name="&gt;&gt;labelControlEngineVoltage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelControlEngineVoltage.Parent" xml:space="preserve">
+    <value>groupBoxControlEngine</value>
+  </data>
+  <data name="&gt;&gt;labelControlEngineVoltage.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="groupBoxControlEngine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="groupBoxControlEngine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>389, 203</value>
+  </data>
+  <data name="groupBoxControlEngine.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupBoxControlEngine.Text" xml:space="preserve">
+    <value>Двигун</value>
+  </data>
+  <data name="&gt;&gt;groupBoxControlEngine.Name" xml:space="preserve">
+    <value>groupBoxControlEngine</value>
+  </data>
+  <data name="&gt;&gt;groupBoxControlEngine.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxControlEngine.Parent" xml:space="preserve">
+    <value>Control</value>
+  </data>
+  <data name="&gt;&gt;groupBoxControlEngine.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="Control.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
@@ -1857,6 +2043,144 @@
   <metadata name="openFileDialogPlan.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="tableLayoutPanelRecordActions.ColumnCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="buttonRecordAdd.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="buttonRecordAdd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="buttonRecordAdd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 19</value>
+  </data>
+  <data name="buttonRecordAdd.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="buttonRecordAdd.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="&gt;&gt;buttonRecordAdd.Name" xml:space="preserve">
+    <value>buttonRecordAdd</value>
+  </data>
+  <data name="&gt;&gt;buttonRecordAdd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonRecordAdd.Parent" xml:space="preserve">
+    <value>tableLayoutPanelRecordActions</value>
+  </data>
+  <data name="&gt;&gt;buttonRecordAdd.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="buttonRecordDelete.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="buttonRecordDelete.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 28</value>
+  </data>
+  <data name="buttonRecordDelete.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 19</value>
+  </data>
+  <data name="buttonRecordDelete.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="buttonRecordDelete.Text" xml:space="preserve">
+    <value>Del</value>
+  </data>
+  <data name="&gt;&gt;buttonRecordDelete.Name" xml:space="preserve">
+    <value>buttonRecordDelete</value>
+  </data>
+  <data name="&gt;&gt;buttonRecordDelete.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonRecordDelete.Parent" xml:space="preserve">
+    <value>tableLayoutPanelRecordActions</value>
+  </data>
+  <data name="&gt;&gt;buttonRecordDelete.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="buttonRecordUp.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="buttonRecordUp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 53</value>
+  </data>
+  <data name="buttonRecordUp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 19</value>
+  </data>
+  <data name="buttonRecordUp.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="buttonRecordUp.Text" xml:space="preserve">
+    <value>Up</value>
+  </data>
+  <data name="&gt;&gt;buttonRecordUp.Name" xml:space="preserve">
+    <value>buttonRecordUp</value>
+  </data>
+  <data name="&gt;&gt;buttonRecordUp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonRecordUp.Parent" xml:space="preserve">
+    <value>tableLayoutPanelRecordActions</value>
+  </data>
+  <data name="&gt;&gt;buttonRecordUp.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="buttonRecordDown.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="buttonRecordDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 78</value>
+  </data>
+  <data name="buttonRecordDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 20</value>
+  </data>
+  <data name="buttonRecordDown.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="buttonRecordDown.Text" xml:space="preserve">
+    <value>Down</value>
+  </data>
+  <data name="&gt;&gt;buttonRecordDown.Name" xml:space="preserve">
+    <value>buttonRecordDown</value>
+  </data>
+  <data name="&gt;&gt;buttonRecordDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonRecordDown.Parent" xml:space="preserve">
+    <value>tableLayoutPanelRecordActions</value>
+  </data>
+  <data name="&gt;&gt;buttonRecordDown.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tableLayoutPanelRecordActions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>802, 0</value>
+  </data>
+  <data name="tableLayoutPanelRecordActions.RowCount" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tableLayoutPanelRecordActions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 101</value>
+  </data>
+  <data name="tableLayoutPanelRecordActions.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelRecordActions.Name" xml:space="preserve">
+    <value>tableLayoutPanelRecordActions</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelRecordActions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelRecordActions.Parent" xml:space="preserve">
+    <value>Plan</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelRecordActions.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanelRecordActions.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="buttonRecordAdd" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonRecordDelete" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonRecordUp" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonRecordDown" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Percent,25,Percent,25,Percent,25,Percent,25" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
   <data name="trackBarLoadedWeight.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 33</value>
   </data>

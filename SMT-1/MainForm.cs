@@ -38,7 +38,8 @@ namespace SMT_1
             }
             //REMOVE
 
-
+            textBoxControlEngineVoltage.Text = (trackBarControlEngineRPM.Value * 2).ToString();
+            numericUpDownControlEngineRPM.Value = trackBarControlEngineRPM.Value;
 
         }
 
@@ -97,6 +98,18 @@ namespace SMT_1
             }
             else
                 textBoxRecordInExecutuion.Text = "План не вибрано";
+        }
+
+        private void trackBarControlEngineRPM_Scroll(object sender, EventArgs e)
+        {
+            textBoxControlEngineVoltage.Text = (trackBarControlEngineRPM.Value*2).ToString();
+            numericUpDownControlEngineRPM.Value = trackBarControlEngineRPM.Value;
+        }
+
+        private void numericUpDownControlEngineRPM_ValueChanged(object sender, EventArgs e)
+        {
+            trackBarControlEngineRPM.Value = (int)numericUpDownControlEngineRPM.Value;
+            textBoxControlEngineVoltage.Text = ((int)numericUpDownControlEngineRPM.Value*2).ToString();
         }
     }
 }
