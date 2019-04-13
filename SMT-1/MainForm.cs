@@ -129,7 +129,8 @@ namespace SMT_1
             if (listViewPlanRecords.SelectedItems.Count > 0)
             {
                 trackBarPlanEngineSpeed.Value = int.Parse(listViewPlanRecords.SelectedItems[0].SubItems[2].Text);
-
+                trackBarFirstTemp.Value = int.Parse(listViewPlanRecords.SelectedItems[0].SubItems[4].Text);
+                trackBarSecondTemp.Value = int.Parse(listViewPlanRecords.SelectedItems[0].SubItems[5].Text);
             }
             else
             {
