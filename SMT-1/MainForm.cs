@@ -41,7 +41,7 @@ namespace SMT_1
             // REMOVE THIS FOR. FOR TESTING PURPOSES ONLY
             for(int i=0;i<100;i++)
             {
-                string[] arr = { i.ToString(), "00:01:00", (i*4 + 300).ToString(), ((i/3)/2).ToString(), (((i*2)-i/3+i)/3).ToString(), (i+(i/2)-i/3-i/4).ToString() };
+                string[] arr = { i.ToString(), "00:01", (i*4 + 300).ToString(), ((i/3)/2).ToString(), (((i*2)-i/3+i)/3).ToString(), (i+(i/2)-i/3-i/4).ToString() };
                 listViewPlanRecords.Items.Add(new ListViewItem(arr));
             }
             //REMOVE
@@ -132,6 +132,10 @@ namespace SMT_1
                 trackBarFirstTemp.Value = int.Parse(listViewPlanRecords.SelectedItems[0].SubItems[4].Text);
                 trackBarSecondTemp.Value = int.Parse(listViewPlanRecords.SelectedItems[0].SubItems[5].Text);
                 trackBarLoadedWeight.Value = int.Parse(listViewPlanRecords.SelectedItems[0].SubItems[3].Text);
+
+                var time = TimeSpan.Parse(listViewPlanRecords.SelectedItems[0].SubItems[1].Text);
+                numericUpDownPlanHours.Value = time.Hours;
+                numericUpDownPlanMinutes.Value = time.Minutes;
             }
             else
             {
