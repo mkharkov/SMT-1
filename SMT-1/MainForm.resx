@@ -261,6 +261,21 @@
   <data name="tableLayoutPanelPlanValues.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
+  <data name="groupBoxGeneral.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="groupBoxGeneral.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="groupBoxGeneral.Size" type="System.Drawing.Size, System.Drawing">
+    <value>424, 81</value>
+  </data>
+  <data name="groupBoxGeneral.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupBoxGeneral.Text" xml:space="preserve">
+    <value>Загальне</value>
+  </data>
   <data name="&gt;&gt;groupBoxGeneral.Name" xml:space="preserve">
     <value>groupBoxGeneral</value>
   </data>
@@ -272,6 +287,69 @@
   </data>
   <data name="&gt;&gt;groupBoxGeneral.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelPlanMinutes.Name" xml:space="preserve">
+    <value>labelPlanMinutes</value>
+  </data>
+  <data name="&gt;&gt;labelPlanMinutes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelPlanMinutes.Parent" xml:space="preserve">
+    <value>groupBoxTime</value>
+  </data>
+  <data name="&gt;&gt;labelPlanMinutes.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelPlanHours.Name" xml:space="preserve">
+    <value>labelPlanHours</value>
+  </data>
+  <data name="&gt;&gt;labelPlanHours.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelPlanHours.Parent" xml:space="preserve">
+    <value>groupBoxTime</value>
+  </data>
+  <data name="&gt;&gt;labelPlanHours.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownPlanMinutes.Name" xml:space="preserve">
+    <value>numericUpDownPlanMinutes</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownPlanMinutes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownPlanMinutes.Parent" xml:space="preserve">
+    <value>groupBoxTime</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownPlanMinutes.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownPlanHours.Name" xml:space="preserve">
+    <value>numericUpDownPlanHours</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownPlanHours.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownPlanHours.Parent" xml:space="preserve">
+    <value>groupBoxTime</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownPlanHours.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="groupBoxTime.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="groupBoxTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>433, 3</value>
+  </data>
+  <data name="groupBoxTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>425, 81</value>
+  </data>
+  <data name="groupBoxTime.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupBoxTime.Text" xml:space="preserve">
+    <value>Час</value>
   </data>
   <data name="&gt;&gt;groupBoxTime.Name" xml:space="preserve">
     <value>groupBoxTime</value>
@@ -285,6 +363,120 @@
   <data name="&gt;&gt;groupBoxTime.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="numericUpDownPlanEngineRPM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>255, 12</value>
+  </data>
+  <data name="numericUpDownPlanEngineRPM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 20</value>
+  </data>
+  <data name="numericUpDownPlanEngineRPM.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownPlanEngineRPM.Name" xml:space="preserve">
+    <value>numericUpDownPlanEngineRPM</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownPlanEngineRPM.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownPlanEngineRPM.Parent" xml:space="preserve">
+    <value>groupBoxEngineSpeed</value>
+  </data>
+  <data name="&gt;&gt;numericUpDownPlanEngineRPM.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelPlanEngineVoltage.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelPlanEngineVoltage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 62</value>
+  </data>
+  <data name="labelPlanEngineVoltage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 13</value>
+  </data>
+  <data name="labelPlanEngineVoltage.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="labelPlanEngineVoltage.Text" xml:space="preserve">
+    <value>Вольт</value>
+  </data>
+  <data name="&gt;&gt;labelPlanEngineVoltage.Name" xml:space="preserve">
+    <value>labelPlanEngineVoltage</value>
+  </data>
+  <data name="&gt;&gt;labelPlanEngineVoltage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelPlanEngineVoltage.Parent" xml:space="preserve">
+    <value>groupBoxEngineSpeed</value>
+  </data>
+  <data name="&gt;&gt;labelPlanEngineVoltage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="labelPlanEngineRPM.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelPlanEngineRPM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 19</value>
+  </data>
+  <data name="labelPlanEngineRPM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 13</value>
+  </data>
+  <data name="labelPlanEngineRPM.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="labelPlanEngineRPM.Text" xml:space="preserve">
+    <value>Об/хв</value>
+  </data>
+  <data name="&gt;&gt;labelPlanEngineRPM.Name" xml:space="preserve">
+    <value>labelPlanEngineRPM</value>
+  </data>
+  <data name="&gt;&gt;labelPlanEngineRPM.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelPlanEngineRPM.Parent" xml:space="preserve">
+    <value>groupBoxEngineSpeed</value>
+  </data>
+  <data name="&gt;&gt;labelPlanEngineRPM.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="textBoxPlanEngineVoltage.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBoxPlanEngineVoltage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>255, 55</value>
+  </data>
+  <data name="textBoxPlanEngineVoltage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 20</value>
+  </data>
+  <data name="textBoxPlanEngineVoltage.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;textBoxPlanEngineVoltage.Name" xml:space="preserve">
+    <value>textBoxPlanEngineVoltage</value>
+  </data>
+  <data name="&gt;&gt;textBoxPlanEngineVoltage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxPlanEngineVoltage.Parent" xml:space="preserve">
+    <value>groupBoxEngineSpeed</value>
+  </data>
+  <data name="&gt;&gt;textBoxPlanEngineVoltage.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="groupBoxEngineSpeed.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="groupBoxEngineSpeed.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 90</value>
+  </data>
+  <data name="groupBoxEngineSpeed.Size" type="System.Drawing.Size, System.Drawing">
+    <value>424, 81</value>
+  </data>
+  <data name="groupBoxEngineSpeed.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="groupBoxEngineSpeed.Text" xml:space="preserve">
+    <value>Швидкість двигуна</value>
+  </data>
   <data name="&gt;&gt;groupBoxEngineSpeed.Name" xml:space="preserve">
     <value>groupBoxEngineSpeed</value>
   </data>
@@ -296,6 +488,57 @@
   </data>
   <data name="&gt;&gt;groupBoxEngineSpeed.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="&gt;&gt;labelLoadedWeight.Name" xml:space="preserve">
+    <value>labelLoadedWeight</value>
+  </data>
+  <data name="&gt;&gt;labelLoadedWeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelLoadedWeight.Parent" xml:space="preserve">
+    <value>groupBoxLoad</value>
+  </data>
+  <data name="&gt;&gt;labelLoadedWeight.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBoxLoadedWeight.Name" xml:space="preserve">
+    <value>textBoxLoadedWeight</value>
+  </data>
+  <data name="&gt;&gt;textBoxLoadedWeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxLoadedWeight.Parent" xml:space="preserve">
+    <value>groupBoxLoad</value>
+  </data>
+  <data name="&gt;&gt;textBoxLoadedWeight.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;trackBarLoadedWeight.Name" xml:space="preserve">
+    <value>trackBarLoadedWeight</value>
+  </data>
+  <data name="&gt;&gt;trackBarLoadedWeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trackBarLoadedWeight.Parent" xml:space="preserve">
+    <value>groupBoxLoad</value>
+  </data>
+  <data name="&gt;&gt;trackBarLoadedWeight.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="groupBoxLoad.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="groupBoxLoad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>433, 90</value>
+  </data>
+  <data name="groupBoxLoad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>425, 81</value>
+  </data>
+  <data name="groupBoxLoad.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="groupBoxLoad.Text" xml:space="preserve">
+    <value>Навантаження</value>
   </data>
   <data name="&gt;&gt;groupBoxLoad.Name" xml:space="preserve">
     <value>groupBoxLoad</value>
@@ -309,6 +552,57 @@
   <data name="&gt;&gt;groupBoxLoad.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="&gt;&gt;labelFirstTemp.Name" xml:space="preserve">
+    <value>labelFirstTemp</value>
+  </data>
+  <data name="&gt;&gt;labelFirstTemp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelFirstTemp.Parent" xml:space="preserve">
+    <value>groupBoxTempFirst</value>
+  </data>
+  <data name="&gt;&gt;labelFirstTemp.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBoxFirstTemp.Name" xml:space="preserve">
+    <value>textBoxFirstTemp</value>
+  </data>
+  <data name="&gt;&gt;textBoxFirstTemp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxFirstTemp.Parent" xml:space="preserve">
+    <value>groupBoxTempFirst</value>
+  </data>
+  <data name="&gt;&gt;textBoxFirstTemp.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;trackBarFirstTemp.Name" xml:space="preserve">
+    <value>trackBarFirstTemp</value>
+  </data>
+  <data name="&gt;&gt;trackBarFirstTemp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trackBarFirstTemp.Parent" xml:space="preserve">
+    <value>groupBoxTempFirst</value>
+  </data>
+  <data name="&gt;&gt;trackBarFirstTemp.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="groupBoxTempFirst.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="groupBoxTempFirst.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 177</value>
+  </data>
+  <data name="groupBoxTempFirst.Size" type="System.Drawing.Size, System.Drawing">
+    <value>424, 81</value>
+  </data>
+  <data name="groupBoxTempFirst.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="groupBoxTempFirst.Text" xml:space="preserve">
+    <value>Температура першої камери</value>
+  </data>
   <data name="&gt;&gt;groupBoxTempFirst.Name" xml:space="preserve">
     <value>groupBoxTempFirst</value>
   </data>
@@ -320,6 +614,57 @@
   </data>
   <data name="&gt;&gt;groupBoxTempFirst.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="&gt;&gt;labelSecondTemp.Name" xml:space="preserve">
+    <value>labelSecondTemp</value>
+  </data>
+  <data name="&gt;&gt;labelSecondTemp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelSecondTemp.Parent" xml:space="preserve">
+    <value>groupBoxTempSecond</value>
+  </data>
+  <data name="&gt;&gt;labelSecondTemp.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBoxSecondTemp.Name" xml:space="preserve">
+    <value>textBoxSecondTemp</value>
+  </data>
+  <data name="&gt;&gt;textBoxSecondTemp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxSecondTemp.Parent" xml:space="preserve">
+    <value>groupBoxTempSecond</value>
+  </data>
+  <data name="&gt;&gt;textBoxSecondTemp.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;trackBarSecondTemp.Name" xml:space="preserve">
+    <value>trackBarSecondTemp</value>
+  </data>
+  <data name="&gt;&gt;trackBarSecondTemp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;trackBarSecondTemp.Parent" xml:space="preserve">
+    <value>groupBoxTempSecond</value>
+  </data>
+  <data name="&gt;&gt;trackBarSecondTemp.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="groupBoxTempSecond.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="groupBoxTempSecond.Location" type="System.Drawing.Point, System.Drawing">
+    <value>433, 177</value>
+  </data>
+  <data name="groupBoxTempSecond.Size" type="System.Drawing.Size, System.Drawing">
+    <value>425, 81</value>
+  </data>
+  <data name="groupBoxTempSecond.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="groupBoxTempSecond.Text" xml:space="preserve">
+    <value>Температура другої камери</value>
   </data>
   <data name="&gt;&gt;groupBoxTempSecond.Name" xml:space="preserve">
     <value>groupBoxTempSecond</value>
@@ -438,42 +783,6 @@
   <data name="tableLayoutPanelPlanControl.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="buttonStartSelected" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonLoadPlan" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonStopPlan" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="buttonLoadFileFromPath" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <data name="columnHeaderNumber.Text" xml:space="preserve">
-    <value>№</value>
-  </data>
-  <data name="columnHeaderNumber.Width" type="System.Int32, mscorlib">
-    <value>54</value>
-  </data>
-  <data name="columnHeaderTime.Text" xml:space="preserve">
-    <value>Час виконання</value>
-  </data>
-  <data name="columnHeaderTime.Width" type="System.Int32, mscorlib">
-    <value>139</value>
-  </data>
-  <data name="columnHeaderSpeed.Text" xml:space="preserve">
-    <value>Швидкість</value>
-  </data>
-  <data name="columnHeaderSpeed.Width" type="System.Int32, mscorlib">
-    <value>102</value>
-  </data>
-  <data name="columnHeaderLoad.Text" xml:space="preserve">
-    <value>Навантаження</value>
-  </data>
-  <data name="columnHeaderLoad.Width" type="System.Int32, mscorlib">
-    <value>119</value>
-  </data>
-  <data name="columnHeaderT1.Text" xml:space="preserve">
-    <value>Температура першої камери</value>
-  </data>
-  <data name="columnHeaderT1.Width" type="System.Int32, mscorlib">
-    <value>175</value>
-  </data>
-  <data name="columnHeaderT2.Text" xml:space="preserve">
-    <value>Температура другої камери</value>
-  </data>
-  <data name="columnHeaderT2.Width" type="System.Int32, mscorlib">
-    <value>207</value>
-  </data>
   <data name="listViewPlanRecords.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -518,108 +827,6 @@
   </data>
   <data name="&gt;&gt;Plan.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="groupBoxGeneral.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="groupBoxGeneral.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="groupBoxGeneral.Size" type="System.Drawing.Size, System.Drawing">
-    <value>424, 81</value>
-  </data>
-  <data name="groupBoxGeneral.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="groupBoxGeneral.Text" xml:space="preserve">
-    <value>Загальне</value>
-  </data>
-  <data name="&gt;&gt;groupBoxGeneral.Name" xml:space="preserve">
-    <value>groupBoxGeneral</value>
-  </data>
-  <data name="&gt;&gt;groupBoxGeneral.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxGeneral.Parent" xml:space="preserve">
-    <value>tableLayoutPanelPlanValues</value>
-  </data>
-  <data name="&gt;&gt;groupBoxGeneral.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;labelPlanMinutes.Name" xml:space="preserve">
-    <value>labelPlanMinutes</value>
-  </data>
-  <data name="&gt;&gt;labelPlanMinutes.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelPlanMinutes.Parent" xml:space="preserve">
-    <value>groupBoxTime</value>
-  </data>
-  <data name="&gt;&gt;labelPlanMinutes.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;labelPlanHours.Name" xml:space="preserve">
-    <value>labelPlanHours</value>
-  </data>
-  <data name="&gt;&gt;labelPlanHours.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelPlanHours.Parent" xml:space="preserve">
-    <value>groupBoxTime</value>
-  </data>
-  <data name="&gt;&gt;labelPlanHours.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownPlanMinutes.Name" xml:space="preserve">
-    <value>numericUpDownPlanMinutes</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownPlanMinutes.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownPlanMinutes.Parent" xml:space="preserve">
-    <value>groupBoxTime</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownPlanMinutes.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownPlanHours.Name" xml:space="preserve">
-    <value>numericUpDownPlanHours</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownPlanHours.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownPlanHours.Parent" xml:space="preserve">
-    <value>groupBoxTime</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownPlanHours.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="groupBoxTime.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="groupBoxTime.Location" type="System.Drawing.Point, System.Drawing">
-    <value>433, 3</value>
-  </data>
-  <data name="groupBoxTime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>425, 81</value>
-  </data>
-  <data name="groupBoxTime.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="groupBoxTime.Text" xml:space="preserve">
-    <value>Час</value>
-  </data>
-  <data name="&gt;&gt;groupBoxTime.Name" xml:space="preserve">
-    <value>groupBoxTime</value>
-  </data>
-  <data name="&gt;&gt;groupBoxTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxTime.Parent" xml:space="preserve">
-    <value>tableLayoutPanelPlanValues</value>
-  </data>
-  <data name="&gt;&gt;groupBoxTime.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="labelPlanMinutes.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -717,318 +924,6 @@
   <data name="&gt;&gt;numericUpDownPlanHours.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;labelPlanEngineVoltage.Name" xml:space="preserve">
-    <value>labelPlanEngineVoltage</value>
-  </data>
-  <data name="&gt;&gt;labelPlanEngineVoltage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelPlanEngineVoltage.Parent" xml:space="preserve">
-    <value>groupBoxEngineSpeed</value>
-  </data>
-  <data name="&gt;&gt;labelPlanEngineVoltage.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;labelPlanEngineRPM.Name" xml:space="preserve">
-    <value>labelPlanEngineRPM</value>
-  </data>
-  <data name="&gt;&gt;labelPlanEngineRPM.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelPlanEngineRPM.Parent" xml:space="preserve">
-    <value>groupBoxEngineSpeed</value>
-  </data>
-  <data name="&gt;&gt;labelPlanEngineRPM.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;textBoxPlanEngineVoltage.Name" xml:space="preserve">
-    <value>textBoxPlanEngineVoltage</value>
-  </data>
-  <data name="&gt;&gt;textBoxPlanEngineVoltage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxPlanEngineVoltage.Parent" xml:space="preserve">
-    <value>groupBoxEngineSpeed</value>
-  </data>
-  <data name="&gt;&gt;textBoxPlanEngineVoltage.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;labelPlanEngineSpeedText.Name" xml:space="preserve">
-    <value>labelPlanEngineSpeedText</value>
-  </data>
-  <data name="&gt;&gt;labelPlanEngineSpeedText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelPlanEngineSpeedText.Parent" xml:space="preserve">
-    <value>groupBoxEngineSpeed</value>
-  </data>
-  <data name="&gt;&gt;labelPlanEngineSpeedText.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;textBoxPlanEngineRPM.Name" xml:space="preserve">
-    <value>textBoxPlanEngineRPM</value>
-  </data>
-  <data name="&gt;&gt;textBoxPlanEngineRPM.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxPlanEngineRPM.Parent" xml:space="preserve">
-    <value>groupBoxEngineSpeed</value>
-  </data>
-  <data name="&gt;&gt;textBoxPlanEngineRPM.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;trackBarPlanEngineSpeed.Name" xml:space="preserve">
-    <value>trackBarPlanEngineSpeed</value>
-  </data>
-  <data name="&gt;&gt;trackBarPlanEngineSpeed.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;trackBarPlanEngineSpeed.Parent" xml:space="preserve">
-    <value>groupBoxEngineSpeed</value>
-  </data>
-  <data name="&gt;&gt;trackBarPlanEngineSpeed.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="groupBoxEngineSpeed.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="groupBoxEngineSpeed.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 90</value>
-  </data>
-  <data name="groupBoxEngineSpeed.Size" type="System.Drawing.Size, System.Drawing">
-    <value>424, 81</value>
-  </data>
-  <data name="groupBoxEngineSpeed.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="groupBoxEngineSpeed.Text" xml:space="preserve">
-    <value>Швидкість двигуна</value>
-  </data>
-  <data name="&gt;&gt;groupBoxEngineSpeed.Name" xml:space="preserve">
-    <value>groupBoxEngineSpeed</value>
-  </data>
-  <data name="&gt;&gt;groupBoxEngineSpeed.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxEngineSpeed.Parent" xml:space="preserve">
-    <value>tableLayoutPanelPlanValues</value>
-  </data>
-  <data name="&gt;&gt;groupBoxEngineSpeed.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="labelPlanEngineVoltage.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelPlanEngineVoltage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>345, 57</value>
-  </data>
-  <data name="labelPlanEngineVoltage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 13</value>
-  </data>
-  <data name="labelPlanEngineVoltage.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="labelPlanEngineVoltage.Text" xml:space="preserve">
-    <value>Вольт</value>
-  </data>
-  <data name="&gt;&gt;labelPlanEngineVoltage.Name" xml:space="preserve">
-    <value>labelPlanEngineVoltage</value>
-  </data>
-  <data name="&gt;&gt;labelPlanEngineVoltage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelPlanEngineVoltage.Parent" xml:space="preserve">
-    <value>groupBoxEngineSpeed</value>
-  </data>
-  <data name="&gt;&gt;labelPlanEngineVoltage.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="labelPlanEngineRPM.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelPlanEngineRPM.Location" type="System.Drawing.Point, System.Drawing">
-    <value>345, 16</value>
-  </data>
-  <data name="labelPlanEngineRPM.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 13</value>
-  </data>
-  <data name="labelPlanEngineRPM.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="labelPlanEngineRPM.Text" xml:space="preserve">
-    <value>Об/хв</value>
-  </data>
-  <data name="&gt;&gt;labelPlanEngineRPM.Name" xml:space="preserve">
-    <value>labelPlanEngineRPM</value>
-  </data>
-  <data name="&gt;&gt;labelPlanEngineRPM.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelPlanEngineRPM.Parent" xml:space="preserve">
-    <value>groupBoxEngineSpeed</value>
-  </data>
-  <data name="&gt;&gt;labelPlanEngineRPM.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="textBoxPlanEngineVoltage.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="textBoxPlanEngineVoltage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>250, 54</value>
-  </data>
-  <data name="textBoxPlanEngineVoltage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 20</value>
-  </data>
-  <data name="textBoxPlanEngineVoltage.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;textBoxPlanEngineVoltage.Name" xml:space="preserve">
-    <value>textBoxPlanEngineVoltage</value>
-  </data>
-  <data name="&gt;&gt;textBoxPlanEngineVoltage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxPlanEngineVoltage.Parent" xml:space="preserve">
-    <value>groupBoxEngineSpeed</value>
-  </data>
-  <data name="&gt;&gt;textBoxPlanEngineVoltage.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="labelPlanEngineSpeedText.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelPlanEngineSpeedText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>44, 15</value>
-  </data>
-  <data name="labelPlanEngineSpeedText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 13</value>
-  </data>
-  <data name="labelPlanEngineSpeedText.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="labelPlanEngineSpeedText.Text" xml:space="preserve">
-    <value>Кількість обертів за хвилину</value>
-  </data>
-  <data name="&gt;&gt;labelPlanEngineSpeedText.Name" xml:space="preserve">
-    <value>labelPlanEngineSpeedText</value>
-  </data>
-  <data name="&gt;&gt;labelPlanEngineSpeedText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelPlanEngineSpeedText.Parent" xml:space="preserve">
-    <value>groupBoxEngineSpeed</value>
-  </data>
-  <data name="&gt;&gt;labelPlanEngineSpeedText.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="textBoxPlanEngineRPM.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="textBoxPlanEngineRPM.Location" type="System.Drawing.Point, System.Drawing">
-    <value>250, 12</value>
-  </data>
-  <data name="textBoxPlanEngineRPM.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 20</value>
-  </data>
-  <data name="textBoxPlanEngineRPM.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;textBoxPlanEngineRPM.Name" xml:space="preserve">
-    <value>textBoxPlanEngineRPM</value>
-  </data>
-  <data name="&gt;&gt;textBoxPlanEngineRPM.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxPlanEngineRPM.Parent" xml:space="preserve">
-    <value>groupBoxEngineSpeed</value>
-  </data>
-  <data name="&gt;&gt;textBoxPlanEngineRPM.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="trackBarPlanEngineSpeed.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 31</value>
-  </data>
-  <data name="trackBarPlanEngineSpeed.Size" type="System.Drawing.Size, System.Drawing">
-    <value>241, 45</value>
-  </data>
-  <data name="trackBarPlanEngineSpeed.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;trackBarPlanEngineSpeed.Name" xml:space="preserve">
-    <value>trackBarPlanEngineSpeed</value>
-  </data>
-  <data name="&gt;&gt;trackBarPlanEngineSpeed.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;trackBarPlanEngineSpeed.Parent" xml:space="preserve">
-    <value>groupBoxEngineSpeed</value>
-  </data>
-  <data name="&gt;&gt;trackBarPlanEngineSpeed.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;labelLoadedWeight.Name" xml:space="preserve">
-    <value>labelLoadedWeight</value>
-  </data>
-  <data name="&gt;&gt;labelLoadedWeight.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelLoadedWeight.Parent" xml:space="preserve">
-    <value>groupBoxLoad</value>
-  </data>
-  <data name="&gt;&gt;labelLoadedWeight.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;textBoxLoadedWeight.Name" xml:space="preserve">
-    <value>textBoxLoadedWeight</value>
-  </data>
-  <data name="&gt;&gt;textBoxLoadedWeight.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxLoadedWeight.Parent" xml:space="preserve">
-    <value>groupBoxLoad</value>
-  </data>
-  <data name="&gt;&gt;textBoxLoadedWeight.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;trackBarLoadedWeight.Name" xml:space="preserve">
-    <value>trackBarLoadedWeight</value>
-  </data>
-  <data name="&gt;&gt;trackBarLoadedWeight.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;trackBarLoadedWeight.Parent" xml:space="preserve">
-    <value>groupBoxLoad</value>
-  </data>
-  <data name="&gt;&gt;trackBarLoadedWeight.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="groupBoxLoad.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="groupBoxLoad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>433, 90</value>
-  </data>
-  <data name="groupBoxLoad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>425, 81</value>
-  </data>
-  <data name="groupBoxLoad.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="groupBoxLoad.Text" xml:space="preserve">
-    <value>Навантаження</value>
-  </data>
-  <data name="&gt;&gt;groupBoxLoad.Name" xml:space="preserve">
-    <value>groupBoxLoad</value>
-  </data>
-  <data name="&gt;&gt;groupBoxLoad.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxLoad.Parent" xml:space="preserve">
-    <value>tableLayoutPanelPlanValues</value>
-  </data>
-  <data name="&gt;&gt;groupBoxLoad.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="labelLoadedWeight.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1101,69 +996,6 @@
   <data name="&gt;&gt;trackBarLoadedWeight.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;labelFirstTemp.Name" xml:space="preserve">
-    <value>labelFirstTemp</value>
-  </data>
-  <data name="&gt;&gt;labelFirstTemp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelFirstTemp.Parent" xml:space="preserve">
-    <value>groupBoxTempFirst</value>
-  </data>
-  <data name="&gt;&gt;labelFirstTemp.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;textBoxFirstTemp.Name" xml:space="preserve">
-    <value>textBoxFirstTemp</value>
-  </data>
-  <data name="&gt;&gt;textBoxFirstTemp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxFirstTemp.Parent" xml:space="preserve">
-    <value>groupBoxTempFirst</value>
-  </data>
-  <data name="&gt;&gt;textBoxFirstTemp.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;trackBarFirstTemp.Name" xml:space="preserve">
-    <value>trackBarFirstTemp</value>
-  </data>
-  <data name="&gt;&gt;trackBarFirstTemp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;trackBarFirstTemp.Parent" xml:space="preserve">
-    <value>groupBoxTempFirst</value>
-  </data>
-  <data name="&gt;&gt;trackBarFirstTemp.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="groupBoxTempFirst.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="groupBoxTempFirst.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 177</value>
-  </data>
-  <data name="groupBoxTempFirst.Size" type="System.Drawing.Size, System.Drawing">
-    <value>424, 81</value>
-  </data>
-  <data name="groupBoxTempFirst.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="groupBoxTempFirst.Text" xml:space="preserve">
-    <value>Температура першої камери</value>
-  </data>
-  <data name="&gt;&gt;groupBoxTempFirst.Name" xml:space="preserve">
-    <value>groupBoxTempFirst</value>
-  </data>
-  <data name="&gt;&gt;groupBoxTempFirst.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxTempFirst.Parent" xml:space="preserve">
-    <value>tableLayoutPanelPlanValues</value>
-  </data>
-  <data name="&gt;&gt;groupBoxTempFirst.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="labelFirstTemp.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1235,69 +1067,6 @@
   </data>
   <data name="&gt;&gt;trackBarFirstTemp.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="&gt;&gt;labelSecondTemp.Name" xml:space="preserve">
-    <value>labelSecondTemp</value>
-  </data>
-  <data name="&gt;&gt;labelSecondTemp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelSecondTemp.Parent" xml:space="preserve">
-    <value>groupBoxTempSecond</value>
-  </data>
-  <data name="&gt;&gt;labelSecondTemp.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;textBoxSecondTemp.Name" xml:space="preserve">
-    <value>textBoxSecondTemp</value>
-  </data>
-  <data name="&gt;&gt;textBoxSecondTemp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxSecondTemp.Parent" xml:space="preserve">
-    <value>groupBoxTempSecond</value>
-  </data>
-  <data name="&gt;&gt;textBoxSecondTemp.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;trackBarSecondTemp.Name" xml:space="preserve">
-    <value>trackBarSecondTemp</value>
-  </data>
-  <data name="&gt;&gt;trackBarSecondTemp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;trackBarSecondTemp.Parent" xml:space="preserve">
-    <value>groupBoxTempSecond</value>
-  </data>
-  <data name="&gt;&gt;trackBarSecondTemp.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="groupBoxTempSecond.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="groupBoxTempSecond.Location" type="System.Drawing.Point, System.Drawing">
-    <value>433, 177</value>
-  </data>
-  <data name="groupBoxTempSecond.Size" type="System.Drawing.Size, System.Drawing">
-    <value>425, 81</value>
-  </data>
-  <data name="groupBoxTempSecond.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="groupBoxTempSecond.Text" xml:space="preserve">
-    <value>Температура другої камери</value>
-  </data>
-  <data name="&gt;&gt;groupBoxTempSecond.Name" xml:space="preserve">
-    <value>groupBoxTempSecond</value>
-  </data>
-  <data name="&gt;&gt;groupBoxTempSecond.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxTempSecond.Parent" xml:space="preserve">
-    <value>tableLayoutPanelPlanValues</value>
-  </data>
-  <data name="&gt;&gt;groupBoxTempSecond.ZOrder" xml:space="preserve">
-    <value>5</value>
   </data>
   <data name="labelSecondTemp.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1478,6 +1247,42 @@
   </data>
   <data name="&gt;&gt;buttonLoadFileFromPath.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="columnHeaderNumber.Text" xml:space="preserve">
+    <value>№</value>
+  </data>
+  <data name="columnHeaderNumber.Width" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="columnHeaderTime.Text" xml:space="preserve">
+    <value>Час виконання</value>
+  </data>
+  <data name="columnHeaderTime.Width" type="System.Int32, mscorlib">
+    <value>102</value>
+  </data>
+  <data name="columnHeaderSpeed.Text" xml:space="preserve">
+    <value>Швидкість</value>
+  </data>
+  <data name="columnHeaderSpeed.Width" type="System.Int32, mscorlib">
+    <value>72</value>
+  </data>
+  <data name="columnHeaderLoad.Text" xml:space="preserve">
+    <value>Навантаження</value>
+  </data>
+  <data name="columnHeaderLoad.Width" type="System.Int32, mscorlib">
+    <value>96</value>
+  </data>
+  <data name="columnHeaderT1.Text" xml:space="preserve">
+    <value>Температура першої камери</value>
+  </data>
+  <data name="columnHeaderT1.Width" type="System.Int32, mscorlib">
+    <value>159</value>
+  </data>
+  <data name="columnHeaderT2.Text" xml:space="preserve">
+    <value>Температура другої камери</value>
+  </data>
+  <data name="columnHeaderT2.Width" type="System.Int32, mscorlib">
+    <value>168</value>
   </data>
   <data name="&gt;&gt;groupBoxControlLoadedWeight.Name" xml:space="preserve">
     <value>groupBoxControlLoadedWeight</value>

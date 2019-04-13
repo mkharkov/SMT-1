@@ -31,8 +31,8 @@ namespace SMT_1
             textBoxRecordInExecutuion.Text = "План не вибрано";
             textBoxEndTime.Text = textBoxRemainingTime.Text = textBoxStartTime.Text = "0";
 
-            textBoxPlanEngineRPM.Text = trackBarPlanEngineSpeed.Value.ToString();
-            textBoxPlanEngineVoltage.Text = EngineController.RpmToVoltage(trackBarPlanEngineSpeed.Value).ToString();
+            numericUpDownControlEngineRPM.Value = engine.RPM;
+            textBoxPlanEngineVoltage.Text = EngineController.RpmToVoltage((int)numericUpDownControlEngineRPM.Value).ToString();
 
             textBoxLoadedWeight.Text = trackBarLoadedWeight.Value.ToString();
             textBoxFirstTemp.Text = trackBarFirstTemp.Value.ToString();
@@ -41,7 +41,7 @@ namespace SMT_1
             // REMOVE THIS FOR. FOR TESTING PURPOSES ONLY
             for(int i=0;i<100;i++)
             {
-                string[] arr = { i.ToString(), "00:01:00", (i*4 + 300).ToString(), ((i/3 + i*2)/2).ToString(), (((i*2)-i/3+i)/3).ToString(), (i+(i/2)-i/3-i/4).ToString() };
+                string[] arr = { i.ToString(), "00:01:00", (i*4 + 300).ToString(), ((i/3)/2).ToString(), (((i*2)-i/3+i)/3).ToString(), (i+(i/2)-i/3-i/4).ToString() };
                 listViewPlanRecords.Items.Add(new ListViewItem(arr));
             }
             //REMOVE
@@ -81,7 +81,7 @@ namespace SMT_1
 
         private void trackBarControlEngineRPM_ValueChanged(object sender, EventArgs e)
         {
-            textBoxControlEngineVoltage.Text = (trackBarControlEngineRPM.Value * 2).ToString();
+            textBoxControlEngineVoltage.Text = EngineController.RpmToVoltage(trackBarControlEngineRPM.Value).ToString();
             numericUpDownControlEngineRPM.Value = trackBarControlEngineRPM.Value;
         }
 
@@ -128,15 +128,17 @@ namespace SMT_1
             //textBoxPlanEngineVoltage;
             if (listViewPlanRecords.SelectedItems.Count > 0)
             {
-                trackBarPlanEngineSpeed.Value = int.Parse(listViewPlanRecords.SelectedItems[0].SubItems[2].Text);
+                numericUpDownPlanEngineRPM.Value = int.Parse(listViewPlanRecords.SelectedItems[0].SubItems[2].Text);
                 trackBarFirstTemp.Value = int.Parse(listViewPlanRecords.SelectedItems[0].SubItems[4].Text);
                 trackBarSecondTemp.Value = int.Parse(listViewPlanRecords.SelectedItems[0].SubItems[5].Text);
+                trackBarLoadedWeight.Value = int.Parse(listViewPlanRecords.SelectedItems[0].SubItems[3].Text);
             }
             else
             {
-                trackBarPlanEngineSpeed.Value = trackBarPlanEngineSpeed.Minimum;
-                textBoxPlanEngineRPM.Text = trackBarPlanEngineSpeed.Value.ToString();
-                textBoxPlanEngineVoltage.Text = EngineController.RpmToVoltage(trackBarPlanEngineSpeed.Value).ToString();
+                numericUpDownControlEngineRPM.Value = numericUpDownControlEngineRPM.Minimum;
+                trackBarFirstTemp.Value = trackBarFirstTemp.Minimum;
+                trackBarSecondTemp.Value = trackBarSecondTemp.Minimum;
+                trackBarLoadedWeight.Value = trackBarLoadedWeight.Minimum;
             }
         }
 
@@ -145,18 +147,15 @@ namespace SMT_1
             //MessageBox.Show("Clicked");
         }
 
-        private void trackBarPlanEngineSpeed_ValueChanged(object sender, EventArgs e)
-        {
-            textBoxPlanEngineRPM.Text = trackBarPlanEngineSpeed.Value.ToString();
-            textBoxPlanEngineVoltage.Text = EngineController.RpmToVoltage(trackBarPlanEngineSpeed.Value).ToString();
-        }
-
         private void buttonControlEngineRestore_Click(object sender, EventArgs e)
         {
             trackBarControlEngineRPM.Value = engine.RPM;
         }
 
-
+        private void numericUpDownPlanEngineRPM_ValueChanged(object sender, EventArgs e)
+        {
+            textBoxPlanEngineVoltage.Text = EngineController.RpmToVoltage((int)numericUpDownPlanEngineRPM.Value).ToString();
+        }
     }
 }
 

@@ -46,9 +46,6 @@
             this.labelPlanEngineVoltage = new System.Windows.Forms.Label();
             this.labelPlanEngineRPM = new System.Windows.Forms.Label();
             this.textBoxPlanEngineVoltage = new System.Windows.Forms.TextBox();
-            this.labelPlanEngineSpeedText = new System.Windows.Forms.Label();
-            this.textBoxPlanEngineRPM = new System.Windows.Forms.TextBox();
-            this.trackBarPlanEngineSpeed = new System.Windows.Forms.TrackBar();
             this.groupBoxLoad = new System.Windows.Forms.GroupBox();
             this.labelLoadedWeight = new System.Windows.Forms.Label();
             this.textBoxLoadedWeight = new System.Windows.Forms.TextBox();
@@ -112,6 +109,7 @@
             this.labelControlEngineCurrentRPM = new System.Windows.Forms.Label();
             this.labelControlEngineCurrentVoltage = new System.Windows.Forms.Label();
             this.textBoxControlEngineCurrentRPM = new System.Windows.Forms.TextBox();
+            this.numericUpDownPlanEngineRPM = new System.Windows.Forms.NumericUpDown();
             this.Plan.SuspendLayout();
             this.tableLayoutPanelRecordActions.SuspendLayout();
             this.tableLayoutPanelPlanValues.SuspendLayout();
@@ -119,7 +117,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPlanMinutes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPlanHours)).BeginInit();
             this.groupBoxEngineSpeed.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarPlanEngineSpeed)).BeginInit();
             this.groupBoxLoad.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarLoadedWeight)).BeginInit();
             this.groupBoxTempFirst.SuspendLayout();
@@ -138,6 +135,7 @@
             this.tableLayoutPanelParameters.SuspendLayout();
             this.groupBoxPlan.SuspendLayout();
             this.tableLayoutPanelPlan.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPlanEngineRPM)).BeginInit();
             this.SuspendLayout();
             // 
             // Plan
@@ -242,12 +240,10 @@
             // 
             // groupBoxEngineSpeed
             // 
+            this.groupBoxEngineSpeed.Controls.Add(this.numericUpDownPlanEngineRPM);
             this.groupBoxEngineSpeed.Controls.Add(this.labelPlanEngineVoltage);
             this.groupBoxEngineSpeed.Controls.Add(this.labelPlanEngineRPM);
             this.groupBoxEngineSpeed.Controls.Add(this.textBoxPlanEngineVoltage);
-            this.groupBoxEngineSpeed.Controls.Add(this.labelPlanEngineSpeedText);
-            this.groupBoxEngineSpeed.Controls.Add(this.textBoxPlanEngineRPM);
-            this.groupBoxEngineSpeed.Controls.Add(this.trackBarPlanEngineSpeed);
             resources.ApplyResources(this.groupBoxEngineSpeed, "groupBoxEngineSpeed");
             this.groupBoxEngineSpeed.Name = "groupBoxEngineSpeed";
             this.groupBoxEngineSpeed.TabStop = false;
@@ -266,27 +262,6 @@
             // 
             resources.ApplyResources(this.textBoxPlanEngineVoltage, "textBoxPlanEngineVoltage");
             this.textBoxPlanEngineVoltage.Name = "textBoxPlanEngineVoltage";
-            // 
-            // labelPlanEngineSpeedText
-            // 
-            resources.ApplyResources(this.labelPlanEngineSpeedText, "labelPlanEngineSpeedText");
-            this.labelPlanEngineSpeedText.Name = "labelPlanEngineSpeedText";
-            // 
-            // textBoxPlanEngineRPM
-            // 
-            resources.ApplyResources(this.textBoxPlanEngineRPM, "textBoxPlanEngineRPM");
-            this.textBoxPlanEngineRPM.Name = "textBoxPlanEngineRPM";
-            // 
-            // trackBarPlanEngineSpeed
-            // 
-            this.trackBarPlanEngineSpeed.BackColor = System.Drawing.SystemColors.Window;
-            resources.ApplyResources(this.trackBarPlanEngineSpeed, "trackBarPlanEngineSpeed");
-            this.trackBarPlanEngineSpeed.Maximum = 1000;
-            this.trackBarPlanEngineSpeed.Minimum = 300;
-            this.trackBarPlanEngineSpeed.Name = "trackBarPlanEngineSpeed";
-            this.trackBarPlanEngineSpeed.TickFrequency = 50;
-            this.trackBarPlanEngineSpeed.Value = 300;
-            this.trackBarPlanEngineSpeed.ValueChanged += new System.EventHandler(this.trackBarPlanEngineSpeed_ValueChanged);
             // 
             // groupBoxLoad
             // 
@@ -719,6 +694,27 @@
             resources.ApplyResources(this.textBoxControlEngineCurrentRPM, "textBoxControlEngineCurrentRPM");
             this.textBoxControlEngineCurrentRPM.Name = "textBoxControlEngineCurrentRPM";
             // 
+            // numericUpDownPlanEngineRPM
+            // 
+            resources.ApplyResources(this.numericUpDownPlanEngineRPM, "numericUpDownPlanEngineRPM");
+            this.numericUpDownPlanEngineRPM.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.numericUpDownPlanEngineRPM.Minimum = new decimal(new int[] {
+            300,
+            0,
+            0,
+            0});
+            this.numericUpDownPlanEngineRPM.Name = "numericUpDownPlanEngineRPM";
+            this.numericUpDownPlanEngineRPM.Value = new decimal(new int[] {
+            300,
+            0,
+            0,
+            0});
+            this.numericUpDownPlanEngineRPM.ValueChanged += new System.EventHandler(this.numericUpDownPlanEngineRPM_ValueChanged);
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -740,7 +736,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPlanHours)).EndInit();
             this.groupBoxEngineSpeed.ResumeLayout(false);
             this.groupBoxEngineSpeed.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarPlanEngineSpeed)).EndInit();
             this.groupBoxLoad.ResumeLayout(false);
             this.groupBoxLoad.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarLoadedWeight)).EndInit();
@@ -766,6 +761,7 @@
             this.groupBoxPlan.ResumeLayout(false);
             this.tableLayoutPanelPlan.ResumeLayout(false);
             this.tableLayoutPanelPlan.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPlanEngineRPM)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -812,9 +808,6 @@
         private System.Windows.Forms.Label labelPlanMinutes;
         private System.Windows.Forms.Label labelPlanHours;
         private System.Windows.Forms.NumericUpDown numericUpDownPlanMinutes;
-        private System.Windows.Forms.Label labelPlanEngineSpeedText;
-        private System.Windows.Forms.TextBox textBoxPlanEngineRPM;
-        private System.Windows.Forms.TrackBar trackBarPlanEngineSpeed;
         private System.Windows.Forms.TextBox textBoxPlanEngineVoltage;
         private System.Windows.Forms.Label labelPlanEngineVoltage;
         private System.Windows.Forms.Label labelPlanEngineRPM;
@@ -855,6 +848,7 @@
         private System.Windows.Forms.Label labelControlEngineCurrentVoltage;
         private System.Windows.Forms.Label labelControlEngineCurrentRPM;
         private System.Windows.Forms.TextBox textBoxControlEngineCurrentRPM;
+        private System.Windows.Forms.NumericUpDown numericUpDownPlanEngineRPM;
     }
 }
 
