@@ -134,5 +134,18 @@ namespace SMT_1
         {
             engine.On = true;
         }
+
+        //SHOWING DEBUG INFO ABOUT STATE OF MAIN FORM
+        private void buttonShowDebugInfo_Click(object sender, EventArgs e)
+        {
+            richTextBoxDebug.Text = string.Format("Engine Info:\n" +
+                "\tON: {0}\n" +
+                "\tRPM: {1}\n" +
+                "\tVoltage: {2}\n" +
+                "**************\n" +
+                "" +
+                "" +
+                "", engine.On, engine.RPM, engine.Voltage);
+        }
     }
 }

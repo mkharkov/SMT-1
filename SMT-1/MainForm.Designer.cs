@@ -30,6 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.Plan = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanelRecordActions = new System.Windows.Forms.TableLayoutPanel();
+            this.buttonRecordAdd = new System.Windows.Forms.Button();
+            this.buttonRecordDelete = new System.Windows.Forms.Button();
+            this.buttonRecordUp = new System.Windows.Forms.Button();
+            this.buttonRecordDown = new System.Windows.Forms.Button();
             this.tableLayoutPanelPlanValues = new System.Windows.Forms.TableLayoutPanel();
             this.groupBoxGeneral = new System.Windows.Forms.GroupBox();
             this.groupBoxTime = new System.Windows.Forms.GroupBox();
@@ -45,8 +50,17 @@
             this.textBoxPlanEngineRPM = new System.Windows.Forms.TextBox();
             this.trackBarPlanEngineSpeed = new System.Windows.Forms.TrackBar();
             this.groupBoxLoad = new System.Windows.Forms.GroupBox();
+            this.labelLoadedWeight = new System.Windows.Forms.Label();
+            this.textBoxLoadedWeight = new System.Windows.Forms.TextBox();
+            this.trackBarLoadedWeight = new System.Windows.Forms.TrackBar();
             this.groupBoxTempFirst = new System.Windows.Forms.GroupBox();
+            this.labelFirstTemp = new System.Windows.Forms.Label();
+            this.textBoxFirstTemp = new System.Windows.Forms.TextBox();
+            this.trackBarFirstTemp = new System.Windows.Forms.TrackBar();
             this.groupBoxTempSecond = new System.Windows.Forms.GroupBox();
+            this.labelSecondTemp = new System.Windows.Forms.Label();
+            this.textBoxSecondTemp = new System.Windows.Forms.TextBox();
+            this.trackBarSecondTemp = new System.Windows.Forms.TrackBar();
             this.tableLayoutPanelPlanControl = new System.Windows.Forms.TableLayoutPanel();
             this.buttonStartSelected = new System.Windows.Forms.Button();
             this.buttonLoadPlan = new System.Windows.Forms.Button();
@@ -60,6 +74,18 @@
             this.columnHeaderT1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderT2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Control = new System.Windows.Forms.TabPage();
+            this.groupBoxControlLoadedWeight = new System.Windows.Forms.GroupBox();
+            this.groupBoxControlVents = new System.Windows.Forms.GroupBox();
+            this.groupBoxControlEngine = new System.Windows.Forms.GroupBox();
+            this.buttonControlEngineStart = new System.Windows.Forms.Button();
+            this.buttonControlEngineStop = new System.Windows.Forms.Button();
+            this.buttonControlEngineSetValues = new System.Windows.Forms.Button();
+            this.trackBarControlEngineRPM = new System.Windows.Forms.TrackBar();
+            this.labelControlEngineRPM = new System.Windows.Forms.Label();
+            this.numericUpDownControlEngineRPM = new System.Windows.Forms.NumericUpDown();
+            this.labelControlEngineSpeed = new System.Windows.Forms.Label();
+            this.textBoxControlEngineVoltage = new System.Windows.Forms.TextBox();
+            this.labelControlEngineVoltage = new System.Windows.Forms.Label();
             this.Charts = new System.Windows.Forms.TabPage();
             this.tabControlControlPanel = new System.Windows.Forms.TabControl();
             this.groupBoxCurrentParameters = new System.Windows.Forms.GroupBox();
@@ -69,41 +95,19 @@
             this.groupBoxPlan = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanelPlan = new System.Windows.Forms.TableLayoutPanel();
             this.textBoxRecordInExecutuion = new System.Windows.Forms.TextBox();
-            this.textBoxStartTime = new System.Windows.Forms.TextBox();
             this.textBoxEndTime = new System.Windows.Forms.TextBox();
             this.textBoxRemainingTime = new System.Windows.Forms.TextBox();
             this.labelRecordInExecution = new System.Windows.Forms.Label();
             this.labelStartTime = new System.Windows.Forms.Label();
             this.labelEndTime = new System.Windows.Forms.Label();
             this.labelRemainingTime = new System.Windows.Forms.Label();
+            this.textBoxStartTime = new System.Windows.Forms.TextBox();
             this.openFileDialogPlan = new System.Windows.Forms.OpenFileDialog();
-            this.tableLayoutPanelRecordActions = new System.Windows.Forms.TableLayoutPanel();
-            this.buttonRecordAdd = new System.Windows.Forms.Button();
-            this.buttonRecordDelete = new System.Windows.Forms.Button();
-            this.buttonRecordUp = new System.Windows.Forms.Button();
-            this.buttonRecordDown = new System.Windows.Forms.Button();
-            this.trackBarLoadedWeight = new System.Windows.Forms.TrackBar();
-            this.trackBarFirstTemp = new System.Windows.Forms.TrackBar();
-            this.trackBarSecondTemp = new System.Windows.Forms.TrackBar();
-            this.textBoxFirstTemp = new System.Windows.Forms.TextBox();
-            this.textBoxLoadedWeight = new System.Windows.Forms.TextBox();
-            this.textBoxSecondTemp = new System.Windows.Forms.TextBox();
-            this.labelFirstTemp = new System.Windows.Forms.Label();
-            this.labelSecondTemp = new System.Windows.Forms.Label();
-            this.labelLoadedWeight = new System.Windows.Forms.Label();
-            this.groupBoxControlEngine = new System.Windows.Forms.GroupBox();
-            this.groupBoxControlVents = new System.Windows.Forms.GroupBox();
-            this.groupBoxControlLoadedWeight = new System.Windows.Forms.GroupBox();
-            this.labelControlEngineVoltage = new System.Windows.Forms.Label();
-            this.textBoxControlEngineVoltage = new System.Windows.Forms.TextBox();
-            this.labelControlEngineSpeed = new System.Windows.Forms.Label();
-            this.numericUpDownControlEngineRPM = new System.Windows.Forms.NumericUpDown();
-            this.labelControlEngineRPM = new System.Windows.Forms.Label();
-            this.trackBarControlEngineRPM = new System.Windows.Forms.TrackBar();
-            this.buttonControlEngineSetValues = new System.Windows.Forms.Button();
-            this.buttonControlEngineStop = new System.Windows.Forms.Button();
-            this.buttonControlEngineStart = new System.Windows.Forms.Button();
+            this.DebugTab = new System.Windows.Forms.TabPage();
+            this.richTextBoxDebug = new System.Windows.Forms.RichTextBox();
+            this.buttonShowDebugInfo = new System.Windows.Forms.Button();
             this.Plan.SuspendLayout();
+            this.tableLayoutPanelRecordActions.SuspendLayout();
             this.tableLayoutPanelPlanValues.SuspendLayout();
             this.groupBoxTime.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPlanMinutes)).BeginInit();
@@ -111,22 +115,22 @@
             this.groupBoxEngineSpeed.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarPlanEngineSpeed)).BeginInit();
             this.groupBoxLoad.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarLoadedWeight)).BeginInit();
             this.groupBoxTempFirst.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarFirstTemp)).BeginInit();
             this.groupBoxTempSecond.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarSecondTemp)).BeginInit();
             this.tableLayoutPanelPlanControl.SuspendLayout();
             this.Control.SuspendLayout();
+            this.groupBoxControlEngine.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarControlEngineRPM)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownControlEngineRPM)).BeginInit();
             this.tabControlControlPanel.SuspendLayout();
             this.groupBoxCurrentParameters.SuspendLayout();
             this.tableLayoutPanelParameters.SuspendLayout();
             this.groupBoxPlan.SuspendLayout();
             this.tableLayoutPanelPlan.SuspendLayout();
-            this.tableLayoutPanelRecordActions.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarLoadedWeight)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarFirstTemp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarSecondTemp)).BeginInit();
-            this.groupBoxControlEngine.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownControlEngineRPM)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarControlEngineRPM)).BeginInit();
+            this.DebugTab.SuspendLayout();
             this.SuspendLayout();
             // 
             // Plan
@@ -138,6 +142,39 @@
             resources.ApplyResources(this.Plan, "Plan");
             this.Plan.Name = "Plan";
             this.Plan.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanelRecordActions
+            // 
+            resources.ApplyResources(this.tableLayoutPanelRecordActions, "tableLayoutPanelRecordActions");
+            this.tableLayoutPanelRecordActions.Controls.Add(this.buttonRecordAdd, 0, 0);
+            this.tableLayoutPanelRecordActions.Controls.Add(this.buttonRecordDelete, 0, 1);
+            this.tableLayoutPanelRecordActions.Controls.Add(this.buttonRecordUp, 0, 2);
+            this.tableLayoutPanelRecordActions.Controls.Add(this.buttonRecordDown, 0, 3);
+            this.tableLayoutPanelRecordActions.Name = "tableLayoutPanelRecordActions";
+            // 
+            // buttonRecordAdd
+            // 
+            resources.ApplyResources(this.buttonRecordAdd, "buttonRecordAdd");
+            this.buttonRecordAdd.Name = "buttonRecordAdd";
+            this.buttonRecordAdd.UseVisualStyleBackColor = true;
+            // 
+            // buttonRecordDelete
+            // 
+            resources.ApplyResources(this.buttonRecordDelete, "buttonRecordDelete");
+            this.buttonRecordDelete.Name = "buttonRecordDelete";
+            this.buttonRecordDelete.UseVisualStyleBackColor = true;
+            // 
+            // buttonRecordUp
+            // 
+            resources.ApplyResources(this.buttonRecordUp, "buttonRecordUp");
+            this.buttonRecordUp.Name = "buttonRecordUp";
+            this.buttonRecordUp.UseVisualStyleBackColor = true;
+            // 
+            // buttonRecordDown
+            // 
+            resources.ApplyResources(this.buttonRecordDown, "buttonRecordDown");
+            this.buttonRecordDown.Name = "buttonRecordDown";
+            this.buttonRecordDown.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanelPlanValues
             // 
@@ -253,6 +290,23 @@
             this.groupBoxLoad.Name = "groupBoxLoad";
             this.groupBoxLoad.TabStop = false;
             // 
+            // labelLoadedWeight
+            // 
+            resources.ApplyResources(this.labelLoadedWeight, "labelLoadedWeight");
+            this.labelLoadedWeight.Name = "labelLoadedWeight";
+            // 
+            // textBoxLoadedWeight
+            // 
+            resources.ApplyResources(this.textBoxLoadedWeight, "textBoxLoadedWeight");
+            this.textBoxLoadedWeight.Name = "textBoxLoadedWeight";
+            // 
+            // trackBarLoadedWeight
+            // 
+            this.trackBarLoadedWeight.BackColor = System.Drawing.SystemColors.Window;
+            resources.ApplyResources(this.trackBarLoadedWeight, "trackBarLoadedWeight");
+            this.trackBarLoadedWeight.Name = "trackBarLoadedWeight";
+            this.trackBarLoadedWeight.Scroll += new System.EventHandler(this.trackBarLoadedWeight_Scroll);
+            // 
             // groupBoxTempFirst
             // 
             this.groupBoxTempFirst.Controls.Add(this.labelFirstTemp);
@@ -262,6 +316,23 @@
             this.groupBoxTempFirst.Name = "groupBoxTempFirst";
             this.groupBoxTempFirst.TabStop = false;
             // 
+            // labelFirstTemp
+            // 
+            resources.ApplyResources(this.labelFirstTemp, "labelFirstTemp");
+            this.labelFirstTemp.Name = "labelFirstTemp";
+            // 
+            // textBoxFirstTemp
+            // 
+            resources.ApplyResources(this.textBoxFirstTemp, "textBoxFirstTemp");
+            this.textBoxFirstTemp.Name = "textBoxFirstTemp";
+            // 
+            // trackBarFirstTemp
+            // 
+            this.trackBarFirstTemp.BackColor = System.Drawing.SystemColors.Window;
+            resources.ApplyResources(this.trackBarFirstTemp, "trackBarFirstTemp");
+            this.trackBarFirstTemp.Name = "trackBarFirstTemp";
+            this.trackBarFirstTemp.Scroll += new System.EventHandler(this.trackBarFirstTemp_Scroll);
+            // 
             // groupBoxTempSecond
             // 
             this.groupBoxTempSecond.Controls.Add(this.labelSecondTemp);
@@ -270,6 +341,23 @@
             resources.ApplyResources(this.groupBoxTempSecond, "groupBoxTempSecond");
             this.groupBoxTempSecond.Name = "groupBoxTempSecond";
             this.groupBoxTempSecond.TabStop = false;
+            // 
+            // labelSecondTemp
+            // 
+            resources.ApplyResources(this.labelSecondTemp, "labelSecondTemp");
+            this.labelSecondTemp.Name = "labelSecondTemp";
+            // 
+            // textBoxSecondTemp
+            // 
+            resources.ApplyResources(this.textBoxSecondTemp, "textBoxSecondTemp");
+            this.textBoxSecondTemp.Name = "textBoxSecondTemp";
+            // 
+            // trackBarSecondTemp
+            // 
+            this.trackBarSecondTemp.BackColor = System.Drawing.SystemColors.Window;
+            resources.ApplyResources(this.trackBarSecondTemp, "trackBarSecondTemp");
+            this.trackBarSecondTemp.Name = "trackBarSecondTemp";
+            this.trackBarSecondTemp.Scroll += new System.EventHandler(this.trackBarSecondTemp_Scroll);
             // 
             // tableLayoutPanelPlanControl
             // 
@@ -355,6 +443,106 @@
             this.Control.Name = "Control";
             this.Control.UseVisualStyleBackColor = true;
             // 
+            // groupBoxControlLoadedWeight
+            // 
+            resources.ApplyResources(this.groupBoxControlLoadedWeight, "groupBoxControlLoadedWeight");
+            this.groupBoxControlLoadedWeight.Name = "groupBoxControlLoadedWeight";
+            this.groupBoxControlLoadedWeight.TabStop = false;
+            // 
+            // groupBoxControlVents
+            // 
+            resources.ApplyResources(this.groupBoxControlVents, "groupBoxControlVents");
+            this.groupBoxControlVents.Name = "groupBoxControlVents";
+            this.groupBoxControlVents.TabStop = false;
+            // 
+            // groupBoxControlEngine
+            // 
+            this.groupBoxControlEngine.Controls.Add(this.buttonControlEngineStart);
+            this.groupBoxControlEngine.Controls.Add(this.buttonControlEngineStop);
+            this.groupBoxControlEngine.Controls.Add(this.buttonControlEngineSetValues);
+            this.groupBoxControlEngine.Controls.Add(this.trackBarControlEngineRPM);
+            this.groupBoxControlEngine.Controls.Add(this.labelControlEngineRPM);
+            this.groupBoxControlEngine.Controls.Add(this.numericUpDownControlEngineRPM);
+            this.groupBoxControlEngine.Controls.Add(this.labelControlEngineSpeed);
+            this.groupBoxControlEngine.Controls.Add(this.textBoxControlEngineVoltage);
+            this.groupBoxControlEngine.Controls.Add(this.labelControlEngineVoltage);
+            resources.ApplyResources(this.groupBoxControlEngine, "groupBoxControlEngine");
+            this.groupBoxControlEngine.Name = "groupBoxControlEngine";
+            this.groupBoxControlEngine.TabStop = false;
+            // 
+            // buttonControlEngineStart
+            // 
+            resources.ApplyResources(this.buttonControlEngineStart, "buttonControlEngineStart");
+            this.buttonControlEngineStart.Name = "buttonControlEngineStart";
+            this.buttonControlEngineStart.UseVisualStyleBackColor = true;
+            this.buttonControlEngineStart.Click += new System.EventHandler(this.buttonControlEngineStart_Click);
+            // 
+            // buttonControlEngineStop
+            // 
+            resources.ApplyResources(this.buttonControlEngineStop, "buttonControlEngineStop");
+            this.buttonControlEngineStop.Name = "buttonControlEngineStop";
+            this.buttonControlEngineStop.UseVisualStyleBackColor = true;
+            this.buttonControlEngineStop.Click += new System.EventHandler(this.buttonControlEngineStop_Click);
+            // 
+            // buttonControlEngineSetValues
+            // 
+            resources.ApplyResources(this.buttonControlEngineSetValues, "buttonControlEngineSetValues");
+            this.buttonControlEngineSetValues.Name = "buttonControlEngineSetValues";
+            this.buttonControlEngineSetValues.UseVisualStyleBackColor = true;
+            this.buttonControlEngineSetValues.Click += new System.EventHandler(this.buttonControlEngineSetValues_Click);
+            // 
+            // trackBarControlEngineRPM
+            // 
+            this.trackBarControlEngineRPM.BackColor = System.Drawing.SystemColors.Window;
+            resources.ApplyResources(this.trackBarControlEngineRPM, "trackBarControlEngineRPM");
+            this.trackBarControlEngineRPM.Maximum = 1000;
+            this.trackBarControlEngineRPM.Minimum = 300;
+            this.trackBarControlEngineRPM.Name = "trackBarControlEngineRPM";
+            this.trackBarControlEngineRPM.TickFrequency = 50;
+            this.trackBarControlEngineRPM.Value = 300;
+            this.trackBarControlEngineRPM.Scroll += new System.EventHandler(this.trackBarControlEngineRPM_Scroll);
+            // 
+            // labelControlEngineRPM
+            // 
+            resources.ApplyResources(this.labelControlEngineRPM, "labelControlEngineRPM");
+            this.labelControlEngineRPM.Name = "labelControlEngineRPM";
+            // 
+            // numericUpDownControlEngineRPM
+            // 
+            resources.ApplyResources(this.numericUpDownControlEngineRPM, "numericUpDownControlEngineRPM");
+            this.numericUpDownControlEngineRPM.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.numericUpDownControlEngineRPM.Minimum = new decimal(new int[] {
+            300,
+            0,
+            0,
+            0});
+            this.numericUpDownControlEngineRPM.Name = "numericUpDownControlEngineRPM";
+            this.numericUpDownControlEngineRPM.Value = new decimal(new int[] {
+            300,
+            0,
+            0,
+            0});
+            this.numericUpDownControlEngineRPM.ValueChanged += new System.EventHandler(this.numericUpDownControlEngineRPM_ValueChanged);
+            // 
+            // labelControlEngineSpeed
+            // 
+            resources.ApplyResources(this.labelControlEngineSpeed, "labelControlEngineSpeed");
+            this.labelControlEngineSpeed.Name = "labelControlEngineSpeed";
+            // 
+            // textBoxControlEngineVoltage
+            // 
+            resources.ApplyResources(this.textBoxControlEngineVoltage, "textBoxControlEngineVoltage");
+            this.textBoxControlEngineVoltage.Name = "textBoxControlEngineVoltage";
+            // 
+            // labelControlEngineVoltage
+            // 
+            resources.ApplyResources(this.labelControlEngineVoltage, "labelControlEngineVoltage");
+            this.labelControlEngineVoltage.Name = "labelControlEngineVoltage";
+            // 
             // Charts
             // 
             resources.ApplyResources(this.Charts, "Charts");
@@ -366,6 +554,7 @@
             this.tabControlControlPanel.Controls.Add(this.Charts);
             this.tabControlControlPanel.Controls.Add(this.Control);
             this.tabControlControlPanel.Controls.Add(this.Plan);
+            this.tabControlControlPanel.Controls.Add(this.DebugTab);
             resources.ApplyResources(this.tabControlControlPanel, "tabControlControlPanel");
             this.tabControlControlPanel.Name = "tabControlControlPanel";
             this.tabControlControlPanel.SelectedIndex = 0;
@@ -419,11 +608,6 @@
             resources.ApplyResources(this.textBoxRecordInExecutuion, "textBoxRecordInExecutuion");
             this.textBoxRecordInExecutuion.Name = "textBoxRecordInExecutuion";
             // 
-            // textBoxStartTime
-            // 
-            resources.ApplyResources(this.textBoxStartTime, "textBoxStartTime");
-            this.textBoxStartTime.Name = "textBoxStartTime";
-            // 
             // textBoxEndTime
             // 
             resources.ApplyResources(this.textBoxEndTime, "textBoxEndTime");
@@ -454,193 +638,34 @@
             resources.ApplyResources(this.labelRemainingTime, "labelRemainingTime");
             this.labelRemainingTime.Name = "labelRemainingTime";
             // 
+            // textBoxStartTime
+            // 
+            resources.ApplyResources(this.textBoxStartTime, "textBoxStartTime");
+            this.textBoxStartTime.Name = "textBoxStartTime";
+            // 
             // openFileDialogPlan
             // 
             this.openFileDialogPlan.FileName = "openFileDialogPlan";
             // 
-            // tableLayoutPanelRecordActions
+            // DebugTab
             // 
-            resources.ApplyResources(this.tableLayoutPanelRecordActions, "tableLayoutPanelRecordActions");
-            this.tableLayoutPanelRecordActions.Controls.Add(this.buttonRecordAdd, 0, 0);
-            this.tableLayoutPanelRecordActions.Controls.Add(this.buttonRecordDelete, 0, 1);
-            this.tableLayoutPanelRecordActions.Controls.Add(this.buttonRecordUp, 0, 2);
-            this.tableLayoutPanelRecordActions.Controls.Add(this.buttonRecordDown, 0, 3);
-            this.tableLayoutPanelRecordActions.Name = "tableLayoutPanelRecordActions";
+            this.DebugTab.Controls.Add(this.buttonShowDebugInfo);
+            this.DebugTab.Controls.Add(this.richTextBoxDebug);
+            resources.ApplyResources(this.DebugTab, "DebugTab");
+            this.DebugTab.Name = "DebugTab";
+            this.DebugTab.UseVisualStyleBackColor = true;
             // 
-            // buttonRecordAdd
+            // richTextBoxDebug
             // 
-            resources.ApplyResources(this.buttonRecordAdd, "buttonRecordAdd");
-            this.buttonRecordAdd.Name = "buttonRecordAdd";
-            this.buttonRecordAdd.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.richTextBoxDebug, "richTextBoxDebug");
+            this.richTextBoxDebug.Name = "richTextBoxDebug";
             // 
-            // buttonRecordDelete
+            // buttonShowDebugInfo
             // 
-            resources.ApplyResources(this.buttonRecordDelete, "buttonRecordDelete");
-            this.buttonRecordDelete.Name = "buttonRecordDelete";
-            this.buttonRecordDelete.UseVisualStyleBackColor = true;
-            // 
-            // buttonRecordUp
-            // 
-            resources.ApplyResources(this.buttonRecordUp, "buttonRecordUp");
-            this.buttonRecordUp.Name = "buttonRecordUp";
-            this.buttonRecordUp.UseVisualStyleBackColor = true;
-            // 
-            // buttonRecordDown
-            // 
-            resources.ApplyResources(this.buttonRecordDown, "buttonRecordDown");
-            this.buttonRecordDown.Name = "buttonRecordDown";
-            this.buttonRecordDown.UseVisualStyleBackColor = true;
-            // 
-            // trackBarLoadedWeight
-            // 
-            this.trackBarLoadedWeight.BackColor = System.Drawing.SystemColors.Window;
-            resources.ApplyResources(this.trackBarLoadedWeight, "trackBarLoadedWeight");
-            this.trackBarLoadedWeight.Name = "trackBarLoadedWeight";
-            this.trackBarLoadedWeight.Scroll += new System.EventHandler(this.trackBarLoadedWeight_Scroll);
-            // 
-            // trackBarFirstTemp
-            // 
-            this.trackBarFirstTemp.BackColor = System.Drawing.SystemColors.Window;
-            resources.ApplyResources(this.trackBarFirstTemp, "trackBarFirstTemp");
-            this.trackBarFirstTemp.Name = "trackBarFirstTemp";
-            this.trackBarFirstTemp.Scroll += new System.EventHandler(this.trackBarFirstTemp_Scroll);
-            // 
-            // trackBarSecondTemp
-            // 
-            this.trackBarSecondTemp.BackColor = System.Drawing.SystemColors.Window;
-            resources.ApplyResources(this.trackBarSecondTemp, "trackBarSecondTemp");
-            this.trackBarSecondTemp.Name = "trackBarSecondTemp";
-            this.trackBarSecondTemp.Scroll += new System.EventHandler(this.trackBarSecondTemp_Scroll);
-            // 
-            // textBoxFirstTemp
-            // 
-            resources.ApplyResources(this.textBoxFirstTemp, "textBoxFirstTemp");
-            this.textBoxFirstTemp.Name = "textBoxFirstTemp";
-            // 
-            // textBoxLoadedWeight
-            // 
-            resources.ApplyResources(this.textBoxLoadedWeight, "textBoxLoadedWeight");
-            this.textBoxLoadedWeight.Name = "textBoxLoadedWeight";
-            // 
-            // textBoxSecondTemp
-            // 
-            resources.ApplyResources(this.textBoxSecondTemp, "textBoxSecondTemp");
-            this.textBoxSecondTemp.Name = "textBoxSecondTemp";
-            // 
-            // labelFirstTemp
-            // 
-            resources.ApplyResources(this.labelFirstTemp, "labelFirstTemp");
-            this.labelFirstTemp.Name = "labelFirstTemp";
-            // 
-            // labelSecondTemp
-            // 
-            resources.ApplyResources(this.labelSecondTemp, "labelSecondTemp");
-            this.labelSecondTemp.Name = "labelSecondTemp";
-            // 
-            // labelLoadedWeight
-            // 
-            resources.ApplyResources(this.labelLoadedWeight, "labelLoadedWeight");
-            this.labelLoadedWeight.Name = "labelLoadedWeight";
-            // 
-            // groupBoxControlEngine
-            // 
-            this.groupBoxControlEngine.Controls.Add(this.buttonControlEngineStart);
-            this.groupBoxControlEngine.Controls.Add(this.buttonControlEngineStop);
-            this.groupBoxControlEngine.Controls.Add(this.buttonControlEngineSetValues);
-            this.groupBoxControlEngine.Controls.Add(this.trackBarControlEngineRPM);
-            this.groupBoxControlEngine.Controls.Add(this.labelControlEngineRPM);
-            this.groupBoxControlEngine.Controls.Add(this.numericUpDownControlEngineRPM);
-            this.groupBoxControlEngine.Controls.Add(this.labelControlEngineSpeed);
-            this.groupBoxControlEngine.Controls.Add(this.textBoxControlEngineVoltage);
-            this.groupBoxControlEngine.Controls.Add(this.labelControlEngineVoltage);
-            resources.ApplyResources(this.groupBoxControlEngine, "groupBoxControlEngine");
-            this.groupBoxControlEngine.Name = "groupBoxControlEngine";
-            this.groupBoxControlEngine.TabStop = false;
-            // 
-            // groupBoxControlVents
-            // 
-            resources.ApplyResources(this.groupBoxControlVents, "groupBoxControlVents");
-            this.groupBoxControlVents.Name = "groupBoxControlVents";
-            this.groupBoxControlVents.TabStop = false;
-            // 
-            // groupBoxControlLoadedWeight
-            // 
-            resources.ApplyResources(this.groupBoxControlLoadedWeight, "groupBoxControlLoadedWeight");
-            this.groupBoxControlLoadedWeight.Name = "groupBoxControlLoadedWeight";
-            this.groupBoxControlLoadedWeight.TabStop = false;
-            // 
-            // labelControlEngineVoltage
-            // 
-            resources.ApplyResources(this.labelControlEngineVoltage, "labelControlEngineVoltage");
-            this.labelControlEngineVoltage.Name = "labelControlEngineVoltage";
-            // 
-            // textBoxControlEngineVoltage
-            // 
-            resources.ApplyResources(this.textBoxControlEngineVoltage, "textBoxControlEngineVoltage");
-            this.textBoxControlEngineVoltage.Name = "textBoxControlEngineVoltage";
-            // 
-            // labelControlEngineSpeed
-            // 
-            resources.ApplyResources(this.labelControlEngineSpeed, "labelControlEngineSpeed");
-            this.labelControlEngineSpeed.Name = "labelControlEngineSpeed";
-            // 
-            // numericUpDownControlEngineRPM
-            // 
-            resources.ApplyResources(this.numericUpDownControlEngineRPM, "numericUpDownControlEngineRPM");
-            this.numericUpDownControlEngineRPM.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numericUpDownControlEngineRPM.Minimum = new decimal(new int[] {
-            300,
-            0,
-            0,
-            0});
-            this.numericUpDownControlEngineRPM.Name = "numericUpDownControlEngineRPM";
-            this.numericUpDownControlEngineRPM.Value = new decimal(new int[] {
-            300,
-            0,
-            0,
-            0});
-            this.numericUpDownControlEngineRPM.ValueChanged += new System.EventHandler(this.numericUpDownControlEngineRPM_ValueChanged);
-            // 
-            // labelControlEngineRPM
-            // 
-            resources.ApplyResources(this.labelControlEngineRPM, "labelControlEngineRPM");
-            this.labelControlEngineRPM.Name = "labelControlEngineRPM";
-            // 
-            // trackBarControlEngineRPM
-            // 
-            this.trackBarControlEngineRPM.BackColor = System.Drawing.SystemColors.Window;
-            resources.ApplyResources(this.trackBarControlEngineRPM, "trackBarControlEngineRPM");
-            this.trackBarControlEngineRPM.Maximum = 1000;
-            this.trackBarControlEngineRPM.Minimum = 300;
-            this.trackBarControlEngineRPM.Name = "trackBarControlEngineRPM";
-            this.trackBarControlEngineRPM.TickFrequency = 50;
-            this.trackBarControlEngineRPM.Value = 300;
-            this.trackBarControlEngineRPM.Scroll += new System.EventHandler(this.trackBarControlEngineRPM_Scroll);
-            // 
-            // buttonControlEngineSetValues
-            // 
-            resources.ApplyResources(this.buttonControlEngineSetValues, "buttonControlEngineSetValues");
-            this.buttonControlEngineSetValues.Name = "buttonControlEngineSetValues";
-            this.buttonControlEngineSetValues.UseVisualStyleBackColor = true;
-            this.buttonControlEngineSetValues.Click += new System.EventHandler(this.buttonControlEngineSetValues_Click);
-            // 
-            // buttonControlEngineStop
-            // 
-            resources.ApplyResources(this.buttonControlEngineStop, "buttonControlEngineStop");
-            this.buttonControlEngineStop.Name = "buttonControlEngineStop";
-            this.buttonControlEngineStop.UseVisualStyleBackColor = true;
-            this.buttonControlEngineStop.Click += new System.EventHandler(this.buttonControlEngineStop_Click);
-            // 
-            // buttonControlEngineStart
-            // 
-            resources.ApplyResources(this.buttonControlEngineStart, "buttonControlEngineStart");
-            this.buttonControlEngineStart.Name = "buttonControlEngineStart";
-            this.buttonControlEngineStart.UseVisualStyleBackColor = true;
-            this.buttonControlEngineStart.Click += new System.EventHandler(this.buttonControlEngineStart_Click);
+            resources.ApplyResources(this.buttonShowDebugInfo, "buttonShowDebugInfo");
+            this.buttonShowDebugInfo.Name = "buttonShowDebugInfo";
+            this.buttonShowDebugInfo.UseVisualStyleBackColor = true;
+            this.buttonShowDebugInfo.Click += new System.EventHandler(this.buttonShowDebugInfo_Click);
             // 
             // MainForm
             // 
@@ -655,6 +680,7 @@
             this.Name = "MainForm";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.Plan.ResumeLayout(false);
+            this.tableLayoutPanelRecordActions.ResumeLayout(false);
             this.tableLayoutPanelPlanValues.ResumeLayout(false);
             this.groupBoxTime.ResumeLayout(false);
             this.groupBoxTime.PerformLayout();
@@ -665,12 +691,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBarPlanEngineSpeed)).EndInit();
             this.groupBoxLoad.ResumeLayout(false);
             this.groupBoxLoad.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarLoadedWeight)).EndInit();
             this.groupBoxTempFirst.ResumeLayout(false);
             this.groupBoxTempFirst.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarFirstTemp)).EndInit();
             this.groupBoxTempSecond.ResumeLayout(false);
             this.groupBoxTempSecond.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarSecondTemp)).EndInit();
             this.tableLayoutPanelPlanControl.ResumeLayout(false);
             this.Control.ResumeLayout(false);
+            this.groupBoxControlEngine.ResumeLayout(false);
+            this.groupBoxControlEngine.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarControlEngineRPM)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownControlEngineRPM)).EndInit();
             this.tabControlControlPanel.ResumeLayout(false);
             this.groupBoxCurrentParameters.ResumeLayout(false);
             this.tableLayoutPanelParameters.ResumeLayout(false);
@@ -678,14 +711,7 @@
             this.groupBoxPlan.ResumeLayout(false);
             this.tableLayoutPanelPlan.ResumeLayout(false);
             this.tableLayoutPanelPlan.PerformLayout();
-            this.tableLayoutPanelRecordActions.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarLoadedWeight)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarFirstTemp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarSecondTemp)).EndInit();
-            this.groupBoxControlEngine.ResumeLayout(false);
-            this.groupBoxControlEngine.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownControlEngineRPM)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarControlEngineRPM)).EndInit();
+            this.DebugTab.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -766,6 +792,9 @@
         private System.Windows.Forms.Button buttonControlEngineStop;
         private System.Windows.Forms.Button buttonControlEngineSetValues;
         private System.Windows.Forms.Button buttonControlEngineStart;
+        private System.Windows.Forms.TabPage DebugTab;
+        private System.Windows.Forms.RichTextBox richTextBoxDebug;
+        private System.Windows.Forms.Button buttonShowDebugInfo;
     }
 }
 

@@ -1054,37 +1054,37 @@
     <value>№</value>
   </data>
   <data name="columnHeaderNumber.Width" type="System.Int32, mscorlib">
-    <value>40</value>
+    <value>54</value>
   </data>
   <data name="columnHeaderTime.Text" xml:space="preserve">
     <value>Час виконання</value>
   </data>
   <data name="columnHeaderTime.Width" type="System.Int32, mscorlib">
-    <value>142</value>
+    <value>139</value>
   </data>
   <data name="columnHeaderSpeed.Text" xml:space="preserve">
     <value>Швидкість</value>
   </data>
   <data name="columnHeaderSpeed.Width" type="System.Int32, mscorlib">
-    <value>112</value>
+    <value>102</value>
   </data>
   <data name="columnHeaderLoad.Text" xml:space="preserve">
     <value>Навантаження</value>
   </data>
   <data name="columnHeaderLoad.Width" type="System.Int32, mscorlib">
-    <value>112</value>
+    <value>119</value>
   </data>
   <data name="columnHeaderT1.Text" xml:space="preserve">
     <value>Температура першої камери</value>
   </data>
   <data name="columnHeaderT1.Width" type="System.Int32, mscorlib">
-    <value>205</value>
+    <value>175</value>
   </data>
   <data name="columnHeaderT2.Text" xml:space="preserve">
     <value>Температура другої камери</value>
   </data>
   <data name="columnHeaderT2.Width" type="System.Int32, mscorlib">
-    <value>182</value>
+    <value>207</value>
   </data>
   <data name="listViewPlanRecords.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -1475,6 +1475,81 @@
   </data>
   <data name="&gt;&gt;Charts.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="buttonShowDebugInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 18</value>
+  </data>
+  <data name="buttonShowDebugInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="buttonShowDebugInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="buttonShowDebugInfo.Text" xml:space="preserve">
+    <value>ShowDebug</value>
+  </data>
+  <data name="&gt;&gt;buttonShowDebugInfo.Name" xml:space="preserve">
+    <value>buttonShowDebugInfo</value>
+  </data>
+  <data name="&gt;&gt;buttonShowDebugInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonShowDebugInfo.Parent" xml:space="preserve">
+    <value>DebugTab</value>
+  </data>
+  <data name="&gt;&gt;buttonShowDebugInfo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="richTextBoxDebug.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 47</value>
+  </data>
+  <data name="richTextBoxDebug.Size" type="System.Drawing.Size, System.Drawing">
+    <value>796, 634</value>
+  </data>
+  <data name="richTextBoxDebug.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="richTextBoxDebug.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;richTextBoxDebug.Name" xml:space="preserve">
+    <value>richTextBoxDebug</value>
+  </data>
+  <data name="&gt;&gt;richTextBoxDebug.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;richTextBoxDebug.Parent" xml:space="preserve">
+    <value>DebugTab</value>
+  </data>
+  <data name="&gt;&gt;richTextBoxDebug.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="DebugTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="DebugTab.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="DebugTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>861, 735</value>
+  </data>
+  <data name="DebugTab.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="DebugTab.Text" xml:space="preserve">
+    <value>Debug</value>
+  </data>
+  <data name="&gt;&gt;DebugTab.Name" xml:space="preserve">
+    <value>DebugTab</value>
+  </data>
+  <data name="&gt;&gt;DebugTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DebugTab.Parent" xml:space="preserve">
+    <value>tabControlControlPanel</value>
+  </data>
+  <data name="&gt;&gt;DebugTab.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="tabControlControlPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Right</value>
