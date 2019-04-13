@@ -36,7 +36,7 @@
             this.buttonRecordUp = new System.Windows.Forms.Button();
             this.buttonRecordDown = new System.Windows.Forms.Button();
             this.tableLayoutPanelPlanValues = new System.Windows.Forms.TableLayoutPanel();
-            this.groupBoxGeneral = new System.Windows.Forms.GroupBox();
+            this.groupBoxSelected = new System.Windows.Forms.GroupBox();
             this.groupBoxTime = new System.Windows.Forms.GroupBox();
             this.labelPlanMinutes = new System.Windows.Forms.Label();
             this.labelPlanHours = new System.Windows.Forms.Label();
@@ -110,9 +110,15 @@
             this.labelControlEngineCurrentVoltage = new System.Windows.Forms.Label();
             this.textBoxControlEngineCurrentRPM = new System.Windows.Forms.TextBox();
             this.numericUpDownPlanEngineRPM = new System.Windows.Forms.NumericUpDown();
+            this.buttonApplyPlanRecordChanges = new System.Windows.Forms.Button();
+            this.trackBarPlanEngineRPM = new System.Windows.Forms.TrackBar();
+            this.labelPlanSelectedRecordNumber = new System.Windows.Forms.Label();
+            this.textBoxPlanSelectedRecordNumber = new System.Windows.Forms.TextBox();
+            this.buttonRejectPlanRecordChanges = new System.Windows.Forms.Button();
             this.Plan.SuspendLayout();
             this.tableLayoutPanelRecordActions.SuspendLayout();
             this.tableLayoutPanelPlanValues.SuspendLayout();
+            this.groupBoxSelected.SuspendLayout();
             this.groupBoxTime.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPlanMinutes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPlanHours)).BeginInit();
@@ -136,6 +142,7 @@
             this.groupBoxPlan.SuspendLayout();
             this.tableLayoutPanelPlan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPlanEngineRPM)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarPlanEngineRPM)).BeginInit();
             this.SuspendLayout();
             // 
             // Plan
@@ -184,7 +191,7 @@
             // tableLayoutPanelPlanValues
             // 
             resources.ApplyResources(this.tableLayoutPanelPlanValues, "tableLayoutPanelPlanValues");
-            this.tableLayoutPanelPlanValues.Controls.Add(this.groupBoxGeneral, 0, 0);
+            this.tableLayoutPanelPlanValues.Controls.Add(this.groupBoxSelected, 0, 0);
             this.tableLayoutPanelPlanValues.Controls.Add(this.groupBoxTime, 1, 0);
             this.tableLayoutPanelPlanValues.Controls.Add(this.groupBoxEngineSpeed, 0, 1);
             this.tableLayoutPanelPlanValues.Controls.Add(this.groupBoxLoad, 1, 1);
@@ -192,11 +199,15 @@
             this.tableLayoutPanelPlanValues.Controls.Add(this.groupBoxTempSecond, 1, 2);
             this.tableLayoutPanelPlanValues.Name = "tableLayoutPanelPlanValues";
             // 
-            // groupBoxGeneral
+            // groupBoxSelected
             // 
-            resources.ApplyResources(this.groupBoxGeneral, "groupBoxGeneral");
-            this.groupBoxGeneral.Name = "groupBoxGeneral";
-            this.groupBoxGeneral.TabStop = false;
+            this.groupBoxSelected.Controls.Add(this.buttonRejectPlanRecordChanges);
+            this.groupBoxSelected.Controls.Add(this.textBoxPlanSelectedRecordNumber);
+            this.groupBoxSelected.Controls.Add(this.labelPlanSelectedRecordNumber);
+            this.groupBoxSelected.Controls.Add(this.buttonApplyPlanRecordChanges);
+            resources.ApplyResources(this.groupBoxSelected, "groupBoxSelected");
+            this.groupBoxSelected.Name = "groupBoxSelected";
+            this.groupBoxSelected.TabStop = false;
             // 
             // groupBoxTime
             // 
@@ -240,6 +251,7 @@
             // 
             // groupBoxEngineSpeed
             // 
+            this.groupBoxEngineSpeed.Controls.Add(this.trackBarPlanEngineRPM);
             this.groupBoxEngineSpeed.Controls.Add(this.numericUpDownPlanEngineRPM);
             this.groupBoxEngineSpeed.Controls.Add(this.labelPlanEngineVoltage);
             this.groupBoxEngineSpeed.Controls.Add(this.labelPlanEngineRPM);
@@ -715,6 +727,41 @@
             0});
             this.numericUpDownPlanEngineRPM.ValueChanged += new System.EventHandler(this.numericUpDownPlanEngineRPM_ValueChanged);
             // 
+            // buttonApplyPlanRecordChanges
+            // 
+            resources.ApplyResources(this.buttonApplyPlanRecordChanges, "buttonApplyPlanRecordChanges");
+            this.buttonApplyPlanRecordChanges.Name = "buttonApplyPlanRecordChanges";
+            this.buttonApplyPlanRecordChanges.UseVisualStyleBackColor = true;
+            this.buttonApplyPlanRecordChanges.Click += new System.EventHandler(this.buttonApplyPlanRecordChanges_Click);
+            // 
+            // trackBarPlanEngineRPM
+            // 
+            this.trackBarPlanEngineRPM.BackColor = System.Drawing.SystemColors.Window;
+            resources.ApplyResources(this.trackBarPlanEngineRPM, "trackBarPlanEngineRPM");
+            this.trackBarPlanEngineRPM.Maximum = 1000;
+            this.trackBarPlanEngineRPM.Minimum = 300;
+            this.trackBarPlanEngineRPM.Name = "trackBarPlanEngineRPM";
+            this.trackBarPlanEngineRPM.TickFrequency = 50;
+            this.trackBarPlanEngineRPM.Value = 300;
+            this.trackBarPlanEngineRPM.ValueChanged += new System.EventHandler(this.trackBarPlanEngineRPM_ValueChanged);
+            // 
+            // labelPlanSelectedRecordNumber
+            // 
+            resources.ApplyResources(this.labelPlanSelectedRecordNumber, "labelPlanSelectedRecordNumber");
+            this.labelPlanSelectedRecordNumber.Name = "labelPlanSelectedRecordNumber";
+            // 
+            // textBoxPlanSelectedRecordNumber
+            // 
+            resources.ApplyResources(this.textBoxPlanSelectedRecordNumber, "textBoxPlanSelectedRecordNumber");
+            this.textBoxPlanSelectedRecordNumber.Name = "textBoxPlanSelectedRecordNumber";
+            // 
+            // buttonRejectPlanRecordChanges
+            // 
+            resources.ApplyResources(this.buttonRejectPlanRecordChanges, "buttonRejectPlanRecordChanges");
+            this.buttonRejectPlanRecordChanges.Name = "buttonRejectPlanRecordChanges";
+            this.buttonRejectPlanRecordChanges.UseVisualStyleBackColor = true;
+            this.buttonRejectPlanRecordChanges.Click += new System.EventHandler(this.buttonRejectPlanRecordChanges_Click);
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -730,6 +777,8 @@
             this.Plan.ResumeLayout(false);
             this.tableLayoutPanelRecordActions.ResumeLayout(false);
             this.tableLayoutPanelPlanValues.ResumeLayout(false);
+            this.groupBoxSelected.ResumeLayout(false);
+            this.groupBoxSelected.PerformLayout();
             this.groupBoxTime.ResumeLayout(false);
             this.groupBoxTime.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPlanMinutes)).EndInit();
@@ -762,6 +811,7 @@
             this.tableLayoutPanelPlan.ResumeLayout(false);
             this.tableLayoutPanelPlan.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPlanEngineRPM)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarPlanEngineRPM)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -798,7 +848,7 @@
         private System.Windows.Forms.Button buttonLoadPlan;
         private System.Windows.Forms.Button buttonStopPlan;
         private System.Windows.Forms.Button buttonLoadFileFromPath;
-        private System.Windows.Forms.GroupBox groupBoxGeneral;
+        private System.Windows.Forms.GroupBox groupBoxSelected;
         private System.Windows.Forms.GroupBox groupBoxTime;
         private System.Windows.Forms.GroupBox groupBoxEngineSpeed;
         private System.Windows.Forms.GroupBox groupBoxLoad;
@@ -849,6 +899,11 @@
         private System.Windows.Forms.Label labelControlEngineCurrentRPM;
         private System.Windows.Forms.TextBox textBoxControlEngineCurrentRPM;
         private System.Windows.Forms.NumericUpDown numericUpDownPlanEngineRPM;
+        private System.Windows.Forms.Button buttonApplyPlanRecordChanges;
+        private System.Windows.Forms.TrackBar trackBarPlanEngineRPM;
+        private System.Windows.Forms.TextBox textBoxPlanSelectedRecordNumber;
+        private System.Windows.Forms.Label labelPlanSelectedRecordNumber;
+        private System.Windows.Forms.Button buttonRejectPlanRecordChanges;
     }
 }
 

@@ -136,13 +136,17 @@ namespace SMT_1
                 var time = TimeSpan.Parse(listViewPlanRecords.SelectedItems[0].SubItems[1].Text);
                 numericUpDownPlanHours.Value = time.Hours;
                 numericUpDownPlanMinutes.Value = time.Minutes;
+
+                textBoxPlanSelectedRecordNumber.Text = listViewPlanRecords.SelectedItems[0].SubItems[0].Text;
             }
             else
             {
-                numericUpDownControlEngineRPM.Value = numericUpDownControlEngineRPM.Minimum;
+                numericUpDownPlanEngineRPM.Value = numericUpDownPlanEngineRPM.Minimum;
                 trackBarFirstTemp.Value = trackBarFirstTemp.Minimum;
                 trackBarSecondTemp.Value = trackBarSecondTemp.Minimum;
                 trackBarLoadedWeight.Value = trackBarLoadedWeight.Minimum;
+
+                textBoxPlanSelectedRecordNumber.Text = "";
             }
         }
 
@@ -159,6 +163,57 @@ namespace SMT_1
         private void numericUpDownPlanEngineRPM_ValueChanged(object sender, EventArgs e)
         {
             textBoxPlanEngineVoltage.Text = EngineController.RpmToVoltage((int)numericUpDownPlanEngineRPM.Value).ToString();
+            trackBarPlanEngineRPM.Value = (int)numericUpDownPlanEngineRPM.Value;
+        }
+
+        private void buttonApplyPlanRecordChanges_Click(object sender, EventArgs e)
+        {
+            if (listViewPlanRecords.SelectedItems.Count > 0)
+            {
+                string timeHours = String.Format("{0}", numericUpDownPlanHours.Value).PadLeft(2, '0');
+                string timeMinutes = String.Format("{0}", numericUpDownPlanMinutes.Value).PadLeft(2, '0');
+
+                listViewPlanRecords.SelectedItems[0].SubItems[1].Text = String.Format("{0}:{1}", timeHours, timeMinutes);
+                listViewPlanRecords.SelectedItems[0].SubItems[2].Text = numericUpDownPlanEngineRPM.Value.ToString();
+                listViewPlanRecords.SelectedItems[0].SubItems[3].Text = trackBarLoadedWeight.Value.ToString();
+                listViewPlanRecords.SelectedItems[0].SubItems[4].Text = trackBarFirstTemp.Value.ToString();
+                listViewPlanRecords.SelectedItems[0].SubItems[5].Text = trackBarSecondTemp.Value.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Запис не обрано", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void trackBarPlanEngineRPM_ValueChanged(object sender, EventArgs e)
+        {
+            numericUpDownPlanEngineRPM.Text = trackBarPlanEngineRPM.Value.ToString();
+        }
+
+        private void buttonRejectPlanRecordChanges_Click(object sender, EventArgs e)
+        {
+            if (listViewPlanRecords.SelectedItems.Count > 0)
+            {
+                numericUpDownPlanEngineRPM.Value = int.Parse(listViewPlanRecords.SelectedItems[0].SubItems[2].Text);
+                trackBarFirstTemp.Value = int.Parse(listViewPlanRecords.SelectedItems[0].SubItems[4].Text);
+                trackBarSecondTemp.Value = int.Parse(listViewPlanRecords.SelectedItems[0].SubItems[5].Text);
+                trackBarLoadedWeight.Value = int.Parse(listViewPlanRecords.SelectedItems[0].SubItems[3].Text);
+
+                var time = TimeSpan.Parse(listViewPlanRecords.SelectedItems[0].SubItems[1].Text);
+                numericUpDownPlanHours.Value = time.Hours;
+                numericUpDownPlanMinutes.Value = time.Minutes;
+
+                textBoxPlanSelectedRecordNumber.Text = listViewPlanRecords.SelectedItems[0].SubItems[0].Text;
+            }
+            else
+            {
+                numericUpDownPlanEngineRPM.Value = numericUpDownPlanEngineRPM.Minimum;
+                trackBarFirstTemp.Value = trackBarFirstTemp.Minimum;
+                trackBarSecondTemp.Value = trackBarSecondTemp.Minimum;
+                trackBarLoadedWeight.Value = trackBarLoadedWeight.Minimum;
+
+                textBoxPlanSelectedRecordNumber.Text = "";
+            }
         }
     }
 }
