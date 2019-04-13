@@ -215,6 +215,69 @@ namespace SMT_1
                 textBoxPlanSelectedRecordNumber.Text = "";
             }
         }
+
+        private void buttonRecordAdd_Click(object sender, EventArgs e)
+        {
+            // Getting last element of list
+            var r = Enumerable.Empty<ListViewItem>();
+
+            if (listViewPlanRecords.Items.Count > 0)
+                r = this.listViewPlanRecords.Items.OfType<ListViewItem>();
+
+            var last = r.LastOrDefault();
+
+            if (last != null)
+            {
+                string timeHours = String.Format("{0}", numericUpDownPlanHours.Value).PadLeft(2, '0');
+                string timeMinutes = String.Format("{0}", numericUpDownPlanMinutes.Value).PadLeft(2, '0');
+
+                string[] arr = { (int.Parse(last.SubItems[0].Text) + 1).ToString(), // index
+                                  String.Format("{0}:{1}", timeHours, timeMinutes), // time
+                                  numericUpDownPlanEngineRPM.Value.ToString(),      // rpm
+                                  trackBarLoadedWeight.Value.ToString(),            // loadedWeight
+                                  trackBarFirstTemp.Value.ToString(),               // temp1
+                                  trackBarSecondTemp.Value.ToString()};             // temp2
+
+                listViewPlanRecords.Items.Add(new ListViewItem(arr));
+            }
+        }
+
+        private void buttonRecordDelete_Click(object sender, EventArgs e)
+        {
+            if (listViewPlanRecords.SelectedItems.Count > 0)
+            {
+                listViewPlanRecords.Items.RemoveAt(int.Parse(listViewPlanRecords.SelectedItems[0].SubItems[0].Text));
+                MessageBox.Show("Видалено", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                //Change all indexes
+                int i = 0;
+                foreach(ListViewItem elem in listViewPlanRecords.Items)
+                {
+                    elem.Text = i.ToString();
+                    i++;
+                }
+
+                numericUpDownPlanEngineRPM.Value = numericUpDownPlanEngineRPM.Minimum;
+                trackBarFirstTemp.Value = trackBarFirstTemp.Minimum;
+                trackBarSecondTemp.Value = trackBarSecondTemp.Minimum;
+                trackBarLoadedWeight.Value = trackBarLoadedWeight.Minimum;
+                textBoxPlanSelectedRecordNumber.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Запис не вибрано", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void buttonRecordUp_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonRecordDown_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

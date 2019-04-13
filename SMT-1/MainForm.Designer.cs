@@ -169,24 +169,28 @@
             resources.ApplyResources(this.buttonRecordAdd, "buttonRecordAdd");
             this.buttonRecordAdd.Name = "buttonRecordAdd";
             this.buttonRecordAdd.UseVisualStyleBackColor = true;
+            this.buttonRecordAdd.Click += new System.EventHandler(this.buttonRecordAdd_Click);
             // 
             // buttonRecordDelete
             // 
             resources.ApplyResources(this.buttonRecordDelete, "buttonRecordDelete");
             this.buttonRecordDelete.Name = "buttonRecordDelete";
             this.buttonRecordDelete.UseVisualStyleBackColor = true;
+            this.buttonRecordDelete.Click += new System.EventHandler(this.buttonRecordDelete_Click);
             // 
             // buttonRecordUp
             // 
             resources.ApplyResources(this.buttonRecordUp, "buttonRecordUp");
             this.buttonRecordUp.Name = "buttonRecordUp";
             this.buttonRecordUp.UseVisualStyleBackColor = true;
+            this.buttonRecordUp.Click += new System.EventHandler(this.buttonRecordUp_Click);
             // 
             // buttonRecordDown
             // 
             resources.ApplyResources(this.buttonRecordDown, "buttonRecordDown");
             this.buttonRecordDown.Name = "buttonRecordDown";
             this.buttonRecordDown.UseVisualStyleBackColor = true;
+            this.buttonRecordDown.Click += new System.EventHandler(this.buttonRecordDown_Click);
             // 
             // tableLayoutPanelPlanValues
             // 
