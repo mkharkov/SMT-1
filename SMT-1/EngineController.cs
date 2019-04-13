@@ -40,11 +40,14 @@ namespace SMT_1
             RPM = 300;
         }
 
-
-
         private void CalculateVoltage()
         {
-            Voltage = RPM * 2;// CHANGE WHEN FORMULA WILL BE KNOWN
+            Voltage = RpmToVoltage(RPM);
+        }
+
+        public static decimal RpmToVoltage(int Rpm)
+        {
+            return Rpm * 2; // CHANGE WHEN FORMULA WILL BE KNOWN
         }
     }
 }
