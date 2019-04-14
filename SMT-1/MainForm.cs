@@ -246,8 +246,9 @@ namespace SMT_1
         {
             if (listViewPlanRecords.SelectedItems.Count > 0)
             {
-                listViewPlanRecords.Items.RemoveAt(int.Parse(listViewPlanRecords.SelectedItems[0].SubItems[0].Text));
-                MessageBox.Show("Видалено", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                int idx = int.Parse(listViewPlanRecords.SelectedItems[0].SubItems[0].Text);
+                listViewPlanRecords.Items.RemoveAt(idx);
+                MessageBox.Show(String.Format("Запис №{0} видалено\nСписок реорганізовано", idx), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 //Change all indexes
                 int i = 0;
@@ -271,12 +272,65 @@ namespace SMT_1
 
         private void buttonRecordUp_Click(object sender, EventArgs e)
         {
+            if (listViewPlanRecords.SelectedItems.Count > 0)
+            {
+                int idxA = listViewPlanRecords.SelectedItems[0].Index;
+                if (idxA == 0)
+                {
+                    MessageBox.Show("Запис на горі списку", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+                int idxB = idxA - 1;
+
+                ListViewItem itemA = listViewPlanRecords.Items[idxA];
+                ListViewItem itemB = listViewPlanRecords.Items[idxB];
+
+                listViewPlanRecords.Items.RemoveAt(idxA);
+                listViewPlanRecords.Items.RemoveAt(idxB);
+
+                string tempIdx = itemA.SubItems[0].Text;
+                itemA.SubItems[0].Text = itemB.SubItems[0].Text;
+                itemB.SubItems[0].Text = tempIdx;
+
+                listViewPlanRecords.Items.Insert(idxB, itemA);
+                listViewPlanRecords.Items.Insert(idxA, itemB);
+            }
+            else
+            {
+                MessageBox.Show("Запис не обрано", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
 
         }
 
         private void buttonRecordDown_Click(object sender, EventArgs e)
         {
+            if (listViewPlanRecords.SelectedItems.Count > 0)
+            {
+                int idxA = listViewPlanRecords.SelectedItems[0].Index;
+                if (idxA == listViewPlanRecords.Items.Count)
+                {
+                    MessageBox.Show("Запис внизу списку", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+                int idxB = idxA + 1;
 
+                ListViewItem itemA = listViewPlanRecords.Items[idxA];
+                ListViewItem itemB = listViewPlanRecords.Items[idxB];
+
+                listViewPlanRecords.Items.RemoveAt(idxB);
+                listViewPlanRecords.Items.RemoveAt(idxA);
+
+                string tempIdx = itemA.SubItems[0].Text;
+                itemA.SubItems[0].Text = itemB.SubItems[0].Text;
+                itemB.SubItems[0].Text = tempIdx;
+
+                listViewPlanRecords.Items.Insert(idxA, itemB);
+                listViewPlanRecords.Items.Insert(idxB, itemA);
+            }
+            else
+            {
+                MessageBox.Show("Запис не обрано", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }
