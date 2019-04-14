@@ -1,0 +1,2 @@
+time=00:01; speed=600; load=30; t1=20; t2=25
+time=00:02; speed=800; load=40; t1=40; t2=50

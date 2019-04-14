@@ -13,6 +13,8 @@ namespace SMT_1
     public partial class MainForm : Form
     {
         private EngineController engine;
+        private FileController fileRW;
+
         public MainForm()
         {
             InitializeComponent();
@@ -21,11 +23,14 @@ namespace SMT_1
         private void InitializeControllers()
         {
             engine = new EngineController();
+            fileRW = new FileController();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
             InitializeControllers();
+
+            openFileDialogPlan.FileName = "";
 
             textBoxT0.Text = "Degrees";
             textBoxRecordInExecutuion.Text = "План не вибрано";
@@ -51,11 +56,6 @@ namespace SMT_1
 
             textBoxControlEngineCurrentRPM.Text = engine.RPM.ToString();
             textBoxControlEngineCurrentVoltage.Text = ((int)engine.Voltage).ToString();
-        }
-
-        private void buttonLoadPlan_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void trackBarFirstTemp_ValueChanged(object sender, EventArgs e)
@@ -111,14 +111,26 @@ namespace SMT_1
         //SHOWING DEBUG INFO ABOUT STATE OF MAIN FORM
         private void buttonShowDebugInfo_Click(object sender, EventArgs e)
         {
-            richTextBoxDebug.Text = string.Format("Engine Info:\n" +
+            string dbg = string.Format("Engine Info:\n" +
                 "\tON: {0}\n" +
                 "\tRPM: {1}\n" +
                 "\tVoltage: {2}\n" +
                 "**************\n" +
-                "" +
-                "" +
-                "", engine.On, engine.RPM, engine.Voltage);
+                "File info:\n" +
+                "\tFileName: {3}\n" +
+                "**************\n" +
+                "", engine.On, engine.RPM, engine.Voltage, openFileDialogPlan.FileName);
+            if (fileRW.GetRecords().Count != 0)
+                dbg += "Records:\n";
+            foreach(PlanRecord pl in fileRW.GetRecords())
+            {
+                string timeHours = String.Format("{0}", pl.GetTime().Hours).PadLeft(2, '0');
+                string timeMinutes = String.Format("{0}", pl.GetTime().Minutes).PadLeft(2, '0');
+                dbg += String.Format("\ttime={0};speed={1};load={2};t1={3};t2={4};\n", String.Format("{0}:{1}", timeHours, timeMinutes), pl.GetSpeed(), pl.GetLoad(), pl.GetT1(), pl.GetT2());
+            }
+            if (fileRW.GetRecords().Count != 0)
+                dbg += "**************\n";
+            richTextBoxDebug.Text = dbg;
         }
 
         private void listViewPlanRecords_SelectedIndexChanged(object sender, EventArgs e)
@@ -148,11 +160,6 @@ namespace SMT_1
 
                 textBoxPlanSelectedRecordNumber.Text = "";
             }
-        }
-
-        private void listViewPlanRecords_Click(object sender, EventArgs e)
-        {
-            //MessageBox.Show("Clicked");
         }
 
         private void buttonControlEngineRestore_Click(object sender, EventArgs e)
@@ -331,6 +338,22 @@ namespace SMT_1
             {
                 MessageBox.Show("Запис не обрано", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void buttonLoadFileFromPath_Click(object sender, EventArgs e)
+        {
+            if (openFileDialogPlan.ShowDialog() == DialogResult.OK)
+            {
+                if(!fileRW.SetFile(openFileDialogPlan.FileName))
+                {
+                    MessageBox.Show("Вміст файлу не відповідає заданому формату\nФормат:\n" + FileController.FileFormatString, "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+        }
+
+        private void buttonLoadPlan_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

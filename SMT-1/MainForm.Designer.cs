@@ -383,6 +383,7 @@
             resources.ApplyResources(this.buttonLoadPlan, "buttonLoadPlan");
             this.buttonLoadPlan.Name = "buttonLoadPlan";
             this.buttonLoadPlan.UseVisualStyleBackColor = true;
+            this.buttonLoadPlan.Click += new System.EventHandler(this.buttonLoadPlan_Click);
             // 
             // buttonStopPlan
             // 
@@ -395,6 +396,7 @@
             resources.ApplyResources(this.buttonLoadFileFromPath, "buttonLoadFileFromPath");
             this.buttonLoadFileFromPath.Name = "buttonLoadFileFromPath";
             this.buttonLoadFileFromPath.UseVisualStyleBackColor = true;
+            this.buttonLoadFileFromPath.Click += new System.EventHandler(this.buttonLoadFileFromPath_Click);
             // 
             // listViewPlanRecords
             // 
