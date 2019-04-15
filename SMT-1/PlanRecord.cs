@@ -74,5 +74,14 @@ namespace SMT_1
             }
             return false;
         }
+
+        public override string ToString()
+        {
+            string timeHours = String.Format("{0}", time.Hours).PadLeft(2, '0');
+            string timeMinutes = String.Format("{0}", time.Minutes).PadLeft(2, '0');
+            string timeStr = String.Format("{0}:{1}", timeHours, timeMinutes);
+
+            return String.Format("time={0}; speed={1}; load={2}; t1={3}; t2={4}\n", timeStr, speed, load, t1, t2);
+        }
     }
 }

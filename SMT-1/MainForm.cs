@@ -31,6 +31,9 @@ namespace SMT_1
             InitializeControllers();
 
             openFileDialogPlan.FileName = "";
+            openFileDialogPlan.Filter = "text files (*.txt)|*.txt";
+            saveFileDialogPlan.DefaultExt = ".txt";
+            saveFileDialogPlan.Filter = "text files (*.txt)|*.txt";
 
             textBoxT0.Text = "Degrees";
             textBoxRecordInExecutuion.Text = "План не вибрано";
@@ -44,7 +47,7 @@ namespace SMT_1
             textBoxSecondTemp.Text = trackBarSecondTemp.Value.ToString();
 
             // REMOVE THIS FOR. FOR TESTING PURPOSES ONLY
-            for(int i=0;i<100;i++)
+            for(int i=0;i<10;i++)
             {
                 string[] arr = { i.ToString(), "00:01", (i*4 + 300).ToString(), ((i/3)/2).ToString(), (((i*2)-i/3+i)/3).ToString(), (i+(i/2)-i/3-i/4).ToString() };
                 listViewPlanRecords.Items.Add(new ListViewItem(arr));
@@ -124,9 +127,10 @@ namespace SMT_1
                 dbg += "Records:\n";
             foreach(PlanRecord pl in fileRW.GetRecords())
             {
-                string timeHours = String.Format("{0}", pl.GetTime().Hours).PadLeft(2, '0');
-                string timeMinutes = String.Format("{0}", pl.GetTime().Minutes).PadLeft(2, '0');
-                dbg += String.Format("\ttime={0};speed={1};load={2};t1={3};t2={4};\n", String.Format("{0}:{1}", timeHours, timeMinutes), pl.GetSpeed(), pl.GetLoad(), pl.GetT1(), pl.GetT2());
+                //string timeHours = String.Format("{0}", pl.GetTime().Hours).PadLeft(2, '0');
+                //string timeMinutes = String.Format("{0}", pl.GetTime().Minutes).PadLeft(2, '0');
+                //dbg += String.Format("\ttime={0};speed={1};load={2};t1={3};t2={4};\n", String.Format("{0}:{1}", timeHours, timeMinutes), pl.GetSpeed(), pl.GetLoad(), pl.GetT1(), pl.GetT2());
+                dbg += pl.ToString();
             }
             if (fileRW.GetRecords().Count != 0)
                 dbg += "**************\n";
@@ -238,12 +242,14 @@ namespace SMT_1
                 string timeHours = String.Format("{0}", numericUpDownPlanHours.Value).PadLeft(2, '0');
                 string timeMinutes = String.Format("{0}", numericUpDownPlanMinutes.Value).PadLeft(2, '0');
 
-                string[] arr = { (int.Parse(last.SubItems[0].Text) + 1).ToString(), // index
-                                  String.Format("{0}:{1}", timeHours, timeMinutes), // time
-                                  numericUpDownPlanEngineRPM.Value.ToString(),      // rpm
-                                  trackBarLoadedWeight.Value.ToString(),            // loadedWeight
-                                  trackBarFirstTemp.Value.ToString(),               // temp1
-                                  trackBarSecondTemp.Value.ToString()};             // temp2
+                int newIdx = int.Parse(last.SubItems[0].Text) + 1;
+
+                string[] arr = { newIdx.ToString(), // index
+                                 String.Format("{0}:{1}", timeHours, timeMinutes), // time
+                                 numericUpDownPlanEngineRPM.Value.ToString(),      // rpm
+                                 trackBarLoadedWeight.Value.ToString(),            // loadedWeight
+                                 trackBarFirstTemp.Value.ToString(),               // temp1
+                                 trackBarSecondTemp.Value.ToString()};             // temp2
 
                 listViewPlanRecords.Items.Add(new ListViewItem(arr));
             }
@@ -351,9 +357,15 @@ namespace SMT_1
             }
         }
 
-        private void buttonLoadPlan_Click(object sender, EventArgs e)
+        private void buttonSavePlan_Click(object sender, EventArgs e)
         {
-
+            if (saveFileDialogPlan.ShowDialog() == DialogResult.OK)
+            {
+                if(!fileRW.SaveToFile(openFileDialogPlan.FileName))
+                {
+                    MessageBox.Show("Помилка при збереженні", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
         }
     }
 }

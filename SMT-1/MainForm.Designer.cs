@@ -60,7 +60,7 @@
             this.trackBarSecondTemp = new System.Windows.Forms.TrackBar();
             this.tableLayoutPanelPlanControl = new System.Windows.Forms.TableLayoutPanel();
             this.buttonStartSelected = new System.Windows.Forms.Button();
-            this.buttonLoadPlan = new System.Windows.Forms.Button();
+            this.buttonSavePlan = new System.Windows.Forms.Button();
             this.buttonStopPlan = new System.Windows.Forms.Button();
             this.buttonLoadFileFromPath = new System.Windows.Forms.Button();
             this.listViewPlanRecords = new System.Windows.Forms.ListView();
@@ -115,6 +115,7 @@
             this.labelPlanSelectedRecordNumber = new System.Windows.Forms.Label();
             this.textBoxPlanSelectedRecordNumber = new System.Windows.Forms.TextBox();
             this.buttonRejectPlanRecordChanges = new System.Windows.Forms.Button();
+            this.saveFileDialogPlan = new System.Windows.Forms.SaveFileDialog();
             this.Plan.SuspendLayout();
             this.tableLayoutPanelRecordActions.SuspendLayout();
             this.tableLayoutPanelPlanValues.SuspendLayout();
@@ -367,7 +368,7 @@
             // 
             resources.ApplyResources(this.tableLayoutPanelPlanControl, "tableLayoutPanelPlanControl");
             this.tableLayoutPanelPlanControl.Controls.Add(this.buttonStartSelected, 0, 0);
-            this.tableLayoutPanelPlanControl.Controls.Add(this.buttonLoadPlan, 0, 1);
+            this.tableLayoutPanelPlanControl.Controls.Add(this.buttonSavePlan, 0, 1);
             this.tableLayoutPanelPlanControl.Controls.Add(this.buttonStopPlan, 1, 0);
             this.tableLayoutPanelPlanControl.Controls.Add(this.buttonLoadFileFromPath, 1, 1);
             this.tableLayoutPanelPlanControl.Name = "tableLayoutPanelPlanControl";
@@ -378,12 +379,12 @@
             this.buttonStartSelected.Name = "buttonStartSelected";
             this.buttonStartSelected.UseVisualStyleBackColor = true;
             // 
-            // buttonLoadPlan
+            // buttonSavePlan
             // 
-            resources.ApplyResources(this.buttonLoadPlan, "buttonLoadPlan");
-            this.buttonLoadPlan.Name = "buttonLoadPlan";
-            this.buttonLoadPlan.UseVisualStyleBackColor = true;
-            this.buttonLoadPlan.Click += new System.EventHandler(this.buttonLoadPlan_Click);
+            resources.ApplyResources(this.buttonSavePlan, "buttonSavePlan");
+            this.buttonSavePlan.Name = "buttonSavePlan";
+            this.buttonSavePlan.UseVisualStyleBackColor = true;
+            this.buttonSavePlan.Click += new System.EventHandler(this.buttonSavePlan_Click);
             // 
             // buttonStopPlan
             // 
@@ -851,7 +852,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelPlanControl;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelPlanValues;
         private System.Windows.Forms.Button buttonStartSelected;
-        private System.Windows.Forms.Button buttonLoadPlan;
+        private System.Windows.Forms.Button buttonSavePlan;
         private System.Windows.Forms.Button buttonStopPlan;
         private System.Windows.Forms.Button buttonLoadFileFromPath;
         private System.Windows.Forms.GroupBox groupBoxSelected;
@@ -910,6 +911,7 @@
         private System.Windows.Forms.TextBox textBoxPlanSelectedRecordNumber;
         private System.Windows.Forms.Label labelPlanSelectedRecordNumber;
         private System.Windows.Forms.Button buttonRejectPlanRecordChanges;
+        private System.Windows.Forms.SaveFileDialog saveFileDialogPlan;
     }
 }
 

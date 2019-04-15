@@ -117,96 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;tableLayoutPanelRecordActions.Name" xml:space="preserve">
-    <value>tableLayoutPanelRecordActions</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelRecordActions.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelRecordActions.Parent" xml:space="preserve">
-    <value>Plan</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelRecordActions.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tableLayoutPanelRecordActions.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="buttonRecordAdd" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonRecordDelete" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonRecordUp" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonRecordDown" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Percent,25,Percent,25,Percent,25,Percent,25" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelPlanValues.Name" xml:space="preserve">
-    <value>tableLayoutPanelPlanValues</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelPlanValues.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelPlanValues.Parent" xml:space="preserve">
-    <value>Plan</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelPlanValues.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanelPlanValues.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="groupBoxSelected" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxTime" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxEngineSpeed" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxLoad" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxTempFirst" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxTempSecond" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,33.33333,Percent,33.33333,Percent,33.33333" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelPlanControl.Name" xml:space="preserve">
-    <value>tableLayoutPanelPlanControl</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelPlanControl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelPlanControl.Parent" xml:space="preserve">
-    <value>Plan</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelPlanControl.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanelPlanControl.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="buttonStartSelected" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonLoadPlan" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonStopPlan" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="buttonLoadFileFromPath" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="&gt;&gt;listViewPlanRecords.Name" xml:space="preserve">
-    <value>listViewPlanRecords</value>
-  </data>
-  <data name="&gt;&gt;listViewPlanRecords.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;listViewPlanRecords.Parent" xml:space="preserve">
-    <value>Plan</value>
-  </data>
-  <data name="&gt;&gt;listViewPlanRecords.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Plan.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="Plan.Size" type="System.Drawing.Size, System.Drawing">
-    <value>861, 735</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Plan.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="Plan.Text" xml:space="preserve">
-    <value>План</value>
-  </data>
-  <data name="&gt;&gt;Plan.Name" xml:space="preserve">
-    <value>Plan</value>
-  </data>
-  <data name="&gt;&gt;Plan.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Plan.Parent" xml:space="preserve">
-    <value>tabControlControlPanel</value>
-  </data>
-  <data name="&gt;&gt;Plan.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="tableLayoutPanelRecordActions.ColumnCount" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="buttonRecordAdd.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="buttonRecordAdd.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
   </data>
@@ -342,104 +261,17 @@
   <data name="tableLayoutPanelPlanValues.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;groupBoxSelected.Name" xml:space="preserve">
-    <value>groupBoxSelected</value>
+  <data name="buttonRejectPlanRecordChanges.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 52</value>
   </data>
-  <data name="&gt;&gt;groupBoxSelected.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="buttonRejectPlanRecordChanges.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 23</value>
   </data>
-  <data name="&gt;&gt;groupBoxSelected.Parent" xml:space="preserve">
-    <value>tableLayoutPanelPlanValues</value>
-  </data>
-  <data name="&gt;&gt;groupBoxSelected.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;groupBoxTime.Name" xml:space="preserve">
-    <value>groupBoxTime</value>
-  </data>
-  <data name="&gt;&gt;groupBoxTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxTime.Parent" xml:space="preserve">
-    <value>tableLayoutPanelPlanValues</value>
-  </data>
-  <data name="&gt;&gt;groupBoxTime.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;groupBoxEngineSpeed.Name" xml:space="preserve">
-    <value>groupBoxEngineSpeed</value>
-  </data>
-  <data name="&gt;&gt;groupBoxEngineSpeed.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxEngineSpeed.Parent" xml:space="preserve">
-    <value>tableLayoutPanelPlanValues</value>
-  </data>
-  <data name="&gt;&gt;groupBoxEngineSpeed.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;groupBoxLoad.Name" xml:space="preserve">
-    <value>groupBoxLoad</value>
-  </data>
-  <data name="&gt;&gt;groupBoxLoad.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxLoad.Parent" xml:space="preserve">
-    <value>tableLayoutPanelPlanValues</value>
-  </data>
-  <data name="&gt;&gt;groupBoxLoad.ZOrder" xml:space="preserve">
+  <data name="buttonRejectPlanRecordChanges.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;groupBoxTempFirst.Name" xml:space="preserve">
-    <value>groupBoxTempFirst</value>
-  </data>
-  <data name="&gt;&gt;groupBoxTempFirst.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxTempFirst.Parent" xml:space="preserve">
-    <value>tableLayoutPanelPlanValues</value>
-  </data>
-  <data name="&gt;&gt;groupBoxTempFirst.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;groupBoxTempSecond.Name" xml:space="preserve">
-    <value>groupBoxTempSecond</value>
-  </data>
-  <data name="&gt;&gt;groupBoxTempSecond.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxTempSecond.Parent" xml:space="preserve">
-    <value>tableLayoutPanelPlanValues</value>
-  </data>
-  <data name="&gt;&gt;groupBoxTempSecond.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="tableLayoutPanelPlanValues.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 280</value>
-  </data>
-  <data name="tableLayoutPanelPlanValues.RowCount" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="tableLayoutPanelPlanValues.Size" type="System.Drawing.Size, System.Drawing">
-    <value>861, 261</value>
-  </data>
-  <data name="tableLayoutPanelPlanValues.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelPlanValues.Name" xml:space="preserve">
-    <value>tableLayoutPanelPlanValues</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelPlanValues.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelPlanValues.Parent" xml:space="preserve">
-    <value>Plan</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelPlanValues.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanelPlanValues.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="groupBoxSelected" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxTime" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxEngineSpeed" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxLoad" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxTempFirst" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxTempSecond" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,33.33333,Percent,33.33333,Percent,33.33333" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  <data name="buttonRejectPlanRecordChanges.Text" xml:space="preserve">
+    <value>Відмінити зміни</value>
   </data>
   <data name="&gt;&gt;buttonRejectPlanRecordChanges.Name" xml:space="preserve">
     <value>buttonRejectPlanRecordChanges</value>
@@ -453,6 +285,18 @@
   <data name="&gt;&gt;buttonRejectPlanRecordChanges.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="textBoxPlanSelectedRecordNumber.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBoxPlanSelectedRecordNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 19</value>
+  </data>
+  <data name="textBoxPlanSelectedRecordNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="textBoxPlanSelectedRecordNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
   <data name="&gt;&gt;textBoxPlanSelectedRecordNumber.Name" xml:space="preserve">
     <value>textBoxPlanSelectedRecordNumber</value>
   </data>
@@ -465,6 +309,21 @@
   <data name="&gt;&gt;textBoxPlanSelectedRecordNumber.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="labelPlanSelectedRecordNumber.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelPlanSelectedRecordNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 21</value>
+  </data>
+  <data name="labelPlanSelectedRecordNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 13</value>
+  </data>
+  <data name="labelPlanSelectedRecordNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="labelPlanSelectedRecordNumber.Text" xml:space="preserve">
+    <value>Номер обраного запису</value>
+  </data>
   <data name="&gt;&gt;labelPlanSelectedRecordNumber.Name" xml:space="preserve">
     <value>labelPlanSelectedRecordNumber</value>
   </data>
@@ -476,6 +335,18 @@
   </data>
   <data name="&gt;&gt;labelPlanSelectedRecordNumber.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="buttonApplyPlanRecordChanges.Location" type="System.Drawing.Point, System.Drawing">
+    <value>307, 52</value>
+  </data>
+  <data name="buttonApplyPlanRecordChanges.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 23</value>
+  </data>
+  <data name="buttonApplyPlanRecordChanges.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="buttonApplyPlanRecordChanges.Text" xml:space="preserve">
+    <value>Підтвердити зміни</value>
   </data>
   <data name="&gt;&gt;buttonApplyPlanRecordChanges.Name" xml:space="preserve">
     <value>buttonApplyPlanRecordChanges</value>
@@ -515,81 +386,6 @@
   </data>
   <data name="&gt;&gt;groupBoxSelected.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="&gt;&gt;labelPlanMinutes.Name" xml:space="preserve">
-    <value>labelPlanMinutes</value>
-  </data>
-  <data name="&gt;&gt;labelPlanMinutes.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelPlanMinutes.Parent" xml:space="preserve">
-    <value>groupBoxTime</value>
-  </data>
-  <data name="&gt;&gt;labelPlanMinutes.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;labelPlanHours.Name" xml:space="preserve">
-    <value>labelPlanHours</value>
-  </data>
-  <data name="&gt;&gt;labelPlanHours.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelPlanHours.Parent" xml:space="preserve">
-    <value>groupBoxTime</value>
-  </data>
-  <data name="&gt;&gt;labelPlanHours.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownPlanMinutes.Name" xml:space="preserve">
-    <value>numericUpDownPlanMinutes</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownPlanMinutes.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownPlanMinutes.Parent" xml:space="preserve">
-    <value>groupBoxTime</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownPlanMinutes.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownPlanHours.Name" xml:space="preserve">
-    <value>numericUpDownPlanHours</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownPlanHours.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownPlanHours.Parent" xml:space="preserve">
-    <value>groupBoxTime</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownPlanHours.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="groupBoxTime.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="groupBoxTime.Location" type="System.Drawing.Point, System.Drawing">
-    <value>433, 3</value>
-  </data>
-  <data name="groupBoxTime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>425, 81</value>
-  </data>
-  <data name="groupBoxTime.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="groupBoxTime.Text" xml:space="preserve">
-    <value>Час</value>
-  </data>
-  <data name="&gt;&gt;groupBoxTime.Name" xml:space="preserve">
-    <value>groupBoxTime</value>
-  </data>
-  <data name="&gt;&gt;groupBoxTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxTime.Parent" xml:space="preserve">
-    <value>tableLayoutPanelPlanValues</value>
-  </data>
-  <data name="&gt;&gt;groupBoxTime.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="labelPlanMinutes.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -687,6 +483,42 @@
   <data name="&gt;&gt;numericUpDownPlanHours.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="groupBoxTime.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="groupBoxTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>433, 3</value>
+  </data>
+  <data name="groupBoxTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>425, 81</value>
+  </data>
+  <data name="groupBoxTime.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupBoxTime.Text" xml:space="preserve">
+    <value>Час</value>
+  </data>
+  <data name="&gt;&gt;groupBoxTime.Name" xml:space="preserve">
+    <value>groupBoxTime</value>
+  </data>
+  <data name="&gt;&gt;groupBoxTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxTime.Parent" xml:space="preserve">
+    <value>tableLayoutPanelPlanValues</value>
+  </data>
+  <data name="&gt;&gt;groupBoxTime.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="trackBarPlanEngineRPM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 22</value>
+  </data>
+  <data name="trackBarPlanEngineRPM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>243, 45</value>
+  </data>
+  <data name="trackBarPlanEngineRPM.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
   <data name="&gt;&gt;trackBarPlanEngineRPM.Name" xml:space="preserve">
     <value>trackBarPlanEngineRPM</value>
   </data>
@@ -699,6 +531,15 @@
   <data name="&gt;&gt;trackBarPlanEngineRPM.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="numericUpDownPlanEngineRPM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>255, 12</value>
+  </data>
+  <data name="numericUpDownPlanEngineRPM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 20</value>
+  </data>
+  <data name="numericUpDownPlanEngineRPM.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
   <data name="&gt;&gt;numericUpDownPlanEngineRPM.Name" xml:space="preserve">
     <value>numericUpDownPlanEngineRPM</value>
   </data>
@@ -710,69 +551,6 @@
   </data>
   <data name="&gt;&gt;numericUpDownPlanEngineRPM.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="&gt;&gt;labelPlanEngineVoltage.Name" xml:space="preserve">
-    <value>labelPlanEngineVoltage</value>
-  </data>
-  <data name="&gt;&gt;labelPlanEngineVoltage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelPlanEngineVoltage.Parent" xml:space="preserve">
-    <value>groupBoxEngineSpeed</value>
-  </data>
-  <data name="&gt;&gt;labelPlanEngineVoltage.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;labelPlanEngineRPM.Name" xml:space="preserve">
-    <value>labelPlanEngineRPM</value>
-  </data>
-  <data name="&gt;&gt;labelPlanEngineRPM.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelPlanEngineRPM.Parent" xml:space="preserve">
-    <value>groupBoxEngineSpeed</value>
-  </data>
-  <data name="&gt;&gt;labelPlanEngineRPM.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;textBoxPlanEngineVoltage.Name" xml:space="preserve">
-    <value>textBoxPlanEngineVoltage</value>
-  </data>
-  <data name="&gt;&gt;textBoxPlanEngineVoltage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxPlanEngineVoltage.Parent" xml:space="preserve">
-    <value>groupBoxEngineSpeed</value>
-  </data>
-  <data name="&gt;&gt;textBoxPlanEngineVoltage.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="groupBoxEngineSpeed.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="groupBoxEngineSpeed.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 90</value>
-  </data>
-  <data name="groupBoxEngineSpeed.Size" type="System.Drawing.Size, System.Drawing">
-    <value>424, 81</value>
-  </data>
-  <data name="groupBoxEngineSpeed.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="groupBoxEngineSpeed.Text" xml:space="preserve">
-    <value>Швидкість двигуна</value>
-  </data>
-  <data name="&gt;&gt;groupBoxEngineSpeed.Name" xml:space="preserve">
-    <value>groupBoxEngineSpeed</value>
-  </data>
-  <data name="&gt;&gt;groupBoxEngineSpeed.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxEngineSpeed.Parent" xml:space="preserve">
-    <value>tableLayoutPanelPlanValues</value>
-  </data>
-  <data name="&gt;&gt;groupBoxEngineSpeed.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="labelPlanEngineVoltage.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -852,68 +630,32 @@
   <data name="&gt;&gt;textBoxPlanEngineVoltage.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;labelLoadedWeight.Name" xml:space="preserve">
-    <value>labelLoadedWeight</value>
-  </data>
-  <data name="&gt;&gt;labelLoadedWeight.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelLoadedWeight.Parent" xml:space="preserve">
-    <value>groupBoxLoad</value>
-  </data>
-  <data name="&gt;&gt;labelLoadedWeight.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;textBoxLoadedWeight.Name" xml:space="preserve">
-    <value>textBoxLoadedWeight</value>
-  </data>
-  <data name="&gt;&gt;textBoxLoadedWeight.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxLoadedWeight.Parent" xml:space="preserve">
-    <value>groupBoxLoad</value>
-  </data>
-  <data name="&gt;&gt;textBoxLoadedWeight.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;trackBarLoadedWeight.Name" xml:space="preserve">
-    <value>trackBarLoadedWeight</value>
-  </data>
-  <data name="&gt;&gt;trackBarLoadedWeight.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;trackBarLoadedWeight.Parent" xml:space="preserve">
-    <value>groupBoxLoad</value>
-  </data>
-  <data name="&gt;&gt;trackBarLoadedWeight.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="groupBoxLoad.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="groupBoxEngineSpeed.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="groupBoxLoad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>433, 90</value>
+  <data name="groupBoxEngineSpeed.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 90</value>
   </data>
-  <data name="groupBoxLoad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>425, 81</value>
+  <data name="groupBoxEngineSpeed.Size" type="System.Drawing.Size, System.Drawing">
+    <value>424, 81</value>
   </data>
-  <data name="groupBoxLoad.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="groupBoxEngineSpeed.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="groupBoxLoad.Text" xml:space="preserve">
-    <value>Навантаження</value>
+  <data name="groupBoxEngineSpeed.Text" xml:space="preserve">
+    <value>Швидкість двигуна</value>
   </data>
-  <data name="&gt;&gt;groupBoxLoad.Name" xml:space="preserve">
-    <value>groupBoxLoad</value>
+  <data name="&gt;&gt;groupBoxEngineSpeed.Name" xml:space="preserve">
+    <value>groupBoxEngineSpeed</value>
   </data>
-  <data name="&gt;&gt;groupBoxLoad.Type" xml:space="preserve">
+  <data name="&gt;&gt;groupBoxEngineSpeed.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;groupBoxLoad.Parent" xml:space="preserve">
+  <data name="&gt;&gt;groupBoxEngineSpeed.Parent" xml:space="preserve">
     <value>tableLayoutPanelPlanValues</value>
   </data>
-  <data name="&gt;&gt;groupBoxLoad.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;groupBoxEngineSpeed.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="labelLoadedWeight.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -987,68 +729,32 @@
   <data name="&gt;&gt;trackBarLoadedWeight.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;labelFirstTemp.Name" xml:space="preserve">
-    <value>labelFirstTemp</value>
-  </data>
-  <data name="&gt;&gt;labelFirstTemp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelFirstTemp.Parent" xml:space="preserve">
-    <value>groupBoxTempFirst</value>
-  </data>
-  <data name="&gt;&gt;labelFirstTemp.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;textBoxFirstTemp.Name" xml:space="preserve">
-    <value>textBoxFirstTemp</value>
-  </data>
-  <data name="&gt;&gt;textBoxFirstTemp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxFirstTemp.Parent" xml:space="preserve">
-    <value>groupBoxTempFirst</value>
-  </data>
-  <data name="&gt;&gt;textBoxFirstTemp.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;trackBarFirstTemp.Name" xml:space="preserve">
-    <value>trackBarFirstTemp</value>
-  </data>
-  <data name="&gt;&gt;trackBarFirstTemp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;trackBarFirstTemp.Parent" xml:space="preserve">
-    <value>groupBoxTempFirst</value>
-  </data>
-  <data name="&gt;&gt;trackBarFirstTemp.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="groupBoxTempFirst.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="groupBoxLoad.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="groupBoxTempFirst.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 177</value>
+  <data name="groupBoxLoad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>433, 90</value>
   </data>
-  <data name="groupBoxTempFirst.Size" type="System.Drawing.Size, System.Drawing">
-    <value>424, 81</value>
+  <data name="groupBoxLoad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>425, 81</value>
   </data>
-  <data name="groupBoxTempFirst.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="groupBoxLoad.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="groupBoxTempFirst.Text" xml:space="preserve">
-    <value>Температура першої камери</value>
+  <data name="groupBoxLoad.Text" xml:space="preserve">
+    <value>Навантаження</value>
   </data>
-  <data name="&gt;&gt;groupBoxTempFirst.Name" xml:space="preserve">
-    <value>groupBoxTempFirst</value>
+  <data name="&gt;&gt;groupBoxLoad.Name" xml:space="preserve">
+    <value>groupBoxLoad</value>
   </data>
-  <data name="&gt;&gt;groupBoxTempFirst.Type" xml:space="preserve">
+  <data name="&gt;&gt;groupBoxLoad.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;groupBoxTempFirst.Parent" xml:space="preserve">
+  <data name="&gt;&gt;groupBoxLoad.Parent" xml:space="preserve">
     <value>tableLayoutPanelPlanValues</value>
   </data>
-  <data name="&gt;&gt;groupBoxTempFirst.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;groupBoxLoad.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="labelFirstTemp.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1122,68 +828,32 @@
   <data name="&gt;&gt;trackBarFirstTemp.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;labelSecondTemp.Name" xml:space="preserve">
-    <value>labelSecondTemp</value>
-  </data>
-  <data name="&gt;&gt;labelSecondTemp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelSecondTemp.Parent" xml:space="preserve">
-    <value>groupBoxTempSecond</value>
-  </data>
-  <data name="&gt;&gt;labelSecondTemp.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;textBoxSecondTemp.Name" xml:space="preserve">
-    <value>textBoxSecondTemp</value>
-  </data>
-  <data name="&gt;&gt;textBoxSecondTemp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxSecondTemp.Parent" xml:space="preserve">
-    <value>groupBoxTempSecond</value>
-  </data>
-  <data name="&gt;&gt;textBoxSecondTemp.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;trackBarSecondTemp.Name" xml:space="preserve">
-    <value>trackBarSecondTemp</value>
-  </data>
-  <data name="&gt;&gt;trackBarSecondTemp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;trackBarSecondTemp.Parent" xml:space="preserve">
-    <value>groupBoxTempSecond</value>
-  </data>
-  <data name="&gt;&gt;trackBarSecondTemp.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="groupBoxTempSecond.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="groupBoxTempFirst.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="groupBoxTempSecond.Location" type="System.Drawing.Point, System.Drawing">
-    <value>433, 177</value>
+  <data name="groupBoxTempFirst.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 177</value>
   </data>
-  <data name="groupBoxTempSecond.Size" type="System.Drawing.Size, System.Drawing">
-    <value>425, 81</value>
+  <data name="groupBoxTempFirst.Size" type="System.Drawing.Size, System.Drawing">
+    <value>424, 81</value>
   </data>
-  <data name="groupBoxTempSecond.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="groupBoxTempFirst.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="groupBoxTempSecond.Text" xml:space="preserve">
-    <value>Температура другої камери</value>
+  <data name="groupBoxTempFirst.Text" xml:space="preserve">
+    <value>Температура першої камери</value>
   </data>
-  <data name="&gt;&gt;groupBoxTempSecond.Name" xml:space="preserve">
-    <value>groupBoxTempSecond</value>
+  <data name="&gt;&gt;groupBoxTempFirst.Name" xml:space="preserve">
+    <value>groupBoxTempFirst</value>
   </data>
-  <data name="&gt;&gt;groupBoxTempSecond.Type" xml:space="preserve">
+  <data name="&gt;&gt;groupBoxTempFirst.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;groupBoxTempSecond.Parent" xml:space="preserve">
+  <data name="&gt;&gt;groupBoxTempFirst.Parent" xml:space="preserve">
     <value>tableLayoutPanelPlanValues</value>
   </data>
-  <data name="&gt;&gt;groupBoxTempSecond.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="&gt;&gt;groupBoxTempFirst.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="labelSecondTemp.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1257,83 +927,62 @@
   <data name="&gt;&gt;trackBarSecondTemp.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="tableLayoutPanelPlanControl.ColumnCount" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="groupBoxTempSecond.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="&gt;&gt;buttonStartSelected.Name" xml:space="preserve">
-    <value>buttonStartSelected</value>
+  <data name="groupBoxTempSecond.Location" type="System.Drawing.Point, System.Drawing">
+    <value>433, 177</value>
   </data>
-  <data name="&gt;&gt;buttonStartSelected.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="groupBoxTempSecond.Size" type="System.Drawing.Size, System.Drawing">
+    <value>425, 81</value>
   </data>
-  <data name="&gt;&gt;buttonStartSelected.Parent" xml:space="preserve">
-    <value>tableLayoutPanelPlanControl</value>
+  <data name="groupBoxTempSecond.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="&gt;&gt;buttonStartSelected.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="groupBoxTempSecond.Text" xml:space="preserve">
+    <value>Температура другої камери</value>
   </data>
-  <data name="&gt;&gt;buttonLoadPlan.Name" xml:space="preserve">
-    <value>buttonLoadPlan</value>
+  <data name="&gt;&gt;groupBoxTempSecond.Name" xml:space="preserve">
+    <value>groupBoxTempSecond</value>
   </data>
-  <data name="&gt;&gt;buttonLoadPlan.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;groupBoxTempSecond.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;buttonLoadPlan.Parent" xml:space="preserve">
-    <value>tableLayoutPanelPlanControl</value>
+  <data name="&gt;&gt;groupBoxTempSecond.Parent" xml:space="preserve">
+    <value>tableLayoutPanelPlanValues</value>
   </data>
-  <data name="&gt;&gt;buttonLoadPlan.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;groupBoxTempSecond.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
-  <data name="&gt;&gt;buttonStopPlan.Name" xml:space="preserve">
-    <value>buttonStopPlan</value>
+  <data name="tableLayoutPanelPlanValues.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 280</value>
   </data>
-  <data name="&gt;&gt;buttonStopPlan.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonStopPlan.Parent" xml:space="preserve">
-    <value>tableLayoutPanelPlanControl</value>
-  </data>
-  <data name="&gt;&gt;buttonStopPlan.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;buttonLoadFileFromPath.Name" xml:space="preserve">
-    <value>buttonLoadFileFromPath</value>
-  </data>
-  <data name="&gt;&gt;buttonLoadFileFromPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonLoadFileFromPath.Parent" xml:space="preserve">
-    <value>tableLayoutPanelPlanControl</value>
-  </data>
-  <data name="&gt;&gt;buttonLoadFileFromPath.ZOrder" xml:space="preserve">
+  <data name="tableLayoutPanelPlanValues.RowCount" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="tableLayoutPanelPlanControl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 632</value>
+  <data name="tableLayoutPanelPlanValues.Size" type="System.Drawing.Size, System.Drawing">
+    <value>861, 261</value>
   </data>
-  <data name="tableLayoutPanelPlanControl.RowCount" type="System.Int32, mscorlib">
+  <data name="tableLayoutPanelPlanValues.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="tableLayoutPanelPlanControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>296, 100</value>
+  <data name="&gt;&gt;tableLayoutPanelPlanValues.Name" xml:space="preserve">
+    <value>tableLayoutPanelPlanValues</value>
   </data>
-  <data name="tableLayoutPanelPlanControl.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelPlanControl.Name" xml:space="preserve">
-    <value>tableLayoutPanelPlanControl</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelPlanControl.Type" xml:space="preserve">
+  <data name="&gt;&gt;tableLayoutPanelPlanValues.Type" xml:space="preserve">
     <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanelPlanControl.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tableLayoutPanelPlanValues.Parent" xml:space="preserve">
     <value>Plan</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanelPlanControl.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;tableLayoutPanelPlanValues.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="tableLayoutPanelPlanControl.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="buttonStartSelected" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonLoadPlan" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonStopPlan" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="buttonLoadFileFromPath" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  <data name="tableLayoutPanelPlanValues.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="groupBoxSelected" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxTime" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxEngineSpeed" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxLoad" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxTempFirst" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="groupBoxTempSecond" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,33.33333,Percent,33.33333,Percent,33.33333" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="tableLayoutPanelPlanControl.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="buttonStartSelected.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1362,31 +1011,31 @@
   <data name="&gt;&gt;buttonStartSelected.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="buttonLoadPlan.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="buttonSavePlan.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="buttonLoadPlan.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="buttonSavePlan.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 53</value>
   </data>
-  <data name="buttonLoadPlan.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="buttonSavePlan.Size" type="System.Drawing.Size, System.Drawing">
     <value>142, 44</value>
   </data>
-  <data name="buttonLoadPlan.TabIndex" type="System.Int32, mscorlib">
+  <data name="buttonSavePlan.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="buttonLoadPlan.Text" xml:space="preserve">
+  <data name="buttonSavePlan.Text" xml:space="preserve">
     <value>Зберігти план</value>
   </data>
-  <data name="&gt;&gt;buttonLoadPlan.Name" xml:space="preserve">
-    <value>buttonLoadPlan</value>
+  <data name="&gt;&gt;buttonSavePlan.Name" xml:space="preserve">
+    <value>buttonSavePlan</value>
   </data>
-  <data name="&gt;&gt;buttonLoadPlan.Type" xml:space="preserve">
+  <data name="&gt;&gt;buttonSavePlan.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;buttonLoadPlan.Parent" xml:space="preserve">
+  <data name="&gt;&gt;buttonSavePlan.Parent" xml:space="preserve">
     <value>tableLayoutPanelPlanControl</value>
   </data>
-  <data name="&gt;&gt;buttonLoadPlan.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;buttonSavePlan.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="buttonStopPlan.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -1443,26 +1092,32 @@
   <data name="&gt;&gt;buttonLoadFileFromPath.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="listViewPlanRecords.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="tableLayoutPanelPlanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 632</value>
   </data>
-  <data name="listViewPlanRecords.Size" type="System.Drawing.Size, System.Drawing">
-    <value>799, 249</value>
+  <data name="tableLayoutPanelPlanControl.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="listViewPlanRecords.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="tableLayoutPanelPlanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>296, 100</value>
   </data>
-  <data name="&gt;&gt;listViewPlanRecords.Name" xml:space="preserve">
-    <value>listViewPlanRecords</value>
+  <data name="tableLayoutPanelPlanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;listViewPlanRecords.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;tableLayoutPanelPlanControl.Name" xml:space="preserve">
+    <value>tableLayoutPanelPlanControl</value>
   </data>
-  <data name="&gt;&gt;listViewPlanRecords.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tableLayoutPanelPlanControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelPlanControl.Parent" xml:space="preserve">
     <value>Plan</value>
   </data>
-  <data name="&gt;&gt;listViewPlanRecords.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;tableLayoutPanelPlanControl.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanelPlanControl.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="buttonStartSelected" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonSavePlan" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonStopPlan" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="buttonLoadFileFromPath" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="columnHeaderNumber.Text" xml:space="preserve">
     <value>№</value>
@@ -1500,68 +1155,50 @@
   <data name="columnHeaderT2.Width" type="System.Int32, mscorlib">
     <value>168</value>
   </data>
-  <data name="&gt;&gt;groupBoxControlLoadedWeight.Name" xml:space="preserve">
-    <value>groupBoxControlLoadedWeight</value>
+  <data name="listViewPlanRecords.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="&gt;&gt;groupBoxControlLoadedWeight.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="listViewPlanRecords.Size" type="System.Drawing.Size, System.Drawing">
+    <value>799, 249</value>
   </data>
-  <data name="&gt;&gt;groupBoxControlLoadedWeight.Parent" xml:space="preserve">
-    <value>Control</value>
-  </data>
-  <data name="&gt;&gt;groupBoxControlLoadedWeight.ZOrder" xml:space="preserve">
+  <data name="listViewPlanRecords.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;groupBoxControlVents.Name" xml:space="preserve">
-    <value>groupBoxControlVents</value>
+  <data name="&gt;&gt;listViewPlanRecords.Name" xml:space="preserve">
+    <value>listViewPlanRecords</value>
   </data>
-  <data name="&gt;&gt;groupBoxControlVents.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;listViewPlanRecords.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;groupBoxControlVents.Parent" xml:space="preserve">
-    <value>Control</value>
+  <data name="&gt;&gt;listViewPlanRecords.Parent" xml:space="preserve">
+    <value>Plan</value>
   </data>
-  <data name="&gt;&gt;groupBoxControlVents.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;listViewPlanRecords.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="&gt;&gt;groupBoxControlEngine.Name" xml:space="preserve">
-    <value>groupBoxControlEngine</value>
-  </data>
-  <data name="&gt;&gt;groupBoxControlEngine.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxControlEngine.Parent" xml:space="preserve">
-    <value>Control</value>
-  </data>
-  <data name="&gt;&gt;groupBoxControlEngine.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="Control.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="Plan.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
   </data>
-  <data name="Control.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="Control.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="Plan.Size" type="System.Drawing.Size, System.Drawing">
     <value>861, 735</value>
   </data>
-  <data name="Control.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="Plan.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="Control.Text" xml:space="preserve">
-    <value>Управление</value>
+  <data name="Plan.Text" xml:space="preserve">
+    <value>План</value>
   </data>
-  <data name="&gt;&gt;Control.Name" xml:space="preserve">
-    <value>Control</value>
+  <data name="&gt;&gt;Plan.Name" xml:space="preserve">
+    <value>Plan</value>
   </data>
-  <data name="&gt;&gt;Control.Type" xml:space="preserve">
+  <data name="&gt;&gt;Plan.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Control.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Plan.Parent" xml:space="preserve">
     <value>tabControlControlPanel</value>
   </data>
-  <data name="&gt;&gt;Control.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;Plan.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="groupBoxControlLoadedWeight.Location" type="System.Drawing.Point, System.Drawing">
     <value>409, 199</value>
@@ -1611,161 +1248,17 @@
   <data name="&gt;&gt;groupBoxControlVents.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;groupBoxControlEngineCurrentParams.Name" xml:space="preserve">
-    <value>groupBoxControlEngineCurrentParams</value>
+  <data name="textBoxControlEngineCurrentRPM.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="&gt;&gt;groupBoxControlEngineCurrentParams.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="textBoxControlEngineCurrentRPM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 21</value>
   </data>
-  <data name="&gt;&gt;groupBoxControlEngineCurrentParams.Parent" xml:space="preserve">
-    <value>groupBoxControlEngine</value>
+  <data name="textBoxControlEngineCurrentRPM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
   </data>
-  <data name="&gt;&gt;groupBoxControlEngineCurrentParams.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;buttonControlEngineRestore.Name" xml:space="preserve">
-    <value>buttonControlEngineRestore</value>
-  </data>
-  <data name="&gt;&gt;buttonControlEngineRestore.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonControlEngineRestore.Parent" xml:space="preserve">
-    <value>groupBoxControlEngine</value>
-  </data>
-  <data name="&gt;&gt;buttonControlEngineRestore.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;buttonControlEngineStart.Name" xml:space="preserve">
-    <value>buttonControlEngineStart</value>
-  </data>
-  <data name="&gt;&gt;buttonControlEngineStart.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonControlEngineStart.Parent" xml:space="preserve">
-    <value>groupBoxControlEngine</value>
-  </data>
-  <data name="&gt;&gt;buttonControlEngineStart.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;buttonControlEngineStop.Name" xml:space="preserve">
-    <value>buttonControlEngineStop</value>
-  </data>
-  <data name="&gt;&gt;buttonControlEngineStop.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonControlEngineStop.Parent" xml:space="preserve">
-    <value>groupBoxControlEngine</value>
-  </data>
-  <data name="&gt;&gt;buttonControlEngineStop.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;buttonControlEngineSetValues.Name" xml:space="preserve">
-    <value>buttonControlEngineSetValues</value>
-  </data>
-  <data name="&gt;&gt;buttonControlEngineSetValues.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonControlEngineSetValues.Parent" xml:space="preserve">
-    <value>groupBoxControlEngine</value>
-  </data>
-  <data name="&gt;&gt;buttonControlEngineSetValues.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;trackBarControlEngineRPM.Name" xml:space="preserve">
-    <value>trackBarControlEngineRPM</value>
-  </data>
-  <data name="&gt;&gt;trackBarControlEngineRPM.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;trackBarControlEngineRPM.Parent" xml:space="preserve">
-    <value>groupBoxControlEngine</value>
-  </data>
-  <data name="&gt;&gt;trackBarControlEngineRPM.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;labelControlEngineRPM.Name" xml:space="preserve">
-    <value>labelControlEngineRPM</value>
-  </data>
-  <data name="&gt;&gt;labelControlEngineRPM.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelControlEngineRPM.Parent" xml:space="preserve">
-    <value>groupBoxControlEngine</value>
-  </data>
-  <data name="&gt;&gt;labelControlEngineRPM.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownControlEngineRPM.Name" xml:space="preserve">
-    <value>numericUpDownControlEngineRPM</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownControlEngineRPM.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownControlEngineRPM.Parent" xml:space="preserve">
-    <value>groupBoxControlEngine</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownControlEngineRPM.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;labelControlEngineSpeed.Name" xml:space="preserve">
-    <value>labelControlEngineSpeed</value>
-  </data>
-  <data name="&gt;&gt;labelControlEngineSpeed.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelControlEngineSpeed.Parent" xml:space="preserve">
-    <value>groupBoxControlEngine</value>
-  </data>
-  <data name="&gt;&gt;labelControlEngineSpeed.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;textBoxControlEngineVoltage.Name" xml:space="preserve">
-    <value>textBoxControlEngineVoltage</value>
-  </data>
-  <data name="&gt;&gt;textBoxControlEngineVoltage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxControlEngineVoltage.Parent" xml:space="preserve">
-    <value>groupBoxControlEngine</value>
-  </data>
-  <data name="&gt;&gt;textBoxControlEngineVoltage.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;labelControlEngineVoltage.Name" xml:space="preserve">
-    <value>labelControlEngineVoltage</value>
-  </data>
-  <data name="&gt;&gt;labelControlEngineVoltage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelControlEngineVoltage.Parent" xml:space="preserve">
-    <value>groupBoxControlEngine</value>
-  </data>
-  <data name="&gt;&gt;labelControlEngineVoltage.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="groupBoxControlEngine.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 6</value>
-  </data>
-  <data name="groupBoxControlEngine.Size" type="System.Drawing.Size, System.Drawing">
-    <value>389, 249</value>
-  </data>
-  <data name="groupBoxControlEngine.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="groupBoxControlEngine.Text" xml:space="preserve">
-    <value>Двигун</value>
-  </data>
-  <data name="&gt;&gt;groupBoxControlEngine.Name" xml:space="preserve">
-    <value>groupBoxControlEngine</value>
-  </data>
-  <data name="&gt;&gt;groupBoxControlEngine.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxControlEngine.Parent" xml:space="preserve">
-    <value>Control</value>
-  </data>
-  <data name="&gt;&gt;groupBoxControlEngine.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="textBoxControlEngineCurrentRPM.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
   </data>
   <data name="&gt;&gt;textBoxControlEngineCurrentRPM.Name" xml:space="preserve">
     <value>textBoxControlEngineCurrentRPM</value>
@@ -1779,6 +1272,24 @@
   <data name="&gt;&gt;textBoxControlEngineCurrentRPM.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="labelControlEngineCurrentVoltage.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelControlEngineCurrentVoltage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelControlEngineCurrentVoltage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 69</value>
+  </data>
+  <data name="labelControlEngineCurrentVoltage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 13</value>
+  </data>
+  <data name="labelControlEngineCurrentVoltage.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="labelControlEngineCurrentVoltage.Text" xml:space="preserve">
+    <value>Вольт</value>
+  </data>
   <data name="&gt;&gt;labelControlEngineCurrentVoltage.Name" xml:space="preserve">
     <value>labelControlEngineCurrentVoltage</value>
   </data>
@@ -1791,6 +1302,24 @@
   <data name="&gt;&gt;labelControlEngineCurrentVoltage.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="labelControlEngineCurrentRPM.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelControlEngineCurrentRPM.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelControlEngineCurrentRPM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 28</value>
+  </data>
+  <data name="labelControlEngineCurrentRPM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 13</value>
+  </data>
+  <data name="labelControlEngineCurrentRPM.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="labelControlEngineCurrentRPM.Text" xml:space="preserve">
+    <value>Об\хв</value>
+  </data>
   <data name="&gt;&gt;labelControlEngineCurrentRPM.Name" xml:space="preserve">
     <value>labelControlEngineCurrentRPM</value>
   </data>
@@ -1802,6 +1331,18 @@
   </data>
   <data name="&gt;&gt;labelControlEngineCurrentRPM.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="textBoxControlEngineCurrentVoltage.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBoxControlEngineCurrentVoltage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 62</value>
+  </data>
+  <data name="textBoxControlEngineCurrentVoltage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="textBoxControlEngineCurrentVoltage.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
   </data>
   <data name="&gt;&gt;textBoxControlEngineCurrentVoltage.Name" xml:space="preserve">
     <value>textBoxControlEngineCurrentVoltage</value>
@@ -1838,30 +1379,6 @@
   </data>
   <data name="&gt;&gt;groupBoxControlEngineCurrentParams.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="textBoxControlEngineCurrentVoltage.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="textBoxControlEngineCurrentVoltage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 62</value>
-  </data>
-  <data name="textBoxControlEngineCurrentVoltage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
-  </data>
-  <data name="textBoxControlEngineCurrentVoltage.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;textBoxControlEngineCurrentVoltage.Name" xml:space="preserve">
-    <value>textBoxControlEngineCurrentVoltage</value>
-  </data>
-  <data name="&gt;&gt;textBoxControlEngineCurrentVoltage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxControlEngineCurrentVoltage.Parent" xml:space="preserve">
-    <value>groupBoxControlEngineCurrentParams</value>
-  </data>
-  <data name="&gt;&gt;textBoxControlEngineCurrentVoltage.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="buttonControlEngineRestore.Location" type="System.Drawing.Point, System.Drawing">
     <value>289, 201</value>
@@ -2106,6 +1623,57 @@
   <data name="&gt;&gt;labelControlEngineVoltage.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
+  <data name="groupBoxControlEngine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="groupBoxControlEngine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>389, 249</value>
+  </data>
+  <data name="groupBoxControlEngine.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupBoxControlEngine.Text" xml:space="preserve">
+    <value>Двигун</value>
+  </data>
+  <data name="&gt;&gt;groupBoxControlEngine.Name" xml:space="preserve">
+    <value>groupBoxControlEngine</value>
+  </data>
+  <data name="&gt;&gt;groupBoxControlEngine.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxControlEngine.Parent" xml:space="preserve">
+    <value>Control</value>
+  </data>
+  <data name="&gt;&gt;groupBoxControlEngine.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Control.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="Control.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="Control.Size" type="System.Drawing.Size, System.Drawing">
+    <value>861, 735</value>
+  </data>
+  <data name="Control.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="Control.Text" xml:space="preserve">
+    <value>Управление</value>
+  </data>
+  <data name="&gt;&gt;Control.Name" xml:space="preserve">
+    <value>Control</value>
+  </data>
+  <data name="&gt;&gt;Control.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Control.Parent" xml:space="preserve">
+    <value>tabControlControlPanel</value>
+  </data>
+  <data name="&gt;&gt;Control.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="Charts.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
   </data>
@@ -2132,93 +1700,6 @@
   </data>
   <data name="&gt;&gt;Charts.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="&gt;&gt;DebugTab.Name" xml:space="preserve">
-    <value>DebugTab</value>
-  </data>
-  <data name="&gt;&gt;DebugTab.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DebugTab.Parent" xml:space="preserve">
-    <value>tabControlControlPanel</value>
-  </data>
-  <data name="&gt;&gt;DebugTab.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="tabControlControlPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="tabControlControlPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>415, 0</value>
-  </data>
-  <data name="tabControlControlPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>869, 761</value>
-  </data>
-  <data name="tabControlControlPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;tabControlControlPanel.Name" xml:space="preserve">
-    <value>tabControlControlPanel</value>
-  </data>
-  <data name="&gt;&gt;tabControlControlPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabControlControlPanel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tabControlControlPanel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;buttonShowDebugInfo.Name" xml:space="preserve">
-    <value>buttonShowDebugInfo</value>
-  </data>
-  <data name="&gt;&gt;buttonShowDebugInfo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonShowDebugInfo.Parent" xml:space="preserve">
-    <value>DebugTab</value>
-  </data>
-  <data name="&gt;&gt;buttonShowDebugInfo.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;richTextBoxDebug.Name" xml:space="preserve">
-    <value>richTextBoxDebug</value>
-  </data>
-  <data name="&gt;&gt;richTextBoxDebug.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;richTextBoxDebug.Parent" xml:space="preserve">
-    <value>DebugTab</value>
-  </data>
-  <data name="&gt;&gt;richTextBoxDebug.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="DebugTab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="DebugTab.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="DebugTab.Size" type="System.Drawing.Size, System.Drawing">
-    <value>861, 735</value>
-  </data>
-  <data name="DebugTab.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="DebugTab.Text" xml:space="preserve">
-    <value>Debug</value>
-  </data>
-  <data name="&gt;&gt;DebugTab.Name" xml:space="preserve">
-    <value>DebugTab</value>
-  </data>
-  <data name="&gt;&gt;DebugTab.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DebugTab.Parent" xml:space="preserve">
-    <value>tabControlControlPanel</value>
-  </data>
-  <data name="&gt;&gt;DebugTab.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="buttonShowDebugInfo.Location" type="System.Drawing.Point, System.Drawing">
     <value>33, 18</value>
@@ -2268,104 +1749,59 @@
   <data name="&gt;&gt;richTextBoxDebug.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanelParameters.Name" xml:space="preserve">
-    <value>tableLayoutPanelParameters</value>
+  <data name="DebugTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanelParameters.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="DebugTab.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanelParameters.Parent" xml:space="preserve">
-    <value>groupBoxCurrentParameters</value>
+  <data name="DebugTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>861, 735</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanelParameters.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="DebugTab.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="tableLayoutPanelParameters.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBoxT0" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelT0" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  <data name="DebugTab.Text" xml:space="preserve">
+    <value>Debug</value>
   </data>
-  <data name="groupBoxCurrentParameters.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
+  <data name="&gt;&gt;DebugTab.Name" xml:space="preserve">
+    <value>DebugTab</value>
   </data>
-  <data name="groupBoxCurrentParameters.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="&gt;&gt;DebugTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="groupBoxCurrentParameters.Size" type="System.Drawing.Size, System.Drawing">
-    <value>415, 532</value>
+  <data name="&gt;&gt;DebugTab.Parent" xml:space="preserve">
+    <value>tabControlControlPanel</value>
   </data>
-  <data name="groupBoxCurrentParameters.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="&gt;&gt;DebugTab.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="groupBoxCurrentParameters.Text" xml:space="preserve">
-    <value>Поточні параметри</value>
+  <data name="tabControlControlPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
   </data>
-  <data name="&gt;&gt;groupBoxCurrentParameters.Name" xml:space="preserve">
-    <value>groupBoxCurrentParameters</value>
+  <data name="tabControlControlPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>415, 0</value>
   </data>
-  <data name="&gt;&gt;groupBoxCurrentParameters.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="tabControlControlPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>869, 761</value>
   </data>
-  <data name="&gt;&gt;groupBoxCurrentParameters.Parent" xml:space="preserve">
+  <data name="tabControlControlPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tabControlControlPanel.Name" xml:space="preserve">
+    <value>tabControlControlPanel</value>
+  </data>
+  <data name="&gt;&gt;tabControlControlPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControlControlPanel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;groupBoxCurrentParameters.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;tabControlControlPanel.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="tableLayoutPanelParameters.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
-  </data>
-  <data name="&gt;&gt;textBoxT0.Name" xml:space="preserve">
-    <value>textBoxT0</value>
-  </data>
-  <data name="&gt;&gt;textBoxT0.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxT0.Parent" xml:space="preserve">
-    <value>tableLayoutPanelParameters</value>
-  </data>
-  <data name="&gt;&gt;textBoxT0.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;labelT0.Name" xml:space="preserve">
-    <value>labelT0</value>
-  </data>
-  <data name="&gt;&gt;labelT0.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelT0.Parent" xml:space="preserve">
-    <value>tableLayoutPanelParameters</value>
-  </data>
-  <data name="&gt;&gt;labelT0.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanelParameters.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tableLayoutPanelParameters.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 16</value>
-  </data>
-  <data name="tableLayoutPanelParameters.RowCount" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanelParameters.Size" type="System.Drawing.Size, System.Drawing">
-    <value>409, 513</value>
-  </data>
-  <data name="tableLayoutPanelParameters.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelParameters.Name" xml:space="preserve">
-    <value>tableLayoutPanelParameters</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelParameters.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelParameters.Parent" xml:space="preserve">
-    <value>groupBoxCurrentParameters</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelParameters.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanelParameters.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBoxT0" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelT0" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="textBoxT0.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -2418,176 +1854,65 @@
   <data name="&gt;&gt;labelT0.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanelPlan.Name" xml:space="preserve">
-    <value>tableLayoutPanelPlan</value>
+  <data name="tableLayoutPanelParameters.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanelPlan.Type" xml:space="preserve">
+  <data name="tableLayoutPanelParameters.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 16</value>
+  </data>
+  <data name="tableLayoutPanelParameters.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanelParameters.Size" type="System.Drawing.Size, System.Drawing">
+    <value>409, 513</value>
+  </data>
+  <data name="tableLayoutPanelParameters.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelParameters.Name" xml:space="preserve">
+    <value>tableLayoutPanelParameters</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelParameters.Type" xml:space="preserve">
     <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanelPlan.Parent" xml:space="preserve">
-    <value>groupBoxPlan</value>
+  <data name="&gt;&gt;tableLayoutPanelParameters.Parent" xml:space="preserve">
+    <value>groupBoxCurrentParameters</value>
   </data>
-  <data name="&gt;&gt;tableLayoutPanelPlan.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tableLayoutPanelParameters.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="tableLayoutPanelPlan.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBoxRecordInExecutuion" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBoxEndTime" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBoxRemainingTime" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelRecordInExecution" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelStartTime" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelEndTime" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelRemainingTime" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBoxStartTime" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,37.26415,Percent,62.73585" /&gt;&lt;Rows Styles="Percent,25,Percent,25,Percent,25,Percent,25" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  <data name="tableLayoutPanelParameters.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBoxT0" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelT0" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <data name="groupBoxPlan.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
+  <data name="groupBoxCurrentParameters.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
   </data>
-  <data name="groupBoxPlan.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 532</value>
+  <data name="groupBoxCurrentParameters.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="groupBoxPlan.Size" type="System.Drawing.Size, System.Drawing">
-    <value>290, 229</value>
+  <data name="groupBoxCurrentParameters.Size" type="System.Drawing.Size, System.Drawing">
+    <value>415, 532</value>
   </data>
-  <data name="groupBoxPlan.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="groupBoxCurrentParameters.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="groupBoxPlan.Text" xml:space="preserve">
-    <value>План</value>
+  <data name="groupBoxCurrentParameters.Text" xml:space="preserve">
+    <value>Поточні параметри</value>
   </data>
-  <data name="&gt;&gt;groupBoxPlan.Name" xml:space="preserve">
-    <value>groupBoxPlan</value>
+  <data name="&gt;&gt;groupBoxCurrentParameters.Name" xml:space="preserve">
+    <value>groupBoxCurrentParameters</value>
   </data>
-  <data name="&gt;&gt;groupBoxPlan.Type" xml:space="preserve">
+  <data name="&gt;&gt;groupBoxCurrentParameters.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;groupBoxPlan.Parent" xml:space="preserve">
+  <data name="&gt;&gt;groupBoxCurrentParameters.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;groupBoxPlan.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;groupBoxCurrentParameters.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="tableLayoutPanelPlan.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
-  </data>
-  <data name="&gt;&gt;textBoxRecordInExecutuion.Name" xml:space="preserve">
-    <value>textBoxRecordInExecutuion</value>
-  </data>
-  <data name="&gt;&gt;textBoxRecordInExecutuion.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxRecordInExecutuion.Parent" xml:space="preserve">
-    <value>tableLayoutPanelPlan</value>
-  </data>
-  <data name="&gt;&gt;textBoxRecordInExecutuion.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;textBoxEndTime.Name" xml:space="preserve">
-    <value>textBoxEndTime</value>
-  </data>
-  <data name="&gt;&gt;textBoxEndTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxEndTime.Parent" xml:space="preserve">
-    <value>tableLayoutPanelPlan</value>
-  </data>
-  <data name="&gt;&gt;textBoxEndTime.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;textBoxRemainingTime.Name" xml:space="preserve">
-    <value>textBoxRemainingTime</value>
-  </data>
-  <data name="&gt;&gt;textBoxRemainingTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxRemainingTime.Parent" xml:space="preserve">
-    <value>tableLayoutPanelPlan</value>
-  </data>
-  <data name="&gt;&gt;textBoxRemainingTime.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;labelRecordInExecution.Name" xml:space="preserve">
-    <value>labelRecordInExecution</value>
-  </data>
-  <data name="&gt;&gt;labelRecordInExecution.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelRecordInExecution.Parent" xml:space="preserve">
-    <value>tableLayoutPanelPlan</value>
-  </data>
-  <data name="&gt;&gt;labelRecordInExecution.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;labelStartTime.Name" xml:space="preserve">
-    <value>labelStartTime</value>
-  </data>
-  <data name="&gt;&gt;labelStartTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelStartTime.Parent" xml:space="preserve">
-    <value>tableLayoutPanelPlan</value>
-  </data>
-  <data name="&gt;&gt;labelStartTime.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;labelEndTime.Name" xml:space="preserve">
-    <value>labelEndTime</value>
-  </data>
-  <data name="&gt;&gt;labelEndTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelEndTime.Parent" xml:space="preserve">
-    <value>tableLayoutPanelPlan</value>
-  </data>
-  <data name="&gt;&gt;labelEndTime.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;labelRemainingTime.Name" xml:space="preserve">
-    <value>labelRemainingTime</value>
-  </data>
-  <data name="&gt;&gt;labelRemainingTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelRemainingTime.Parent" xml:space="preserve">
-    <value>tableLayoutPanelPlan</value>
-  </data>
-  <data name="&gt;&gt;labelRemainingTime.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;textBoxStartTime.Name" xml:space="preserve">
-    <value>textBoxStartTime</value>
-  </data>
-  <data name="&gt;&gt;textBoxStartTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxStartTime.Parent" xml:space="preserve">
-    <value>tableLayoutPanelPlan</value>
-  </data>
-  <data name="&gt;&gt;textBoxStartTime.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="tableLayoutPanelPlan.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tableLayoutPanelPlan.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 16</value>
-  </data>
-  <data name="tableLayoutPanelPlan.RowCount" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="tableLayoutPanelPlan.Size" type="System.Drawing.Size, System.Drawing">
-    <value>284, 210</value>
-  </data>
-  <data name="tableLayoutPanelPlan.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelPlan.Name" xml:space="preserve">
-    <value>tableLayoutPanelPlan</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelPlan.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelPlan.Parent" xml:space="preserve">
-    <value>groupBoxPlan</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelPlan.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanelPlan.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBoxRecordInExecutuion" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBoxEndTime" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBoxRemainingTime" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelRecordInExecution" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelStartTime" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelEndTime" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelRemainingTime" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBoxStartTime" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,37.26415,Percent,62.73585" /&gt;&lt;Rows Styles="Percent,25,Percent,25,Percent,25,Percent,25" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="textBoxRecordInExecutuion.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -2829,234 +2154,69 @@
   <data name="&gt;&gt;textBoxStartTime.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="tableLayoutPanelPlan.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanelPlan.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 16</value>
+  </data>
+  <data name="tableLayoutPanelPlan.RowCount" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tableLayoutPanelPlan.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 210</value>
+  </data>
+  <data name="tableLayoutPanelPlan.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelPlan.Name" xml:space="preserve">
+    <value>tableLayoutPanelPlan</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelPlan.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelPlan.Parent" xml:space="preserve">
+    <value>groupBoxPlan</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelPlan.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanelPlan.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBoxRecordInExecutuion" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBoxEndTime" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBoxRemainingTime" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelRecordInExecution" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelStartTime" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelEndTime" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelRemainingTime" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBoxStartTime" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,37.26415,Percent,62.73585" /&gt;&lt;Rows Styles="Percent,25,Percent,25,Percent,25,Percent,25" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="groupBoxPlan.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="groupBoxPlan.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 532</value>
+  </data>
+  <data name="groupBoxPlan.Size" type="System.Drawing.Size, System.Drawing">
+    <value>290, 229</value>
+  </data>
+  <data name="groupBoxPlan.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="groupBoxPlan.Text" xml:space="preserve">
+    <value>План</value>
+  </data>
+  <data name="&gt;&gt;groupBoxPlan.Name" xml:space="preserve">
+    <value>groupBoxPlan</value>
+  </data>
+  <data name="&gt;&gt;groupBoxPlan.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxPlan.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBoxPlan.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="openFileDialogPlan.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="labelControlEngineCurrentRPM.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelControlEngineCurrentRPM.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelControlEngineCurrentRPM.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 28</value>
-  </data>
-  <data name="labelControlEngineCurrentRPM.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 13</value>
-  </data>
-  <data name="labelControlEngineCurrentRPM.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="labelControlEngineCurrentRPM.Text" xml:space="preserve">
-    <value>Об\хв</value>
-  </data>
-  <data name="&gt;&gt;labelControlEngineCurrentRPM.Name" xml:space="preserve">
-    <value>labelControlEngineCurrentRPM</value>
-  </data>
-  <data name="&gt;&gt;labelControlEngineCurrentRPM.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelControlEngineCurrentRPM.Parent" xml:space="preserve">
-    <value>groupBoxControlEngineCurrentParams</value>
-  </data>
-  <data name="&gt;&gt;labelControlEngineCurrentRPM.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="labelControlEngineCurrentVoltage.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelControlEngineCurrentVoltage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="labelControlEngineCurrentVoltage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 69</value>
-  </data>
-  <data name="labelControlEngineCurrentVoltage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 13</value>
-  </data>
-  <data name="labelControlEngineCurrentVoltage.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="labelControlEngineCurrentVoltage.Text" xml:space="preserve">
-    <value>Вольт</value>
-  </data>
-  <data name="&gt;&gt;labelControlEngineCurrentVoltage.Name" xml:space="preserve">
-    <value>labelControlEngineCurrentVoltage</value>
-  </data>
-  <data name="&gt;&gt;labelControlEngineCurrentVoltage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelControlEngineCurrentVoltage.Parent" xml:space="preserve">
-    <value>groupBoxControlEngineCurrentParams</value>
-  </data>
-  <data name="&gt;&gt;labelControlEngineCurrentVoltage.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="textBoxControlEngineCurrentRPM.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="textBoxControlEngineCurrentRPM.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 21</value>
-  </data>
-  <data name="textBoxControlEngineCurrentRPM.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
-  </data>
-  <data name="textBoxControlEngineCurrentRPM.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;textBoxControlEngineCurrentRPM.Name" xml:space="preserve">
-    <value>textBoxControlEngineCurrentRPM</value>
-  </data>
-  <data name="&gt;&gt;textBoxControlEngineCurrentRPM.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxControlEngineCurrentRPM.Parent" xml:space="preserve">
-    <value>groupBoxControlEngineCurrentParams</value>
-  </data>
-  <data name="&gt;&gt;textBoxControlEngineCurrentRPM.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="numericUpDownPlanEngineRPM.Location" type="System.Drawing.Point, System.Drawing">
-    <value>255, 12</value>
-  </data>
-  <data name="numericUpDownPlanEngineRPM.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 20</value>
-  </data>
-  <data name="numericUpDownPlanEngineRPM.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownPlanEngineRPM.Name" xml:space="preserve">
-    <value>numericUpDownPlanEngineRPM</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownPlanEngineRPM.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownPlanEngineRPM.Parent" xml:space="preserve">
-    <value>groupBoxEngineSpeed</value>
-  </data>
-  <data name="&gt;&gt;numericUpDownPlanEngineRPM.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="buttonApplyPlanRecordChanges.Location" type="System.Drawing.Point, System.Drawing">
-    <value>307, 52</value>
-  </data>
-  <data name="buttonApplyPlanRecordChanges.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 23</value>
-  </data>
-  <data name="buttonApplyPlanRecordChanges.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="buttonApplyPlanRecordChanges.Text" xml:space="preserve">
-    <value>Підтвердити зміни</value>
-  </data>
-  <data name="&gt;&gt;buttonApplyPlanRecordChanges.Name" xml:space="preserve">
-    <value>buttonApplyPlanRecordChanges</value>
-  </data>
-  <data name="&gt;&gt;buttonApplyPlanRecordChanges.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonApplyPlanRecordChanges.Parent" xml:space="preserve">
-    <value>groupBoxSelected</value>
-  </data>
-  <data name="&gt;&gt;buttonApplyPlanRecordChanges.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="trackBarPlanEngineRPM.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 22</value>
-  </data>
-  <data name="trackBarPlanEngineRPM.Size" type="System.Drawing.Size, System.Drawing">
-    <value>243, 45</value>
-  </data>
-  <data name="trackBarPlanEngineRPM.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;trackBarPlanEngineRPM.Name" xml:space="preserve">
-    <value>trackBarPlanEngineRPM</value>
-  </data>
-  <data name="&gt;&gt;trackBarPlanEngineRPM.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;trackBarPlanEngineRPM.Parent" xml:space="preserve">
-    <value>groupBoxEngineSpeed</value>
-  </data>
-  <data name="&gt;&gt;trackBarPlanEngineRPM.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="labelPlanSelectedRecordNumber.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelPlanSelectedRecordNumber.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 21</value>
-  </data>
-  <data name="labelPlanSelectedRecordNumber.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 13</value>
-  </data>
-  <data name="labelPlanSelectedRecordNumber.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="labelPlanSelectedRecordNumber.Text" xml:space="preserve">
-    <value>Номер обраного запису</value>
-  </data>
-  <data name="&gt;&gt;labelPlanSelectedRecordNumber.Name" xml:space="preserve">
-    <value>labelPlanSelectedRecordNumber</value>
-  </data>
-  <data name="&gt;&gt;labelPlanSelectedRecordNumber.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelPlanSelectedRecordNumber.Parent" xml:space="preserve">
-    <value>groupBoxSelected</value>
-  </data>
-  <data name="&gt;&gt;labelPlanSelectedRecordNumber.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="textBoxPlanSelectedRecordNumber.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="textBoxPlanSelectedRecordNumber.Location" type="System.Drawing.Point, System.Drawing">
-    <value>141, 19</value>
-  </data>
-  <data name="textBoxPlanSelectedRecordNumber.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
-  </data>
-  <data name="textBoxPlanSelectedRecordNumber.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;textBoxPlanSelectedRecordNumber.Name" xml:space="preserve">
-    <value>textBoxPlanSelectedRecordNumber</value>
-  </data>
-  <data name="&gt;&gt;textBoxPlanSelectedRecordNumber.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxPlanSelectedRecordNumber.Parent" xml:space="preserve">
-    <value>groupBoxSelected</value>
-  </data>
-  <data name="&gt;&gt;textBoxPlanSelectedRecordNumber.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="buttonRejectPlanRecordChanges.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 52</value>
-  </data>
-  <data name="buttonRejectPlanRecordChanges.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 23</value>
-  </data>
-  <data name="buttonRejectPlanRecordChanges.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="buttonRejectPlanRecordChanges.Text" xml:space="preserve">
-    <value>Відмінити зміни</value>
-  </data>
-  <data name="&gt;&gt;buttonRejectPlanRecordChanges.Name" xml:space="preserve">
-    <value>buttonRejectPlanRecordChanges</value>
-  </data>
-  <data name="&gt;&gt;buttonRejectPlanRecordChanges.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonRejectPlanRecordChanges.Parent" xml:space="preserve">
-    <value>groupBoxSelected</value>
-  </data>
-  <data name="&gt;&gt;buttonRejectPlanRecordChanges.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
+  <metadata name="saveFileDialogPlan.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>174, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -3116,6 +2276,12 @@
   </data>
   <data name="&gt;&gt;openFileDialogPlan.Type" xml:space="preserve">
     <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;saveFileDialogPlan.Name" xml:space="preserve">
+    <value>saveFileDialogPlan</value>
+  </data>
+  <data name="&gt;&gt;saveFileDialogPlan.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MainForm</value>

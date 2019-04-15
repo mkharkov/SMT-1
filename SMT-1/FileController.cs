@@ -29,6 +29,21 @@ namespace SMT_1
             return false;
         }
 
+        public bool SaveToFile(string fileName)
+        {
+            try
+            {
+                using (TextWriter tw = new StreamWriter(fileName))
+                {
+                    foreach (PlanRecord pl in records)
+                        tw.WriteLine(pl.ToString());
+                }
+            } catch {
+                return false;
+            }
+            return true;
+        }
+
         private bool ParseAndValidate(string fileName)
         {
             foreach (string line in File.ReadAllLines(fileName))
