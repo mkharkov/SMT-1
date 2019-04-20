@@ -46,14 +46,6 @@ namespace SMT_1
             textBoxFirstTemp.Text = trackBarFirstTemp.Value.ToString();
             textBoxSecondTemp.Text = trackBarSecondTemp.Value.ToString();
 
-            // REMOVE THIS FOR. FOR TESTING PURPOSES ONLY
-            for(int i=0;i<10;i++)
-            {
-                string[] arr = { i.ToString(), "00:01", (i*4 + 300).ToString(), ((i/3)/2).ToString(), (((i*2)-i/3+i)/3).ToString(), (i+(i/2)-i/3-i/4).ToString() };
-                listViewPlanRecords.Items.Add(new ListViewItem(arr));
-            }
-            //REMOVE
-
             textBoxControlEngineVoltage.Text = EngineController.RpmToVoltage(trackBarControlEngineRPM.Value).ToString();
             numericUpDownControlEngineRPM.Value = trackBarControlEngineRPM.Value;
 
@@ -237,22 +229,23 @@ namespace SMT_1
 
             var last = r.LastOrDefault();
 
+            int newIdx = 0;
             if (last != null)
             {
-                string timeHours = String.Format("{0}", numericUpDownPlanHours.Value).PadLeft(2, '0');
-                string timeMinutes = String.Format("{0}", numericUpDownPlanMinutes.Value).PadLeft(2, '0');
+                newIdx = int.Parse(last.SubItems[0].Text) + 1;
+            }
 
-                int newIdx = int.Parse(last.SubItems[0].Text) + 1;
+            string timeHours = String.Format("{0}", numericUpDownPlanHours.Value).PadLeft(2, '0');
+            string timeMinutes = String.Format("{0}", numericUpDownPlanMinutes.Value).PadLeft(2, '0');
 
-                string[] arr = { newIdx.ToString(), // index
+            string[] arr = { newIdx.ToString(), // index
                                  String.Format("{0}:{1}", timeHours, timeMinutes), // time
                                  numericUpDownPlanEngineRPM.Value.ToString(),      // rpm
                                  trackBarLoadedWeight.Value.ToString(),            // loadedWeight
                                  trackBarFirstTemp.Value.ToString(),               // temp1
                                  trackBarSecondTemp.Value.ToString()};             // temp2
 
-                listViewPlanRecords.Items.Add(new ListViewItem(arr));
-            }
+            listViewPlanRecords.Items.Add(new ListViewItem(arr));
         }
 
         private void buttonRecordDelete_Click(object sender, EventArgs e)
@@ -320,7 +313,7 @@ namespace SMT_1
             if (listViewPlanRecords.SelectedItems.Count > 0)
             {
                 int idxA = listViewPlanRecords.SelectedItems[0].Index;
-                if (idxA == listViewPlanRecords.Items.Count)
+                if (idxA == listViewPlanRecords.Items.Count-1)
                 {
                     MessageBox.Show("Запис внизу списку", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
@@ -350,8 +343,21 @@ namespace SMT_1
         {
             if (openFileDialogPlan.ShowDialog() == DialogResult.OK)
             {
-                if(!fileRW.SetFile(openFileDialogPlan.FileName))
+                if(fileRW.LoadFromFile(openFileDialogPlan.FileName))
                 {
+                    listViewPlanRecords.Items.Clear();
+                    int idx = 0;
+                    foreach(PlanRecord pl in fileRW.GetRecords())
+                    {
+                        listViewPlanRecords.Items.Add(new ListViewItem( new string[] { idx.ToString(),
+                                                                                        pl.GetTimeStr(),
+                                                                                        pl.GetSpeed().ToString(),
+                                                                                        pl.GetLoad().ToString(),
+                                                                                        pl.GetT1().ToString(),
+                                                                                        pl.GetT2().ToString() } ));
+                        idx++;
+                    }
+                } else {
                     MessageBox.Show("Вміст файлу не відповідає заданому формату\nФормат:\n" + FileController.FileFormatString, "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
@@ -361,7 +367,17 @@ namespace SMT_1
         {
             if (saveFileDialogPlan.ShowDialog() == DialogResult.OK)
             {
-                if(!fileRW.SaveToFile(openFileDialogPlan.FileName))
+                List<string> list = new List<string>(listViewPlanRecords.Items.Count);
+                foreach(ListViewItem item in listViewPlanRecords.Items)
+                {
+                    list.Add(FileController.ApplyTemplate(item.SubItems[1].Text,
+                                                          item.SubItems[2].Text,
+                                                          item.SubItems[3].Text,
+                                                          item.SubItems[4].Text,
+                                                          item.SubItems[5].Text));
+                }
+
+                if (!fileRW.SaveToFile(saveFileDialogPlan.FileName, list))
                 {
                     MessageBox.Show("Помилка при збереженні", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
@@ -375,6 +391,12 @@ namespace SMT_1
 
 /*   For plan info box
 
+                // REMOVE THIS FOR. FOR TESTING PURPOSES ONLY
+            //for(int i=0;i<10;i++)
+            //{
+            //    string[] arr = { i.ToString(), "00:01", (i*4 + 300).ToString(), ((i/3)/2).ToString(), (((i*2)-i/3+i)/3).ToString(), (i+(i/2)-i/3-i/4).ToString() };
+            //    listViewPlanRecords.Items.Add(new ListViewItem(arr));
+            //}
 
 if (listViewPlanRecords.SelectedItems.Count > 0)
 {

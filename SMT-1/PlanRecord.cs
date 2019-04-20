@@ -29,6 +29,13 @@ namespace SMT_1
         public int GetT1() => t1;
         public int GetT2() => t2;
 
+        public string GetTimeStr()
+        {
+            string timeHours = String.Format("{0}", time.Hours).PadLeft(2, '0');
+            string timeMinutes = String.Format("{0}", time.Minutes).PadLeft(2, '0');
+            return String.Format("{0}:{1}", timeHours, timeMinutes);
+        }
+
         public bool SetTime(TimeSpan t)
         {
             time = t; // Можливо тут потрібна якась умова або обмеження максимуму часу
@@ -73,6 +80,15 @@ namespace SMT_1
                 return true;
             }
             return false;
+        }
+
+        public string[] ToValueArray()
+        {
+            string timeHours = String.Format("{0}", time.Hours).PadLeft(2, '0');
+            string timeMinutes = String.Format("{0}", time.Minutes).PadLeft(2, '0');
+            string timeStr = String.Format("{0}:{1}", timeHours, timeMinutes);
+
+            return new string[] { timeStr, speed.ToString(), load.ToString(), t1.ToString(), t2.ToString() };
         }
 
         public override string ToString()

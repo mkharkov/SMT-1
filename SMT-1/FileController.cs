@@ -5,20 +5,23 @@ using System.Text;
 using System.Threading.Tasks;
 
 using System.IO;
-using System.Collections.Generic;
 
 namespace SMT_1
 {
     public class FileController
     {
         public static string FileFormatString = "time=100; speed=600; load=30; t1=20; t2=25";
+        public static string ApplyTemplate(string time, string speed, string load, string t1, string t2)
+        {
+            return String.Format("time={0}; speed={1}; load={2}; t1={3}; t2={4}", time, speed, load, t1, t2);
+        }
 
-        private List<PlanRecord> records = new List<PlanRecord>();
-        public List<PlanRecord> GetRecords() => records;
+        private List<PlanRecord> buffer = new List<PlanRecord>();
+        public List<PlanRecord> GetRecords() => buffer;
 
         string filePath = "";
         public string GetFilePath() => filePath;
-        public bool SetFile(string fileName)
+        public bool LoadFromFile(string fileName)
         {
             if (ParseAndValidate(fileName))
             {
@@ -29,14 +32,14 @@ namespace SMT_1
             return false;
         }
 
-        public bool SaveToFile(string fileName)
+        public bool SaveToFile(string fileName, List<string> data)
         {
             try
             {
                 using (TextWriter tw = new StreamWriter(fileName))
                 {
-                    foreach (PlanRecord pl in records)
-                        tw.WriteLine(pl.ToString());
+                    foreach (string s in data)
+                        tw.WriteLine(s);
                 }
             } catch {
                 return false;
@@ -91,7 +94,7 @@ namespace SMT_1
                             return false;
                     }
                 }
-                records.Add(pr);
+                buffer.Add(pr);
             }
             return true;
         }
