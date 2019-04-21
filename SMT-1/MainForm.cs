@@ -13,6 +13,7 @@ namespace SMT_1
     public partial class MainForm : Form
     {
         private EngineController engine;
+        private LoadController load;
         private FileController fileRW;
 
         public MainForm()
@@ -23,6 +24,7 @@ namespace SMT_1
         private void InitializeControllers()
         {
             engine = new EngineController();
+            load = new LoadController();
             fileRW = new FileController();
         }
 
@@ -111,10 +113,13 @@ namespace SMT_1
                 "\tRPM: {1}\n" +
                 "\tVoltage: {2}\n" +
                 "**************\n" +
+                "Load info:\n" +
+                "\tload: {4}\n" +
+                "**************\n" +
                 "File info:\n" +
                 "\tFileName: {3}\n" +
                 "**************\n" +
-                "", engine.On, engine.RPM, engine.Voltage, openFileDialogPlan.FileName);
+                "", engine.On, engine.RPM, engine.Voltage, openFileDialogPlan.FileName, load.Load);
             if (fileRW.GetRecords().Count != 0)
                 dbg += "Records:\n";
             foreach(PlanRecord pl in fileRW.GetRecords())
@@ -382,6 +387,26 @@ namespace SMT_1
                     MessageBox.Show("Помилка при збереженні", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
+        }
+
+        private void trackBarControlLoad_ValueChanged(object sender, EventArgs e)
+        {
+            numericUpDownControlLoad.Value = trackBarControlLoad.Value;
+        }
+
+        private void numericUpDownControlLoad_ValueChanged(object sender, EventArgs e)
+        {
+            trackBarControlLoad.Value = (int)numericUpDownControlLoad.Value;
+        }
+
+        private void buttonControlLoadSetValues_Click(object sender, EventArgs e)
+        {
+            load.Load = trackBarControlLoad.Value;
+        }
+
+        private void buttonControlLoadRestore_Click(object sender, EventArgs e)
+        {
+            trackBarControlLoad.Value = load.Load;
         }
     }
 }

@@ -22,10 +22,11 @@ namespace SMT_1
             }
             set
             {
-                if (value > 1000 || value < 300)
-                    return;
-                this.rpm = value;
-                CalculateVoltage();
+                if (value >= 300 && value <= 1000)
+                {
+                    this.rpm = value;
+                    CalculateVoltage();
+                }
             }
         }
 
