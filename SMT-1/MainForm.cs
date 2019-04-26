@@ -44,7 +44,7 @@ namespace SMT_1
             numericUpDownControlEngineRPM.Value = engine.RPM;
             textBoxPlanEngineVoltage.Text = EngineController.RpmToVoltage((int)numericUpDownControlEngineRPM.Value).ToString();
 
-            textBoxLoadedWeight.Text = trackBarLoadedWeight.Value.ToString();
+            numericUpDownPlanLoadedWeight.Value = trackBarLoadedWeight.Value;
             textBoxFirstTemp.Text = trackBarFirstTemp.Value.ToString();
             textBoxSecondTemp.Text = trackBarSecondTemp.Value.ToString();
 
@@ -62,7 +62,7 @@ namespace SMT_1
 
         private void trackBarLoadedWeight_ValueChanged(object sender, EventArgs e)
         {
-            textBoxLoadedWeight.Text = trackBarLoadedWeight.Value.ToString();
+            numericUpDownPlanLoadedWeight.Value = trackBarLoadedWeight.Value;
         }
 
         private void trackBarSecondTemp_ValueChanged(object sender, EventArgs e)
@@ -407,6 +407,11 @@ namespace SMT_1
         private void buttonControlLoadRestore_Click(object sender, EventArgs e)
         {
             trackBarControlLoad.Value = load.Load;
+        }
+
+        private void numericUpDownPlanLoadedWeight_ValueChanged(object sender, EventArgs e)
+        {
+            trackBarLoadedWeight.Value = (int)numericUpDownPlanLoadedWeight.Value;
         }
     }
 }

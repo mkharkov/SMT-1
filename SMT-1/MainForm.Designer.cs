@@ -54,7 +54,6 @@
             this.textBoxPlanEngineVoltage = new System.Windows.Forms.TextBox();
             this.groupBoxLoad = new System.Windows.Forms.GroupBox();
             this.labelLoadedWeight = new System.Windows.Forms.Label();
-            this.textBoxLoadedWeight = new System.Windows.Forms.TextBox();
             this.trackBarLoadedWeight = new System.Windows.Forms.TrackBar();
             this.groupBoxTempFirst = new System.Windows.Forms.GroupBox();
             this.labelFirstTemp = new System.Windows.Forms.Label();
@@ -78,6 +77,11 @@
             this.columnHeaderT2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Control = new System.Windows.Forms.TabPage();
             this.groupBoxControlLoadedWeight = new System.Windows.Forms.GroupBox();
+            this.buttonControlLoadSetValues = new System.Windows.Forms.Button();
+            this.buttonControlLoadRestore = new System.Windows.Forms.Button();
+            this.numericUpDownControlLoad = new System.Windows.Forms.NumericUpDown();
+            this.labelControlLoad = new System.Windows.Forms.Label();
+            this.trackBarControlLoad = new System.Windows.Forms.TrackBar();
             this.groupBoxControlVents = new System.Windows.Forms.GroupBox();
             this.groupBoxControlEngine = new System.Windows.Forms.GroupBox();
             this.groupBoxControlEngineCurrentParams = new System.Windows.Forms.GroupBox();
@@ -116,11 +120,7 @@
             this.textBoxStartTime = new System.Windows.Forms.TextBox();
             this.openFileDialogPlan = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialogPlan = new System.Windows.Forms.SaveFileDialog();
-            this.trackBarControlLoad = new System.Windows.Forms.TrackBar();
-            this.labelControlLoad = new System.Windows.Forms.Label();
-            this.numericUpDownControlLoad = new System.Windows.Forms.NumericUpDown();
-            this.buttonControlLoadRestore = new System.Windows.Forms.Button();
-            this.buttonControlLoadSetValues = new System.Windows.Forms.Button();
+            this.numericUpDownPlanLoadedWeight = new System.Windows.Forms.NumericUpDown();
             this.Plan.SuspendLayout();
             this.tableLayoutPanelRecordActions.SuspendLayout();
             this.tableLayoutPanelPlanValues.SuspendLayout();
@@ -140,6 +140,8 @@
             this.tableLayoutPanelPlanControl.SuspendLayout();
             this.Control.SuspendLayout();
             this.groupBoxControlLoadedWeight.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownControlLoad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarControlLoad)).BeginInit();
             this.groupBoxControlEngine.SuspendLayout();
             this.groupBoxControlEngineCurrentParams.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarControlEngineRPM)).BeginInit();
@@ -150,8 +152,7 @@
             this.tableLayoutPanelParameters.SuspendLayout();
             this.groupBoxPlan.SuspendLayout();
             this.tableLayoutPanelPlan.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarControlLoad)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownControlLoad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPlanLoadedWeight)).BeginInit();
             this.SuspendLayout();
             // 
             // Plan
@@ -346,8 +347,8 @@
             // 
             // groupBoxLoad
             // 
+            this.groupBoxLoad.Controls.Add(this.numericUpDownPlanLoadedWeight);
             this.groupBoxLoad.Controls.Add(this.labelLoadedWeight);
-            this.groupBoxLoad.Controls.Add(this.textBoxLoadedWeight);
             this.groupBoxLoad.Controls.Add(this.trackBarLoadedWeight);
             resources.ApplyResources(this.groupBoxLoad, "groupBoxLoad");
             this.groupBoxLoad.Name = "groupBoxLoad";
@@ -358,16 +359,11 @@
             resources.ApplyResources(this.labelLoadedWeight, "labelLoadedWeight");
             this.labelLoadedWeight.Name = "labelLoadedWeight";
             // 
-            // textBoxLoadedWeight
-            // 
-            resources.ApplyResources(this.textBoxLoadedWeight, "textBoxLoadedWeight");
-            this.textBoxLoadedWeight.Name = "textBoxLoadedWeight";
-            // 
             // trackBarLoadedWeight
             // 
             this.trackBarLoadedWeight.BackColor = System.Drawing.SystemColors.Window;
             resources.ApplyResources(this.trackBarLoadedWeight, "trackBarLoadedWeight");
-            this.trackBarLoadedWeight.Maximum = 50;
+            this.trackBarLoadedWeight.Maximum = 190;
             this.trackBarLoadedWeight.Name = "trackBarLoadedWeight";
             this.trackBarLoadedWeight.TickFrequency = 5;
             this.trackBarLoadedWeight.ValueChanged += new System.EventHandler(this.trackBarLoadedWeight_ValueChanged);
@@ -524,6 +520,45 @@
             resources.ApplyResources(this.groupBoxControlLoadedWeight, "groupBoxControlLoadedWeight");
             this.groupBoxControlLoadedWeight.Name = "groupBoxControlLoadedWeight";
             this.groupBoxControlLoadedWeight.TabStop = false;
+            // 
+            // buttonControlLoadSetValues
+            // 
+            resources.ApplyResources(this.buttonControlLoadSetValues, "buttonControlLoadSetValues");
+            this.buttonControlLoadSetValues.Name = "buttonControlLoadSetValues";
+            this.buttonControlLoadSetValues.UseVisualStyleBackColor = true;
+            this.buttonControlLoadSetValues.Click += new System.EventHandler(this.buttonControlLoadSetValues_Click);
+            // 
+            // buttonControlLoadRestore
+            // 
+            resources.ApplyResources(this.buttonControlLoadRestore, "buttonControlLoadRestore");
+            this.buttonControlLoadRestore.Name = "buttonControlLoadRestore";
+            this.buttonControlLoadRestore.UseVisualStyleBackColor = true;
+            this.buttonControlLoadRestore.Click += new System.EventHandler(this.buttonControlLoadRestore_Click);
+            // 
+            // numericUpDownControlLoad
+            // 
+            resources.ApplyResources(this.numericUpDownControlLoad, "numericUpDownControlLoad");
+            this.numericUpDownControlLoad.Maximum = new decimal(new int[] {
+            190,
+            0,
+            0,
+            0});
+            this.numericUpDownControlLoad.Name = "numericUpDownControlLoad";
+            this.numericUpDownControlLoad.ValueChanged += new System.EventHandler(this.numericUpDownControlLoad_ValueChanged);
+            // 
+            // labelControlLoad
+            // 
+            resources.ApplyResources(this.labelControlLoad, "labelControlLoad");
+            this.labelControlLoad.Name = "labelControlLoad";
+            // 
+            // trackBarControlLoad
+            // 
+            this.trackBarControlLoad.BackColor = System.Drawing.SystemColors.Window;
+            resources.ApplyResources(this.trackBarControlLoad, "trackBarControlLoad");
+            this.trackBarControlLoad.Maximum = 190;
+            this.trackBarControlLoad.Name = "trackBarControlLoad";
+            this.trackBarControlLoad.TickFrequency = 5;
+            this.trackBarControlLoad.ValueChanged += new System.EventHandler(this.trackBarControlLoad_ValueChanged);
             // 
             // groupBoxControlVents
             // 
@@ -782,44 +817,16 @@
             // 
             this.openFileDialogPlan.FileName = "openFileDialogPlan";
             // 
-            // trackBarControlLoad
+            // numericUpDownPlanLoadedWeight
             // 
-            this.trackBarControlLoad.BackColor = System.Drawing.SystemColors.Window;
-            resources.ApplyResources(this.trackBarControlLoad, "trackBarControlLoad");
-            this.trackBarControlLoad.Maximum = 50;
-            this.trackBarControlLoad.Name = "trackBarControlLoad";
-            this.trackBarControlLoad.TickFrequency = 5;
-            this.trackBarControlLoad.ValueChanged += new System.EventHandler(this.trackBarControlLoad_ValueChanged);
-            // 
-            // labelControlLoad
-            // 
-            resources.ApplyResources(this.labelControlLoad, "labelControlLoad");
-            this.labelControlLoad.Name = "labelControlLoad";
-            // 
-            // numericUpDownControlLoad
-            // 
-            resources.ApplyResources(this.numericUpDownControlLoad, "numericUpDownControlLoad");
-            this.numericUpDownControlLoad.Maximum = new decimal(new int[] {
-            50,
+            resources.ApplyResources(this.numericUpDownPlanLoadedWeight, "numericUpDownPlanLoadedWeight");
+            this.numericUpDownPlanLoadedWeight.Maximum = new decimal(new int[] {
+            190,
             0,
             0,
             0});
-            this.numericUpDownControlLoad.Name = "numericUpDownControlLoad";
-            this.numericUpDownControlLoad.ValueChanged += new System.EventHandler(this.numericUpDownControlLoad_ValueChanged);
-            // 
-            // buttonControlLoadRestore
-            // 
-            resources.ApplyResources(this.buttonControlLoadRestore, "buttonControlLoadRestore");
-            this.buttonControlLoadRestore.Name = "buttonControlLoadRestore";
-            this.buttonControlLoadRestore.UseVisualStyleBackColor = true;
-            this.buttonControlLoadRestore.Click += new System.EventHandler(this.buttonControlLoadRestore_Click);
-            // 
-            // buttonControlLoadSetValues
-            // 
-            resources.ApplyResources(this.buttonControlLoadSetValues, "buttonControlLoadSetValues");
-            this.buttonControlLoadSetValues.Name = "buttonControlLoadSetValues";
-            this.buttonControlLoadSetValues.UseVisualStyleBackColor = true;
-            this.buttonControlLoadSetValues.Click += new System.EventHandler(this.buttonControlLoadSetValues_Click);
+            this.numericUpDownPlanLoadedWeight.Name = "numericUpDownPlanLoadedWeight";
+            this.numericUpDownPlanLoadedWeight.ValueChanged += new System.EventHandler(this.numericUpDownPlanLoadedWeight_ValueChanged);
             // 
             // MainForm
             // 
@@ -859,6 +866,8 @@
             this.Control.ResumeLayout(false);
             this.groupBoxControlLoadedWeight.ResumeLayout(false);
             this.groupBoxControlLoadedWeight.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownControlLoad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarControlLoad)).EndInit();
             this.groupBoxControlEngine.ResumeLayout(false);
             this.groupBoxControlEngine.PerformLayout();
             this.groupBoxControlEngineCurrentParams.ResumeLayout(false);
@@ -873,8 +882,7 @@
             this.groupBoxPlan.ResumeLayout(false);
             this.tableLayoutPanelPlan.ResumeLayout(false);
             this.tableLayoutPanelPlan.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarControlLoad)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownControlLoad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPlanLoadedWeight)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -932,7 +940,6 @@
         private System.Windows.Forms.Button buttonRecordUp;
         private System.Windows.Forms.Button buttonRecordDown;
         private System.Windows.Forms.Label labelLoadedWeight;
-        private System.Windows.Forms.TextBox textBoxLoadedWeight;
         private System.Windows.Forms.TrackBar trackBarLoadedWeight;
         private System.Windows.Forms.Label labelFirstTemp;
         private System.Windows.Forms.TextBox textBoxFirstTemp;
@@ -973,6 +980,7 @@
         private System.Windows.Forms.NumericUpDown numericUpDownControlLoad;
         private System.Windows.Forms.Button buttonControlLoadSetValues;
         private System.Windows.Forms.Button buttonControlLoadRestore;
+        private System.Windows.Forms.NumericUpDown numericUpDownPlanLoadedWeight;
     }
 }
 

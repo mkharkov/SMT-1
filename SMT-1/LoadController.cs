@@ -18,7 +18,7 @@ namespace SMT_1
             }
             set
             {
-                if (value >= 0 && value <= 100)
+                if (value >= 0 && value <= 190)
                     load = value;
             }
         }
