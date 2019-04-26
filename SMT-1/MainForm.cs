@@ -409,9 +409,53 @@ namespace SMT_1
             trackBarControlLoad.Value = load.Load;
         }
 
+        private Dictionary<int, PlanRecord> Convert_ListViewItems_ToList()
+        {
+            Dictionary<int, PlanRecord> records = new Dictionary<int, PlanRecord>(listViewPlanRecords.Items.Count);
+
+            foreach (ListViewItem item in listViewPlanRecords.Items)
+            {
+                PlanRecord record = new PlanRecord();
+
+                record.TrustedSetData(TimeSpan.Parse(item.SubItems[1].Text),
+                                      int.Parse(item.SubItems[2].Text),
+                                      int.Parse(item.SubItems[3].Text),
+                                      int.Parse(item.SubItems[4].Text),
+                                      int.Parse(item.SubItems[5].Text));
+
+                records.Add(int.Parse(item.SubItems[0].Text), record);
+            }
+
+            return records;
+        }
+
         private void numericUpDownPlanLoadedWeight_ValueChanged(object sender, EventArgs e)
         {
             trackBarLoadedWeight.Value = (int)numericUpDownPlanLoadedWeight.Value;
+        }
+
+        private void buttonStartSelected_Click(object sender, EventArgs e)
+        {
+            if (listViewPlanRecords.SelectedItems.Count > 0)
+            {
+                Dictionary<int, PlanRecord> recordsToExecute = Convert_ListViewItems_ToList();
+                //Видалення записів, які не будуть виконуватись
+                int executeFromIdx = int.Parse(listViewPlanRecords.SelectedItems[0].SubItems[0].Text);
+                foreach(var toDelete in recordsToExecute.Where(kv => kv.Key < executeFromIdx).ToList())
+                {
+                    recordsToExecute.Remove(toDelete.Key);
+                }
+
+                // Тут потрібно буде створювати інший потік і передавати туди записи, які потрібно виконати
+
+            } else {
+                MessageBox.Show("Запис не обрано", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void buttonStopPlan_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

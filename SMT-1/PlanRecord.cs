@@ -23,6 +23,15 @@ namespace SMT_1
             t2 = 0;
         }
 
+        public void TrustedSetData(TimeSpan time, int speed, int load, int t1, int t2)
+        {
+            this.time = time;
+            this.speed = speed;
+            this.load = load;
+            this.t1 = t1;
+            this.t2 = t2;
+        }
+
         public TimeSpan GetTime() => time;
         public int GetSpeed() => speed;
         public int GetLoad() => load;

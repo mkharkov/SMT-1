@@ -438,6 +438,7 @@
             resources.ApplyResources(this.buttonStartSelected, "buttonStartSelected");
             this.buttonStartSelected.Name = "buttonStartSelected";
             this.buttonStartSelected.UseVisualStyleBackColor = true;
+            this.buttonStartSelected.Click += new System.EventHandler(this.buttonStartSelected_Click);
             // 
             // buttonSavePlan
             // 
@@ -451,6 +452,7 @@
             resources.ApplyResources(this.buttonStopPlan, "buttonStopPlan");
             this.buttonStopPlan.Name = "buttonStopPlan";
             this.buttonStopPlan.UseVisualStyleBackColor = true;
+            this.buttonStopPlan.Click += new System.EventHandler(this.buttonStopPlan_Click);
             // 
             // buttonLoadFileFromPath
             // 
