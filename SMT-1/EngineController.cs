@@ -10,9 +10,12 @@ namespace SMT_1
 {
     public class EngineController
     {
+        public static int minRPM = 300;
+        public static int maxRPM = 1000;
+
         public bool On { get; set; } = false;
 
-        private int rpm=300;
+        private int rpm= minRPM;
 
         public int RPM
         {
@@ -22,7 +25,7 @@ namespace SMT_1
             }
             set
             {
-                if (value >= 300 && value <= 1000)
+                if (value >= minRPM && value <= maxRPM)
                 {
                     this.rpm = value;
                     CalculateVoltage();
@@ -38,7 +41,7 @@ namespace SMT_1
 
         public EngineController()
         {
-            RPM = 300;
+            RPM = minRPM;
         }
 
         private void CalculateVoltage()

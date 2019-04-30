@@ -8,7 +8,10 @@ namespace SMT_1
 {
     class LoadController
     {
-        private int load = 0;
+        public static int minLoad = 0;
+        public static int maxLoad = 190;
+
+        private int load = minLoad;
 
         public int Load
         {
@@ -18,7 +21,7 @@ namespace SMT_1
             }
             set
             {
-                if (value >= 0 && value <= 190)
+                if (value >= minLoad && value <= maxLoad)
                     load = value;
             }
         }

@@ -41,26 +41,19 @@ namespace SMT_1
             saveFileDialogPlan.Filter = "text files (*.txt)|*.txt";
 
             textBoxT0.Text = "Degrees";
-            textBoxRecordInExecution.Text = "План не вибрано";
-            textBoxEndTime.Text = textBoxRemainingTime.Text = textBoxStartTime.Text = "0";
 
-            numericUpDownControlEngineRPM.Value = engine.RPM;
+            SetAllControlToInitial();
+
             textBoxPlanEngineVoltage.Text = EngineController.RpmToVoltage((int)numericUpDownControlEngineRPM.Value).ToString();
-
+            
             numericUpDownPlanLoadedWeight.Value = trackBarLoadedWeight.Value;
-            textBoxFirstTemp.Text = trackBarFirstTemp.Value.ToString();
-            textBoxSecondTemp.Text = trackBarSecondTemp.Value.ToString();
-
-            textBoxControlEngineVoltage.Text = EngineController.RpmToVoltage(trackBarControlEngineRPM.Value).ToString();
-            numericUpDownControlEngineRPM.Value = trackBarControlEngineRPM.Value;
-
-            textBoxControlEngineCurrentRPM.Text = engine.RPM.ToString();
-            textBoxControlEngineCurrentVoltage.Text = ((int)engine.Voltage).ToString();
+            numericUpDownPlanFirstTemp.Value = trackBarFirstTemp.Value;
+            numericUpDownPlanSecondTemp.Value = trackBarSecondTemp.Value;
         }
 
         private void trackBarFirstTemp_ValueChanged(object sender, EventArgs e)
         {
-            textBoxFirstTemp.Text = trackBarFirstTemp.Value.ToString();
+            numericUpDownPlanFirstTemp.Value = trackBarFirstTemp.Value;
         }
 
         private void trackBarLoadedWeight_ValueChanged(object sender, EventArgs e)
@@ -70,13 +63,7 @@ namespace SMT_1
 
         private void trackBarSecondTemp_ValueChanged(object sender, EventArgs e)
         {
-            textBoxSecondTemp.Text = trackBarSecondTemp.Value.ToString();
-        }
-
-        private void trackBarControlEngineRPM_Scroll(object sender, EventArgs e)
-        {
-            textBoxControlEngineVoltage.Text = EngineController.RpmToVoltage(trackBarControlEngineRPM.Value).ToString();
-            numericUpDownControlEngineRPM.Value = trackBarControlEngineRPM.Value;
+            numericUpDownPlanSecondTemp.Value = trackBarSecondTemp.Value;
         }
 
         private void trackBarControlEngineRPM_ValueChanged(object sender, EventArgs e)
@@ -460,11 +447,12 @@ namespace SMT_1
 
         private async Task ExecutePlanAsync(Dictionary<int, PlanRecord> recordsToExecute)
         {
-            //STOP ALL
+            SetAllControlToInitial();
+
             isPlanInExecution = true;
             Dispatcher uiDispatcher = Dispatcher.CurrentDispatcher;
 
-            await Task.Run(async () =>
+            await Task.Run(() => //task is synchronous for itself
             {
                 DateTime recordEndTime = DateTime.Now;
                 foreach(KeyValuePair<int, PlanRecord> recordKV in recordsToExecute)
@@ -486,10 +474,8 @@ namespace SMT_1
                 }
             });
 
-            StopAll();
+            SetAllControlToInitial();
             MessageBox.Show("Виконання плану завершено", "", MessageBoxButtons.OK, MessageBoxIcon.None);
-
-            //STOP ALL
         }
 
         private void buttonStopPlan_Click(object sender, EventArgs e)
@@ -497,11 +483,36 @@ namespace SMT_1
             isPlanInExecution = false;
         }
 
-        // TODO: stop everything, before plan start
-        private void StopAll()
+        private void SetAllControlToInitial()
         {
             textBoxRecordInExecution.Text = "План не вибрано";
+            textBoxEndTime.Text = textBoxRemainingTime.Text = textBoxStartTime.Text = "0";
+
+            // Engine to default
+            engine.On = false;
+            numericUpDownControlEngineRPM.Value = trackBarControlEngineRPM.Value = engine.RPM = EngineController.minRPM;
+
+            textBoxControlEngineVoltage.Text = EngineController.RpmToVoltage(trackBarControlEngineRPM.Value).ToString();
+            textBoxControlEngineCurrentRPM.Text = engine.RPM.ToString();
+            textBoxControlEngineCurrentVoltage.Text = ((int)engine.Voltage).ToString();
+
+            // Load to default
+            numericUpDownControlLoad.Value = trackBarControlLoad.Value = load.Load = LoadController.minLoad;
+
+            //TODO (when vents are added)
+            // Vents to default
+
             isPlanInExecution = false;
+        }
+
+        private void numericUpDownPlanSecondTemp_ValueChanged(object sender, EventArgs e)
+        {
+            trackBarSecondTemp.Value = (int)numericUpDownPlanSecondTemp.Value;
+        }
+
+        private void numericUpDownPlanFirstTemp_ValueChanged(object sender, EventArgs e)
+        {
+            trackBarFirstTemp.Value = (int)numericUpDownPlanFirstTemp.Value;
         }
     }
 }

@@ -58,11 +58,9 @@
             this.trackBarLoadedWeight = new System.Windows.Forms.TrackBar();
             this.groupBoxTempFirst = new System.Windows.Forms.GroupBox();
             this.labelFirstTemp = new System.Windows.Forms.Label();
-            this.textBoxFirstTemp = new System.Windows.Forms.TextBox();
             this.trackBarFirstTemp = new System.Windows.Forms.TrackBar();
             this.groupBoxTempSecond = new System.Windows.Forms.GroupBox();
             this.labelSecondTemp = new System.Windows.Forms.Label();
-            this.textBoxSecondTemp = new System.Windows.Forms.TextBox();
             this.trackBarSecondTemp = new System.Windows.Forms.TrackBar();
             this.tableLayoutPanelPlanControl = new System.Windows.Forms.TableLayoutPanel();
             this.buttonStartSelected = new System.Windows.Forms.Button();
@@ -121,6 +119,8 @@
             this.textBoxStartTime = new System.Windows.Forms.TextBox();
             this.openFileDialogPlan = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialogPlan = new System.Windows.Forms.SaveFileDialog();
+            this.numericUpDownPlanFirstTemp = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownPlanSecondTemp = new System.Windows.Forms.NumericUpDown();
             this.Plan.SuspendLayout();
             this.tableLayoutPanelRecordActions.SuspendLayout();
             this.tableLayoutPanelPlanValues.SuspendLayout();
@@ -153,6 +153,8 @@
             this.tableLayoutPanelParameters.SuspendLayout();
             this.groupBoxPlan.SuspendLayout();
             this.tableLayoutPanelPlan.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPlanFirstTemp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPlanSecondTemp)).BeginInit();
             this.SuspendLayout();
             // 
             // Plan
@@ -381,8 +383,8 @@
             // 
             // groupBoxTempFirst
             // 
+            this.groupBoxTempFirst.Controls.Add(this.numericUpDownPlanFirstTemp);
             this.groupBoxTempFirst.Controls.Add(this.labelFirstTemp);
-            this.groupBoxTempFirst.Controls.Add(this.textBoxFirstTemp);
             this.groupBoxTempFirst.Controls.Add(this.trackBarFirstTemp);
             resources.ApplyResources(this.groupBoxTempFirst, "groupBoxTempFirst");
             this.groupBoxTempFirst.Name = "groupBoxTempFirst";
@@ -392,11 +394,6 @@
             // 
             resources.ApplyResources(this.labelFirstTemp, "labelFirstTemp");
             this.labelFirstTemp.Name = "labelFirstTemp";
-            // 
-            // textBoxFirstTemp
-            // 
-            resources.ApplyResources(this.textBoxFirstTemp, "textBoxFirstTemp");
-            this.textBoxFirstTemp.Name = "textBoxFirstTemp";
             // 
             // trackBarFirstTemp
             // 
@@ -409,8 +406,8 @@
             // 
             // groupBoxTempSecond
             // 
+            this.groupBoxTempSecond.Controls.Add(this.numericUpDownPlanSecondTemp);
             this.groupBoxTempSecond.Controls.Add(this.labelSecondTemp);
-            this.groupBoxTempSecond.Controls.Add(this.textBoxSecondTemp);
             this.groupBoxTempSecond.Controls.Add(this.trackBarSecondTemp);
             resources.ApplyResources(this.groupBoxTempSecond, "groupBoxTempSecond");
             this.groupBoxTempSecond.Name = "groupBoxTempSecond";
@@ -420,11 +417,6 @@
             // 
             resources.ApplyResources(this.labelSecondTemp, "labelSecondTemp");
             this.labelSecondTemp.Name = "labelSecondTemp";
-            // 
-            // textBoxSecondTemp
-            // 
-            resources.ApplyResources(this.textBoxSecondTemp, "textBoxSecondTemp");
-            this.textBoxSecondTemp.Name = "textBoxSecondTemp";
             // 
             // trackBarSecondTemp
             // 
@@ -830,6 +822,28 @@
             // 
             this.openFileDialogPlan.FileName = "openFileDialogPlan";
             // 
+            // numericUpDownPlanFirstTemp
+            // 
+            resources.ApplyResources(this.numericUpDownPlanFirstTemp, "numericUpDownPlanFirstTemp");
+            this.numericUpDownPlanFirstTemp.Maximum = new decimal(new int[] {
+            125,
+            0,
+            0,
+            0});
+            this.numericUpDownPlanFirstTemp.Name = "numericUpDownPlanFirstTemp";
+            this.numericUpDownPlanFirstTemp.ValueChanged += new System.EventHandler(this.numericUpDownPlanFirstTemp_ValueChanged);
+            // 
+            // numericUpDownPlanSecondTemp
+            // 
+            resources.ApplyResources(this.numericUpDownPlanSecondTemp, "numericUpDownPlanSecondTemp");
+            this.numericUpDownPlanSecondTemp.Maximum = new decimal(new int[] {
+            125,
+            0,
+            0,
+            0});
+            this.numericUpDownPlanSecondTemp.Name = "numericUpDownPlanSecondTemp";
+            this.numericUpDownPlanSecondTemp.ValueChanged += new System.EventHandler(this.numericUpDownPlanSecondTemp_ValueChanged);
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -885,6 +899,8 @@
             this.groupBoxPlan.ResumeLayout(false);
             this.tableLayoutPanelPlan.ResumeLayout(false);
             this.tableLayoutPanelPlan.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPlanFirstTemp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPlanSecondTemp)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -944,10 +960,8 @@
         private System.Windows.Forms.Label labelLoadedWeight;
         private System.Windows.Forms.TrackBar trackBarLoadedWeight;
         private System.Windows.Forms.Label labelFirstTemp;
-        private System.Windows.Forms.TextBox textBoxFirstTemp;
         private System.Windows.Forms.TrackBar trackBarFirstTemp;
         private System.Windows.Forms.Label labelSecondTemp;
-        private System.Windows.Forms.TextBox textBoxSecondTemp;
         private System.Windows.Forms.TrackBar trackBarSecondTemp;
         private System.Windows.Forms.GroupBox groupBoxControlLoadedWeight;
         private System.Windows.Forms.GroupBox groupBoxControlVents;
@@ -983,6 +997,8 @@
         private System.Windows.Forms.Button buttonControlLoadSetValues;
         private System.Windows.Forms.Button buttonControlLoadRestore;
         private System.Windows.Forms.NumericUpDown numericUpDownPlanLoadedWeight;
+        private System.Windows.Forms.NumericUpDown numericUpDownPlanFirstTemp;
+        private System.Windows.Forms.NumericUpDown numericUpDownPlanSecondTemp;
     }
 }
 
