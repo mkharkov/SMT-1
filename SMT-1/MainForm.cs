@@ -17,6 +17,9 @@ namespace SMT_1
         private EngineController engine;
         private LoadController load;
         private FileController fileRW;
+        private FanController leftFan;
+        private FanController rightFan;
+
         bool isPlanInExecution = false;
 
         public MainForm()
@@ -29,6 +32,8 @@ namespace SMT_1
             engine = new EngineController();
             load = new LoadController();
             fileRW = new FileController();
+            leftFan = new FanController();
+            rightFan = new FanController();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -81,6 +86,7 @@ namespace SMT_1
         private void buttonControlEngineStop_Click(object sender, EventArgs e)
         {
             engine.On = false;
+            textBoxCurrentEngineOn.Text = "Ні";
         }
 
         private void buttonControlEngineSetValues_Click(object sender, EventArgs e)
@@ -93,6 +99,7 @@ namespace SMT_1
         private void buttonControlEngineStart_Click(object sender, EventArgs e)
         {
             engine.On = true;
+            textBoxCurrentEngineOn.Text = "Так";
         }
 
         //SHOWING DEBUG INFO ABOUT STATE OF MAIN FORM
@@ -111,7 +118,11 @@ namespace SMT_1
                 "**************\n" +
                 "isPlanInExecution: {5}\n" +
                 "**************\n" +
-                "", engine.On, engine.RPM, engine.Voltage, openFileDialogPlan.FileName, load.Load, isPlanInExecution);
+                "LeftFan: ON({6}), Vent({7})\n" + 
+                "**************\n" +
+                "RightFan: ON({8}), Vent({9})\n" +
+                "**************\n" +
+                "", engine.On, engine.RPM, engine.Voltage, openFileDialogPlan.FileName, load.Load, isPlanInExecution, leftFan.On, leftFan.VentOpen, rightFan.On, rightFan.VentOpen);
             if (fileRW.GetRecords().Count != 0)
                 dbg += "Records:\n";
             foreach(PlanRecord pl in fileRW.GetRecords())
@@ -394,6 +405,7 @@ namespace SMT_1
         private void buttonControlLoadSetValues_Click(object sender, EventArgs e)
         {
             load.Load = trackBarControlLoad.Value;
+            textBoxControlCurrentLoad.Text = load.Load.ToString();
         }
 
         private void buttonControlLoadRestore_Click(object sender, EventArgs e)
@@ -498,9 +510,13 @@ namespace SMT_1
 
             // Load to default
             numericUpDownControlLoad.Value = trackBarControlLoad.Value = load.Load = LoadController.minLoad;
+            textBoxControlCurrentLoad.Text = load.Load.ToString();
 
-            //TODO (when vents are added)
             // Vents to default
+            checkBoxControlCurrentLeftFanOn.Checked = false;
+            checkBoxControlCurrentRightFanOn.Checked = false;
+            checkBoxControlCurrentLeftVentOn.Checked = false;
+            checkBoxControlCurrentRightVentOn.Checked = false;
 
             isPlanInExecution = false;
         }
@@ -513,6 +529,30 @@ namespace SMT_1
         private void numericUpDownPlanFirstTemp_ValueChanged(object sender, EventArgs e)
         {
             trackBarFirstTemp.Value = (int)numericUpDownPlanFirstTemp.Value;
+        }
+
+        private void buttonControlOnOffLeftFan_Click(object sender, EventArgs e)
+        {
+            leftFan.On = !leftFan.On;
+            checkBoxControlCurrentLeftFanOn.Checked = leftFan.On;
+        }
+
+        private void buttonControlOnOffRightFan_Click(object sender, EventArgs e)
+        {
+            rightFan.On = !rightFan.On;
+            checkBoxControlCurrentRightFanOn.Checked = rightFan.On;
+        }
+
+        private void buttonControlOnOffLeftVent_Click(object sender, EventArgs e)
+        {
+            leftFan.VentOpen = !leftFan.VentOpen;
+            checkBoxControlCurrentLeftVentOn.Checked = leftFan.VentOpen;
+        }
+
+        private void buttonControlOnOffRightVent_Click(object sender, EventArgs e)
+        {
+            rightFan.VentOpen = !rightFan.VentOpen;
+            checkBoxControlCurrentRightVentOn.Checked = rightFan.VentOpen;
         }
     }
 }

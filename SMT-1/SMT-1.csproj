@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EngineController.cs" />
+    <Compile Include="FanController.cs" />
     <Compile Include="FileController.cs" />
     <Compile Include="LoadController.cs" />
     <Compile Include="MainForm.cs">

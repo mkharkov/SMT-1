@@ -57,9 +57,11 @@
             this.labelLoadedWeight = new System.Windows.Forms.Label();
             this.trackBarLoadedWeight = new System.Windows.Forms.TrackBar();
             this.groupBoxTempFirst = new System.Windows.Forms.GroupBox();
+            this.numericUpDownPlanFirstTemp = new System.Windows.Forms.NumericUpDown();
             this.labelFirstTemp = new System.Windows.Forms.Label();
             this.trackBarFirstTemp = new System.Windows.Forms.TrackBar();
             this.groupBoxTempSecond = new System.Windows.Forms.GroupBox();
+            this.numericUpDownPlanSecondTemp = new System.Windows.Forms.NumericUpDown();
             this.labelSecondTemp = new System.Windows.Forms.Label();
             this.trackBarSecondTemp = new System.Windows.Forms.TrackBar();
             this.tableLayoutPanelPlanControl = new System.Windows.Forms.TableLayoutPanel();
@@ -75,6 +77,15 @@
             this.columnHeaderT1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderT2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Control = new System.Windows.Forms.TabPage();
+            this.groupBoxControlEngineCurrentParams = new System.Windows.Forms.GroupBox();
+            this.groupBoxCurrentLoadState = new System.Windows.Forms.GroupBox();
+            this.groupBoxCurrentVentsState = new System.Windows.Forms.GroupBox();
+            this.groupBoxCurrentEngineState = new System.Windows.Forms.GroupBox();
+            this.labelCurrentEngineOn = new System.Windows.Forms.Label();
+            this.textBoxControlEngineCurrentRPM = new System.Windows.Forms.TextBox();
+            this.textBoxControlEngineCurrentVoltage = new System.Windows.Forms.TextBox();
+            this.labelControlEngineCurrentVoltage = new System.Windows.Forms.Label();
+            this.labelControlEngineCurrentRPM = new System.Windows.Forms.Label();
             this.groupBoxControlLoadedWeight = new System.Windows.Forms.GroupBox();
             this.buttonControlLoadSetValues = new System.Windows.Forms.Button();
             this.buttonControlLoadRestore = new System.Windows.Forms.Button();
@@ -82,12 +93,13 @@
             this.labelControlLoad = new System.Windows.Forms.Label();
             this.trackBarControlLoad = new System.Windows.Forms.TrackBar();
             this.groupBoxControlVents = new System.Windows.Forms.GroupBox();
+            this.labelControlRightFan = new System.Windows.Forms.Label();
+            this.labelControlLeftFan = new System.Windows.Forms.Label();
+            this.buttonControlOnOffRightVent = new System.Windows.Forms.Button();
+            this.buttonControlOnOffLeftVent = new System.Windows.Forms.Button();
+            this.buttonControlOnOffRightFan = new System.Windows.Forms.Button();
+            this.buttonControlOnOffLeftFan = new System.Windows.Forms.Button();
             this.groupBoxControlEngine = new System.Windows.Forms.GroupBox();
-            this.groupBoxControlEngineCurrentParams = new System.Windows.Forms.GroupBox();
-            this.textBoxControlEngineCurrentRPM = new System.Windows.Forms.TextBox();
-            this.labelControlEngineCurrentVoltage = new System.Windows.Forms.Label();
-            this.labelControlEngineCurrentRPM = new System.Windows.Forms.Label();
-            this.textBoxControlEngineCurrentVoltage = new System.Windows.Forms.TextBox();
             this.buttonControlEngineRestore = new System.Windows.Forms.Button();
             this.buttonControlEngineStart = new System.Windows.Forms.Button();
             this.buttonControlEngineStop = new System.Windows.Forms.Button();
@@ -119,8 +131,19 @@
             this.textBoxStartTime = new System.Windows.Forms.TextBox();
             this.openFileDialogPlan = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialogPlan = new System.Windows.Forms.SaveFileDialog();
-            this.numericUpDownPlanFirstTemp = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownPlanSecondTemp = new System.Windows.Forms.NumericUpDown();
+            this.textBoxCurrentEngineOn = new System.Windows.Forms.TextBox();
+            this.labelContolCurrentLoad = new System.Windows.Forms.Label();
+            this.labelControlCurrentLeftFanOn = new System.Windows.Forms.Label();
+            this.labelControlCurrentRightFan = new System.Windows.Forms.Label();
+            this.labelControlCurrentRightVentOn = new System.Windows.Forms.Label();
+            this.labelControlCurrentLeftVentOn = new System.Windows.Forms.Label();
+            this.labelControlCurrentLeftFan = new System.Windows.Forms.Label();
+            this.labelControlCurrentRightFanOn = new System.Windows.Forms.Label();
+            this.textBoxControlCurrentLoad = new System.Windows.Forms.TextBox();
+            this.checkBoxControlCurrentLeftFanOn = new System.Windows.Forms.CheckBox();
+            this.checkBoxControlCurrentRightVentOn = new System.Windows.Forms.CheckBox();
+            this.checkBoxControlCurrentRightFanOn = new System.Windows.Forms.CheckBox();
+            this.checkBoxControlCurrentLeftVentOn = new System.Windows.Forms.CheckBox();
             this.Plan.SuspendLayout();
             this.tableLayoutPanelRecordActions.SuspendLayout();
             this.tableLayoutPanelPlanValues.SuspendLayout();
@@ -135,16 +158,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPlanLoadedWeight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarLoadedWeight)).BeginInit();
             this.groupBoxTempFirst.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPlanFirstTemp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarFirstTemp)).BeginInit();
             this.groupBoxTempSecond.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPlanSecondTemp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarSecondTemp)).BeginInit();
             this.tableLayoutPanelPlanControl.SuspendLayout();
             this.Control.SuspendLayout();
+            this.groupBoxControlEngineCurrentParams.SuspendLayout();
+            this.groupBoxCurrentLoadState.SuspendLayout();
+            this.groupBoxCurrentVentsState.SuspendLayout();
+            this.groupBoxCurrentEngineState.SuspendLayout();
             this.groupBoxControlLoadedWeight.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownControlLoad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarControlLoad)).BeginInit();
+            this.groupBoxControlVents.SuspendLayout();
             this.groupBoxControlEngine.SuspendLayout();
-            this.groupBoxControlEngineCurrentParams.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarControlEngineRPM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownControlEngineRPM)).BeginInit();
             this.tabControlControlPanel.SuspendLayout();
@@ -153,8 +182,6 @@
             this.tableLayoutPanelParameters.SuspendLayout();
             this.groupBoxPlan.SuspendLayout();
             this.tableLayoutPanelPlan.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPlanFirstTemp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPlanSecondTemp)).BeginInit();
             this.SuspendLayout();
             // 
             // Plan
@@ -390,6 +417,17 @@
             this.groupBoxTempFirst.Name = "groupBoxTempFirst";
             this.groupBoxTempFirst.TabStop = false;
             // 
+            // numericUpDownPlanFirstTemp
+            // 
+            resources.ApplyResources(this.numericUpDownPlanFirstTemp, "numericUpDownPlanFirstTemp");
+            this.numericUpDownPlanFirstTemp.Maximum = new decimal(new int[] {
+            125,
+            0,
+            0,
+            0});
+            this.numericUpDownPlanFirstTemp.Name = "numericUpDownPlanFirstTemp";
+            this.numericUpDownPlanFirstTemp.ValueChanged += new System.EventHandler(this.numericUpDownPlanFirstTemp_ValueChanged);
+            // 
             // labelFirstTemp
             // 
             resources.ApplyResources(this.labelFirstTemp, "labelFirstTemp");
@@ -412,6 +450,17 @@
             resources.ApplyResources(this.groupBoxTempSecond, "groupBoxTempSecond");
             this.groupBoxTempSecond.Name = "groupBoxTempSecond";
             this.groupBoxTempSecond.TabStop = false;
+            // 
+            // numericUpDownPlanSecondTemp
+            // 
+            resources.ApplyResources(this.numericUpDownPlanSecondTemp, "numericUpDownPlanSecondTemp");
+            this.numericUpDownPlanSecondTemp.Maximum = new decimal(new int[] {
+            125,
+            0,
+            0,
+            0});
+            this.numericUpDownPlanSecondTemp.Name = "numericUpDownPlanSecondTemp";
+            this.numericUpDownPlanSecondTemp.ValueChanged += new System.EventHandler(this.numericUpDownPlanSecondTemp_ValueChanged);
             // 
             // labelSecondTemp
             // 
@@ -508,12 +557,83 @@
             // 
             // Control
             // 
+            this.Control.Controls.Add(this.groupBoxControlEngineCurrentParams);
             this.Control.Controls.Add(this.groupBoxControlLoadedWeight);
             this.Control.Controls.Add(this.groupBoxControlVents);
             this.Control.Controls.Add(this.groupBoxControlEngine);
             resources.ApplyResources(this.Control, "Control");
             this.Control.Name = "Control";
             this.Control.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxControlEngineCurrentParams
+            // 
+            this.groupBoxControlEngineCurrentParams.Controls.Add(this.groupBoxCurrentLoadState);
+            this.groupBoxControlEngineCurrentParams.Controls.Add(this.groupBoxCurrentVentsState);
+            this.groupBoxControlEngineCurrentParams.Controls.Add(this.groupBoxCurrentEngineState);
+            resources.ApplyResources(this.groupBoxControlEngineCurrentParams, "groupBoxControlEngineCurrentParams");
+            this.groupBoxControlEngineCurrentParams.Name = "groupBoxControlEngineCurrentParams";
+            this.groupBoxControlEngineCurrentParams.TabStop = false;
+            // 
+            // groupBoxCurrentLoadState
+            // 
+            this.groupBoxCurrentLoadState.Controls.Add(this.textBoxControlCurrentLoad);
+            this.groupBoxCurrentLoadState.Controls.Add(this.labelContolCurrentLoad);
+            resources.ApplyResources(this.groupBoxCurrentLoadState, "groupBoxCurrentLoadState");
+            this.groupBoxCurrentLoadState.Name = "groupBoxCurrentLoadState";
+            this.groupBoxCurrentLoadState.TabStop = false;
+            // 
+            // groupBoxCurrentVentsState
+            // 
+            this.groupBoxCurrentVentsState.Controls.Add(this.checkBoxControlCurrentLeftVentOn);
+            this.groupBoxCurrentVentsState.Controls.Add(this.checkBoxControlCurrentRightFanOn);
+            this.groupBoxCurrentVentsState.Controls.Add(this.checkBoxControlCurrentRightVentOn);
+            this.groupBoxCurrentVentsState.Controls.Add(this.checkBoxControlCurrentLeftFanOn);
+            this.groupBoxCurrentVentsState.Controls.Add(this.labelControlCurrentRightFanOn);
+            this.groupBoxCurrentVentsState.Controls.Add(this.labelControlCurrentLeftFan);
+            this.groupBoxCurrentVentsState.Controls.Add(this.labelControlCurrentLeftVentOn);
+            this.groupBoxCurrentVentsState.Controls.Add(this.labelControlCurrentRightVentOn);
+            this.groupBoxCurrentVentsState.Controls.Add(this.labelControlCurrentRightFan);
+            this.groupBoxCurrentVentsState.Controls.Add(this.labelControlCurrentLeftFanOn);
+            resources.ApplyResources(this.groupBoxCurrentVentsState, "groupBoxCurrentVentsState");
+            this.groupBoxCurrentVentsState.Name = "groupBoxCurrentVentsState";
+            this.groupBoxCurrentVentsState.TabStop = false;
+            // 
+            // groupBoxCurrentEngineState
+            // 
+            this.groupBoxCurrentEngineState.Controls.Add(this.textBoxCurrentEngineOn);
+            this.groupBoxCurrentEngineState.Controls.Add(this.labelCurrentEngineOn);
+            this.groupBoxCurrentEngineState.Controls.Add(this.textBoxControlEngineCurrentRPM);
+            this.groupBoxCurrentEngineState.Controls.Add(this.textBoxControlEngineCurrentVoltage);
+            this.groupBoxCurrentEngineState.Controls.Add(this.labelControlEngineCurrentVoltage);
+            this.groupBoxCurrentEngineState.Controls.Add(this.labelControlEngineCurrentRPM);
+            resources.ApplyResources(this.groupBoxCurrentEngineState, "groupBoxCurrentEngineState");
+            this.groupBoxCurrentEngineState.Name = "groupBoxCurrentEngineState";
+            this.groupBoxCurrentEngineState.TabStop = false;
+            // 
+            // labelCurrentEngineOn
+            // 
+            resources.ApplyResources(this.labelCurrentEngineOn, "labelCurrentEngineOn");
+            this.labelCurrentEngineOn.Name = "labelCurrentEngineOn";
+            // 
+            // textBoxControlEngineCurrentRPM
+            // 
+            resources.ApplyResources(this.textBoxControlEngineCurrentRPM, "textBoxControlEngineCurrentRPM");
+            this.textBoxControlEngineCurrentRPM.Name = "textBoxControlEngineCurrentRPM";
+            // 
+            // textBoxControlEngineCurrentVoltage
+            // 
+            resources.ApplyResources(this.textBoxControlEngineCurrentVoltage, "textBoxControlEngineCurrentVoltage");
+            this.textBoxControlEngineCurrentVoltage.Name = "textBoxControlEngineCurrentVoltage";
+            // 
+            // labelControlEngineCurrentVoltage
+            // 
+            resources.ApplyResources(this.labelControlEngineCurrentVoltage, "labelControlEngineCurrentVoltage");
+            this.labelControlEngineCurrentVoltage.Name = "labelControlEngineCurrentVoltage";
+            // 
+            // labelControlEngineCurrentRPM
+            // 
+            resources.ApplyResources(this.labelControlEngineCurrentRPM, "labelControlEngineCurrentRPM");
+            this.labelControlEngineCurrentRPM.Name = "labelControlEngineCurrentRPM";
             // 
             // groupBoxControlLoadedWeight
             // 
@@ -567,13 +687,56 @@
             // 
             // groupBoxControlVents
             // 
+            this.groupBoxControlVents.Controls.Add(this.labelControlRightFan);
+            this.groupBoxControlVents.Controls.Add(this.labelControlLeftFan);
+            this.groupBoxControlVents.Controls.Add(this.buttonControlOnOffRightVent);
+            this.groupBoxControlVents.Controls.Add(this.buttonControlOnOffLeftVent);
+            this.groupBoxControlVents.Controls.Add(this.buttonControlOnOffRightFan);
+            this.groupBoxControlVents.Controls.Add(this.buttonControlOnOffLeftFan);
             resources.ApplyResources(this.groupBoxControlVents, "groupBoxControlVents");
             this.groupBoxControlVents.Name = "groupBoxControlVents";
             this.groupBoxControlVents.TabStop = false;
             // 
+            // labelControlRightFan
+            // 
+            resources.ApplyResources(this.labelControlRightFan, "labelControlRightFan");
+            this.labelControlRightFan.Name = "labelControlRightFan";
+            // 
+            // labelControlLeftFan
+            // 
+            resources.ApplyResources(this.labelControlLeftFan, "labelControlLeftFan");
+            this.labelControlLeftFan.Name = "labelControlLeftFan";
+            // 
+            // buttonControlOnOffRightVent
+            // 
+            resources.ApplyResources(this.buttonControlOnOffRightVent, "buttonControlOnOffRightVent");
+            this.buttonControlOnOffRightVent.Name = "buttonControlOnOffRightVent";
+            this.buttonControlOnOffRightVent.UseVisualStyleBackColor = true;
+            this.buttonControlOnOffRightVent.Click += new System.EventHandler(this.buttonControlOnOffRightVent_Click);
+            // 
+            // buttonControlOnOffLeftVent
+            // 
+            resources.ApplyResources(this.buttonControlOnOffLeftVent, "buttonControlOnOffLeftVent");
+            this.buttonControlOnOffLeftVent.Name = "buttonControlOnOffLeftVent";
+            this.buttonControlOnOffLeftVent.UseVisualStyleBackColor = true;
+            this.buttonControlOnOffLeftVent.Click += new System.EventHandler(this.buttonControlOnOffLeftVent_Click);
+            // 
+            // buttonControlOnOffRightFan
+            // 
+            resources.ApplyResources(this.buttonControlOnOffRightFan, "buttonControlOnOffRightFan");
+            this.buttonControlOnOffRightFan.Name = "buttonControlOnOffRightFan";
+            this.buttonControlOnOffRightFan.UseVisualStyleBackColor = true;
+            this.buttonControlOnOffRightFan.Click += new System.EventHandler(this.buttonControlOnOffRightFan_Click);
+            // 
+            // buttonControlOnOffLeftFan
+            // 
+            resources.ApplyResources(this.buttonControlOnOffLeftFan, "buttonControlOnOffLeftFan");
+            this.buttonControlOnOffLeftFan.Name = "buttonControlOnOffLeftFan";
+            this.buttonControlOnOffLeftFan.UseVisualStyleBackColor = true;
+            this.buttonControlOnOffLeftFan.Click += new System.EventHandler(this.buttonControlOnOffLeftFan_Click);
+            // 
             // groupBoxControlEngine
             // 
-            this.groupBoxControlEngine.Controls.Add(this.groupBoxControlEngineCurrentParams);
             this.groupBoxControlEngine.Controls.Add(this.buttonControlEngineRestore);
             this.groupBoxControlEngine.Controls.Add(this.buttonControlEngineStart);
             this.groupBoxControlEngine.Controls.Add(this.buttonControlEngineStop);
@@ -587,36 +750,6 @@
             resources.ApplyResources(this.groupBoxControlEngine, "groupBoxControlEngine");
             this.groupBoxControlEngine.Name = "groupBoxControlEngine";
             this.groupBoxControlEngine.TabStop = false;
-            // 
-            // groupBoxControlEngineCurrentParams
-            // 
-            this.groupBoxControlEngineCurrentParams.Controls.Add(this.textBoxControlEngineCurrentRPM);
-            this.groupBoxControlEngineCurrentParams.Controls.Add(this.labelControlEngineCurrentVoltage);
-            this.groupBoxControlEngineCurrentParams.Controls.Add(this.labelControlEngineCurrentRPM);
-            this.groupBoxControlEngineCurrentParams.Controls.Add(this.textBoxControlEngineCurrentVoltage);
-            resources.ApplyResources(this.groupBoxControlEngineCurrentParams, "groupBoxControlEngineCurrentParams");
-            this.groupBoxControlEngineCurrentParams.Name = "groupBoxControlEngineCurrentParams";
-            this.groupBoxControlEngineCurrentParams.TabStop = false;
-            // 
-            // textBoxControlEngineCurrentRPM
-            // 
-            resources.ApplyResources(this.textBoxControlEngineCurrentRPM, "textBoxControlEngineCurrentRPM");
-            this.textBoxControlEngineCurrentRPM.Name = "textBoxControlEngineCurrentRPM";
-            // 
-            // labelControlEngineCurrentVoltage
-            // 
-            resources.ApplyResources(this.labelControlEngineCurrentVoltage, "labelControlEngineCurrentVoltage");
-            this.labelControlEngineCurrentVoltage.Name = "labelControlEngineCurrentVoltage";
-            // 
-            // labelControlEngineCurrentRPM
-            // 
-            resources.ApplyResources(this.labelControlEngineCurrentRPM, "labelControlEngineCurrentRPM");
-            this.labelControlEngineCurrentRPM.Name = "labelControlEngineCurrentRPM";
-            // 
-            // textBoxControlEngineCurrentVoltage
-            // 
-            resources.ApplyResources(this.textBoxControlEngineCurrentVoltage, "textBoxControlEngineCurrentVoltage");
-            this.textBoxControlEngineCurrentVoltage.Name = "textBoxControlEngineCurrentVoltage";
             // 
             // buttonControlEngineRestore
             // 
@@ -822,27 +955,74 @@
             // 
             this.openFileDialogPlan.FileName = "openFileDialogPlan";
             // 
-            // numericUpDownPlanFirstTemp
+            // textBoxCurrentEngineOn
             // 
-            resources.ApplyResources(this.numericUpDownPlanFirstTemp, "numericUpDownPlanFirstTemp");
-            this.numericUpDownPlanFirstTemp.Maximum = new decimal(new int[] {
-            125,
-            0,
-            0,
-            0});
-            this.numericUpDownPlanFirstTemp.Name = "numericUpDownPlanFirstTemp";
-            this.numericUpDownPlanFirstTemp.ValueChanged += new System.EventHandler(this.numericUpDownPlanFirstTemp_ValueChanged);
+            resources.ApplyResources(this.textBoxCurrentEngineOn, "textBoxCurrentEngineOn");
+            this.textBoxCurrentEngineOn.Name = "textBoxCurrentEngineOn";
             // 
-            // numericUpDownPlanSecondTemp
+            // labelContolCurrentLoad
             // 
-            resources.ApplyResources(this.numericUpDownPlanSecondTemp, "numericUpDownPlanSecondTemp");
-            this.numericUpDownPlanSecondTemp.Maximum = new decimal(new int[] {
-            125,
-            0,
-            0,
-            0});
-            this.numericUpDownPlanSecondTemp.Name = "numericUpDownPlanSecondTemp";
-            this.numericUpDownPlanSecondTemp.ValueChanged += new System.EventHandler(this.numericUpDownPlanSecondTemp_ValueChanged);
+            resources.ApplyResources(this.labelContolCurrentLoad, "labelContolCurrentLoad");
+            this.labelContolCurrentLoad.Name = "labelContolCurrentLoad";
+            // 
+            // labelControlCurrentLeftFanOn
+            // 
+            resources.ApplyResources(this.labelControlCurrentLeftFanOn, "labelControlCurrentLeftFanOn");
+            this.labelControlCurrentLeftFanOn.Name = "labelControlCurrentLeftFanOn";
+            // 
+            // labelControlCurrentRightFan
+            // 
+            resources.ApplyResources(this.labelControlCurrentRightFan, "labelControlCurrentRightFan");
+            this.labelControlCurrentRightFan.Name = "labelControlCurrentRightFan";
+            // 
+            // labelControlCurrentRightVentOn
+            // 
+            resources.ApplyResources(this.labelControlCurrentRightVentOn, "labelControlCurrentRightVentOn");
+            this.labelControlCurrentRightVentOn.Name = "labelControlCurrentRightVentOn";
+            // 
+            // labelControlCurrentLeftVentOn
+            // 
+            resources.ApplyResources(this.labelControlCurrentLeftVentOn, "labelControlCurrentLeftVentOn");
+            this.labelControlCurrentLeftVentOn.Name = "labelControlCurrentLeftVentOn";
+            // 
+            // labelControlCurrentLeftFan
+            // 
+            resources.ApplyResources(this.labelControlCurrentLeftFan, "labelControlCurrentLeftFan");
+            this.labelControlCurrentLeftFan.Name = "labelControlCurrentLeftFan";
+            // 
+            // labelControlCurrentRightFanOn
+            // 
+            resources.ApplyResources(this.labelControlCurrentRightFanOn, "labelControlCurrentRightFanOn");
+            this.labelControlCurrentRightFanOn.Name = "labelControlCurrentRightFanOn";
+            // 
+            // textBoxControlCurrentLoad
+            // 
+            resources.ApplyResources(this.textBoxControlCurrentLoad, "textBoxControlCurrentLoad");
+            this.textBoxControlCurrentLoad.Name = "textBoxControlCurrentLoad";
+            // 
+            // checkBoxControlCurrentLeftFanOn
+            // 
+            resources.ApplyResources(this.checkBoxControlCurrentLeftFanOn, "checkBoxControlCurrentLeftFanOn");
+            this.checkBoxControlCurrentLeftFanOn.Name = "checkBoxControlCurrentLeftFanOn";
+            this.checkBoxControlCurrentLeftFanOn.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxControlCurrentRightVentOn
+            // 
+            resources.ApplyResources(this.checkBoxControlCurrentRightVentOn, "checkBoxControlCurrentRightVentOn");
+            this.checkBoxControlCurrentRightVentOn.Name = "checkBoxControlCurrentRightVentOn";
+            this.checkBoxControlCurrentRightVentOn.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxControlCurrentRightFanOn
+            // 
+            resources.ApplyResources(this.checkBoxControlCurrentRightFanOn, "checkBoxControlCurrentRightFanOn");
+            this.checkBoxControlCurrentRightFanOn.Name = "checkBoxControlCurrentRightFanOn";
+            this.checkBoxControlCurrentRightFanOn.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxControlCurrentLeftVentOn
+            // 
+            resources.ApplyResources(this.checkBoxControlCurrentLeftVentOn, "checkBoxControlCurrentLeftVentOn");
+            this.checkBoxControlCurrentLeftVentOn.Name = "checkBoxControlCurrentLeftVentOn";
+            this.checkBoxControlCurrentLeftVentOn.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -875,20 +1055,29 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBarLoadedWeight)).EndInit();
             this.groupBoxTempFirst.ResumeLayout(false);
             this.groupBoxTempFirst.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPlanFirstTemp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarFirstTemp)).EndInit();
             this.groupBoxTempSecond.ResumeLayout(false);
             this.groupBoxTempSecond.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPlanSecondTemp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarSecondTemp)).EndInit();
             this.tableLayoutPanelPlanControl.ResumeLayout(false);
             this.Control.ResumeLayout(false);
+            this.groupBoxControlEngineCurrentParams.ResumeLayout(false);
+            this.groupBoxCurrentLoadState.ResumeLayout(false);
+            this.groupBoxCurrentLoadState.PerformLayout();
+            this.groupBoxCurrentVentsState.ResumeLayout(false);
+            this.groupBoxCurrentVentsState.PerformLayout();
+            this.groupBoxCurrentEngineState.ResumeLayout(false);
+            this.groupBoxCurrentEngineState.PerformLayout();
             this.groupBoxControlLoadedWeight.ResumeLayout(false);
             this.groupBoxControlLoadedWeight.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownControlLoad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarControlLoad)).EndInit();
+            this.groupBoxControlVents.ResumeLayout(false);
+            this.groupBoxControlVents.PerformLayout();
             this.groupBoxControlEngine.ResumeLayout(false);
             this.groupBoxControlEngine.PerformLayout();
-            this.groupBoxControlEngineCurrentParams.ResumeLayout(false);
-            this.groupBoxControlEngineCurrentParams.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarControlEngineRPM)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownControlEngineRPM)).EndInit();
             this.tabControlControlPanel.ResumeLayout(false);
@@ -899,8 +1088,6 @@
             this.groupBoxPlan.ResumeLayout(false);
             this.tableLayoutPanelPlan.ResumeLayout(false);
             this.tableLayoutPanelPlan.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPlanFirstTemp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPlanSecondTemp)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -999,6 +1186,29 @@
         private System.Windows.Forms.NumericUpDown numericUpDownPlanLoadedWeight;
         private System.Windows.Forms.NumericUpDown numericUpDownPlanFirstTemp;
         private System.Windows.Forms.NumericUpDown numericUpDownPlanSecondTemp;
+        private System.Windows.Forms.Label labelControlRightFan;
+        private System.Windows.Forms.Label labelControlLeftFan;
+        private System.Windows.Forms.Button buttonControlOnOffRightVent;
+        private System.Windows.Forms.Button buttonControlOnOffLeftVent;
+        private System.Windows.Forms.Button buttonControlOnOffRightFan;
+        private System.Windows.Forms.Button buttonControlOnOffLeftFan;
+        private System.Windows.Forms.GroupBox groupBoxCurrentLoadState;
+        private System.Windows.Forms.GroupBox groupBoxCurrentVentsState;
+        private System.Windows.Forms.GroupBox groupBoxCurrentEngineState;
+        private System.Windows.Forms.Label labelCurrentEngineOn;
+        private System.Windows.Forms.TextBox textBoxCurrentEngineOn;
+        private System.Windows.Forms.TextBox textBoxControlCurrentLoad;
+        private System.Windows.Forms.Label labelContolCurrentLoad;
+        private System.Windows.Forms.Label labelControlCurrentRightFanOn;
+        private System.Windows.Forms.Label labelControlCurrentLeftFan;
+        private System.Windows.Forms.Label labelControlCurrentLeftVentOn;
+        private System.Windows.Forms.Label labelControlCurrentRightVentOn;
+        private System.Windows.Forms.Label labelControlCurrentRightFan;
+        private System.Windows.Forms.Label labelControlCurrentLeftFanOn;
+        private System.Windows.Forms.CheckBox checkBoxControlCurrentLeftVentOn;
+        private System.Windows.Forms.CheckBox checkBoxControlCurrentRightFanOn;
+        private System.Windows.Forms.CheckBox checkBoxControlCurrentRightVentOn;
+        private System.Windows.Forms.CheckBox checkBoxControlCurrentLeftFanOn;
     }
 }
 
