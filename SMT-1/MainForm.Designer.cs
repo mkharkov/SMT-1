@@ -53,6 +53,7 @@
             this.labelPlanEngineRPM = new System.Windows.Forms.Label();
             this.textBoxPlanEngineVoltage = new System.Windows.Forms.TextBox();
             this.groupBoxLoad = new System.Windows.Forms.GroupBox();
+            this.numericUpDownPlanLoadedWeight = new System.Windows.Forms.NumericUpDown();
             this.labelLoadedWeight = new System.Windows.Forms.Label();
             this.trackBarLoadedWeight = new System.Windows.Forms.TrackBar();
             this.groupBoxTempFirst = new System.Windows.Forms.GroupBox();
@@ -110,7 +111,7 @@
             this.labelT0 = new System.Windows.Forms.Label();
             this.groupBoxPlan = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanelPlan = new System.Windows.Forms.TableLayoutPanel();
-            this.textBoxRecordInExecutuion = new System.Windows.Forms.TextBox();
+            this.textBoxRecordInExecution = new System.Windows.Forms.TextBox();
             this.textBoxEndTime = new System.Windows.Forms.TextBox();
             this.textBoxRemainingTime = new System.Windows.Forms.TextBox();
             this.labelRecordInExecution = new System.Windows.Forms.Label();
@@ -120,7 +121,6 @@
             this.textBoxStartTime = new System.Windows.Forms.TextBox();
             this.openFileDialogPlan = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialogPlan = new System.Windows.Forms.SaveFileDialog();
-            this.numericUpDownPlanLoadedWeight = new System.Windows.Forms.NumericUpDown();
             this.Plan.SuspendLayout();
             this.tableLayoutPanelRecordActions.SuspendLayout();
             this.tableLayoutPanelPlanValues.SuspendLayout();
@@ -132,6 +132,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBarPlanEngineRPM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPlanEngineRPM)).BeginInit();
             this.groupBoxLoad.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPlanLoadedWeight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarLoadedWeight)).BeginInit();
             this.groupBoxTempFirst.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarFirstTemp)).BeginInit();
@@ -152,7 +153,6 @@
             this.tableLayoutPanelParameters.SuspendLayout();
             this.groupBoxPlan.SuspendLayout();
             this.tableLayoutPanelPlan.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPlanLoadedWeight)).BeginInit();
             this.SuspendLayout();
             // 
             // Plan
@@ -353,6 +353,17 @@
             resources.ApplyResources(this.groupBoxLoad, "groupBoxLoad");
             this.groupBoxLoad.Name = "groupBoxLoad";
             this.groupBoxLoad.TabStop = false;
+            // 
+            // numericUpDownPlanLoadedWeight
+            // 
+            resources.ApplyResources(this.numericUpDownPlanLoadedWeight, "numericUpDownPlanLoadedWeight");
+            this.numericUpDownPlanLoadedWeight.Maximum = new decimal(new int[] {
+            190,
+            0,
+            0,
+            0});
+            this.numericUpDownPlanLoadedWeight.Name = "numericUpDownPlanLoadedWeight";
+            this.numericUpDownPlanLoadedWeight.ValueChanged += new System.EventHandler(this.numericUpDownPlanLoadedWeight_ValueChanged);
             // 
             // labelLoadedWeight
             // 
@@ -765,7 +776,7 @@
             // tableLayoutPanelPlan
             // 
             resources.ApplyResources(this.tableLayoutPanelPlan, "tableLayoutPanelPlan");
-            this.tableLayoutPanelPlan.Controls.Add(this.textBoxRecordInExecutuion, 1, 0);
+            this.tableLayoutPanelPlan.Controls.Add(this.textBoxRecordInExecution, 1, 0);
             this.tableLayoutPanelPlan.Controls.Add(this.textBoxEndTime, 1, 2);
             this.tableLayoutPanelPlan.Controls.Add(this.textBoxRemainingTime, 1, 3);
             this.tableLayoutPanelPlan.Controls.Add(this.labelRecordInExecution, 0, 0);
@@ -775,10 +786,10 @@
             this.tableLayoutPanelPlan.Controls.Add(this.textBoxStartTime, 1, 1);
             this.tableLayoutPanelPlan.Name = "tableLayoutPanelPlan";
             // 
-            // textBoxRecordInExecutuion
+            // textBoxRecordInExecution
             // 
-            resources.ApplyResources(this.textBoxRecordInExecutuion, "textBoxRecordInExecutuion");
-            this.textBoxRecordInExecutuion.Name = "textBoxRecordInExecutuion";
+            resources.ApplyResources(this.textBoxRecordInExecution, "textBoxRecordInExecution");
+            this.textBoxRecordInExecution.Name = "textBoxRecordInExecution";
             // 
             // textBoxEndTime
             // 
@@ -819,17 +830,6 @@
             // 
             this.openFileDialogPlan.FileName = "openFileDialogPlan";
             // 
-            // numericUpDownPlanLoadedWeight
-            // 
-            resources.ApplyResources(this.numericUpDownPlanLoadedWeight, "numericUpDownPlanLoadedWeight");
-            this.numericUpDownPlanLoadedWeight.Maximum = new decimal(new int[] {
-            190,
-            0,
-            0,
-            0});
-            this.numericUpDownPlanLoadedWeight.Name = "numericUpDownPlanLoadedWeight";
-            this.numericUpDownPlanLoadedWeight.ValueChanged += new System.EventHandler(this.numericUpDownPlanLoadedWeight_ValueChanged);
-            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -857,6 +857,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPlanEngineRPM)).EndInit();
             this.groupBoxLoad.ResumeLayout(false);
             this.groupBoxLoad.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPlanLoadedWeight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarLoadedWeight)).EndInit();
             this.groupBoxTempFirst.ResumeLayout(false);
             this.groupBoxTempFirst.PerformLayout();
@@ -884,7 +885,6 @@
             this.groupBoxPlan.ResumeLayout(false);
             this.tableLayoutPanelPlan.ResumeLayout(false);
             this.tableLayoutPanelPlan.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPlanLoadedWeight)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -901,7 +901,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelParameters;
         private System.Windows.Forms.GroupBox groupBoxPlan;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelPlan;
-        private System.Windows.Forms.TextBox textBoxRecordInExecutuion;
+        private System.Windows.Forms.TextBox textBoxRecordInExecution;
         private System.Windows.Forms.TextBox textBoxStartTime;
         private System.Windows.Forms.TextBox textBoxEndTime;
         private System.Windows.Forms.TextBox textBoxRemainingTime;

@@ -5,8 +5,10 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Threading;
 
 namespace SMT_1
 {
@@ -15,6 +17,7 @@ namespace SMT_1
         private EngineController engine;
         private LoadController load;
         private FileController fileRW;
+        bool isPlanInExecution = false;
 
         public MainForm()
         {
@@ -38,7 +41,7 @@ namespace SMT_1
             saveFileDialogPlan.Filter = "text files (*.txt)|*.txt";
 
             textBoxT0.Text = "Degrees";
-            textBoxRecordInExecutuion.Text = "План не вибрано";
+            textBoxRecordInExecution.Text = "План не вибрано";
             textBoxEndTime.Text = textBoxRemainingTime.Text = textBoxStartTime.Text = "0";
 
             numericUpDownControlEngineRPM.Value = engine.RPM;
@@ -119,7 +122,9 @@ namespace SMT_1
                 "File info:\n" +
                 "\tFileName: {3}\n" +
                 "**************\n" +
-                "", engine.On, engine.RPM, engine.Voltage, openFileDialogPlan.FileName, load.Load);
+                "isPlanInExecution: {5}\n" +
+                "**************\n" +
+                "", engine.On, engine.RPM, engine.Voltage, openFileDialogPlan.FileName, load.Load, isPlanInExecution);
             if (fileRW.GetRecords().Count != 0)
                 dbg += "Records:\n";
             foreach(PlanRecord pl in fileRW.GetRecords())
@@ -434,7 +439,7 @@ namespace SMT_1
             trackBarLoadedWeight.Value = (int)numericUpDownPlanLoadedWeight.Value;
         }
 
-        private void buttonStartSelected_Click(object sender, EventArgs e)
+        private async void buttonStartSelected_Click(object sender, EventArgs e)
         {
             if (listViewPlanRecords.SelectedItems.Count > 0)
             {
@@ -446,16 +451,57 @@ namespace SMT_1
                     recordsToExecute.Remove(toDelete.Key);
                 }
 
-                // Тут потрібно буде створювати інший потік і передавати туди записи, які потрібно виконати
-
+                await ExecutePlanAsync(recordsToExecute);
+                
             } else {
                 MessageBox.Show("Запис не обрано", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
+        private async Task ExecutePlanAsync(Dictionary<int, PlanRecord> recordsToExecute)
+        {
+            //STOP ALL
+            isPlanInExecution = true;
+            Dispatcher uiDispatcher = Dispatcher.CurrentDispatcher;
+
+            await Task.Run(async () =>
+            {
+                DateTime recordEndTime = DateTime.Now;
+                foreach(KeyValuePair<int, PlanRecord> recordKV in recordsToExecute)
+                {
+                    recordEndTime = recordEndTime.Add(recordKV.Value.GetTime());
+                    
+                    var uiDispatcherTask = uiDispatcher.BeginInvoke(new Action(() => 
+                    {
+                        textBoxRecordInExecution.Text = recordKV.Key.ToString();
+                    }), null);
+                    uiDispatcherTask.Wait();
+
+                    while (DateTime.Now < recordEndTime)
+                    {
+                        if (!isPlanInExecution)
+                            return;
+                        Thread.Sleep(1000);
+                    }
+                }
+            });
+
+            StopAll();
+            MessageBox.Show("Виконання плану завершено", "", MessageBoxButtons.OK, MessageBoxIcon.None);
+
+            //STOP ALL
+        }
+
         private void buttonStopPlan_Click(object sender, EventArgs e)
         {
+            isPlanInExecution = false;
+        }
 
+        // TODO: stop everything, before plan start
+        private void StopAll()
+        {
+            textBoxRecordInExecution.Text = "План не вибрано";
+            isPlanInExecution = false;
         }
     }
 }
