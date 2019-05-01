@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.Plan = new System.Windows.Forms.TabPage();
             this.tableLayoutPanelRecordActions = new System.Windows.Forms.TableLayoutPanel();
@@ -144,6 +145,7 @@
             this.checkBoxControlCurrentRightVentOn = new System.Windows.Forms.CheckBox();
             this.checkBoxControlCurrentRightFanOn = new System.Windows.Forms.CheckBox();
             this.checkBoxControlCurrentLeftVentOn = new System.Windows.Forms.CheckBox();
+            this.timerCurrentRecord = new System.Windows.Forms.Timer(this.components);
             this.Plan.SuspendLayout();
             this.tableLayoutPanelRecordActions.SuspendLayout();
             this.tableLayoutPanelPlanValues.SuspendLayout();
@@ -901,14 +903,14 @@
             // tableLayoutPanelPlan
             // 
             resources.ApplyResources(this.tableLayoutPanelPlan, "tableLayoutPanelPlan");
-            this.tableLayoutPanelPlan.Controls.Add(this.textBoxRecordInExecution, 1, 0);
-            this.tableLayoutPanelPlan.Controls.Add(this.textBoxEndTime, 1, 2);
-            this.tableLayoutPanelPlan.Controls.Add(this.textBoxRemainingTime, 1, 3);
             this.tableLayoutPanelPlan.Controls.Add(this.labelRecordInExecution, 0, 0);
             this.tableLayoutPanelPlan.Controls.Add(this.labelStartTime, 0, 1);
-            this.tableLayoutPanelPlan.Controls.Add(this.labelEndTime, 0, 2);
-            this.tableLayoutPanelPlan.Controls.Add(this.labelRemainingTime, 0, 3);
             this.tableLayoutPanelPlan.Controls.Add(this.textBoxStartTime, 1, 1);
+            this.tableLayoutPanelPlan.Controls.Add(this.textBoxRecordInExecution, 1, 0);
+            this.tableLayoutPanelPlan.Controls.Add(this.labelEndTime, 0, 3);
+            this.tableLayoutPanelPlan.Controls.Add(this.labelRemainingTime, 0, 2);
+            this.tableLayoutPanelPlan.Controls.Add(this.textBoxEndTime, 1, 3);
+            this.tableLayoutPanelPlan.Controls.Add(this.textBoxRemainingTime, 1, 2);
             this.tableLayoutPanelPlan.Name = "tableLayoutPanelPlan";
             // 
             // textBoxRecordInExecution
@@ -1023,6 +1025,11 @@
             resources.ApplyResources(this.checkBoxControlCurrentLeftVentOn, "checkBoxControlCurrentLeftVentOn");
             this.checkBoxControlCurrentLeftVentOn.Name = "checkBoxControlCurrentLeftVentOn";
             this.checkBoxControlCurrentLeftVentOn.UseVisualStyleBackColor = true;
+            // 
+            // timerCurrentRecord
+            // 
+            this.timerCurrentRecord.Interval = 1000;
+            this.timerCurrentRecord.Tick += new System.EventHandler(this.timerCurrentRecord_Tick);
             // 
             // MainForm
             // 
@@ -1209,6 +1216,7 @@
         private System.Windows.Forms.CheckBox checkBoxControlCurrentRightFanOn;
         private System.Windows.Forms.CheckBox checkBoxControlCurrentRightVentOn;
         private System.Windows.Forms.CheckBox checkBoxControlCurrentLeftFanOn;
+        private System.Windows.Forms.Timer timerCurrentRecord;
     }
 }
 

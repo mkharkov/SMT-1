@@ -20,6 +20,7 @@ namespace SMT_1
         private FanController leftFan;
         private FanController rightFan;
 
+        private int executeTimeCounter=0;
         bool isPlanInExecution = false;
 
         public MainForm()
@@ -463,17 +464,39 @@ namespace SMT_1
 
             isPlanInExecution = true;
             Dispatcher uiDispatcher = Dispatcher.CurrentDispatcher;
-
+            executeTimeCounter = 0;
             await Task.Run(() => //task is synchronous for itself
             {
                 DateTime recordEndTime = DateTime.Now;
+                DateTime recordStartTime;
                 foreach(KeyValuePair<int, PlanRecord> recordKV in recordsToExecute)
                 {
+                    recordStartTime = recordEndTime;
                     recordEndTime = recordEndTime.Add(recordKV.Value.GetTime());
-                    
+                    executeTimeCounter = (int)recordEndTime.Subtract(recordStartTime).TotalSeconds;
+
                     var uiDispatcherTask = uiDispatcher.BeginInvoke(new Action(() => 
                     {
                         textBoxRecordInExecution.Text = recordKV.Key.ToString();
+                        textBoxStartTime.Text = recordStartTime.ToString("hh:mm:ss tt");
+                        textBoxEndTime.Text = recordEndTime.ToString("hh:mm:ss tt");
+                        textBoxRemainingTime.Text = executeTimeCounter.ToString();
+                        timerCurrentRecord.Start();
+                        // TODO: fill all fields
+                        // Some timer should be triggered when 
+                        /* Previous, current = Now
+                         * previous = current
+                         * current = Now+timeToExecute
+                         * previous = startOfTask
+                         * current = endOfTask
+                         * remaining = end - now
+                         * Timer should be started when task starts to execute
+                         * so, start timer in dispatcher action
+                         * end timer at the end of the loop iteration
+                         * tick event should decrease counter
+                         * initially counter should be set to amount of seconds needed to execute time
+                         * when displaying counter seconds should be formated into hh:mm    
+                         */
                     }), null);
                     uiDispatcherTask.Wait();
 
@@ -498,7 +521,7 @@ namespace SMT_1
         private void SetAllControlToInitial()
         {
             textBoxRecordInExecution.Text = "План не вибрано";
-            textBoxEndTime.Text = textBoxRemainingTime.Text = textBoxStartTime.Text = "0";
+            textBoxEndTime.Text = textBoxRemainingTime.Text = textBoxStartTime.Text = "";
 
             // Engine to default
             engine.On = false;
@@ -553,6 +576,18 @@ namespace SMT_1
         {
             rightFan.VentOpen = !rightFan.VentOpen;
             checkBoxControlCurrentRightVentOn.Checked = rightFan.VentOpen;
+        }
+
+        private void timerCurrentRecord_Tick(object sender, EventArgs e)
+        {
+            if (executeTimeCounter > 0 && isPlanInExecution)
+            {
+                executeTimeCounter--;
+                textBoxRemainingTime.Text = executeTimeCounter.ToString();
+            } else {
+                timerCurrentRecord.Stop();
+            }
+            
         }
     }
 }
