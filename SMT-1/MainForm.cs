@@ -20,7 +20,7 @@ namespace SMT_1
         private FanController leftFan;
         private FanController rightFan;
 
-        private int executeTimeCounter=0;
+        private int executeTimeCounter = 0;
         bool isPlanInExecution = false;
 
         public MainForm()
@@ -51,7 +51,7 @@ namespace SMT_1
             SetAllControlToInitial();
 
             textBoxPlanEngineVoltage.Text = EngineController.RpmToVoltage((int)numericUpDownControlEngineRPM.Value).ToString();
-            
+
             numericUpDownPlanLoadedWeight.Value = trackBarLoadedWeight.Value;
             numericUpDownPlanFirstTemp.Value = trackBarFirstTemp.Value;
             numericUpDownPlanSecondTemp.Value = trackBarSecondTemp.Value;
@@ -119,14 +119,14 @@ namespace SMT_1
                 "**************\n" +
                 "isPlanInExecution: {5}\n" +
                 "**************\n" +
-                "LeftFan: ON({6}), Vent({7})\n" + 
+                "LeftFan: ON({6}), Vent({7})\n" +
                 "**************\n" +
                 "RightFan: ON({8}), Vent({9})\n" +
                 "**************\n" +
                 "", engine.On, engine.RPM, engine.Voltage, openFileDialogPlan.FileName, load.Load, isPlanInExecution, leftFan.On, leftFan.VentOpen, rightFan.On, rightFan.VentOpen);
             if (fileRW.GetRecords().Count != 0)
                 dbg += "Records:\n";
-            foreach(PlanRecord pl in fileRW.GetRecords())
+            foreach (PlanRecord pl in fileRW.GetRecords())
             {
                 //string timeHours = String.Format("{0}", pl.GetTime().Hours).PadLeft(2, '0');
                 //string timeMinutes = String.Format("{0}", pl.GetTime().Minutes).PadLeft(2, '0');
@@ -230,6 +230,12 @@ namespace SMT_1
 
         private void buttonRecordAdd_Click(object sender, EventArgs e)
         {
+            //if(isPlanInExecution)
+            //{
+            //    MessageBox.Show("Виконується план\n" + "Запис не буде додано", "", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            //    return;
+            //}
+
             // Getting last element of list
             var r = Enumerable.Empty<ListViewItem>();
 
@@ -267,7 +273,7 @@ namespace SMT_1
 
                 //Change all indexes
                 int i = 0;
-                foreach(ListViewItem elem in listViewPlanRecords.Items)
+                foreach (ListViewItem elem in listViewPlanRecords.Items)
                 {
                     elem.Text = i.ToString();
                     i++;
@@ -322,7 +328,7 @@ namespace SMT_1
             if (listViewPlanRecords.SelectedItems.Count > 0)
             {
                 int idxA = listViewPlanRecords.SelectedItems[0].Index;
-                if (idxA == listViewPlanRecords.Items.Count-1)
+                if (idxA == listViewPlanRecords.Items.Count - 1)
                 {
                     MessageBox.Show("Запис внизу списку", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
@@ -352,18 +358,18 @@ namespace SMT_1
         {
             if (openFileDialogPlan.ShowDialog() == DialogResult.OK)
             {
-                if(fileRW.LoadFromFile(openFileDialogPlan.FileName))
+                if (fileRW.LoadFromFile(openFileDialogPlan.FileName))
                 {
                     listViewPlanRecords.Items.Clear();
                     int idx = 0;
-                    foreach(PlanRecord pl in fileRW.GetRecords())
+                    foreach (PlanRecord pl in fileRW.GetRecords())
                     {
-                        listViewPlanRecords.Items.Add(new ListViewItem( new string[] { idx.ToString(),
+                        listViewPlanRecords.Items.Add(new ListViewItem(new string[] { idx.ToString(),
                                                                                         pl.GetTimeStr(),
                                                                                         pl.GetSpeed().ToString(),
                                                                                         pl.GetLoad().ToString(),
                                                                                         pl.GetT1().ToString(),
-                                                                                        pl.GetT2().ToString() } ));
+                                                                                        pl.GetT2().ToString() }));
                         idx++;
                     }
                 } else {
@@ -377,7 +383,7 @@ namespace SMT_1
             if (saveFileDialogPlan.ShowDialog() == DialogResult.OK)
             {
                 List<string> list = new List<string>(listViewPlanRecords.Items.Count);
-                foreach(ListViewItem item in listViewPlanRecords.Items)
+                foreach (ListViewItem item in listViewPlanRecords.Items)
                 {
                     list.Add(FileController.ApplyTemplate(item.SubItems[1].Text,
                                                           item.SubItems[2].Text,
@@ -446,13 +452,13 @@ namespace SMT_1
                 Dictionary<int, PlanRecord> recordsToExecute = Convert_ListViewItems_ToList();
                 //Видалення записів, які не будуть виконуватись
                 int executeFromIdx = int.Parse(listViewPlanRecords.SelectedItems[0].SubItems[0].Text);
-                foreach(var toDelete in recordsToExecute.Where(kv => kv.Key < executeFromIdx).ToList())
+                foreach (var toDelete in recordsToExecute.Where(kv => kv.Key < executeFromIdx).ToList())
                 {
                     recordsToExecute.Remove(toDelete.Key);
                 }
 
                 await ExecutePlanAsync(recordsToExecute);
-                
+
             } else {
                 MessageBox.Show("Запис не обрано", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
@@ -461,6 +467,7 @@ namespace SMT_1
         private async Task ExecutePlanAsync(Dictionary<int, PlanRecord> recordsToExecute)
         {
             SetAllControlToInitial();
+            PlanInExecutionControlDisabler(true);
 
             isPlanInExecution = true;
             Dispatcher uiDispatcher = Dispatcher.CurrentDispatcher;
@@ -469,13 +476,13 @@ namespace SMT_1
             {
                 DateTime recordEndTime = DateTime.Now;
                 DateTime recordStartTime;
-                foreach(KeyValuePair<int, PlanRecord> recordKV in recordsToExecute)
+                foreach (KeyValuePair<int, PlanRecord> recordKV in recordsToExecute)
                 {
                     recordStartTime = recordEndTime;
                     recordEndTime = recordEndTime.Add(recordKV.Value.GetTime());
                     executeTimeCounter = (int)recordEndTime.Subtract(recordStartTime).TotalSeconds;
 
-                    var uiDispatcherTask = uiDispatcher.BeginInvoke(new Action(() => 
+                    var uiDispatcherTask = uiDispatcher.BeginInvoke(new Action(() =>
                     {
                         textBoxRecordInExecution.Text = recordKV.Key.ToString();
                         textBoxStartTime.Text = recordStartTime.ToString("hh:mm:ss tt");
@@ -509,6 +516,7 @@ namespace SMT_1
                 }
             });
 
+            PlanInExecutionControlDisabler(false);
             SetAllControlToInitial();
             MessageBox.Show("Виконання плану завершено", "", MessageBoxButtons.OK, MessageBoxIcon.None);
         }
@@ -542,6 +550,28 @@ namespace SMT_1
             checkBoxControlCurrentRightVentOn.Checked = false;
 
             isPlanInExecution = false;
+        }
+
+        private void PlanInExecutionControlDisabler(bool needToDisable)
+        {
+            // Plan tab
+            buttonRecordAdd.Enabled = 
+            buttonRecordDelete.Enabled =
+            buttonRecordUp.Enabled = 
+            buttonRecordDown.Enabled =
+
+            buttonApplyPlanRecordChanges.Enabled =
+            buttonStartSelected.Enabled =
+            buttonLoadFileFromPath.Enabled =
+
+            //Control tab
+            //TODO: чи надавати можливість керування вентиляторами під час виконання плану?
+            buttonControlEngineStart.Enabled =
+            buttonControlEngineStop.Enabled =
+            buttonControlEngineSetValues.Enabled =
+            buttonControlLoadSetValues.Enabled =
+
+            !needToDisable;
         }
 
         private void numericUpDownPlanSecondTemp_ValueChanged(object sender, EventArgs e)
