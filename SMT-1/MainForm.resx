@@ -2388,6 +2388,27 @@
   <data name="&gt;&gt;Control.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="chartLoad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 291</value>
+  </data>
+  <data name="chartLoad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>847, 241</value>
+  </data>
+  <data name="chartLoad.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;chartLoad.Name" xml:space="preserve">
+    <value>chartLoad</value>
+  </data>
+  <data name="&gt;&gt;chartLoad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;chartLoad.Parent" xml:space="preserve">
+    <value>Charts</value>
+  </data>
+  <data name="&gt;&gt;chartLoad.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 677</value>
   </data>
@@ -2410,7 +2431,7 @@
     <value>Charts</value>
   </data>
   <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="labelTest2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2437,7 +2458,7 @@
     <value>Charts</value>
   </data>
   <data name="&gt;&gt;labelTest2.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="labelTest1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2464,7 +2485,7 @@
     <value>Charts</value>
   </data>
   <data name="&gt;&gt;labelTest1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="numericUpDownTest2.Location" type="System.Drawing.Point, System.Drawing">
     <value>317, 709</value>
@@ -2485,7 +2506,7 @@
     <value>Charts</value>
   </data>
   <data name="&gt;&gt;numericUpDownTest2.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="numericUpDownTest1.Location" type="System.Drawing.Point, System.Drawing">
     <value>317, 683</value>
@@ -2506,7 +2527,7 @@
     <value>Charts</value>
   </data>
   <data name="&gt;&gt;numericUpDownTest1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="buttonGraphSaveToFiles.Location" type="System.Drawing.Point, System.Drawing">
     <value>146, 706</value>
@@ -2530,7 +2551,7 @@
     <value>Charts</value>
   </data>
   <data name="&gt;&gt;buttonGraphSaveToFiles.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="chartTemperature.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 6</value>
@@ -2551,7 +2572,7 @@
     <value>Charts</value>
   </data>
   <data name="&gt;&gt;chartTemperature.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="buttonGraphStart.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 706</value>
@@ -2575,7 +2596,7 @@
     <value>Charts</value>
   </data>
   <data name="&gt;&gt;buttonGraphStart.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="Charts.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>

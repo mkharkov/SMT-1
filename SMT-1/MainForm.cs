@@ -644,6 +644,8 @@ namespace SMT_1
             //Collect info
             chartTemperature.Series["T1"].Points.AddY(Test1);
             chartTemperature.Series["T2"].Points.AddY(Test2);
+
+            chartLoad.Series["Load"].Points.AddY(load.Load);
         }
 
         private void button3_Click(object sender, EventArgs e)

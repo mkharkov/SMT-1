@@ -30,10 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.Plan = new System.Windows.Forms.TabPage();
             this.tableLayoutPanelRecordActions = new System.Windows.Forms.TableLayoutPanel();
@@ -160,6 +164,7 @@
             this.labelTest1 = new System.Windows.Forms.Label();
             this.labelTest2 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
+            this.chartLoad = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.Plan.SuspendLayout();
             this.tableLayoutPanelRecordActions.SuspendLayout();
             this.tableLayoutPanelPlanValues.SuspendLayout();
@@ -202,6 +207,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.chartTemperature)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTest1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTest2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartLoad)).BeginInit();
             this.SuspendLayout();
             // 
             // Plan
@@ -853,6 +859,7 @@
             // 
             // Charts
             // 
+            this.Charts.Controls.Add(this.chartLoad);
             this.Charts.Controls.Add(this.button3);
             this.Charts.Controls.Add(this.labelTest2);
             this.Charts.Controls.Add(this.labelTest1);
@@ -1066,44 +1073,44 @@
             // 
             // chartTemperature
             // 
-            chartArea1.AxisX.ArrowStyle = System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle.Triangle;
-            chartArea1.AxisX.IsMarksNextToAxis = false;
-            chartArea1.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Seconds;
-            chartArea1.AxisX.MajorGrid.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Seconds;
-            chartArea1.AxisX.Title = "час (сек)";
-            chartArea1.AxisX.TitleFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea1.AxisY.ArrowStyle = System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle.Triangle;
-            chartArea1.AxisY.Interval = 25D;
-            chartArea1.AxisY.MajorGrid.Interval = 25D;
-            chartArea1.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea1.AxisY.MajorTickMark.Interval = 50D;
-            chartArea1.AxisY.Title = "температура (ºC)";
-            chartArea1.AxisY.TitleFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea1.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
-            chartArea1.Name = "ChartArea1";
-            this.chartTemperature.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartTemperature.Legends.Add(legend1);
+            chartArea2.AxisX.ArrowStyle = System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle.Triangle;
+            chartArea2.AxisX.IsMarksNextToAxis = false;
+            chartArea2.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Seconds;
+            chartArea2.AxisX.MajorGrid.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Seconds;
+            chartArea2.AxisX.Title = "час (сек)";
+            chartArea2.AxisX.TitleFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea2.AxisY.ArrowStyle = System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle.Triangle;
+            chartArea2.AxisY.Interval = 25D;
+            chartArea2.AxisY.MajorGrid.Interval = 25D;
+            chartArea2.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea2.AxisY.MajorTickMark.Interval = 50D;
+            chartArea2.AxisY.Title = "температура (ºC)";
+            chartArea2.AxisY.TitleFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea2.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
+            chartArea2.Name = "ChartArea1";
+            this.chartTemperature.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartTemperature.Legends.Add(legend2);
             resources.ApplyResources(this.chartTemperature, "chartTemperature");
             this.chartTemperature.Name = "chartTemperature";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.Color = System.Drawing.Color.Red;
-            series1.Legend = "Legend1";
-            series1.LegendText = "Т1";
-            series1.Name = "T1";
             series2.ChartArea = "ChartArea1";
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series2.Color = System.Drawing.Color.Blue;
+            series2.Color = System.Drawing.Color.Red;
             series2.Legend = "Legend1";
-            series2.LegendText = "Т2";
-            series2.Name = "T2";
-            this.chartTemperature.Series.Add(series1);
+            series2.LegendText = "Т1";
+            series2.Name = "T1";
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series3.Color = System.Drawing.Color.Blue;
+            series3.Legend = "Legend1";
+            series3.LegendText = "Т2";
+            series3.Name = "T2";
             this.chartTemperature.Series.Add(series2);
-            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title1.Name = "Title1";
-            title1.Text = "Температура";
-            this.chartTemperature.Titles.Add(title1);
+            this.chartTemperature.Series.Add(series3);
+            title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title2.Name = "Title1";
+            title2.Text = "Температура";
+            this.chartTemperature.Titles.Add(title2);
             // 
             // timerChartInfo
             // 
@@ -1170,6 +1177,42 @@
             this.button3.Name = "button3";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // chartLoad
+            // 
+            chartArea1.AxisX.ArrowStyle = System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle.Triangle;
+            chartArea1.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.NotSet;
+            chartArea1.AxisX.MajorTickMark.Enabled = false;
+            chartArea1.AxisX.MajorTickMark.Interval = 4D;
+            chartArea1.AxisX.MajorTickMark.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Seconds;
+            chartArea1.AxisX.MajorTickMark.TickMarkStyle = System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.None;
+            chartArea1.AxisX.Title = "час (сек)";
+            chartArea1.AxisX.TitleFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea1.AxisY.ArrowStyle = System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle.Triangle;
+            chartArea1.AxisY.Interval = 30D;
+            chartArea1.AxisY.MajorGrid.Interval = 30D;
+            chartArea1.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea1.AxisY.MajorTickMark.Interval = 30D;
+            chartArea1.AxisY.Title = "навантаження (кг)";
+            chartArea1.AxisY.TitleFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea1.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
+            chartArea1.Name = "ChartArea1";
+            this.chartLoad.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartLoad.Legends.Add(legend1);
+            resources.ApplyResources(this.chartLoad, "chartLoad");
+            this.chartLoad.Name = "chartLoad";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Color = System.Drawing.Color.Blue;
+            series1.Legend = "Legend1";
+            series1.LegendText = "Навантаження";
+            series1.Name = "Load";
+            this.chartLoad.Series.Add(series1);
+            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title1.Name = "Title1";
+            title1.Text = "Навантаження";
+            this.chartLoad.Titles.Add(title1);
             // 
             // MainForm
             // 
@@ -1240,6 +1283,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.chartTemperature)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTest1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTest2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartLoad)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1371,6 +1415,7 @@
         private System.Windows.Forms.Button buttonGraphStart;
         private System.Windows.Forms.Timer timerChartInfo;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartLoad;
     }
 }
 
