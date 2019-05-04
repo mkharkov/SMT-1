@@ -30,6 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.Plan = new System.Windows.Forms.TabPage();
             this.tableLayoutPanelRecordActions = new System.Windows.Forms.TableLayoutPanel();
             this.buttonRecordAdd = new System.Windows.Forms.Button();
@@ -146,6 +151,15 @@
             this.checkBoxControlCurrentRightFanOn = new System.Windows.Forms.CheckBox();
             this.checkBoxControlCurrentLeftVentOn = new System.Windows.Forms.CheckBox();
             this.timerCurrentRecord = new System.Windows.Forms.Timer(this.components);
+            this.buttonGraphStart = new System.Windows.Forms.Button();
+            this.chartTemperature = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.timerChartInfo = new System.Windows.Forms.Timer(this.components);
+            this.buttonGraphSaveToFiles = new System.Windows.Forms.Button();
+            this.numericUpDownTest1 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownTest2 = new System.Windows.Forms.NumericUpDown();
+            this.labelTest1 = new System.Windows.Forms.Label();
+            this.labelTest2 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.Plan.SuspendLayout();
             this.tableLayoutPanelRecordActions.SuspendLayout();
             this.tableLayoutPanelPlanValues.SuspendLayout();
@@ -178,12 +192,16 @@
             this.groupBoxControlEngine.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarControlEngineRPM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownControlEngineRPM)).BeginInit();
+            this.Charts.SuspendLayout();
             this.tabControlControlPanel.SuspendLayout();
             this.DebugTab.SuspendLayout();
             this.groupBoxCurrentParameters.SuspendLayout();
             this.tableLayoutPanelParameters.SuspendLayout();
             this.groupBoxPlan.SuspendLayout();
             this.tableLayoutPanelPlan.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTemperature)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTest1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTest2)).BeginInit();
             this.SuspendLayout();
             // 
             // Plan
@@ -835,6 +853,14 @@
             // 
             // Charts
             // 
+            this.Charts.Controls.Add(this.button3);
+            this.Charts.Controls.Add(this.labelTest2);
+            this.Charts.Controls.Add(this.labelTest1);
+            this.Charts.Controls.Add(this.numericUpDownTest2);
+            this.Charts.Controls.Add(this.numericUpDownTest1);
+            this.Charts.Controls.Add(this.buttonGraphSaveToFiles);
+            this.Charts.Controls.Add(this.chartTemperature);
+            this.Charts.Controls.Add(this.buttonGraphStart);
             resources.ApplyResources(this.Charts, "Charts");
             this.Charts.Name = "Charts";
             this.Charts.UseVisualStyleBackColor = true;
@@ -1031,6 +1057,120 @@
             this.timerCurrentRecord.Interval = 1000;
             this.timerCurrentRecord.Tick += new System.EventHandler(this.timerCurrentRecord_Tick);
             // 
+            // buttonGraphStart
+            // 
+            resources.ApplyResources(this.buttonGraphStart, "buttonGraphStart");
+            this.buttonGraphStart.Name = "buttonGraphStart";
+            this.buttonGraphStart.UseVisualStyleBackColor = true;
+            this.buttonGraphStart.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // chartTemperature
+            // 
+            chartArea1.AxisX.ArrowStyle = System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle.Triangle;
+            chartArea1.AxisX.IsMarksNextToAxis = false;
+            chartArea1.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Seconds;
+            chartArea1.AxisX.MajorGrid.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Seconds;
+            chartArea1.AxisX.Title = "час (сек)";
+            chartArea1.AxisX.TitleFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea1.AxisY.ArrowStyle = System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle.Triangle;
+            chartArea1.AxisY.Interval = 25D;
+            chartArea1.AxisY.MajorGrid.Interval = 25D;
+            chartArea1.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea1.AxisY.MajorTickMark.Interval = 50D;
+            chartArea1.AxisY.Title = "температура (ºC)";
+            chartArea1.AxisY.TitleFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea1.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
+            chartArea1.Name = "ChartArea1";
+            this.chartTemperature.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartTemperature.Legends.Add(legend1);
+            resources.ApplyResources(this.chartTemperature, "chartTemperature");
+            this.chartTemperature.Name = "chartTemperature";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.Color = System.Drawing.Color.Red;
+            series1.Legend = "Legend1";
+            series1.LegendText = "Т1";
+            series1.Name = "T1";
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series2.Color = System.Drawing.Color.Blue;
+            series2.Legend = "Legend1";
+            series2.LegendText = "Т2";
+            series2.Name = "T2";
+            this.chartTemperature.Series.Add(series1);
+            this.chartTemperature.Series.Add(series2);
+            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title1.Name = "Title1";
+            title1.Text = "Температура";
+            this.chartTemperature.Titles.Add(title1);
+            // 
+            // timerChartInfo
+            // 
+            this.timerChartInfo.Interval = 1000;
+            this.timerChartInfo.Tick += new System.EventHandler(this.timerChartInfo_Tick);
+            // 
+            // buttonGraphSaveToFiles
+            // 
+            resources.ApplyResources(this.buttonGraphSaveToFiles, "buttonGraphSaveToFiles");
+            this.buttonGraphSaveToFiles.Name = "buttonGraphSaveToFiles";
+            this.buttonGraphSaveToFiles.UseVisualStyleBackColor = true;
+            this.buttonGraphSaveToFiles.Click += new System.EventHandler(this.buttonGraphSaveToFiles_Click);
+            // 
+            // numericUpDownTest1
+            // 
+            resources.ApplyResources(this.numericUpDownTest1, "numericUpDownTest1");
+            this.numericUpDownTest1.Maximum = new decimal(new int[] {
+            125,
+            0,
+            0,
+            0});
+            this.numericUpDownTest1.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDownTest1.Name = "numericUpDownTest1";
+            this.numericUpDownTest1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDownTest1.ValueChanged += new System.EventHandler(this.numericUpDownTest1_ValueChanged);
+            // 
+            // numericUpDownTest2
+            // 
+            resources.ApplyResources(this.numericUpDownTest2, "numericUpDownTest2");
+            this.numericUpDownTest2.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDownTest2.Name = "numericUpDownTest2";
+            this.numericUpDownTest2.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDownTest2.ValueChanged += new System.EventHandler(this.numericUpDownTest2_ValueChanged);
+            // 
+            // labelTest1
+            // 
+            resources.ApplyResources(this.labelTest1, "labelTest1");
+            this.labelTest1.Name = "labelTest1";
+            // 
+            // labelTest2
+            // 
+            resources.ApplyResources(this.labelTest2, "labelTest2");
+            this.labelTest2.Name = "labelTest2";
+            // 
+            // button3
+            // 
+            resources.ApplyResources(this.button3, "button3");
+            this.button3.Name = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -1087,6 +1227,8 @@
             this.groupBoxControlEngine.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarControlEngineRPM)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownControlEngineRPM)).EndInit();
+            this.Charts.ResumeLayout(false);
+            this.Charts.PerformLayout();
             this.tabControlControlPanel.ResumeLayout(false);
             this.DebugTab.ResumeLayout(false);
             this.groupBoxCurrentParameters.ResumeLayout(false);
@@ -1095,6 +1237,9 @@
             this.groupBoxPlan.ResumeLayout(false);
             this.tableLayoutPanelPlan.ResumeLayout(false);
             this.tableLayoutPanelPlan.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTemperature)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTest1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTest2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1217,6 +1362,15 @@
         private System.Windows.Forms.CheckBox checkBoxControlCurrentRightVentOn;
         private System.Windows.Forms.CheckBox checkBoxControlCurrentLeftFanOn;
         private System.Windows.Forms.Timer timerCurrentRecord;
+        private System.Windows.Forms.Label labelTest2;
+        private System.Windows.Forms.Label labelTest1;
+        private System.Windows.Forms.NumericUpDown numericUpDownTest2;
+        private System.Windows.Forms.NumericUpDown numericUpDownTest1;
+        private System.Windows.Forms.Button buttonGraphSaveToFiles;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartTemperature;
+        private System.Windows.Forms.Button buttonGraphStart;
+        private System.Windows.Forms.Timer timerChartInfo;
+        private System.Windows.Forms.Button button3;
     }
 }
 

@@ -23,6 +23,10 @@ namespace SMT_1
         private int executeTimeCounter = 0;
         bool isPlanInExecution = false;
 
+        //REMOVE
+        int Test1 = 0;
+        int Test2 = 0;
+        //REMOVE
         public MainForm()
         {
             InitializeComponent();
@@ -618,6 +622,39 @@ namespace SMT_1
                 timerCurrentRecord.Stop();
             }
             
+        }
+
+        private void numericUpDownTest1_ValueChanged(object sender, EventArgs e)
+        {
+            Test1 = (int)numericUpDownTest1.Value;
+        }
+
+        private void numericUpDownTest2_ValueChanged(object sender, EventArgs e)
+        {
+            Test2 = (int)numericUpDownTest2.Value;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            timerChartInfo.Start();
+        }
+
+        private void timerChartInfo_Tick(object sender, EventArgs e)
+        {
+            //Collect info
+            chartTemperature.Series["T1"].Points.AddY(Test1);
+            chartTemperature.Series["T2"].Points.AddY(Test2);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            timerChartInfo.Stop();
+        }
+
+        private void buttonGraphSaveToFiles_Click(object sender, EventArgs e)
+        {
+            //TODO
+            // Create directory with DateTime.Now name and create file for every chart in it
         }
     }
 }
