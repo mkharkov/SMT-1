@@ -701,18 +701,12 @@ namespace SMT_1
                 FileStream loadFileStream = File.Create(dirInfo.FullName + @"\Навантаження.txt");
 
                 // writing temp1
-                for (int i = 0; i < chartDataTemp1.Count; i++)
+                for (int i = 0; i < chartSecondsCounter; i++)
                 {
-                    if (i % 4 == 0)
-                    {
-                        WriteTextToFile(temp1FileStream, "\r\n");
-                    }
-
-                    WriteTextToFile(temp1FileStream, chartDataTemp1[i].ToString() + ", ");
-                    //WriteTextToFile(temp1FileStream, "Str\r\n");
+                    WriteTextToFile(temp1FileStream, chartDataTemp1[i].ToString() + "\r\n");
+                    WriteTextToFile(temp2FileStream, chartDataTemp2[i].ToString() + "\r\n");
+                    WriteTextToFile(loadFileStream, chartDataLoad[i].ToString() + "\r\n");
                 }
-                //TODO:Write temp2 and load
-
 
                 // Release files
                 temp1FileStream.Close();
