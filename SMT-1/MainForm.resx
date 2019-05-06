@@ -2388,6 +2388,30 @@
   <data name="&gt;&gt;Control.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="buttonClearCharts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>146, 677</value>
+  </data>
+  <data name="buttonClearCharts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 23</value>
+  </data>
+  <data name="buttonClearCharts.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="buttonClearCharts.Text" xml:space="preserve">
+    <value>Очистити</value>
+  </data>
+  <data name="&gt;&gt;buttonClearCharts.Name" xml:space="preserve">
+    <value>buttonClearCharts</value>
+  </data>
+  <data name="&gt;&gt;buttonClearCharts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonClearCharts.Parent" xml:space="preserve">
+    <value>Charts</value>
+  </data>
+  <data name="&gt;&gt;buttonClearCharts.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="chartLoad.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 291</value>
   </data>
@@ -2407,31 +2431,31 @@
     <value>Charts</value>
   </data>
   <data name="&gt;&gt;chartLoad.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
-  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="buttonStopChartsRead.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 677</value>
   </data>
-  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="buttonStopChartsRead.Size" type="System.Drawing.Size, System.Drawing">
     <value>134, 23</value>
   </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+  <data name="buttonStopChartsRead.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="button3.Text" xml:space="preserve">
+  <data name="buttonStopChartsRead.Text" xml:space="preserve">
     <value>Зупинити</value>
   </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
+  <data name="&gt;&gt;buttonStopChartsRead.Name" xml:space="preserve">
+    <value>buttonStopChartsRead</value>
   </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+  <data name="&gt;&gt;buttonStopChartsRead.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;buttonStopChartsRead.Parent" xml:space="preserve">
     <value>Charts</value>
   </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;buttonStopChartsRead.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="labelTest2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2458,7 +2482,7 @@
     <value>Charts</value>
   </data>
   <data name="&gt;&gt;labelTest2.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="labelTest1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2485,7 +2509,7 @@
     <value>Charts</value>
   </data>
   <data name="&gt;&gt;labelTest1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="numericUpDownTest2.Location" type="System.Drawing.Point, System.Drawing">
     <value>317, 709</value>
@@ -2506,7 +2530,7 @@
     <value>Charts</value>
   </data>
   <data name="&gt;&gt;numericUpDownTest2.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="numericUpDownTest1.Location" type="System.Drawing.Point, System.Drawing">
     <value>317, 683</value>
@@ -2527,37 +2551,37 @@
     <value>Charts</value>
   </data>
   <data name="&gt;&gt;numericUpDownTest1.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
-  <data name="buttonGraphSaveToFiles.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="buttonSaveCharts.Location" type="System.Drawing.Point, System.Drawing">
     <value>146, 706</value>
   </data>
-  <data name="buttonGraphSaveToFiles.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="buttonSaveCharts.Size" type="System.Drawing.Size, System.Drawing">
     <value>156, 23</value>
   </data>
-  <data name="buttonGraphSaveToFiles.TabIndex" type="System.Int32, mscorlib">
+  <data name="buttonSaveCharts.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="buttonGraphSaveToFiles.Text" xml:space="preserve">
-    <value>Зберегти дані в файл</value>
+  <data name="buttonSaveCharts.Text" xml:space="preserve">
+    <value>Зберегти дані</value>
   </data>
-  <data name="&gt;&gt;buttonGraphSaveToFiles.Name" xml:space="preserve">
-    <value>buttonGraphSaveToFiles</value>
+  <data name="&gt;&gt;buttonSaveCharts.Name" xml:space="preserve">
+    <value>buttonSaveCharts</value>
   </data>
-  <data name="&gt;&gt;buttonGraphSaveToFiles.Type" xml:space="preserve">
+  <data name="&gt;&gt;buttonSaveCharts.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;buttonGraphSaveToFiles.Parent" xml:space="preserve">
+  <data name="&gt;&gt;buttonSaveCharts.Parent" xml:space="preserve">
     <value>Charts</value>
   </data>
-  <data name="&gt;&gt;buttonGraphSaveToFiles.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;buttonSaveCharts.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="chartTemperature.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 6</value>
   </data>
   <data name="chartTemperature.Size" type="System.Drawing.Size, System.Drawing">
-    <value>782, 265</value>
+    <value>780, 265</value>
   </data>
   <data name="chartTemperature.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2572,31 +2596,31 @@
     <value>Charts</value>
   </data>
   <data name="&gt;&gt;chartTemperature.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
-  <data name="buttonGraphStart.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="buttonStartChartsRead.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 706</value>
   </data>
-  <data name="buttonGraphStart.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="buttonStartChartsRead.Size" type="System.Drawing.Size, System.Drawing">
     <value>134, 23</value>
   </data>
-  <data name="buttonGraphStart.TabIndex" type="System.Int32, mscorlib">
+  <data name="buttonStartChartsRead.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="buttonGraphStart.Text" xml:space="preserve">
+  <data name="buttonStartChartsRead.Text" xml:space="preserve">
     <value>Запустити зчитування</value>
   </data>
-  <data name="&gt;&gt;buttonGraphStart.Name" xml:space="preserve">
-    <value>buttonGraphStart</value>
+  <data name="&gt;&gt;buttonStartChartsRead.Name" xml:space="preserve">
+    <value>buttonStartChartsRead</value>
   </data>
-  <data name="&gt;&gt;buttonGraphStart.Type" xml:space="preserve">
+  <data name="&gt;&gt;buttonStartChartsRead.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;buttonGraphStart.Parent" xml:space="preserve">
+  <data name="&gt;&gt;buttonStartChartsRead.Parent" xml:space="preserve">
     <value>Charts</value>
   </data>
-  <data name="&gt;&gt;buttonGraphStart.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="&gt;&gt;buttonStartChartsRead.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="Charts.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>

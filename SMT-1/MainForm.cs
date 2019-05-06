@@ -9,6 +9,8 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Threading;
+using System.IO;
+
 
 namespace SMT_1
 {
@@ -20,8 +22,14 @@ namespace SMT_1
         private FanController leftFan;
         private FanController rightFan;
 
+        private int chartSecondsCounter = 0;
+        private List<Point2D> chartDataTemp1 = new List<Point2D>();
+        private List<Point2D> chartDataTemp2 = new List<Point2D>();
+        private List<Point2D> chartDataLoad = new List<Point2D>();
+
         private int executeTimeCounter = 0;
         bool isPlanInExecution = false;
+        bool isChartBeingRendered = false;
 
         //REMOVE
         int Test1 = 0;
@@ -139,6 +147,18 @@ namespace SMT_1
             }
             if (fileRW.GetRecords().Count != 0)
                 dbg += "**************\n";
+            dbg += "temp1Data:\n";
+            foreach (Point2D point in chartDataTemp1)
+                dbg += point.ToString() + "\n";
+            dbg += "**************\n";
+            dbg += "temp2Data:\n";
+            foreach (Point2D point in chartDataTemp2)
+                dbg += point.ToString() + "\n";
+            dbg += "**************\n";
+            dbg += "loadData:\n";
+            foreach (Point2D point in chartDataLoad)
+                dbg += point.ToString() + "\n";
+            dbg += "**************\n";
             richTextBoxDebug.Text = dbg;
         }
 
@@ -493,21 +513,6 @@ namespace SMT_1
                         textBoxEndTime.Text = recordEndTime.ToString("hh:mm:ss tt");
                         textBoxRemainingTime.Text = executeTimeCounter.ToString();
                         timerCurrentRecord.Start();
-                        // TODO: fill all fields
-                        // Some timer should be triggered when 
-                        /* Previous, current = Now
-                         * previous = current
-                         * current = Now+timeToExecute
-                         * previous = startOfTask
-                         * current = endOfTask
-                         * remaining = end - now
-                         * Timer should be started when task starts to execute
-                         * so, start timer in dispatcher action
-                         * end timer at the end of the loop iteration
-                         * tick event should decrease counter
-                         * initially counter should be set to amount of seconds needed to execute time
-                         * when displaying counter seconds should be formated into hh:mm    
-                         */
                     }), null);
                     uiDispatcherTask.Wait();
 
@@ -522,7 +527,7 @@ namespace SMT_1
 
             PlanInExecutionControlDisabler(false);
             SetAllControlToInitial();
-            MessageBox.Show("Виконання плану завершено", "", MessageBoxButtons.OK, MessageBoxIcon.None);
+            MessageBox.Show("Виконання плану завершено", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void buttonStopPlan_Click(object sender, EventArgs e)
@@ -633,30 +638,103 @@ namespace SMT_1
         {
             Test2 = (int)numericUpDownTest2.Value;
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            timerChartInfo.Start();
-        }
-
+        
         private void timerChartInfo_Tick(object sender, EventArgs e)
         {
+            chartSecondsCounter++;
             //Collect info
-            chartTemperature.Series["T1"].Points.AddY(Test1);
-            chartTemperature.Series["T2"].Points.AddY(Test2);
+            chartTemperature.Series["T1"].Points.AddXY(chartSecondsCounter, Test1);
+            chartTemperature.Series["T2"].Points.AddXY(chartSecondsCounter, Test2);
+            //Write to tempdata
+            chartDataTemp1.Add(new Point2D((int)chartTemperature.Series["T1"].Points.Last().XValue, (int)chartTemperature.Series["T1"].Points.Last().YValues[0]));
+            chartDataTemp2.Add(new Point2D((int)chartTemperature.Series["T2"].Points.Last().XValue, (int)chartTemperature.Series["T2"].Points.Last().YValues[0]));
 
-            chartLoad.Series["Load"].Points.AddY(load.Load);
+            int newLoadValue = -100;
+            if (isPlanInExecution)
+            {
+                int recordIdx = int.Parse(textBoxRecordInExecution.Text);
+                newLoadValue = int.Parse(listViewPlanRecords.Items[recordIdx].SubItems[3].Text);
+            } else {
+                newLoadValue = load.Load;
+            }
+            chartLoad.Series["Load"].Points.AddXY(chartSecondsCounter, newLoadValue);
+            chartDataLoad.Add(new Point2D((int)chartLoad.Series["Load"].Points.Last().XValue, (int)chartLoad.Series["Load"].Points.Last().YValues[0]));
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void buttonStopChartsRead_Click(object sender, EventArgs e)
         {
             timerChartInfo.Stop();
+            isChartBeingRendered = false;
         }
 
-        private void buttonGraphSaveToFiles_Click(object sender, EventArgs e)
+        private void buttonStartChartsRead_Click(object sender, EventArgs e)
         {
-            //TODO
-            // Create directory with DateTime.Now name and create file for every chart in it
+            timerChartInfo.Start();
+            isChartBeingRendered = true;
+        }
+
+        private async void buttonSaveCharts_Click(object sender, EventArgs e)
+        {
+            if (isChartBeingRendered)
+            {
+                MessageBox.Show("Для запису даних графіків у файл потрібно зупинити їх відображення", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            string dirName = DateTime.Now.ToString("dd.MM.yy hh-mm tt"); // dd/mm/yy hh:mm:ss tt
+
+            if (Directory.Exists(dirName))
+            {
+                DialogResult dRes = MessageBox.Show($"Каталог {dirName} вже існує\nПерезаписати?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if(dRes == DialogResult.No) {
+                    return;
+                }
+
+                Directory.Delete(dirName, true); //delete folder and its contents
+            }
+
+            await Task.Run(() =>
+            {
+                DirectoryInfo dirInfo = Directory.CreateDirectory(dirName);
+                FileStream temp1FileStream = File.Create(dirInfo.FullName + @"\Температура1.txt");
+                FileStream temp2FileStream = File.Create(dirInfo.FullName + @"\Температура2.txt");
+                FileStream loadFileStream = File.Create(dirInfo.FullName + @"\Навантаження.txt");
+
+                // writing temp1
+                for (int i = 0; i < chartDataTemp1.Count; i++)
+                {
+                    if (i % 4 == 0)
+                    {
+                        WriteTextToFile(temp1FileStream, "\r\n");
+                    }
+
+                    WriteTextToFile(temp1FileStream, chartDataTemp1[i].ToString() + ", ");
+                    //WriteTextToFile(temp1FileStream, "Str\r\n");
+                }
+                //TODO:Write temp2 and load
+
+
+                // Release files
+                temp1FileStream.Close();
+                temp2FileStream.Close();
+                loadFileStream.Close();
+            });
+
+            MessageBox.Show($"Дані записано в каталог {dirName}", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private static void WriteTextToFile(FileStream fs, string text)
+        {
+            byte[] info = new UTF8Encoding(true).GetBytes(text);
+            fs.Write(info, 0, info.Length);
+        }
+
+        private void buttonClearCharts_Click(object sender, EventArgs e)
+        {
+            chartSecondsCounter = 0;
+            chartDataTemp1.Clear();
+            chartDataTemp2.Clear();
+            chartDataLoad.Clear();
         }
     }
 }
