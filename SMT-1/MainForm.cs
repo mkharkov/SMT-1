@@ -35,6 +35,16 @@ namespace SMT_1
 
         bool isArduinoFound = false;
 
+        Thread dataCollector;
+
+        // Commands to arduino
+        private readonly byte spResetConnection = 0x31;
+        private readonly byte spStart = 0x32;
+        private readonly byte spAllOk = 0x33;
+
+        private readonly string initializedStr = "INITIALIZED";
+        private readonly string notInitializedStr = "ARDUINO";
+
         //REMOVE
         string threadStrDbg = "";
 
@@ -763,7 +773,7 @@ namespace SMT_1
                         isArduinoFound = true;
                         break;
                     }
-                    System.Threading.Thread.Sleep(1000); // wait a lot after closing
+                    System.Threading.Thread.Sleep(1000); // wait a lot after closing serial
                 }
 
                 if (!isArduinoFound)
@@ -778,31 +788,53 @@ namespace SMT_1
                 try
                 {
                     serialPortArduino.Open();
-                    byte[] buffer = new byte[] { 0x32 };
                     System.Threading.Thread.Sleep(1000); // Need to wait before port is open....
                     serialPortArduino.DiscardInBuffer();
-                    await serialPortArduino.BaseStream.WriteAsync(buffer, 0, buffer.Length); // Using writeAsync of baseStream, as SerialPort lib is broken...
-                                                                                             //serialPortArduino.Write("1");
+                    //await serialPortArduino.BaseStream.WriteAsync(buffer, 0, buffer.Length); // Using writeAsync of baseStream, as SerialPort lib is broken...
+                    serialPortArduino.BaseStream.WriteByte(spStart);
                     System.Threading.Thread.Sleep(500);
+
+                    int retryInitializeCounter = 0; // Max is 10
+                    int bigRetryCounter = 0; // Max is 3
                     while (true)
                     {
+                        //threadStrDbg += returnMessage; //REMOVE
+                        //threadStrDbg += DateTime.Now.ToString("mm:ss:ff") + '\n';  //REMOVE
+
+                        if (retryInitializeCounter >= 10)
+                        {
+                            bigRetryCounter++;
+                            if(bigRetryCounter >= 3)
+                            {
+                                MessageBox.Show("Неможливо ініціалізувати отримання даних з датчиків\nЯкщо перезапуск програми не допоможе, - варто перевірити скетч Arduino", "Критична помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                isArduinoFound = false; // UI should be turned off
+
+                            }
+                            retryInitializeCounter = 0;
+
+                            serialPortArduino.BaseStream.WriteByte(spResetConnection);
+                            System.Threading.Thread.Sleep(1000);
+                            serialPortArduino.DiscardInBuffer();
+                            serialPortArduino.BaseStream.WriteByte(spStart);
+                            System.Threading.Thread.Sleep(500);
+                        }
+
                         string returnMessage = serialPortArduino.ReadLine();
-                        threadStrDbg += returnMessage;
-                        threadStrDbg += DateTime.Now.ToString("mm:ss:ff") + '\n';
-                        //System.Threading.Thread.Sleep(2000);
-                        continue;
-                        //string returnMessage = serialPortArduino.ReadExisting();
-                        //if (returnMessage.Contains("INITIALIZED")) break;
+                        if (returnMessage.Contains(initializedStr)) break;
+                        else retryInitializeCounter++;
                     }
+
+                    // Successful handshake, collecting data
+                    dataCollector = new Thread(new ThreadStart(CollectSensorsData));
                 }
                 catch (Exception ex) {
-                    DialogResult dRes = MessageBox.Show($"Відбулась помилка. Впевніться, що arduino підключено та натисніть 'Під'єднатись до arduino' якщо все впорядку\nІнформація про помилку:\n{ex}",
+                    MessageBox.Show($"Відбулась помилка. Впевніться, що arduino підключено та натисніть 'Під'єднатись до arduino', якщо все впорядку\nІнформація про помилку:\n{ex.Message}",
                         "Помилка зчитування даних датчиків",MessageBoxButtons.OK, MessageBoxIcon.Error);
                     isArduinoFound = false;
-                }
-                finally {
-                    serialPortArduino.DiscardInBuffer();
-                    serialPortArduino.Close();
+                    if(serialPortArduino.IsOpen) { 
+                        serialPortArduino.DiscardInBuffer();
+                        serialPortArduino.Close();
+                    }
                 }
             });
         }
@@ -817,7 +849,7 @@ namespace SMT_1
                 string returnMessage = serialPortArduino.ReadExisting();
 
                 // in arduino sketch should be Serial.println("ARDUINO") inside  void loop()
-                if (returnMessage.Contains("ARDUINO"))
+                if (returnMessage.Contains(notInitializedStr))
                 {
                     return true;
                 }
@@ -837,11 +869,17 @@ namespace SMT_1
             }
         }
 
-        private void buttonScanPorts_Click(object sender, EventArgs e)
+        private async void buttonScanPorts_Click(object sender, EventArgs e)
         {
             EnableAllUI(false);
-            ScanForArduino();
+            await ScanForArduino();
             if(isArduinoFound) EnableAllUI(true);
+        }
+
+        private void CollectSensorsData()
+        {
+            //while(serialPortArduino.IsOpen && )
+            //Interlocked.Exchange(ref location, float value);
         }
     }
 }
