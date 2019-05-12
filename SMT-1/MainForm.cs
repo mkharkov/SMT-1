@@ -11,6 +11,8 @@ using System.Windows.Forms;
 using System.Windows.Threading;
 using System.IO;
 
+using System.Timers;
+using System.IO.Ports;
 
 namespace SMT_1
 {
@@ -30,6 +32,8 @@ namespace SMT_1
         private int executeTimeCounter = 0;
         bool isPlanInExecution = false;
         bool isChartBeingRendered = false;
+
+        bool isArduinoFound = false;
 
         //REMOVE
         int Test1 = 0;
@@ -67,6 +71,16 @@ namespace SMT_1
             numericUpDownPlanLoadedWeight.Value = trackBarLoadedWeight.Value;
             numericUpDownPlanFirstTemp.Value = trackBarFirstTemp.Value;
             numericUpDownPlanSecondTemp.Value = trackBarSecondTemp.Value;
+
+            EnableAllUI(false);
+            ScanForArduino();
+            if(isArduinoFound)
+                EnableAllUI(true);
+        }
+
+        private void EnableAllUI(bool enable)
+        {
+
         }
 
         private void trackBarFirstTemp_ValueChanged(object sender, EventArgs e)
@@ -729,6 +743,88 @@ namespace SMT_1
             chartDataTemp1.Clear();
             chartDataTemp2.Clear();
             chartDataLoad.Clear();
+        }
+
+        private async void ScanForArduino()
+        {
+            string[] ports = SerialPort.GetPortNames();
+            foreach (string p in ports)
+            {
+                //MessageBox.Show($"Сканується порт {p}");
+                serialPortArduino = new SerialPort(p, 9600);
+                if (ArduinoDetected())
+                {
+                    MessageBox.Show($"Arduino знайдено на порті {p}");
+                    isArduinoFound = true;
+                    break;
+                }
+                System.Threading.Thread.Sleep(1000); // wait a lot after closing
+            }
+
+            if (!isArduinoFound)
+            {
+                MessageBox.Show($"Arduino не знайдено\nДля нормального функціонування програми підключіть Arduino і натисніть кнопку 'Сканувати порти'", "Увага", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            serialPortArduino.BaudRate = 9600;
+            serialPortArduino.DtrEnable = true;
+            serialPortArduino.ReadTimeout = 1000;
+            try
+            {
+                serialPortArduino.Open();
+                byte[] buffer = new byte[] { 0x31 };
+                System.Threading.Thread.Sleep(1000); // Need to wait before port is open....
+                serialPortArduino.DiscardInBuffer();
+                await serialPortArduino.BaseStream.WriteAsync(buffer, 0, buffer.Length); // Using writeAsync of baseStream, as SerialPort lib is broken...
+                //serialPortArduino.Write("1");
+                System.Threading.Thread.Sleep(500);
+                while(true)
+                {
+                    string returnMessage = serialPortArduino.ReadLine();
+                    //string returnMessage = serialPortArduino.ReadExisting();
+                    if (returnMessage.Contains("INITIALIZED")) break;
+                }
+            }
+            catch(Exception ex) { MessageBox.Show($"Exception: {ex}"); }
+        }
+
+        private bool ArduinoDetected()
+        {
+            try
+            {
+                serialPortArduino.Open();
+                System.Threading.Thread.Sleep(1000); // just wait a lot
+
+                string returnMessage = serialPortArduino.ReadExisting();
+                serialPortArduino.Close();
+
+                // in arduino sketch should be Serial.println("ARDUINO") inside  void loop()
+                if (returnMessage.Contains("ARDUINO"))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Exception {ex}");
+                return false;
+            }
+        }
+
+        private void buttonScanPorts_Click(object sender, EventArgs e)
+        {
+            ScanForArduino();
+            EnableAllUI(isArduinoFound);
+        }
+
+        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            serialPortArduino.Close();
         }
     }
 }

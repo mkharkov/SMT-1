@@ -30,15 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.Plan = new System.Windows.Forms.TabPage();
             this.tableLayoutPanelRecordActions = new System.Windows.Forms.TableLayoutPanel();
             this.buttonRecordAdd = new System.Windows.Forms.Button();
@@ -89,8 +89,21 @@
             this.Control = new System.Windows.Forms.TabPage();
             this.groupBoxControlEngineCurrentParams = new System.Windows.Forms.GroupBox();
             this.groupBoxCurrentLoadState = new System.Windows.Forms.GroupBox();
+            this.textBoxControlCurrentLoad = new System.Windows.Forms.TextBox();
+            this.labelContolCurrentLoad = new System.Windows.Forms.Label();
             this.groupBoxCurrentVentsState = new System.Windows.Forms.GroupBox();
+            this.checkBoxControlCurrentLeftVentOn = new System.Windows.Forms.CheckBox();
+            this.checkBoxControlCurrentRightFanOn = new System.Windows.Forms.CheckBox();
+            this.checkBoxControlCurrentRightVentOn = new System.Windows.Forms.CheckBox();
+            this.checkBoxControlCurrentLeftFanOn = new System.Windows.Forms.CheckBox();
+            this.labelControlCurrentRightFanOn = new System.Windows.Forms.Label();
+            this.labelControlCurrentLeftFan = new System.Windows.Forms.Label();
+            this.labelControlCurrentLeftVentOn = new System.Windows.Forms.Label();
+            this.labelControlCurrentRightVentOn = new System.Windows.Forms.Label();
+            this.labelControlCurrentRightFan = new System.Windows.Forms.Label();
+            this.labelControlCurrentLeftFanOn = new System.Windows.Forms.Label();
             this.groupBoxCurrentEngineState = new System.Windows.Forms.GroupBox();
+            this.textBoxCurrentEngineOn = new System.Windows.Forms.TextBox();
             this.labelCurrentEngineOn = new System.Windows.Forms.Label();
             this.textBoxControlEngineCurrentRPM = new System.Windows.Forms.TextBox();
             this.textBoxControlEngineCurrentVoltage = new System.Windows.Forms.TextBox();
@@ -121,51 +134,40 @@
             this.textBoxControlEngineVoltage = new System.Windows.Forms.TextBox();
             this.labelControlEngineVoltage = new System.Windows.Forms.Label();
             this.Charts = new System.Windows.Forms.TabPage();
+            this.buttonClearCharts = new System.Windows.Forms.Button();
+            this.chartLoad = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.buttonStopChartsRead = new System.Windows.Forms.Button();
+            this.labelTest2 = new System.Windows.Forms.Label();
+            this.labelTest1 = new System.Windows.Forms.Label();
+            this.numericUpDownTest2 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownTest1 = new System.Windows.Forms.NumericUpDown();
+            this.buttonSaveCharts = new System.Windows.Forms.Button();
+            this.chartTemperature = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.buttonStartChartsRead = new System.Windows.Forms.Button();
             this.tabControlControlPanel = new System.Windows.Forms.TabControl();
             this.DebugTab = new System.Windows.Forms.TabPage();
             this.buttonShowDebugInfo = new System.Windows.Forms.Button();
             this.richTextBoxDebug = new System.Windows.Forms.RichTextBox();
-            this.groupBoxCurrentParameters = new System.Windows.Forms.GroupBox();
+            this.groupBoxCurrentSensorsParameters = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanelParameters = new System.Windows.Forms.TableLayoutPanel();
             this.textBoxT0 = new System.Windows.Forms.TextBox();
             this.labelT0 = new System.Windows.Forms.Label();
             this.groupBoxPlan = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanelPlan = new System.Windows.Forms.TableLayoutPanel();
-            this.textBoxRecordInExecution = new System.Windows.Forms.TextBox();
-            this.textBoxEndTime = new System.Windows.Forms.TextBox();
-            this.textBoxRemainingTime = new System.Windows.Forms.TextBox();
             this.labelRecordInExecution = new System.Windows.Forms.Label();
             this.labelStartTime = new System.Windows.Forms.Label();
+            this.textBoxStartTime = new System.Windows.Forms.TextBox();
+            this.textBoxRecordInExecution = new System.Windows.Forms.TextBox();
             this.labelEndTime = new System.Windows.Forms.Label();
             this.labelRemainingTime = new System.Windows.Forms.Label();
-            this.textBoxStartTime = new System.Windows.Forms.TextBox();
+            this.textBoxEndTime = new System.Windows.Forms.TextBox();
+            this.textBoxRemainingTime = new System.Windows.Forms.TextBox();
             this.openFileDialogPlan = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialogPlan = new System.Windows.Forms.SaveFileDialog();
-            this.textBoxCurrentEngineOn = new System.Windows.Forms.TextBox();
-            this.labelContolCurrentLoad = new System.Windows.Forms.Label();
-            this.labelControlCurrentLeftFanOn = new System.Windows.Forms.Label();
-            this.labelControlCurrentRightFan = new System.Windows.Forms.Label();
-            this.labelControlCurrentRightVentOn = new System.Windows.Forms.Label();
-            this.labelControlCurrentLeftVentOn = new System.Windows.Forms.Label();
-            this.labelControlCurrentLeftFan = new System.Windows.Forms.Label();
-            this.labelControlCurrentRightFanOn = new System.Windows.Forms.Label();
-            this.textBoxControlCurrentLoad = new System.Windows.Forms.TextBox();
-            this.checkBoxControlCurrentLeftFanOn = new System.Windows.Forms.CheckBox();
-            this.checkBoxControlCurrentRightVentOn = new System.Windows.Forms.CheckBox();
-            this.checkBoxControlCurrentRightFanOn = new System.Windows.Forms.CheckBox();
-            this.checkBoxControlCurrentLeftVentOn = new System.Windows.Forms.CheckBox();
             this.timerCurrentRecord = new System.Windows.Forms.Timer(this.components);
-            this.buttonStartChartsRead = new System.Windows.Forms.Button();
-            this.chartTemperature = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.timerChartInfo = new System.Windows.Forms.Timer(this.components);
-            this.buttonSaveCharts = new System.Windows.Forms.Button();
-            this.numericUpDownTest1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownTest2 = new System.Windows.Forms.NumericUpDown();
-            this.labelTest1 = new System.Windows.Forms.Label();
-            this.labelTest2 = new System.Windows.Forms.Label();
-            this.buttonStopChartsRead = new System.Windows.Forms.Button();
-            this.chartLoad = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.buttonClearCharts = new System.Windows.Forms.Button();
+            this.serialPortArduino = new System.IO.Ports.SerialPort(this.components);
+            this.buttonScanPorts = new System.Windows.Forms.Button();
             this.Plan.SuspendLayout();
             this.tableLayoutPanelRecordActions.SuspendLayout();
             this.tableLayoutPanelPlanValues.SuspendLayout();
@@ -199,16 +201,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBarControlEngineRPM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownControlEngineRPM)).BeginInit();
             this.Charts.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartLoad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTest2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTest1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTemperature)).BeginInit();
             this.tabControlControlPanel.SuspendLayout();
             this.DebugTab.SuspendLayout();
-            this.groupBoxCurrentParameters.SuspendLayout();
+            this.groupBoxCurrentSensorsParameters.SuspendLayout();
             this.tableLayoutPanelParameters.SuspendLayout();
             this.groupBoxPlan.SuspendLayout();
             this.tableLayoutPanelPlan.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartTemperature)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTest1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTest2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartLoad)).BeginInit();
             this.SuspendLayout();
             // 
             // Plan
@@ -609,6 +611,16 @@
             this.groupBoxCurrentLoadState.Name = "groupBoxCurrentLoadState";
             this.groupBoxCurrentLoadState.TabStop = false;
             // 
+            // textBoxControlCurrentLoad
+            // 
+            resources.ApplyResources(this.textBoxControlCurrentLoad, "textBoxControlCurrentLoad");
+            this.textBoxControlCurrentLoad.Name = "textBoxControlCurrentLoad";
+            // 
+            // labelContolCurrentLoad
+            // 
+            resources.ApplyResources(this.labelContolCurrentLoad, "labelContolCurrentLoad");
+            this.labelContolCurrentLoad.Name = "labelContolCurrentLoad";
+            // 
             // groupBoxCurrentVentsState
             // 
             this.groupBoxCurrentVentsState.Controls.Add(this.checkBoxControlCurrentLeftVentOn);
@@ -625,6 +637,60 @@
             this.groupBoxCurrentVentsState.Name = "groupBoxCurrentVentsState";
             this.groupBoxCurrentVentsState.TabStop = false;
             // 
+            // checkBoxControlCurrentLeftVentOn
+            // 
+            resources.ApplyResources(this.checkBoxControlCurrentLeftVentOn, "checkBoxControlCurrentLeftVentOn");
+            this.checkBoxControlCurrentLeftVentOn.Name = "checkBoxControlCurrentLeftVentOn";
+            this.checkBoxControlCurrentLeftVentOn.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxControlCurrentRightFanOn
+            // 
+            resources.ApplyResources(this.checkBoxControlCurrentRightFanOn, "checkBoxControlCurrentRightFanOn");
+            this.checkBoxControlCurrentRightFanOn.Name = "checkBoxControlCurrentRightFanOn";
+            this.checkBoxControlCurrentRightFanOn.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxControlCurrentRightVentOn
+            // 
+            resources.ApplyResources(this.checkBoxControlCurrentRightVentOn, "checkBoxControlCurrentRightVentOn");
+            this.checkBoxControlCurrentRightVentOn.Name = "checkBoxControlCurrentRightVentOn";
+            this.checkBoxControlCurrentRightVentOn.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxControlCurrentLeftFanOn
+            // 
+            resources.ApplyResources(this.checkBoxControlCurrentLeftFanOn, "checkBoxControlCurrentLeftFanOn");
+            this.checkBoxControlCurrentLeftFanOn.Name = "checkBoxControlCurrentLeftFanOn";
+            this.checkBoxControlCurrentLeftFanOn.UseVisualStyleBackColor = true;
+            // 
+            // labelControlCurrentRightFanOn
+            // 
+            resources.ApplyResources(this.labelControlCurrentRightFanOn, "labelControlCurrentRightFanOn");
+            this.labelControlCurrentRightFanOn.Name = "labelControlCurrentRightFanOn";
+            // 
+            // labelControlCurrentLeftFan
+            // 
+            resources.ApplyResources(this.labelControlCurrentLeftFan, "labelControlCurrentLeftFan");
+            this.labelControlCurrentLeftFan.Name = "labelControlCurrentLeftFan";
+            // 
+            // labelControlCurrentLeftVentOn
+            // 
+            resources.ApplyResources(this.labelControlCurrentLeftVentOn, "labelControlCurrentLeftVentOn");
+            this.labelControlCurrentLeftVentOn.Name = "labelControlCurrentLeftVentOn";
+            // 
+            // labelControlCurrentRightVentOn
+            // 
+            resources.ApplyResources(this.labelControlCurrentRightVentOn, "labelControlCurrentRightVentOn");
+            this.labelControlCurrentRightVentOn.Name = "labelControlCurrentRightVentOn";
+            // 
+            // labelControlCurrentRightFan
+            // 
+            resources.ApplyResources(this.labelControlCurrentRightFan, "labelControlCurrentRightFan");
+            this.labelControlCurrentRightFan.Name = "labelControlCurrentRightFan";
+            // 
+            // labelControlCurrentLeftFanOn
+            // 
+            resources.ApplyResources(this.labelControlCurrentLeftFanOn, "labelControlCurrentLeftFanOn");
+            this.labelControlCurrentLeftFanOn.Name = "labelControlCurrentLeftFanOn";
+            // 
             // groupBoxCurrentEngineState
             // 
             this.groupBoxCurrentEngineState.Controls.Add(this.textBoxCurrentEngineOn);
@@ -636,6 +702,11 @@
             resources.ApplyResources(this.groupBoxCurrentEngineState, "groupBoxCurrentEngineState");
             this.groupBoxCurrentEngineState.Name = "groupBoxCurrentEngineState";
             this.groupBoxCurrentEngineState.TabStop = false;
+            // 
+            // textBoxCurrentEngineOn
+            // 
+            resources.ApplyResources(this.textBoxCurrentEngineOn, "textBoxCurrentEngineOn");
+            this.textBoxCurrentEngineOn.Name = "textBoxCurrentEngineOn";
             // 
             // labelCurrentEngineOn
             // 
@@ -874,204 +945,109 @@
             this.Charts.Name = "Charts";
             this.Charts.UseVisualStyleBackColor = true;
             // 
-            // tabControlControlPanel
-            // 
-            this.tabControlControlPanel.Controls.Add(this.Charts);
-            this.tabControlControlPanel.Controls.Add(this.Control);
-            this.tabControlControlPanel.Controls.Add(this.Plan);
-            this.tabControlControlPanel.Controls.Add(this.DebugTab);
-            resources.ApplyResources(this.tabControlControlPanel, "tabControlControlPanel");
-            this.tabControlControlPanel.Name = "tabControlControlPanel";
-            this.tabControlControlPanel.SelectedIndex = 0;
-            // 
-            // DebugTab
-            // 
-            this.DebugTab.Controls.Add(this.buttonShowDebugInfo);
-            this.DebugTab.Controls.Add(this.richTextBoxDebug);
-            resources.ApplyResources(this.DebugTab, "DebugTab");
-            this.DebugTab.Name = "DebugTab";
-            this.DebugTab.UseVisualStyleBackColor = true;
-            // 
-            // buttonShowDebugInfo
-            // 
-            resources.ApplyResources(this.buttonShowDebugInfo, "buttonShowDebugInfo");
-            this.buttonShowDebugInfo.Name = "buttonShowDebugInfo";
-            this.buttonShowDebugInfo.UseVisualStyleBackColor = true;
-            this.buttonShowDebugInfo.Click += new System.EventHandler(this.buttonShowDebugInfo_Click);
-            // 
-            // richTextBoxDebug
-            // 
-            resources.ApplyResources(this.richTextBoxDebug, "richTextBoxDebug");
-            this.richTextBoxDebug.Name = "richTextBoxDebug";
-            // 
-            // groupBoxCurrentParameters
-            // 
-            this.groupBoxCurrentParameters.Controls.Add(this.tableLayoutPanelParameters);
-            resources.ApplyResources(this.groupBoxCurrentParameters, "groupBoxCurrentParameters");
-            this.groupBoxCurrentParameters.Name = "groupBoxCurrentParameters";
-            this.groupBoxCurrentParameters.TabStop = false;
-            // 
-            // tableLayoutPanelParameters
-            // 
-            resources.ApplyResources(this.tableLayoutPanelParameters, "tableLayoutPanelParameters");
-            this.tableLayoutPanelParameters.Controls.Add(this.textBoxT0, 1, 0);
-            this.tableLayoutPanelParameters.Controls.Add(this.labelT0, 0, 0);
-            this.tableLayoutPanelParameters.Name = "tableLayoutPanelParameters";
-            // 
-            // textBoxT0
-            // 
-            resources.ApplyResources(this.textBoxT0, "textBoxT0");
-            this.textBoxT0.Name = "textBoxT0";
-            // 
-            // labelT0
-            // 
-            resources.ApplyResources(this.labelT0, "labelT0");
-            this.labelT0.Name = "labelT0";
-            // 
-            // groupBoxPlan
-            // 
-            this.groupBoxPlan.Controls.Add(this.tableLayoutPanelPlan);
-            resources.ApplyResources(this.groupBoxPlan, "groupBoxPlan");
-            this.groupBoxPlan.Name = "groupBoxPlan";
-            this.groupBoxPlan.TabStop = false;
-            // 
-            // tableLayoutPanelPlan
-            // 
-            resources.ApplyResources(this.tableLayoutPanelPlan, "tableLayoutPanelPlan");
-            this.tableLayoutPanelPlan.Controls.Add(this.labelRecordInExecution, 0, 0);
-            this.tableLayoutPanelPlan.Controls.Add(this.labelStartTime, 0, 1);
-            this.tableLayoutPanelPlan.Controls.Add(this.textBoxStartTime, 1, 1);
-            this.tableLayoutPanelPlan.Controls.Add(this.textBoxRecordInExecution, 1, 0);
-            this.tableLayoutPanelPlan.Controls.Add(this.labelEndTime, 0, 3);
-            this.tableLayoutPanelPlan.Controls.Add(this.labelRemainingTime, 0, 2);
-            this.tableLayoutPanelPlan.Controls.Add(this.textBoxEndTime, 1, 3);
-            this.tableLayoutPanelPlan.Controls.Add(this.textBoxRemainingTime, 1, 2);
-            this.tableLayoutPanelPlan.Name = "tableLayoutPanelPlan";
-            // 
-            // textBoxRecordInExecution
-            // 
-            resources.ApplyResources(this.textBoxRecordInExecution, "textBoxRecordInExecution");
-            this.textBoxRecordInExecution.Name = "textBoxRecordInExecution";
-            // 
-            // textBoxEndTime
-            // 
-            resources.ApplyResources(this.textBoxEndTime, "textBoxEndTime");
-            this.textBoxEndTime.Name = "textBoxEndTime";
-            // 
-            // textBoxRemainingTime
-            // 
-            resources.ApplyResources(this.textBoxRemainingTime, "textBoxRemainingTime");
-            this.textBoxRemainingTime.Name = "textBoxRemainingTime";
-            // 
-            // labelRecordInExecution
-            // 
-            resources.ApplyResources(this.labelRecordInExecution, "labelRecordInExecution");
-            this.labelRecordInExecution.Name = "labelRecordInExecution";
-            // 
-            // labelStartTime
-            // 
-            resources.ApplyResources(this.labelStartTime, "labelStartTime");
-            this.labelStartTime.Name = "labelStartTime";
-            // 
-            // labelEndTime
-            // 
-            resources.ApplyResources(this.labelEndTime, "labelEndTime");
-            this.labelEndTime.Name = "labelEndTime";
-            // 
-            // labelRemainingTime
-            // 
-            resources.ApplyResources(this.labelRemainingTime, "labelRemainingTime");
-            this.labelRemainingTime.Name = "labelRemainingTime";
-            // 
-            // textBoxStartTime
-            // 
-            resources.ApplyResources(this.textBoxStartTime, "textBoxStartTime");
-            this.textBoxStartTime.Name = "textBoxStartTime";
-            // 
-            // openFileDialogPlan
-            // 
-            this.openFileDialogPlan.FileName = "openFileDialogPlan";
-            // 
-            // textBoxCurrentEngineOn
-            // 
-            resources.ApplyResources(this.textBoxCurrentEngineOn, "textBoxCurrentEngineOn");
-            this.textBoxCurrentEngineOn.Name = "textBoxCurrentEngineOn";
-            // 
-            // labelContolCurrentLoad
-            // 
-            resources.ApplyResources(this.labelContolCurrentLoad, "labelContolCurrentLoad");
-            this.labelContolCurrentLoad.Name = "labelContolCurrentLoad";
-            // 
-            // labelControlCurrentLeftFanOn
-            // 
-            resources.ApplyResources(this.labelControlCurrentLeftFanOn, "labelControlCurrentLeftFanOn");
-            this.labelControlCurrentLeftFanOn.Name = "labelControlCurrentLeftFanOn";
-            // 
-            // labelControlCurrentRightFan
-            // 
-            resources.ApplyResources(this.labelControlCurrentRightFan, "labelControlCurrentRightFan");
-            this.labelControlCurrentRightFan.Name = "labelControlCurrentRightFan";
-            // 
-            // labelControlCurrentRightVentOn
-            // 
-            resources.ApplyResources(this.labelControlCurrentRightVentOn, "labelControlCurrentRightVentOn");
-            this.labelControlCurrentRightVentOn.Name = "labelControlCurrentRightVentOn";
-            // 
-            // labelControlCurrentLeftVentOn
-            // 
-            resources.ApplyResources(this.labelControlCurrentLeftVentOn, "labelControlCurrentLeftVentOn");
-            this.labelControlCurrentLeftVentOn.Name = "labelControlCurrentLeftVentOn";
-            // 
-            // labelControlCurrentLeftFan
-            // 
-            resources.ApplyResources(this.labelControlCurrentLeftFan, "labelControlCurrentLeftFan");
-            this.labelControlCurrentLeftFan.Name = "labelControlCurrentLeftFan";
-            // 
-            // labelControlCurrentRightFanOn
-            // 
-            resources.ApplyResources(this.labelControlCurrentRightFanOn, "labelControlCurrentRightFanOn");
-            this.labelControlCurrentRightFanOn.Name = "labelControlCurrentRightFanOn";
-            // 
-            // textBoxControlCurrentLoad
-            // 
-            resources.ApplyResources(this.textBoxControlCurrentLoad, "textBoxControlCurrentLoad");
-            this.textBoxControlCurrentLoad.Name = "textBoxControlCurrentLoad";
-            // 
-            // checkBoxControlCurrentLeftFanOn
-            // 
-            resources.ApplyResources(this.checkBoxControlCurrentLeftFanOn, "checkBoxControlCurrentLeftFanOn");
-            this.checkBoxControlCurrentLeftFanOn.Name = "checkBoxControlCurrentLeftFanOn";
-            this.checkBoxControlCurrentLeftFanOn.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxControlCurrentRightVentOn
-            // 
-            resources.ApplyResources(this.checkBoxControlCurrentRightVentOn, "checkBoxControlCurrentRightVentOn");
-            this.checkBoxControlCurrentRightVentOn.Name = "checkBoxControlCurrentRightVentOn";
-            this.checkBoxControlCurrentRightVentOn.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxControlCurrentRightFanOn
-            // 
-            resources.ApplyResources(this.checkBoxControlCurrentRightFanOn, "checkBoxControlCurrentRightFanOn");
-            this.checkBoxControlCurrentRightFanOn.Name = "checkBoxControlCurrentRightFanOn";
-            this.checkBoxControlCurrentRightFanOn.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxControlCurrentLeftVentOn
-            // 
-            resources.ApplyResources(this.checkBoxControlCurrentLeftVentOn, "checkBoxControlCurrentLeftVentOn");
-            this.checkBoxControlCurrentLeftVentOn.Name = "checkBoxControlCurrentLeftVentOn";
-            this.checkBoxControlCurrentLeftVentOn.UseVisualStyleBackColor = true;
-            // 
-            // timerCurrentRecord
-            // 
-            this.timerCurrentRecord.Interval = 1000;
-            this.timerCurrentRecord.Tick += new System.EventHandler(this.timerCurrentRecord_Tick);
-            // 
-            // buttonStartChartsRead
-            // 
-            resources.ApplyResources(this.buttonStartChartsRead, "buttonStartChartsRead");
-            this.buttonStartChartsRead.Name = "buttonStartChartsRead";
-            this.buttonStartChartsRead.UseVisualStyleBackColor = true;
-            this.buttonStartChartsRead.Click += new System.EventHandler(this.buttonStartChartsRead_Click);
+            // buttonClearCharts
+            // 
+            resources.ApplyResources(this.buttonClearCharts, "buttonClearCharts");
+            this.buttonClearCharts.Name = "buttonClearCharts";
+            this.buttonClearCharts.UseVisualStyleBackColor = true;
+            this.buttonClearCharts.Click += new System.EventHandler(this.buttonClearCharts_Click);
+            // 
+            // chartLoad
+            // 
+            chartArea1.AxisX.ArrowStyle = System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle.Triangle;
+            chartArea1.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.NotSet;
+            chartArea1.AxisX.MajorTickMark.Enabled = false;
+            chartArea1.AxisX.MajorTickMark.Interval = 4D;
+            chartArea1.AxisX.MajorTickMark.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Seconds;
+            chartArea1.AxisX.MajorTickMark.TickMarkStyle = System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.None;
+            chartArea1.AxisX.Title = "час (сек)";
+            chartArea1.AxisX.TitleFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea1.AxisY.ArrowStyle = System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle.Triangle;
+            chartArea1.AxisY.Interval = 30D;
+            chartArea1.AxisY.MajorGrid.Interval = 30D;
+            chartArea1.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea1.AxisY.MajorTickMark.Interval = 30D;
+            chartArea1.AxisY.Title = "навантаження (кг)";
+            chartArea1.AxisY.TitleFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea1.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
+            chartArea1.Name = "ChartArea1";
+            this.chartLoad.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartLoad.Legends.Add(legend1);
+            resources.ApplyResources(this.chartLoad, "chartLoad");
+            this.chartLoad.Name = "chartLoad";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Color = System.Drawing.Color.Blue;
+            series1.Legend = "Legend1";
+            series1.LegendText = "Навантаження";
+            series1.Name = "Load";
+            this.chartLoad.Series.Add(series1);
+            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title1.Name = "Title1";
+            title1.Text = "Навантаження";
+            this.chartLoad.Titles.Add(title1);
+            // 
+            // buttonStopChartsRead
+            // 
+            resources.ApplyResources(this.buttonStopChartsRead, "buttonStopChartsRead");
+            this.buttonStopChartsRead.Name = "buttonStopChartsRead";
+            this.buttonStopChartsRead.UseVisualStyleBackColor = true;
+            this.buttonStopChartsRead.Click += new System.EventHandler(this.buttonStopChartsRead_Click);
+            // 
+            // labelTest2
+            // 
+            resources.ApplyResources(this.labelTest2, "labelTest2");
+            this.labelTest2.Name = "labelTest2";
+            // 
+            // labelTest1
+            // 
+            resources.ApplyResources(this.labelTest1, "labelTest1");
+            this.labelTest1.Name = "labelTest1";
+            // 
+            // numericUpDownTest2
+            // 
+            resources.ApplyResources(this.numericUpDownTest2, "numericUpDownTest2");
+            this.numericUpDownTest2.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDownTest2.Name = "numericUpDownTest2";
+            this.numericUpDownTest2.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDownTest2.ValueChanged += new System.EventHandler(this.numericUpDownTest2_ValueChanged);
+            // 
+            // numericUpDownTest1
+            // 
+            resources.ApplyResources(this.numericUpDownTest1, "numericUpDownTest1");
+            this.numericUpDownTest1.Maximum = new decimal(new int[] {
+            125,
+            0,
+            0,
+            0});
+            this.numericUpDownTest1.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDownTest1.Name = "numericUpDownTest1";
+            this.numericUpDownTest1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDownTest1.ValueChanged += new System.EventHandler(this.numericUpDownTest1_ValueChanged);
+            // 
+            // buttonSaveCharts
+            // 
+            resources.ApplyResources(this.buttonSaveCharts, "buttonSaveCharts");
+            this.buttonSaveCharts.Name = "buttonSaveCharts";
+            this.buttonSaveCharts.UseVisualStyleBackColor = true;
+            this.buttonSaveCharts.Click += new System.EventHandler(this.buttonSaveCharts_Click);
             // 
             // chartTemperature
             // 
@@ -1114,126 +1090,161 @@
             title2.Text = "Температура";
             this.chartTemperature.Titles.Add(title2);
             // 
+            // buttonStartChartsRead
+            // 
+            resources.ApplyResources(this.buttonStartChartsRead, "buttonStartChartsRead");
+            this.buttonStartChartsRead.Name = "buttonStartChartsRead";
+            this.buttonStartChartsRead.UseVisualStyleBackColor = true;
+            this.buttonStartChartsRead.Click += new System.EventHandler(this.buttonStartChartsRead_Click);
+            // 
+            // tabControlControlPanel
+            // 
+            this.tabControlControlPanel.Controls.Add(this.Charts);
+            this.tabControlControlPanel.Controls.Add(this.Control);
+            this.tabControlControlPanel.Controls.Add(this.Plan);
+            this.tabControlControlPanel.Controls.Add(this.DebugTab);
+            resources.ApplyResources(this.tabControlControlPanel, "tabControlControlPanel");
+            this.tabControlControlPanel.Name = "tabControlControlPanel";
+            this.tabControlControlPanel.SelectedIndex = 0;
+            // 
+            // DebugTab
+            // 
+            this.DebugTab.Controls.Add(this.buttonShowDebugInfo);
+            this.DebugTab.Controls.Add(this.richTextBoxDebug);
+            resources.ApplyResources(this.DebugTab, "DebugTab");
+            this.DebugTab.Name = "DebugTab";
+            this.DebugTab.UseVisualStyleBackColor = true;
+            // 
+            // buttonShowDebugInfo
+            // 
+            resources.ApplyResources(this.buttonShowDebugInfo, "buttonShowDebugInfo");
+            this.buttonShowDebugInfo.Name = "buttonShowDebugInfo";
+            this.buttonShowDebugInfo.UseVisualStyleBackColor = true;
+            this.buttonShowDebugInfo.Click += new System.EventHandler(this.buttonShowDebugInfo_Click);
+            // 
+            // richTextBoxDebug
+            // 
+            resources.ApplyResources(this.richTextBoxDebug, "richTextBoxDebug");
+            this.richTextBoxDebug.Name = "richTextBoxDebug";
+            // 
+            // groupBoxCurrentSensorsParameters
+            // 
+            this.groupBoxCurrentSensorsParameters.Controls.Add(this.tableLayoutPanelParameters);
+            resources.ApplyResources(this.groupBoxCurrentSensorsParameters, "groupBoxCurrentSensorsParameters");
+            this.groupBoxCurrentSensorsParameters.Name = "groupBoxCurrentSensorsParameters";
+            this.groupBoxCurrentSensorsParameters.TabStop = false;
+            // 
+            // tableLayoutPanelParameters
+            // 
+            resources.ApplyResources(this.tableLayoutPanelParameters, "tableLayoutPanelParameters");
+            this.tableLayoutPanelParameters.Controls.Add(this.textBoxT0, 1, 0);
+            this.tableLayoutPanelParameters.Controls.Add(this.labelT0, 0, 0);
+            this.tableLayoutPanelParameters.Name = "tableLayoutPanelParameters";
+            // 
+            // textBoxT0
+            // 
+            resources.ApplyResources(this.textBoxT0, "textBoxT0");
+            this.textBoxT0.Name = "textBoxT0";
+            // 
+            // labelT0
+            // 
+            resources.ApplyResources(this.labelT0, "labelT0");
+            this.labelT0.Name = "labelT0";
+            // 
+            // groupBoxPlan
+            // 
+            this.groupBoxPlan.Controls.Add(this.tableLayoutPanelPlan);
+            resources.ApplyResources(this.groupBoxPlan, "groupBoxPlan");
+            this.groupBoxPlan.Name = "groupBoxPlan";
+            this.groupBoxPlan.TabStop = false;
+            // 
+            // tableLayoutPanelPlan
+            // 
+            resources.ApplyResources(this.tableLayoutPanelPlan, "tableLayoutPanelPlan");
+            this.tableLayoutPanelPlan.Controls.Add(this.labelRecordInExecution, 0, 0);
+            this.tableLayoutPanelPlan.Controls.Add(this.labelStartTime, 0, 1);
+            this.tableLayoutPanelPlan.Controls.Add(this.textBoxStartTime, 1, 1);
+            this.tableLayoutPanelPlan.Controls.Add(this.textBoxRecordInExecution, 1, 0);
+            this.tableLayoutPanelPlan.Controls.Add(this.labelEndTime, 0, 3);
+            this.tableLayoutPanelPlan.Controls.Add(this.labelRemainingTime, 0, 2);
+            this.tableLayoutPanelPlan.Controls.Add(this.textBoxEndTime, 1, 3);
+            this.tableLayoutPanelPlan.Controls.Add(this.textBoxRemainingTime, 1, 2);
+            this.tableLayoutPanelPlan.Name = "tableLayoutPanelPlan";
+            // 
+            // labelRecordInExecution
+            // 
+            resources.ApplyResources(this.labelRecordInExecution, "labelRecordInExecution");
+            this.labelRecordInExecution.Name = "labelRecordInExecution";
+            // 
+            // labelStartTime
+            // 
+            resources.ApplyResources(this.labelStartTime, "labelStartTime");
+            this.labelStartTime.Name = "labelStartTime";
+            // 
+            // textBoxStartTime
+            // 
+            resources.ApplyResources(this.textBoxStartTime, "textBoxStartTime");
+            this.textBoxStartTime.Name = "textBoxStartTime";
+            // 
+            // textBoxRecordInExecution
+            // 
+            resources.ApplyResources(this.textBoxRecordInExecution, "textBoxRecordInExecution");
+            this.textBoxRecordInExecution.Name = "textBoxRecordInExecution";
+            // 
+            // labelEndTime
+            // 
+            resources.ApplyResources(this.labelEndTime, "labelEndTime");
+            this.labelEndTime.Name = "labelEndTime";
+            // 
+            // labelRemainingTime
+            // 
+            resources.ApplyResources(this.labelRemainingTime, "labelRemainingTime");
+            this.labelRemainingTime.Name = "labelRemainingTime";
+            // 
+            // textBoxEndTime
+            // 
+            resources.ApplyResources(this.textBoxEndTime, "textBoxEndTime");
+            this.textBoxEndTime.Name = "textBoxEndTime";
+            // 
+            // textBoxRemainingTime
+            // 
+            resources.ApplyResources(this.textBoxRemainingTime, "textBoxRemainingTime");
+            this.textBoxRemainingTime.Name = "textBoxRemainingTime";
+            // 
+            // openFileDialogPlan
+            // 
+            this.openFileDialogPlan.FileName = "openFileDialogPlan";
+            // 
+            // timerCurrentRecord
+            // 
+            this.timerCurrentRecord.Interval = 1000;
+            this.timerCurrentRecord.Tick += new System.EventHandler(this.timerCurrentRecord_Tick);
+            // 
             // timerChartInfo
             // 
             this.timerChartInfo.Interval = 1000;
             this.timerChartInfo.Tick += new System.EventHandler(this.timerChartInfo_Tick);
             // 
-            // buttonSaveCharts
+            // buttonScanPorts
             // 
-            resources.ApplyResources(this.buttonSaveCharts, "buttonSaveCharts");
-            this.buttonSaveCharts.Name = "buttonSaveCharts";
-            this.buttonSaveCharts.UseVisualStyleBackColor = true;
-            this.buttonSaveCharts.Click += new System.EventHandler(this.buttonSaveCharts_Click);
-            // 
-            // numericUpDownTest1
-            // 
-            resources.ApplyResources(this.numericUpDownTest1, "numericUpDownTest1");
-            this.numericUpDownTest1.Maximum = new decimal(new int[] {
-            125,
-            0,
-            0,
-            0});
-            this.numericUpDownTest1.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDownTest1.Name = "numericUpDownTest1";
-            this.numericUpDownTest1.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDownTest1.ValueChanged += new System.EventHandler(this.numericUpDownTest1_ValueChanged);
-            // 
-            // numericUpDownTest2
-            // 
-            resources.ApplyResources(this.numericUpDownTest2, "numericUpDownTest2");
-            this.numericUpDownTest2.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDownTest2.Name = "numericUpDownTest2";
-            this.numericUpDownTest2.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDownTest2.ValueChanged += new System.EventHandler(this.numericUpDownTest2_ValueChanged);
-            // 
-            // labelTest1
-            // 
-            resources.ApplyResources(this.labelTest1, "labelTest1");
-            this.labelTest1.Name = "labelTest1";
-            // 
-            // labelTest2
-            // 
-            resources.ApplyResources(this.labelTest2, "labelTest2");
-            this.labelTest2.Name = "labelTest2";
-            // 
-            // buttonStopChartsRead
-            // 
-            resources.ApplyResources(this.buttonStopChartsRead, "buttonStopChartsRead");
-            this.buttonStopChartsRead.Name = "buttonStopChartsRead";
-            this.buttonStopChartsRead.UseVisualStyleBackColor = true;
-            this.buttonStopChartsRead.Click += new System.EventHandler(this.buttonStopChartsRead_Click);
-            // 
-            // chartLoad
-            // 
-            chartArea1.AxisX.ArrowStyle = System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle.Triangle;
-            chartArea1.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.NotSet;
-            chartArea1.AxisX.MajorTickMark.Enabled = false;
-            chartArea1.AxisX.MajorTickMark.Interval = 4D;
-            chartArea1.AxisX.MajorTickMark.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Seconds;
-            chartArea1.AxisX.MajorTickMark.TickMarkStyle = System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.None;
-            chartArea1.AxisX.Title = "час (сек)";
-            chartArea1.AxisX.TitleFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea1.AxisY.ArrowStyle = System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle.Triangle;
-            chartArea1.AxisY.Interval = 30D;
-            chartArea1.AxisY.MajorGrid.Interval = 30D;
-            chartArea1.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea1.AxisY.MajorTickMark.Interval = 30D;
-            chartArea1.AxisY.Title = "навантаження (кг)";
-            chartArea1.AxisY.TitleFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea1.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
-            chartArea1.Name = "ChartArea1";
-            this.chartLoad.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartLoad.Legends.Add(legend1);
-            resources.ApplyResources(this.chartLoad, "chartLoad");
-            this.chartLoad.Name = "chartLoad";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.Color = System.Drawing.Color.Blue;
-            series1.Legend = "Legend1";
-            series1.LegendText = "Навантаження";
-            series1.Name = "Load";
-            this.chartLoad.Series.Add(series1);
-            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title1.Name = "Title1";
-            title1.Text = "Навантаження";
-            this.chartLoad.Titles.Add(title1);
-            // 
-            // buttonClearCharts
-            // 
-            resources.ApplyResources(this.buttonClearCharts, "buttonClearCharts");
-            this.buttonClearCharts.Name = "buttonClearCharts";
-            this.buttonClearCharts.UseVisualStyleBackColor = true;
-            this.buttonClearCharts.Click += new System.EventHandler(this.buttonClearCharts_Click);
+            resources.ApplyResources(this.buttonScanPorts, "buttonScanPorts");
+            this.buttonScanPorts.Name = "buttonScanPorts";
+            this.buttonScanPorts.UseVisualStyleBackColor = true;
+            this.buttonScanPorts.Click += new System.EventHandler(this.buttonScanPorts_Click);
             // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Controls.Add(this.buttonScanPorts);
             this.Controls.Add(this.groupBoxPlan);
-            this.Controls.Add(this.groupBoxCurrentParameters);
+            this.Controls.Add(this.groupBoxCurrentSensorsParameters);
             this.Controls.Add(this.tabControlControlPanel);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.MaximizeBox = false;
             this.Name = "MainForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.Plan.ResumeLayout(false);
             this.tableLayoutPanelRecordActions.ResumeLayout(false);
@@ -1281,18 +1292,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownControlEngineRPM)).EndInit();
             this.Charts.ResumeLayout(false);
             this.Charts.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartLoad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTest2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTest1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTemperature)).EndInit();
             this.tabControlControlPanel.ResumeLayout(false);
             this.DebugTab.ResumeLayout(false);
-            this.groupBoxCurrentParameters.ResumeLayout(false);
+            this.groupBoxCurrentSensorsParameters.ResumeLayout(false);
             this.tableLayoutPanelParameters.ResumeLayout(false);
             this.tableLayoutPanelParameters.PerformLayout();
             this.groupBoxPlan.ResumeLayout(false);
             this.tableLayoutPanelPlan.ResumeLayout(false);
             this.tableLayoutPanelPlan.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartTemperature)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTest1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTest2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartLoad)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1303,7 +1314,7 @@
         private System.Windows.Forms.TabPage Control;
         private System.Windows.Forms.TabPage Charts;
         private System.Windows.Forms.TabControl tabControlControlPanel;
-        private System.Windows.Forms.GroupBox groupBoxCurrentParameters;
+        private System.Windows.Forms.GroupBox groupBoxCurrentSensorsParameters;
         private System.Windows.Forms.TextBox textBoxT0;
         private System.Windows.Forms.Label labelT0;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelParameters;
@@ -1426,6 +1437,8 @@
         private System.Windows.Forms.Button buttonStopChartsRead;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartLoad;
         private System.Windows.Forms.Button buttonClearCharts;
+        private System.IO.Ports.SerialPort serialPortArduino;
+        private System.Windows.Forms.Button buttonScanPorts;
     }
 }
 

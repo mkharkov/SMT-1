@@ -2746,7 +2746,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tabControlControlPanel.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="tableLayoutPanelParameters.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2824,7 +2824,7 @@
     <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanelParameters.Parent" xml:space="preserve">
-    <value>groupBoxCurrentParameters</value>
+    <value>groupBoxCurrentSensorsParameters</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanelParameters.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -2832,32 +2832,32 @@
   <data name="tableLayoutPanelParameters.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBoxT0" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelT0" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <data name="groupBoxCurrentParameters.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="groupBoxCurrentSensorsParameters.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="groupBoxCurrentParameters.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="groupBoxCurrentSensorsParameters.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="groupBoxCurrentParameters.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="groupBoxCurrentSensorsParameters.Size" type="System.Drawing.Size, System.Drawing">
     <value>415, 532</value>
   </data>
-  <data name="groupBoxCurrentParameters.TabIndex" type="System.Int32, mscorlib">
+  <data name="groupBoxCurrentSensorsParameters.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="groupBoxCurrentParameters.Text" xml:space="preserve">
-    <value>Поточні параметри</value>
+  <data name="groupBoxCurrentSensorsParameters.Text" xml:space="preserve">
+    <value>Поточні параметри датчиків</value>
   </data>
-  <data name="&gt;&gt;groupBoxCurrentParameters.Name" xml:space="preserve">
-    <value>groupBoxCurrentParameters</value>
+  <data name="&gt;&gt;groupBoxCurrentSensorsParameters.Name" xml:space="preserve">
+    <value>groupBoxCurrentSensorsParameters</value>
   </data>
-  <data name="&gt;&gt;groupBoxCurrentParameters.Type" xml:space="preserve">
+  <data name="&gt;&gt;groupBoxCurrentSensorsParameters.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;groupBoxCurrentParameters.Parent" xml:space="preserve">
+  <data name="&gt;&gt;groupBoxCurrentSensorsParameters.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;groupBoxCurrentParameters.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;groupBoxCurrentSensorsParameters.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="tableLayoutPanelPlan.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
@@ -3157,7 +3157,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBoxPlan.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <metadata name="openFileDialogPlan.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -3171,6 +3171,33 @@
   <metadata name="timerChartInfo.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>486, 17</value>
   </metadata>
+  <metadata name="serialPortArduino.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>617, 17</value>
+  </metadata>
+  <data name="buttonScanPorts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>298, 547</value>
+  </data>
+  <data name="buttonScanPorts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 37</value>
+  </data>
+  <data name="buttonScanPorts.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="buttonScanPorts.Text" xml:space="preserve">
+    <value>Сканувати порти</value>
+  </data>
+  <data name="&gt;&gt;buttonScanPorts.Name" xml:space="preserve">
+    <value>buttonScanPorts</value>
+  </data>
+  <data name="&gt;&gt;buttonScanPorts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonScanPorts.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;buttonScanPorts.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -3248,6 +3275,12 @@
   </data>
   <data name="&gt;&gt;timerChartInfo.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;serialPortArduino.Name" xml:space="preserve">
+    <value>serialPortArduino</value>
+  </data>
+  <data name="&gt;&gt;serialPortArduino.Type" xml:space="preserve">
+    <value>System.IO.Ports.SerialPort, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MainForm</value>
