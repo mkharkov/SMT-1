@@ -90,9 +90,27 @@ namespace SMT_1
                 EnableAllUI(true);
         }
 
-        private void EnableAllUI(bool enable)
+        private void EnableAllUI(bool enabled)
         {
+            //Charts
+            buttonStopChartsRead.Enabled = enabled;
+            buttonStartChartsRead.Enabled = enabled;
 
+            //Control
+            buttonControlEngineStart.Enabled = enabled;
+            buttonControlEngineStop.Enabled = enabled;
+            buttonControlEngineSetValues.Enabled = enabled;
+
+            buttonControlOnOffLeftFan.Enabled = enabled;
+            buttonControlOnOffRightFan.Enabled = enabled;
+            buttonControlOnOffLeftVent.Enabled = enabled;
+            buttonControlOnOffRightVent.Enabled = enabled;
+
+            buttonControlLoadSetValues.Enabled = enabled;
+
+            //Plan
+            buttonStopPlan.Enabled = enabled;
+            buttonStartSelected.Enabled = enabled;
         }
 
         private void trackBarFirstTemp_ValueChanged(object sender, EventArgs e)
@@ -756,6 +774,16 @@ namespace SMT_1
             chartDataTemp1.Clear();
             chartDataTemp2.Clear();
             chartDataLoad.Clear();
+
+            //Clear charts
+            foreach(var series in chartLoad.Series)
+            {
+                series.Points.Clear();
+            }
+            foreach(var series in chartTemperature.Series)
+            {
+                series.Points.Clear();
+            }
         }
 
         private async Task ScanForArduino()
