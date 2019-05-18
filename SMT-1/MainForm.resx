@@ -4483,7 +4483,7 @@
     <value>4</value>
   </data>
   <data name="buttonScanPorts.Text" xml:space="preserve">
-    <value>Сканувати порти</value>
+    <value>Під'єднатись до Arduino</value>
   </data>
   <data name="&gt;&gt;buttonScanPorts.Name" xml:space="preserve">
     <value>buttonScanPorts</value>

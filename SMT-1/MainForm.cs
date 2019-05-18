@@ -30,12 +30,15 @@ namespace SMT_1
         private List<Point2D> chartDataLoad = new List<Point2D>();
 
         private int executeTimeCounter = 0;
-        bool isPlanInExecution = false;
-        bool isChartBeingRendered = false;
+        private bool isPlanInExecution = false;
+        private bool isChartBeingRendered = false;
 
-        bool isArduinoFound = false;
+        private bool isArduinoFound = false;
 
-        Thread dataCollector;
+        private bool stopCollectingData = false;
+        private long keepAliveTimeCounter = 0;
+
+        private Thread dataCollector;
 
         // Commands to arduino
         private readonly byte spResetConnection = 0x31;
@@ -46,10 +49,10 @@ namespace SMT_1
         private readonly string notInitializedStr = "ARDUINO";
 
         //REMOVE
-        string threadStrDbg = "";
+        private string threadStrDbg = "";
 
-        int Test1 = 0;
-        int Test2 = 0;
+        private long intermediateTemp1 = 0;
+        private long intermediateTemp2 = 0;
         //REMOVE
         public MainForm()
         {
@@ -674,22 +677,24 @@ namespace SMT_1
             
         }
 
+        //REMOVE THIS CONTROLS
         private void numericUpDownTest1_ValueChanged(object sender, EventArgs e)
         {
-            Test1 = (int)numericUpDownTest1.Value;
+            intermediateTemp1 = (int)numericUpDownTest1.Value;
         }
 
         private void numericUpDownTest2_ValueChanged(object sender, EventArgs e)
         {
-            Test2 = (int)numericUpDownTest2.Value;
+            intermediateTemp2 = (int)numericUpDownTest2.Value;
         }
         
         private void timerChartInfo_Tick(object sender, EventArgs e)
         {
             chartSecondsCounter++;
             //Collect info
-            chartTemperature.Series["T1"].Points.AddXY(chartSecondsCounter, Test1);
-            chartTemperature.Series["T2"].Points.AddXY(chartSecondsCounter, Test2);
+            chartTemperature.Series["T1"].Points.AddXY(chartSecondsCounter, Interlocked.Read(ref intermediateTemp1));
+            //MessageBox.Show("t1: " + Interlocked.Read(ref intermediateTemp1));
+            chartTemperature.Series["T2"].Points.AddXY(chartSecondsCounter, intermediateTemp2);
             //Write to tempdata
             chartDataTemp1.Add(new Point2D((int)chartTemperature.Series["T1"].Points.Last().XValue, (int)chartTemperature.Series["T1"].Points.Last().YValues[0]));
             chartDataTemp2.Add(new Point2D((int)chartTemperature.Series["T2"].Points.Last().XValue, (int)chartTemperature.Series["T2"].Points.Last().YValues[0]));
@@ -806,7 +811,7 @@ namespace SMT_1
 
                 if (!isArduinoFound)
                 {
-                    MessageBox.Show($"Arduino не знайдено\nДля нормального функціонування програми підключіть Arduino і натисніть кнопку 'Сканувати порти'", "Увага", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show($"Arduino не знайдено\nДля нормального функціонування програми підключіть Arduino і натисніть кнопку 'Під'єднатись до arduino'", "Увага", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
@@ -826,9 +831,6 @@ namespace SMT_1
                     int bigRetryCounter = 0; // Max is 3
                     while (true)
                     {
-                        //threadStrDbg += returnMessage; //REMOVE
-                        //threadStrDbg += DateTime.Now.ToString("mm:ss:ff") + '\n';  //REMOVE
-
                         if (retryInitializeCounter >= 10)
                         {
                             bigRetryCounter++;
@@ -854,6 +856,7 @@ namespace SMT_1
 
                     // Successful handshake, collecting data
                     dataCollector = new Thread(new ThreadStart(CollectSensorsData));
+                    dataCollector.Start();
                 }
                 catch (Exception ex) {
                     MessageBox.Show($"Відбулась помилка. Впевніться, що arduino підключено та натисніть 'Під'єднатись до arduino', якщо все впорядку\nІнформація про помилку:\n{ex.Message}",
@@ -906,46 +909,68 @@ namespace SMT_1
 
         private void CollectSensorsData()
         {
-            //while(serialPortArduino.IsOpen && )
-            //Interlocked.Exchange(ref location, float value);
+            System.Timers.Timer aTimer = new System.Timers.Timer();
+            aTimer.Interval = 1000;
+            aTimer.Elapsed += new ElapsedEventHandler(OnTimedEvent);
+            aTimer.Start();
+
+            serialPortArduino.DiscardInBuffer(); // Discarding because data in buffer is obsolete
+            while (serialPortArduino.IsOpen && !stopCollectingData)
+            {
+                try
+                {
+                    string returnMessage = serialPortArduino.ReadLine();
+                    threadStrDbg += returnMessage; //REMOVE
+                    threadStrDbg += DateTime.Now.ToString("mm:ss:ff") + '\n';  //REMOVE
+                    if (returnMessage.Contains(notInitializedStr))
+                    {
+                        MessageBox.Show("Протокол спілкування з arduino порушений\nДля ре-ініціалізації підключення натисніть 'Під'єднатись до arduino'", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        isArduinoFound = false;
+                        keepAliveTimeCounter = 0;
+                        serialPortArduino.Close();
+                    }
+
+                    string[] allData = returnMessage.Split(' ');
+                    foreach(string kv in allData)
+                    {
+                        string[] keyValue = kv.Split(':');
+                        if(keyValue[0] == "Temp1")
+                        {
+                            Interlocked.Exchange(ref intermediateTemp1, (long)float.Parse(keyValue[1]));
+                        }
+                    }
+                    // NEED TO PARSE INPUT
+                    //Interlocked.Exchange(ref intermediateTemp2, chartSecondsCounter * 2);
+
+                    if (Interlocked.Read(ref keepAliveTimeCounter) >= 20)
+                    {
+                        System.Threading.Thread.Sleep(1000);
+                        serialPortArduino.BaseStream.WriteByte(spAllOk);
+                        System.Threading.Thread.Sleep(1000);
+                        keepAliveTimeCounter = 0;
+                    }
+                }
+                catch (Exception e)
+                {
+                    MessageBox.Show(e.ToString());
+                    MessageBox.Show("Протокол спілкування з arduino порушений\nДля ре-ініціалізації підключення натисніть 'Під'єднатись до arduino'", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    serialPortArduino.Close();
+                }
+            }
+
+            aTimer.Stop();
+            isArduinoFound = false;
+            keepAliveTimeCounter = 0;
+        }
+
+        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            stopCollectingData = true;
+        }
+
+        private void OnTimedEvent(object source, ElapsedEventArgs e)
+        {
+            Interlocked.Increment(ref keepAliveTimeCounter);
         }
     }
 }
-
-
-
-
-/*   For plan info box
-
-                // REMOVE THIS FOR. FOR TESTING PURPOSES ONLY
-            //for(int i=0;i<10;i++)
-            //{
-            //    string[] arr = { i.ToString(), "00:01", (i*4 + 300).ToString(), ((i/3)/2).ToString(), (((i*2)-i/3+i)/3).ToString(), (i+(i/2)-i/3-i/4).ToString() };
-            //    listViewPlanRecords.Items.Add(new ListViewItem(arr));
-            //}
-
-if (listViewPlanRecords.SelectedItems.Count > 0)
-{
-    textBoxRecordInExecutuion.Text = listViewPlanRecords.SelectedItems[0].SubItems[0].Text;
-    String timeNow = DateTime.Now.ToString("h:mm:ss tt");
-    textBoxStartTime.Text = timeNow;
-    TimeSpan timeDelta = new TimeSpan();
-    bool isParsed = TimeSpan.TryParse(listViewPlanRecords.SelectedItems[0].SubItems[1].Text, out timeDelta);
-
-    if (isParsed)
-    {
-        textBoxEndTime.Text = Convert.ToDateTime(timeNow).Add(timeDelta).ToString("h:mm:ss tt");
-
-
-        var delta = (Convert.ToDateTime(textBoxEndTime.Text) - DateTime.Now);
-        textBoxRemainingTime.Text = String.Format("{0} годин, {1} хвилин, {2} секунд", delta.Hours, delta.Minutes, delta.Seconds);
-    }
-    else
-    {
-        textBoxEndTime.Text = "Неправильно заданий час";
-        textBoxRemainingTime.Text = "Неможливо визначити";
-    }
-}
-else
-    textBoxRecordInExecutuion.Text = "План не вибрано";
-*/
