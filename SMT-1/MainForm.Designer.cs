@@ -30,15 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title7 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title8 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.Plan = new System.Windows.Forms.TabPage();
             this.tableLayoutPanelRecordActions = new System.Windows.Forms.TableLayoutPanel();
             this.buttonRecordAdd = new System.Windows.Forms.Button();
@@ -59,9 +59,7 @@
             this.groupBoxEngineSpeed = new System.Windows.Forms.GroupBox();
             this.trackBarPlanEngineRPM = new System.Windows.Forms.TrackBar();
             this.numericUpDownPlanEngineRPM = new System.Windows.Forms.NumericUpDown();
-            this.labelPlanEngineVoltage = new System.Windows.Forms.Label();
             this.labelPlanEngineRPM = new System.Windows.Forms.Label();
-            this.textBoxPlanEngineVoltage = new System.Windows.Forms.TextBox();
             this.groupBoxLoad = new System.Windows.Forms.GroupBox();
             this.numericUpDownPlanLoadedWeight = new System.Windows.Forms.NumericUpDown();
             this.labelLoadedWeight = new System.Windows.Forms.Label();
@@ -87,6 +85,8 @@
             this.columnHeaderT1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderT2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Control = new System.Windows.Forms.TabPage();
+            this.trackBar2 = new System.Windows.Forms.TrackBar();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.groupBoxControlEngineCurrentParams = new System.Windows.Forms.GroupBox();
             this.groupBoxCurrentLoadState = new System.Windows.Forms.GroupBox();
             this.textBoxControlCurrentLoad = new System.Windows.Forms.TextBox();
@@ -137,10 +137,6 @@
             this.buttonClearCharts = new System.Windows.Forms.Button();
             this.chartLoad = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.buttonStopChartsRead = new System.Windows.Forms.Button();
-            this.labelTest2 = new System.Windows.Forms.Label();
-            this.labelTest1 = new System.Windows.Forms.Label();
-            this.numericUpDownTest2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownTest1 = new System.Windows.Forms.NumericUpDown();
             this.buttonSaveCharts = new System.Windows.Forms.Button();
             this.chartTemperature = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.buttonStartChartsRead = new System.Windows.Forms.Button();
@@ -150,8 +146,20 @@
             this.richTextBoxDebug = new System.Windows.Forms.RichTextBox();
             this.groupBoxCurrentSensorsParameters = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanelParameters = new System.Windows.Forms.TableLayoutPanel();
-            this.textBoxT0 = new System.Windows.Forms.TextBox();
-            this.labelT0 = new System.Windows.Forms.Label();
+            this.textBoxAxelLoad = new System.Windows.Forms.TextBox();
+            this.textBoxRollingResistance = new System.Windows.Forms.TextBox();
+            this.textBoxLoad = new System.Windows.Forms.TextBox();
+            this.textBoxSpeed = new System.Windows.Forms.TextBox();
+            this.textBoxT3 = new System.Windows.Forms.TextBox();
+            this.textBoxT2 = new System.Windows.Forms.TextBox();
+            this.labelAxelLoad = new System.Windows.Forms.Label();
+            this.labelRollingResistance = new System.Windows.Forms.Label();
+            this.labelLoad = new System.Windows.Forms.Label();
+            this.labelSpeed = new System.Windows.Forms.Label();
+            this.labelT3 = new System.Windows.Forms.Label();
+            this.labelT2 = new System.Windows.Forms.Label();
+            this.labelT1 = new System.Windows.Forms.Label();
+            this.textBoxT1 = new System.Windows.Forms.TextBox();
             this.groupBoxPlan = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanelPlan = new System.Windows.Forms.TableLayoutPanel();
             this.labelRecordInExecution = new System.Windows.Forms.Label();
@@ -168,6 +176,8 @@
             this.timerChartInfo = new System.Windows.Forms.Timer(this.components);
             this.serialPortArduino = new System.IO.Ports.SerialPort(this.components);
             this.buttonScanPorts = new System.Windows.Forms.Button();
+            this.labelConnectionStatus = new System.Windows.Forms.Label();
+            this.labelStatusValue = new System.Windows.Forms.Label();
             this.Plan.SuspendLayout();
             this.tableLayoutPanelRecordActions.SuspendLayout();
             this.tableLayoutPanelPlanValues.SuspendLayout();
@@ -189,6 +199,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBarSecondTemp)).BeginInit();
             this.tableLayoutPanelPlanControl.SuspendLayout();
             this.Control.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.groupBoxControlEngineCurrentParams.SuspendLayout();
             this.groupBoxCurrentLoadState.SuspendLayout();
             this.groupBoxCurrentVentsState.SuspendLayout();
@@ -202,8 +214,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownControlEngineRPM)).BeginInit();
             this.Charts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartLoad)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTest2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTest1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartTemperature)).BeginInit();
             this.tabControlControlPanel.SuspendLayout();
             this.DebugTab.SuspendLayout();
@@ -235,6 +245,7 @@
             // buttonRecordAdd
             // 
             resources.ApplyResources(this.buttonRecordAdd, "buttonRecordAdd");
+            this.buttonRecordAdd.FlatAppearance.BorderSize = 0;
             this.buttonRecordAdd.Name = "buttonRecordAdd";
             this.buttonRecordAdd.UseVisualStyleBackColor = true;
             this.buttonRecordAdd.Click += new System.EventHandler(this.buttonRecordAdd_Click);
@@ -242,6 +253,7 @@
             // buttonRecordDelete
             // 
             resources.ApplyResources(this.buttonRecordDelete, "buttonRecordDelete");
+            this.buttonRecordDelete.FlatAppearance.BorderSize = 0;
             this.buttonRecordDelete.Name = "buttonRecordDelete";
             this.buttonRecordDelete.UseVisualStyleBackColor = true;
             this.buttonRecordDelete.Click += new System.EventHandler(this.buttonRecordDelete_Click);
@@ -249,6 +261,7 @@
             // buttonRecordUp
             // 
             resources.ApplyResources(this.buttonRecordUp, "buttonRecordUp");
+            this.buttonRecordUp.FlatAppearance.BorderSize = 0;
             this.buttonRecordUp.Name = "buttonRecordUp";
             this.buttonRecordUp.UseVisualStyleBackColor = true;
             this.buttonRecordUp.Click += new System.EventHandler(this.buttonRecordUp_Click);
@@ -256,6 +269,7 @@
             // buttonRecordDown
             // 
             resources.ApplyResources(this.buttonRecordDown, "buttonRecordDown");
+            this.buttonRecordDown.FlatAppearance.BorderSize = 0;
             this.buttonRecordDown.Name = "buttonRecordDown";
             this.buttonRecordDown.UseVisualStyleBackColor = true;
             this.buttonRecordDown.Click += new System.EventHandler(this.buttonRecordDown_Click);
@@ -349,9 +363,7 @@
             // 
             this.groupBoxEngineSpeed.Controls.Add(this.trackBarPlanEngineRPM);
             this.groupBoxEngineSpeed.Controls.Add(this.numericUpDownPlanEngineRPM);
-            this.groupBoxEngineSpeed.Controls.Add(this.labelPlanEngineVoltage);
             this.groupBoxEngineSpeed.Controls.Add(this.labelPlanEngineRPM);
-            this.groupBoxEngineSpeed.Controls.Add(this.textBoxPlanEngineVoltage);
             resources.ApplyResources(this.groupBoxEngineSpeed, "groupBoxEngineSpeed");
             this.groupBoxEngineSpeed.Name = "groupBoxEngineSpeed";
             this.groupBoxEngineSpeed.TabStop = false;
@@ -360,7 +372,7 @@
             // 
             this.trackBarPlanEngineRPM.BackColor = System.Drawing.SystemColors.Window;
             resources.ApplyResources(this.trackBarPlanEngineRPM, "trackBarPlanEngineRPM");
-            this.trackBarPlanEngineRPM.Maximum = 1000;
+            this.trackBarPlanEngineRPM.Maximum = 20000;
             this.trackBarPlanEngineRPM.Minimum = 300;
             this.trackBarPlanEngineRPM.Name = "trackBarPlanEngineRPM";
             this.trackBarPlanEngineRPM.TickFrequency = 50;
@@ -371,7 +383,7 @@
             // 
             resources.ApplyResources(this.numericUpDownPlanEngineRPM, "numericUpDownPlanEngineRPM");
             this.numericUpDownPlanEngineRPM.Maximum = new decimal(new int[] {
-            1000,
+            20000,
             0,
             0,
             0});
@@ -388,20 +400,10 @@
             0});
             this.numericUpDownPlanEngineRPM.ValueChanged += new System.EventHandler(this.numericUpDownPlanEngineRPM_ValueChanged);
             // 
-            // labelPlanEngineVoltage
-            // 
-            resources.ApplyResources(this.labelPlanEngineVoltage, "labelPlanEngineVoltage");
-            this.labelPlanEngineVoltage.Name = "labelPlanEngineVoltage";
-            // 
             // labelPlanEngineRPM
             // 
             resources.ApplyResources(this.labelPlanEngineRPM, "labelPlanEngineRPM");
             this.labelPlanEngineRPM.Name = "labelPlanEngineRPM";
-            // 
-            // textBoxPlanEngineVoltage
-            // 
-            resources.ApplyResources(this.textBoxPlanEngineVoltage, "textBoxPlanEngineVoltage");
-            this.textBoxPlanEngineVoltage.Name = "textBoxPlanEngineVoltage";
             // 
             // groupBoxLoad
             // 
@@ -586,6 +588,8 @@
             // 
             // Control
             // 
+            this.Control.Controls.Add(this.trackBar2);
+            this.Control.Controls.Add(this.trackBar1);
             this.Control.Controls.Add(this.groupBoxControlEngineCurrentParams);
             this.Control.Controls.Add(this.groupBoxControlLoadedWeight);
             this.Control.Controls.Add(this.groupBoxControlVents);
@@ -593,6 +597,22 @@
             resources.ApplyResources(this.Control, "Control");
             this.Control.Name = "Control";
             this.Control.UseVisualStyleBackColor = true;
+            // 
+            // trackBar2
+            // 
+            resources.ApplyResources(this.trackBar2, "trackBar2");
+            this.trackBar2.Maximum = 100;
+            this.trackBar2.Name = "trackBar2";
+            this.trackBar2.Value = 22;
+            this.trackBar2.Scroll += new System.EventHandler(this.trackBar2_Scroll);
+            // 
+            // trackBar1
+            // 
+            resources.ApplyResources(this.trackBar1, "trackBar1");
+            this.trackBar1.Maximum = 100;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Value = 24;
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
             // groupBoxControlEngineCurrentParams
             // 
@@ -881,7 +901,7 @@
             // 
             this.trackBarControlEngineRPM.BackColor = System.Drawing.SystemColors.Window;
             resources.ApplyResources(this.trackBarControlEngineRPM, "trackBarControlEngineRPM");
-            this.trackBarControlEngineRPM.Maximum = 1000;
+            this.trackBarControlEngineRPM.Maximum = 20000;
             this.trackBarControlEngineRPM.Minimum = 300;
             this.trackBarControlEngineRPM.Name = "trackBarControlEngineRPM";
             this.trackBarControlEngineRPM.TickFrequency = 50;
@@ -897,7 +917,7 @@
             // 
             resources.ApplyResources(this.numericUpDownControlEngineRPM, "numericUpDownControlEngineRPM");
             this.numericUpDownControlEngineRPM.Maximum = new decimal(new int[] {
-            1000,
+            20000,
             0,
             0,
             0});
@@ -934,10 +954,6 @@
             this.Charts.Controls.Add(this.buttonClearCharts);
             this.Charts.Controls.Add(this.chartLoad);
             this.Charts.Controls.Add(this.buttonStopChartsRead);
-            this.Charts.Controls.Add(this.labelTest2);
-            this.Charts.Controls.Add(this.labelTest1);
-            this.Charts.Controls.Add(this.numericUpDownTest2);
-            this.Charts.Controls.Add(this.numericUpDownTest1);
             this.Charts.Controls.Add(this.buttonSaveCharts);
             this.Charts.Controls.Add(this.chartTemperature);
             this.Charts.Controls.Add(this.buttonStartChartsRead);
@@ -954,39 +970,39 @@
             // 
             // chartLoad
             // 
-            chartArea7.AxisX.ArrowStyle = System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle.Triangle;
-            chartArea7.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.NotSet;
-            chartArea7.AxisX.MajorTickMark.Enabled = false;
-            chartArea7.AxisX.MajorTickMark.Interval = 4D;
-            chartArea7.AxisX.MajorTickMark.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Seconds;
-            chartArea7.AxisX.MajorTickMark.TickMarkStyle = System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.None;
-            chartArea7.AxisX.Title = "час (сек)";
-            chartArea7.AxisX.TitleFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea7.AxisY.ArrowStyle = System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle.Triangle;
-            chartArea7.AxisY.Interval = 30D;
-            chartArea7.AxisY.MajorGrid.Interval = 30D;
-            chartArea7.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea7.AxisY.MajorTickMark.Interval = 30D;
-            chartArea7.AxisY.Title = "навантаження (кг)";
-            chartArea7.AxisY.TitleFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea7.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
-            chartArea7.Name = "ChartArea1";
-            this.chartLoad.ChartAreas.Add(chartArea7);
-            legend7.Name = "Legend1";
-            this.chartLoad.Legends.Add(legend7);
+            chartArea1.AxisX.ArrowStyle = System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle.Triangle;
+            chartArea1.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.NotSet;
+            chartArea1.AxisX.MajorTickMark.Enabled = false;
+            chartArea1.AxisX.MajorTickMark.Interval = 4D;
+            chartArea1.AxisX.MajorTickMark.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Seconds;
+            chartArea1.AxisX.MajorTickMark.TickMarkStyle = System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.None;
+            chartArea1.AxisX.Title = "час (сек)";
+            chartArea1.AxisX.TitleFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea1.AxisY.ArrowStyle = System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle.Triangle;
+            chartArea1.AxisY.Interval = 30D;
+            chartArea1.AxisY.MajorGrid.Interval = 30D;
+            chartArea1.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea1.AxisY.MajorTickMark.Interval = 30D;
+            chartArea1.AxisY.Title = "навантаження (кг)";
+            chartArea1.AxisY.TitleFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea1.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
+            chartArea1.Name = "ChartArea1";
+            this.chartLoad.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartLoad.Legends.Add(legend1);
             resources.ApplyResources(this.chartLoad, "chartLoad");
             this.chartLoad.Name = "chartLoad";
-            series10.ChartArea = "ChartArea1";
-            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series10.Color = System.Drawing.Color.Blue;
-            series10.Legend = "Legend1";
-            series10.LegendText = "Навантаження";
-            series10.Name = "Load";
-            this.chartLoad.Series.Add(series10);
-            title7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title7.Name = "Title1";
-            title7.Text = "Навантаження";
-            this.chartLoad.Titles.Add(title7);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Color = System.Drawing.Color.Blue;
+            series1.Legend = "Legend1";
+            series1.LegendText = "Навантаження";
+            series1.Name = "Load";
+            this.chartLoad.Series.Add(series1);
+            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title1.Name = "Title1";
+            title1.Text = "Навантаження";
+            this.chartLoad.Titles.Add(title1);
             // 
             // buttonStopChartsRead
             // 
@@ -994,53 +1010,6 @@
             this.buttonStopChartsRead.Name = "buttonStopChartsRead";
             this.buttonStopChartsRead.UseVisualStyleBackColor = true;
             this.buttonStopChartsRead.Click += new System.EventHandler(this.buttonStopChartsRead_Click);
-            // 
-            // labelTest2
-            // 
-            resources.ApplyResources(this.labelTest2, "labelTest2");
-            this.labelTest2.Name = "labelTest2";
-            // 
-            // labelTest1
-            // 
-            resources.ApplyResources(this.labelTest1, "labelTest1");
-            this.labelTest1.Name = "labelTest1";
-            // 
-            // numericUpDownTest2
-            // 
-            resources.ApplyResources(this.numericUpDownTest2, "numericUpDownTest2");
-            this.numericUpDownTest2.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDownTest2.Name = "numericUpDownTest2";
-            this.numericUpDownTest2.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDownTest2.ValueChanged += new System.EventHandler(this.numericUpDownTest2_ValueChanged);
-            // 
-            // numericUpDownTest1
-            // 
-            resources.ApplyResources(this.numericUpDownTest1, "numericUpDownTest1");
-            this.numericUpDownTest1.Maximum = new decimal(new int[] {
-            125,
-            0,
-            0,
-            0});
-            this.numericUpDownTest1.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDownTest1.Name = "numericUpDownTest1";
-            this.numericUpDownTest1.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDownTest1.ValueChanged += new System.EventHandler(this.numericUpDownTest1_ValueChanged);
             // 
             // buttonSaveCharts
             // 
@@ -1051,44 +1020,44 @@
             // 
             // chartTemperature
             // 
-            chartArea8.AxisX.ArrowStyle = System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle.Triangle;
-            chartArea8.AxisX.IsMarksNextToAxis = false;
-            chartArea8.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Seconds;
-            chartArea8.AxisX.MajorGrid.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Seconds;
-            chartArea8.AxisX.Title = "час (сек)";
-            chartArea8.AxisX.TitleFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea8.AxisY.ArrowStyle = System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle.Triangle;
-            chartArea8.AxisY.Interval = 25D;
-            chartArea8.AxisY.MajorGrid.Interval = 25D;
-            chartArea8.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea8.AxisY.MajorTickMark.Interval = 50D;
-            chartArea8.AxisY.Title = "температура (ºC)";
-            chartArea8.AxisY.TitleFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea8.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
-            chartArea8.Name = "ChartArea1";
-            this.chartTemperature.ChartAreas.Add(chartArea8);
-            legend8.Name = "Legend1";
-            this.chartTemperature.Legends.Add(legend8);
+            chartArea2.AxisX.ArrowStyle = System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle.Triangle;
+            chartArea2.AxisX.IsMarksNextToAxis = false;
+            chartArea2.AxisX.MajorGrid.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Seconds;
+            chartArea2.AxisX.MajorGrid.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Seconds;
+            chartArea2.AxisX.Title = "час (сек)";
+            chartArea2.AxisX.TitleFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea2.AxisY.ArrowStyle = System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle.Triangle;
+            chartArea2.AxisY.Interval = 25D;
+            chartArea2.AxisY.MajorGrid.Interval = 25D;
+            chartArea2.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea2.AxisY.MajorTickMark.Interval = 50D;
+            chartArea2.AxisY.Title = "температура (ºC)";
+            chartArea2.AxisY.TitleFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea2.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
+            chartArea2.Name = "ChartArea1";
+            this.chartTemperature.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartTemperature.Legends.Add(legend2);
             resources.ApplyResources(this.chartTemperature, "chartTemperature");
             this.chartTemperature.Name = "chartTemperature";
-            series11.ChartArea = "ChartArea1";
-            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series11.Color = System.Drawing.Color.Red;
-            series11.Legend = "Legend1";
-            series11.LegendText = "Т1";
-            series11.Name = "T1";
-            series12.ChartArea = "ChartArea1";
-            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series12.Color = System.Drawing.Color.Blue;
-            series12.Legend = "Legend1";
-            series12.LegendText = "Т2";
-            series12.Name = "T2";
-            this.chartTemperature.Series.Add(series11);
-            this.chartTemperature.Series.Add(series12);
-            title8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title8.Name = "Title1";
-            title8.Text = "Температура";
-            this.chartTemperature.Titles.Add(title8);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series2.Color = System.Drawing.Color.Red;
+            series2.Legend = "Legend1";
+            series2.LegendText = "Т1";
+            series2.Name = "T1";
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series3.Color = System.Drawing.Color.Blue;
+            series3.Legend = "Legend1";
+            series3.LegendText = "Т2";
+            series3.Name = "T2";
+            this.chartTemperature.Series.Add(series2);
+            this.chartTemperature.Series.Add(series3);
+            title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title2.Name = "Title1";
+            title2.Text = "Температура";
+            this.chartTemperature.Titles.Add(title2);
             // 
             // buttonStartChartsRead
             // 
@@ -1137,19 +1106,91 @@
             // tableLayoutPanelParameters
             // 
             resources.ApplyResources(this.tableLayoutPanelParameters, "tableLayoutPanelParameters");
-            this.tableLayoutPanelParameters.Controls.Add(this.textBoxT0, 1, 0);
-            this.tableLayoutPanelParameters.Controls.Add(this.labelT0, 0, 0);
+            this.tableLayoutPanelParameters.Controls.Add(this.textBoxAxelLoad, 1, 6);
+            this.tableLayoutPanelParameters.Controls.Add(this.textBoxRollingResistance, 1, 5);
+            this.tableLayoutPanelParameters.Controls.Add(this.textBoxLoad, 1, 4);
+            this.tableLayoutPanelParameters.Controls.Add(this.textBoxSpeed, 1, 3);
+            this.tableLayoutPanelParameters.Controls.Add(this.textBoxT3, 1, 2);
+            this.tableLayoutPanelParameters.Controls.Add(this.textBoxT2, 1, 1);
+            this.tableLayoutPanelParameters.Controls.Add(this.labelAxelLoad, 0, 6);
+            this.tableLayoutPanelParameters.Controls.Add(this.labelRollingResistance, 0, 5);
+            this.tableLayoutPanelParameters.Controls.Add(this.labelLoad, 0, 4);
+            this.tableLayoutPanelParameters.Controls.Add(this.labelSpeed, 0, 3);
+            this.tableLayoutPanelParameters.Controls.Add(this.labelT3, 0, 2);
+            this.tableLayoutPanelParameters.Controls.Add(this.labelT2, 0, 1);
+            this.tableLayoutPanelParameters.Controls.Add(this.labelT1, 0, 0);
+            this.tableLayoutPanelParameters.Controls.Add(this.textBoxT1, 1, 0);
             this.tableLayoutPanelParameters.Name = "tableLayoutPanelParameters";
             // 
-            // textBoxT0
+            // textBoxAxelLoad
             // 
-            resources.ApplyResources(this.textBoxT0, "textBoxT0");
-            this.textBoxT0.Name = "textBoxT0";
+            resources.ApplyResources(this.textBoxAxelLoad, "textBoxAxelLoad");
+            this.textBoxAxelLoad.Name = "textBoxAxelLoad";
             // 
-            // labelT0
+            // textBoxRollingResistance
             // 
-            resources.ApplyResources(this.labelT0, "labelT0");
-            this.labelT0.Name = "labelT0";
+            resources.ApplyResources(this.textBoxRollingResistance, "textBoxRollingResistance");
+            this.textBoxRollingResistance.Name = "textBoxRollingResistance";
+            // 
+            // textBoxLoad
+            // 
+            resources.ApplyResources(this.textBoxLoad, "textBoxLoad");
+            this.textBoxLoad.Name = "textBoxLoad";
+            // 
+            // textBoxSpeed
+            // 
+            resources.ApplyResources(this.textBoxSpeed, "textBoxSpeed");
+            this.textBoxSpeed.Name = "textBoxSpeed";
+            // 
+            // textBoxT3
+            // 
+            resources.ApplyResources(this.textBoxT3, "textBoxT3");
+            this.textBoxT3.Name = "textBoxT3";
+            // 
+            // textBoxT2
+            // 
+            resources.ApplyResources(this.textBoxT2, "textBoxT2");
+            this.textBoxT2.Name = "textBoxT2";
+            // 
+            // labelAxelLoad
+            // 
+            resources.ApplyResources(this.labelAxelLoad, "labelAxelLoad");
+            this.labelAxelLoad.Name = "labelAxelLoad";
+            // 
+            // labelRollingResistance
+            // 
+            resources.ApplyResources(this.labelRollingResistance, "labelRollingResistance");
+            this.labelRollingResistance.Name = "labelRollingResistance";
+            // 
+            // labelLoad
+            // 
+            resources.ApplyResources(this.labelLoad, "labelLoad");
+            this.labelLoad.Name = "labelLoad";
+            // 
+            // labelSpeed
+            // 
+            resources.ApplyResources(this.labelSpeed, "labelSpeed");
+            this.labelSpeed.Name = "labelSpeed";
+            // 
+            // labelT3
+            // 
+            resources.ApplyResources(this.labelT3, "labelT3");
+            this.labelT3.Name = "labelT3";
+            // 
+            // labelT2
+            // 
+            resources.ApplyResources(this.labelT2, "labelT2");
+            this.labelT2.Name = "labelT2";
+            // 
+            // labelT1
+            // 
+            resources.ApplyResources(this.labelT1, "labelT1");
+            this.labelT1.Name = "labelT1";
+            // 
+            // textBoxT1
+            // 
+            resources.ApplyResources(this.textBoxT1, "textBoxT1");
+            this.textBoxT1.Name = "textBoxT1";
             // 
             // groupBoxPlan
             // 
@@ -1232,11 +1273,23 @@
             this.buttonScanPorts.UseVisualStyleBackColor = true;
             this.buttonScanPorts.Click += new System.EventHandler(this.buttonScanPorts_Click);
             // 
+            // labelConnectionStatus
+            // 
+            resources.ApplyResources(this.labelConnectionStatus, "labelConnectionStatus");
+            this.labelConnectionStatus.Name = "labelConnectionStatus";
+            // 
+            // labelStatusValue
+            // 
+            resources.ApplyResources(this.labelStatusValue, "labelStatusValue");
+            this.labelStatusValue.Name = "labelStatusValue";
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Controls.Add(this.labelStatusValue);
+            this.Controls.Add(this.labelConnectionStatus);
             this.Controls.Add(this.buttonScanPorts);
             this.Controls.Add(this.groupBoxPlan);
             this.Controls.Add(this.groupBoxCurrentSensorsParameters);
@@ -1273,6 +1326,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBarSecondTemp)).EndInit();
             this.tableLayoutPanelPlanControl.ResumeLayout(false);
             this.Control.ResumeLayout(false);
+            this.Control.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.groupBoxControlEngineCurrentParams.ResumeLayout(false);
             this.groupBoxCurrentLoadState.ResumeLayout(false);
             this.groupBoxCurrentLoadState.PerformLayout();
@@ -1291,10 +1347,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBarControlEngineRPM)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownControlEngineRPM)).EndInit();
             this.Charts.ResumeLayout(false);
-            this.Charts.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartLoad)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTest2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTest1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartTemperature)).EndInit();
             this.tabControlControlPanel.ResumeLayout(false);
             this.DebugTab.ResumeLayout(false);
@@ -1305,6 +1358,7 @@
             this.tableLayoutPanelPlan.ResumeLayout(false);
             this.tableLayoutPanelPlan.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1315,9 +1369,6 @@
         private System.Windows.Forms.TabPage Charts;
         private System.Windows.Forms.TabControl tabControlControlPanel;
         private System.Windows.Forms.GroupBox groupBoxCurrentSensorsParameters;
-        private System.Windows.Forms.TextBox textBoxT0;
-        private System.Windows.Forms.Label labelT0;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelParameters;
         private System.Windows.Forms.GroupBox groupBoxPlan;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelPlan;
         private System.Windows.Forms.TextBox textBoxRecordInExecution;
@@ -1350,8 +1401,6 @@
         private System.Windows.Forms.Label labelPlanMinutes;
         private System.Windows.Forms.Label labelPlanHours;
         private System.Windows.Forms.NumericUpDown numericUpDownPlanMinutes;
-        private System.Windows.Forms.TextBox textBoxPlanEngineVoltage;
-        private System.Windows.Forms.Label labelPlanEngineVoltage;
         private System.Windows.Forms.Label labelPlanEngineRPM;
         private System.Windows.Forms.ColumnHeader columnHeaderT1;
         private System.Windows.Forms.ColumnHeader columnHeaderT2;
@@ -1426,10 +1475,6 @@
         private System.Windows.Forms.CheckBox checkBoxControlCurrentRightVentOn;
         private System.Windows.Forms.CheckBox checkBoxControlCurrentLeftFanOn;
         private System.Windows.Forms.Timer timerCurrentRecord;
-        private System.Windows.Forms.Label labelTest2;
-        private System.Windows.Forms.Label labelTest1;
-        private System.Windows.Forms.NumericUpDown numericUpDownTest2;
-        private System.Windows.Forms.NumericUpDown numericUpDownTest1;
         private System.Windows.Forms.Button buttonSaveCharts;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartTemperature;
         private System.Windows.Forms.Button buttonStartChartsRead;
@@ -1439,6 +1484,25 @@
         private System.Windows.Forms.Button buttonClearCharts;
         private System.IO.Ports.SerialPort serialPortArduino;
         private System.Windows.Forms.Button buttonScanPorts;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelParameters;
+        private System.Windows.Forms.TextBox textBoxAxelLoad;
+        private System.Windows.Forms.TextBox textBoxRollingResistance;
+        private System.Windows.Forms.TextBox textBoxLoad;
+        private System.Windows.Forms.TextBox textBoxSpeed;
+        private System.Windows.Forms.TextBox textBoxT3;
+        private System.Windows.Forms.TextBox textBoxT2;
+        private System.Windows.Forms.Label labelAxelLoad;
+        private System.Windows.Forms.Label labelRollingResistance;
+        private System.Windows.Forms.Label labelLoad;
+        private System.Windows.Forms.Label labelSpeed;
+        private System.Windows.Forms.Label labelT3;
+        private System.Windows.Forms.Label labelT2;
+        private System.Windows.Forms.Label labelT1;
+        private System.Windows.Forms.TextBox textBoxT1;
+        private System.Windows.Forms.Label labelConnectionStatus;
+        private System.Windows.Forms.Label labelStatusValue;
+        private System.Windows.Forms.TrackBar trackBar2;
+        private System.Windows.Forms.TrackBar trackBar1;
     }
 }
 

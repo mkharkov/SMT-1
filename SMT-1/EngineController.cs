@@ -11,7 +11,7 @@ namespace SMT_1
     public class EngineController
     {
         public static int minRPM = 300;
-        public static int maxRPM = 1000;
+        public static int maxRPM = 20000;
 
         public bool On { get; set; } = false;
 

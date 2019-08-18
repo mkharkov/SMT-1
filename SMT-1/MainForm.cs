@@ -45,14 +45,19 @@ namespace SMT_1
         private readonly byte spStart = 0x32;
         private readonly byte spAllOk = 0x33;
 
+        private readonly byte spStartEngine = 0x34;
+        private readonly byte spEngineRPM = 0x35;
+        private readonly byte spStopEngine = 0x36;
+
         private readonly string initializedStr = "INITIALIZED";
         private readonly string notInitializedStr = "ARDUINO";
 
         //REMOVE
         private string threadStrDbg = "";
 
-        private long intermediateTemp1 = 0;
-        private long intermediateTemp2 = 0;
+        private long intermediateTemp1 = 24;
+        private long intermediateTemp2 = 22;
+        private long intermediateRPM = 0;
         //REMOVE
         public MainForm()
         {
@@ -77,11 +82,7 @@ namespace SMT_1
             saveFileDialogPlan.DefaultExt = ".txt";
             saveFileDialogPlan.Filter = "text files (*.txt)|*.txt";
 
-            textBoxT0.Text = "Degrees";
-
             SetAllControlToInitial();
-
-            textBoxPlanEngineVoltage.Text = EngineController.RpmToVoltage((int)numericUpDownControlEngineRPM.Value).ToString();
 
             numericUpDownPlanLoadedWeight.Value = trackBarLoadedWeight.Value;
             numericUpDownPlanFirstTemp.Value = trackBarFirstTemp.Value;
@@ -145,21 +146,57 @@ namespace SMT_1
 
         private void buttonControlEngineStop_Click(object sender, EventArgs e)
         {
+            if(!serialPortArduino.IsOpen)
+            {
+                isArduinoFound = false;
+                keepAliveTimeCounter = 0;
+                timerChartInfo.Stop();
+                return;
+            }
+
             engine.On = false;
             textBoxCurrentEngineOn.Text = "Ні";
+
+            serialPortArduino.BaseStream.WriteByte(spStopEngine);
         }
 
         private void buttonControlEngineSetValues_Click(object sender, EventArgs e)
         {
+            if (!serialPortArduino.IsOpen)
+            {
+                isArduinoFound = false;
+                keepAliveTimeCounter = 0;
+                timerChartInfo.Stop();
+                return;
+            }
+
+
             engine.RPM = (int)numericUpDownControlEngineRPM.Value; //Voltage will be set automatically
             textBoxControlEngineCurrentRPM.Text = engine.RPM.ToString();
             textBoxControlEngineCurrentVoltage.Text = ((int)engine.Voltage).ToString();
+
+
+            serialPortArduino.BaseStream.WriteByte(spEngineRPM);
+
+            byte[] buffer = BitConverter.GetBytes(engine.RPM);
+            serialPortArduino.BaseStream.Write(buffer, 0, buffer.Length);
         }
 
         private void buttonControlEngineStart_Click(object sender, EventArgs e)
         {
+
+            if (!serialPortArduino.IsOpen)
+            {
+                isArduinoFound = false;
+                keepAliveTimeCounter = 0;
+                timerChartInfo.Stop();
+                return;
+            }
+
             engine.On = true;
             textBoxCurrentEngineOn.Text = "Так";
+
+            serialPortArduino.BaseStream.WriteByte(spStartEngine);
         }
 
         //SHOWING DEBUG INFO ABOUT STATE OF MAIN FORM
@@ -246,7 +283,6 @@ namespace SMT_1
 
         private void numericUpDownPlanEngineRPM_ValueChanged(object sender, EventArgs e)
         {
-            textBoxPlanEngineVoltage.Text = EngineController.RpmToVoltage((int)numericUpDownPlanEngineRPM.Value).ToString();
             trackBarPlanEngineRPM.Value = (int)numericUpDownPlanEngineRPM.Value;
         }
 
@@ -676,39 +712,43 @@ namespace SMT_1
             }
             
         }
-
-        //REMOVE THIS CONTROLS
-        private void numericUpDownTest1_ValueChanged(object sender, EventArgs e)
-        {
-            intermediateTemp1 = (int)numericUpDownTest1.Value;
-        }
-
-        private void numericUpDownTest2_ValueChanged(object sender, EventArgs e)
-        {
-            intermediateTemp2 = (int)numericUpDownTest2.Value;
-        }
         
         private void timerChartInfo_Tick(object sender, EventArgs e)
         {
-            chartSecondsCounter++;
-            //Collect info
-            chartTemperature.Series["T1"].Points.AddXY(chartSecondsCounter, Interlocked.Read(ref intermediateTemp1));
-            //MessageBox.Show("t1: " + Interlocked.Read(ref intermediateTemp1));
-            chartTemperature.Series["T2"].Points.AddXY(chartSecondsCounter, intermediateTemp2);
-            //Write to tempdata
-            chartDataTemp1.Add(new Point2D((int)chartTemperature.Series["T1"].Points.Last().XValue, (int)chartTemperature.Series["T1"].Points.Last().YValues[0]));
-            chartDataTemp2.Add(new Point2D((int)chartTemperature.Series["T2"].Points.Last().XValue, (int)chartTemperature.Series["T2"].Points.Last().YValues[0]));
-
-            int newLoadValue = -100;
-            if (isPlanInExecution)
+            if (isChartBeingRendered)
             {
-                int recordIdx = int.Parse(textBoxRecordInExecution.Text);
-                newLoadValue = int.Parse(listViewPlanRecords.Items[recordIdx].SubItems[3].Text);
-            } else {
-                newLoadValue = load.Load;
+                chartSecondsCounter++;
+                //Collect info
+                chartTemperature.Series["T1"].Points.AddXY(chartSecondsCounter, Interlocked.Read(ref intermediateTemp1));
+                //MessageBox.Show("t1: " + Interlocked.Read(ref intermediateTemp1));
+                chartTemperature.Series["T2"].Points.AddXY(chartSecondsCounter, intermediateTemp2);
+                //Write to tempdata
+                chartDataTemp1.Add(new Point2D((int)chartTemperature.Series["T1"].Points.Last().XValue, (int)chartTemperature.Series["T1"].Points.Last().YValues[0]));
+                chartDataTemp2.Add(new Point2D((int)chartTemperature.Series["T2"].Points.Last().XValue, (int)chartTemperature.Series["T2"].Points.Last().YValues[0]));
+
+                int newLoadValue = -100;
+                if (isPlanInExecution)
+                {
+                    int recordIdx = int.Parse(textBoxRecordInExecution.Text);
+                    newLoadValue = int.Parse(listViewPlanRecords.Items[recordIdx].SubItems[3].Text);
+                }
+                else
+                {
+                    newLoadValue = load.Load;
+                }
+                chartLoad.Series["Load"].Points.AddXY(chartSecondsCounter, newLoadValue);
+                chartDataLoad.Add(new Point2D((int)chartLoad.Series["Load"].Points.Last().XValue, (int)chartLoad.Series["Load"].Points.Last().YValues[0]));
             }
-            chartLoad.Series["Load"].Points.AddXY(chartSecondsCounter, newLoadValue);
-            chartDataLoad.Add(new Point2D((int)chartLoad.Series["Load"].Points.Last().XValue, (int)chartLoad.Series["Load"].Points.Last().YValues[0]));
+
+            textBoxT1.Text = intermediateTemp1.ToString();
+            textBoxT2.Text = intermediateTemp2.ToString();
+            //textBoxSpeed.Text = intermediateRPM.ToString();
+
+            if(intermediateRPM > 20000)
+            {
+                MessageBox.Show($"Значення обертів перевищело максимальне, в межах безпеки двигун зупиняється", "Увага", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                buttonControlEngineStop_Click(sender, e);
+            }
         }
 
         private void buttonStopChartsRead_Click(object sender, EventArgs e)
@@ -804,6 +844,7 @@ namespace SMT_1
                     {
                         MessageBox.Show($"Arduino знайдено на порті {p}");
                         isArduinoFound = true;
+                        //timerChartInfo.Start();
                         break;
                     }
                     System.Threading.Thread.Sleep(1000); // wait a lot after closing serial
@@ -838,7 +879,8 @@ namespace SMT_1
                             {
                                 MessageBox.Show("Неможливо ініціалізувати отримання даних з датчиків\nЯкщо перезапуск програми не допоможе, - варто перевірити скетч Arduino", "Критична помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 isArduinoFound = false; // UI should be turned off
-
+                                //timerChartInfo.Stop();
+                                return;
                             }
                             retryInitializeCounter = 0;
 
@@ -866,6 +908,7 @@ namespace SMT_1
                         serialPortArduino.DiscardInBuffer();
                         serialPortArduino.Close();
                     }
+                    //timerChartInfo.Stop();
                 }
             });
         }
@@ -925,9 +968,7 @@ namespace SMT_1
                     if (returnMessage.Contains(notInitializedStr))
                     {
                         MessageBox.Show("Протокол спілкування з arduino порушений\nДля ре-ініціалізації підключення натисніть 'Під'єднатись до arduino'", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        isArduinoFound = false;
-                        keepAliveTimeCounter = 0;
-                        serialPortArduino.Close();
+                        break;
                     }
 
                     string[] allData = returnMessage.Split(' ');
@@ -936,7 +977,11 @@ namespace SMT_1
                         string[] keyValue = kv.Split(':');
                         if(keyValue[0] == "Temp1")
                         {
-                            Interlocked.Exchange(ref intermediateTemp1, (long)float.Parse(keyValue[1]));
+                            //Interlocked.Exchange(ref intermediateTemp1, (long)float.Parse(keyValue[1]));
+                        }
+                        if (keyValue[0] == "RPM")
+                        {
+                            Interlocked.Exchange(ref intermediateRPM, (long)float.Parse(keyValue[1]));
                         }
                     }
                     // NEED TO PARSE INPUT
@@ -961,6 +1006,7 @@ namespace SMT_1
             aTimer.Stop();
             isArduinoFound = false;
             keepAliveTimeCounter = 0;
+            //timerChartInfo.Stop();
         }
 
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
@@ -971,6 +1017,16 @@ namespace SMT_1
         private void OnTimedEvent(object source, ElapsedEventArgs e)
         {
             Interlocked.Increment(ref keepAliveTimeCounter);
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            intermediateTemp1 = trackBar1.Value;
+        }
+
+        private void trackBar2_Scroll(object sender, EventArgs e)
+        {
+            intermediateTemp2 = trackBar2.Value;
         }
     }
 }
