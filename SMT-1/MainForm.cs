@@ -206,8 +206,8 @@ namespace SMT_1
             foreach (Point2D point in chartDataLoad)
                 dbg += point.ToString() + "\n";
             dbg += "**************\n";
-            //richTextBoxDebug.Text = dbg; //UNCOMMENT
-            richTextBoxDebug.Text = threadStrDbg; //REMOVE
+            richTextBoxDebug.Text = dbg; //UNCOMMENT
+            //richTextBoxDebug.Text = threadStrDbg; //REMOVE
         }
 
         private void listViewPlanRecords_SelectedIndexChanged(object sender, EventArgs e)
@@ -799,10 +799,12 @@ namespace SMT_1
                 foreach (string p in ports)
                 {
                     MessageBox.Show($"Сканується порт {p}"); // DEBUG REMOVE THIS
+                    if (p != "COM5")
+                        continue;
                     serialPortArduino = new SerialPort(p, 9600);
                     if (ArduinoDetected())
                     {
-                        MessageBox.Show($"Arduino знайдено на порті {p}");
+                        MessageBox.Show($"Мікроконтролер знайдено на порті {p}");
                         isArduinoFound = true;
                         break;
                     }
@@ -811,7 +813,7 @@ namespace SMT_1
 
                 if (!isArduinoFound)
                 {
-                    MessageBox.Show($"Arduino не знайдено\nДля нормального функціонування програми підключіть Arduino і натисніть кнопку 'Під'єднатись до arduino'", "Увага", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show($"Мікроконтролер не знайдено\nДля нормального функціонування програми підключіть мікроконтролер і натисніть кнопку 'Під'єднатись до LPC1768'", "Увага", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
@@ -836,7 +838,7 @@ namespace SMT_1
                             bigRetryCounter++;
                             if(bigRetryCounter >= 3)
                             {
-                                MessageBox.Show("Неможливо ініціалізувати отримання даних з датчиків\nЯкщо перезапуск програми не допоможе, - варто перевірити скетч Arduino", "Критична помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show("Неможливо ініціалізувати отримання даних з датчиків\nЯкщо перезапуск програми не допоможе, - варто перевірити програму LPC1768", "Критична помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 isArduinoFound = false; // UI should be turned off
 
                             }
@@ -859,7 +861,7 @@ namespace SMT_1
                     dataCollector.Start();
                 }
                 catch (Exception ex) {
-                    MessageBox.Show($"Відбулась помилка. Впевніться, що arduino підключено та натисніть 'Під'єднатись до arduino', якщо все впорядку\nІнформація про помилку:\n{ex.Message}",
+                    MessageBox.Show($"Відбулась помилка. Впевніться, що мікроконтролер підключено та натисніть 'Під'єднатись до LPC1768', якщо все впорядку\nІнформація про помилку:\n{ex.Message}",
                         "Помилка зчитування даних датчиків",MessageBoxButtons.OK, MessageBoxIcon.Error);
                     isArduinoFound = false;
                     if(serialPortArduino.IsOpen) { 
@@ -924,7 +926,7 @@ namespace SMT_1
                     threadStrDbg += DateTime.Now.ToString("mm:ss:ff") + '\n';  //REMOVE
                     if (returnMessage.Contains(notInitializedStr))
                     {
-                        MessageBox.Show("Протокол спілкування з arduino порушений\nДля ре-ініціалізації підключення натисніть 'Під'єднатись до arduino'", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Протокол спілкування з мікроконтролером порушений\nДля ре-ініціалізації підключення натисніть 'Під'єднатись до LPC1768'", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         isArduinoFound = false;
                         keepAliveTimeCounter = 0;
                         serialPortArduino.Close();
@@ -936,7 +938,9 @@ namespace SMT_1
                         string[] keyValue = kv.Split(':');
                         if(keyValue[0] == "Temp1")
                         {
-                            Interlocked.Exchange(ref intermediateTemp1, (long)float.Parse(keyValue[1]));
+                            //MessageBox.Show($"Temp1 -- {keyValue[1]}");
+                            Interlocked.Exchange(ref intermediateTemp1, (long)float.Parse(keyValue[1], System.Globalization.CultureInfo.InvariantCulture.NumberFormat));
+                            intermediateTemp1 += 70;
                         }
                     }
                     // NEED TO PARSE INPUT
@@ -953,7 +957,7 @@ namespace SMT_1
                 catch (Exception e)
                 {
                     MessageBox.Show(e.ToString());
-                    MessageBox.Show("Протокол спілкування з arduino порушений\nДля ре-ініціалізації підключення натисніть 'Під'єднатись до arduino'", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Протокол спілкування з мікроконтролером порушений\nДля ре-ініціалізації підключення натисніть 'Під'єднатись до LPC1768'", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     serialPortArduino.Close();
                 }
             }
